@@ -1,0 +1,306 @@
+@charset "UTF-8";
+@use "../../foundation/variable" as *;
+@use "../../foundation/base" as *;
+@use "../../foundation/normalize";
+
+section.plan_sec1 {
+  padding: 6.7rem 0 5.7rem;
+  @include mq($sm) {
+    padding: 4.6rem 0 3.6rem;
+  }
+  .plan.sec1.inner {
+    padding-inline: 2.7rem;
+    @include mq($sm) {
+      padding-inline: 2rem;
+    }
+    .plan_breakdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      margin: 3.6rem 0 4.8rem;
+      @include mq($sm) {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 4rem 0 4.8rem;
+      }
+      .plan_fee_box {
+        width: 21rem;
+        height: 6rem;
+        background-color: $main_color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          color: #fff;
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 1.65;
+        }
+      }
+      img {
+        width: 19px;
+        margin-top: 0.5rem;
+        @include mq($sm) {
+          margin-top: 0rem;
+        }
+      }
+    }
+    p {
+      @include mq($sm) {
+        font-size: 1.6rem;
+        line-height: 1.875;
+      }
+    }
+  }
+}
+
+section.plan_sec2 {
+  padding-bottom: 22.3rem;
+  @include mq($sm) {
+    padding-bottom: 18.6rem;
+  }
+  .plan_sec2.inner {
+    .plan_sec2_container {
+      .sec_title {
+        h2 {
+          margin-bottom: 4.7rem;
+          @include mq($sm) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      table.plan_table {
+        font-size: 1.7rem;
+        line-height: 1.471;
+        @include mq($sm) {
+          margin-bottom: 2.5rem;
+        }
+        td {
+          text-align: center;
+        }
+        tbody {
+          tr {
+            td:not(:first-child):not(:last-child) {
+              border-right: 1px solid #333;
+            }
+            .plan_head-title {
+              font-size: 2rem;
+              font-weight: 700;
+              width: 22rem;
+              text-align: center;
+              color: #fff;
+              line-height: 1.65;
+              height: 8rem;
+              @include mq($sm) {
+                line-height: 1.25;
+              }
+              &.blank {
+                background-color: #fff;
+              }
+              &.basic,
+              &.premium {
+                padding-top: 4.3rem;
+                background: linear-gradient(to bottom, white 30px, black 30px);
+                @include mq($sm) {
+                  padding-top: 3.5rem;
+                  background: linear-gradient(
+                    to bottom,
+                    white 26px,
+                    black 25px
+                  );
+                  padding-bottom: 0.5rem;
+                }
+              }
+            }
+            .standard {
+              background-color: $main_color;
+              padding-top: 1rem;
+              span.plan_recommend {
+                font-size: 1.7rem;
+              }
+            }
+            &:nth-child(odd) {
+              background-color: #00000026;
+            }
+            .plan_title_price {
+              font-size: 1.7rem;
+              font-weight: 700;
+              padding: 3rem 0 2.4rem 2rem;
+              line-height: 1.765;
+              border-top: 1px solid #333;
+              border-right: 1px solid #333;
+              @include mq($sm) {
+                font-size: 1.6rem;
+                line-height: 1.875;
+                padding: 3rem 0 2.4rem 1rem;
+              }
+            }
+            .plan_title_price_basic,
+            .plan_title_price_standard_red,
+            .plan_title_price_premium {
+              font-size: 2.2rem;
+              font-weight: 700;
+              line-height: 1.5;
+              padding-top: 2.9rem;
+            }
+            .plan_title_price_standard_red {
+              color: $main_color;
+            }
+          }
+          .plan_title {
+            border-right: 1px solid #000;
+            padding: 3.2rem 0 2.8rem 2rem;
+            @include mq($sm) {
+              font-size: 1.6rem;
+              line-height: 1.563;
+              padding: 3.2rem 0.6rem 2.8rem 1rem;
+            }
+          }
+          .plan_text_plan_circle {
+            padding-top: 4.5rem;
+            position: relative;
+          }
+          .plan_text_plan_circle::after {
+            position: absolute;
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #000;
+            border-radius: 50%;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          .plan_text_plan_circle.last::after {
+            top: 3.5rem;
+          }
+          .plan_text_plan_circle_red {
+            padding-top: 4.5rem;
+            position: relative;
+          }
+          .plan_text_plan_circle_red::after {
+            position: absolute;
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: $main_color;
+            border-radius: 50%;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          .plan_text_circle_plan_circle,
+          .plan_text_circle_plan_circle_red {
+            position: relative;
+          }
+          .plan_text_circle_plan_circle::after {
+            position: absolute;
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #000;
+            border-radius: 50%;
+            top: 3.5rem;
+            transform: translateX(-50%);
+          }
+          .plan_text_circle_plan_circle_red::after {
+            position: absolute;
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: $main_color;
+            border-radius: 50%;
+            top: 3.5rem;
+            transform: translateX(-50%);
+          }
+          .plan_text_plan_border,
+          .plan_text_plan_border_red {
+            position: relative;
+          }
+          .plan_text_plan_border::after {
+            position: absolute;
+            content: "";
+            width: 3rem;
+            height: 0.1rem;
+            background-color: #000;
+            top: 4.25rem;
+            transform: translateX(-50%);
+          }
+          .plan_text_plan_border_red::after {
+            position: absolute;
+            content: "";
+            width: 3rem;
+            height: 0.1rem;
+            background-color: $main_color;
+            border-radius: 50%;
+            top: 4.25rem;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+    .plan_last_text {
+      margin-top: 2.8rem;
+      font-size: 1.7rem;
+      line-height: 1.471;
+      @include mq($sm) {
+        margin-top: 3.5rem;
+        line-height: 1.875;
+        font-size: 1.6rem;
+      }
+    }
+    .border_bottom {
+      border-bottom: 1px solid #000;
+    }
+    .plan_table tr.border_bottom th.plan_title {
+      padding: 3.2rem 0 2.6rem 2rem;
+      @include mq($sm) {
+        padding: 2rem 0 1.5rem 1rem;
+      }
+    }
+  }
+}
+
+.scroll__inner {
+  overflow-x: auto;
+  overflow-y: hidden !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+.scroll__inner .simplebar-placeholder {
+  height: auto !important;
+}
+
+@media screen and (max-width: 768px) {
+  .plan_table {
+    min-width: 668px; /* 数値は調整OK */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .simplebar-track.simplebar-horizontal {
+    /* 常に表示 */
+    opacity: 1 !important;
+    display: block !important;
+    /* 背景（横バー）のデザイン */
+    height: 25px !important;
+    background: #e5e5e5 !important;
+    bottom: -17px;
+  }
+
+  .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    /* スクロールバーの親要素も常に表示 */
+    height: 100% !important;
+    display: block !important;
+    /* transition: opacity 0s !important; /* アニメーションを無効化（必要に応じて） */
+  }
+
+  /* つまみ本体のデザインを適用し、常に不透明にする */
+  .simplebar-track.simplebar-horizontal .simplebar-scrollbar::before {
+    border-radius: 0;
+    background-color: rgba(80, 80, 80, 0.251);
+  }
+}

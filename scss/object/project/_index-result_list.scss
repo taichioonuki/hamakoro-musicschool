@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@use "../../foundation/variable" as *;
+@use "../../foundation/base" as *;
+@use "../../foundation/normalize";
+
+section.page_fv {
+  .page_fv_overlay.result_overlay {
+    background-color: transparent;
+  }
+}
+
+.result_container {
+  padding: 6.5rem 0 21rem;
+  @include mq($sm) {
+    padding: 3.5rem 0 19rem;
+  }
+  .result.inner {
+    .achievement_grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 7.1rem;
+      column-gap: 10.6rem;
+      justify-content: center;
+      margin-top: 3.5rem;
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 3.7rem;
+        margin-bottom: 7.1rem;
+      }
+      .achievement_card {
+        display: flex;
+        flex-direction: column;
+        a {
+          .achievement_img {
+            position: relative;
+            span.img_title {
+              width: 100px;
+            }
+          }
+          .achievement_content {
+            p.achievement_title {
+              margin: 2rem 0 1rem;
+              font-size: 2rem;
+              font-weight: 700;
+              line-height: 1.25;
+            }
+          }
+          .time_right {
+            text-align: right;
+            line-height: 1.778;
+          }
+        }
+      }
+    }
+  }
+}
+.page.result {
+  margin-top: 7.1rem;
+}

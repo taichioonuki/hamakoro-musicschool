@@ -1,0 +1,689 @@
+@charset "UTF-8";
+@use "../../foundation/variable" as *;
+@use "../../foundation/base" as *;
+@use "../../foundation/normalize";
+
+//FV--------------------->
+section.sec_fv {
+  padding-top: 8rem;
+  @include mq($sm) {
+    padding-top: 5rem;
+  }
+  .sec_fv_container {
+    position: relative;
+    .sec_fv_overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(80, 80, 80, 0.502);
+      z-index: 1;
+      pointer-events: none;
+      mix-blend-mode: multiply;
+    }
+    picture {
+      position: relative;
+      z-index: 0;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    h1.top_title {
+      position: absolute;
+      text-align: center;
+      top: 39.6%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1.5;
+      z-index: 2;
+      @include mq($sm) {
+        font-size: 3rem;
+        width: 30rem;
+        line-height: 1.6;
+        top: 38.6%;
+      }
+    }
+  }
+}
+//sec1--------------------->
+
+section.sec1 {
+  text-align: center;
+  padding: 6.67rem 0 5.3rem;
+  @include mq($sm) {
+    padding: 4.6rem 0 3.3rem;
+  }
+  .sec1.inner {
+    .top_sec_title {
+      h2 {
+        font-size: 3.5rem;
+        color: $main_color;
+        font-weight: 700;
+        line-height: 1.429;
+        @include mq($sm) {
+          font-size: 2.5rem;
+          line-height: 1.6;
+        }
+      }
+      p {
+        margin: 1.7rem 0 3.4rem;
+        @include mq($sm) {
+          font-size: 1.8rem;
+          line-height: 1.667;
+          margin: 0.7rem 9rem 2rem;
+        }
+        @media screen and (max-width: 541px) {
+          margin: 0.7rem 0rem 2rem;
+          text-align: left;
+        }
+      }
+      picture {
+        img {
+          display: block;
+          height: 100%;
+        }
+      }
+    }
+    .vision_content {
+      position: relative;
+      .vision_list_1,
+      .vision_list_2,
+      .vision_list_3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        p.vision_en {
+          color: $main_color;
+          font-size: 2.5rem; // 25px
+          font-weight: 700;
+          flex: 1;
+          text-align: end;
+          line-height: 2;
+          @include mq($sm) {
+            font-size: 2rem;
+            line-height: 2.5;
+          }
+        }
+        span.circle::after {
+          content: "";
+          display: block;
+          width: 20px; // 円の直径
+          height: 20px; // 円の直径
+          background-color: $main_color;
+          border-radius: 50%; // 円形にする
+        }
+        p.vision_jp {
+          font-size: 2.3rem; // 23px
+          line-height: 2.174;
+          flex: 1;
+          text-align: left;
+          font-weight: 500;
+          @include mq($sm) {
+            font-size: 2rem;
+            line-height: 2.5;
+          }
+        }
+      }
+      .vision_list_1 {
+        margin-top: 2rem;
+        @include mq($sm) {
+          margin-top: 3.4rem;
+        }
+      }
+      .vision_list_2 {
+        margin: 1.7rem 0 2rem 0;
+      }
+      .arrow {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 4rem;
+        height: 100%;
+        background-image: url(../img/other/up-arrow.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: middle;
+        top: -15%;
+        left: 50%;
+
+        /* 💥 追加点: 要素自身の幅の半分だけ左に戻す */
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+//sec2--------------------->
+section.sec2 {
+  background-color: $main_color;
+  padding: 6.8rem 0 6rem 0;
+  color: #fff;
+  @include mq($sm) {
+    padding: 4.9rem 0 4rem;
+  }
+  .sec2_container {
+    text-align: center;
+    .top_sec_title {
+      h2 {
+        margin-bottom: 3rem;
+        @include mq($sm) {
+          margin-bottom: 1.4rem;
+        }
+      }
+      p {
+        @include mq($sm) {
+          font-size: 1.8rem;
+          line-height: 1.667;
+        }
+      }
+    }
+  }
+}
+
+//sec3--------------------->
+section.sec3 {
+  padding: 6.4rem 0 9rem 0;
+  @include mq($sm) {
+    padding: 4.9rem 0 3.9rem 0;
+  }
+  .sec3.inner {
+    .sec3_container {
+      .sec3_list {
+        margin-top: 2.8rem;
+        @include mq($sm) {
+          margin-top: 3.6rem;
+        }
+        .sec3_item {
+          display: flex;
+          margin-bottom: 5rem;
+          @include mq($sm) {
+            flex-direction: column;
+            margin-bottom: 3.9rem;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .sec3_item_img {
+            max-width: 35rem;
+          }
+          &:last-child {
+            picture {
+              img {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+        .sec3_textbox {
+          flex: 1;
+          h3 {
+            line-height: 1.5;
+            font-weight: 700;
+            font-size: 2.2rem;
+            padding: 0 0 0.7rem 5rem;
+            border-bottom: 2px solid #cb0000;
+            @include mq($sm) {
+              font-size: 2rem;
+              padding: 3rem 0 0.8rem 0;
+            }
+          }
+        }
+        p {
+          padding: 3.7rem 0 6.9rem 5rem;
+          line-height: 1.833;
+          @include mq($sm) {
+            font-size: 1.6rem;
+            line-height: 1.875;
+            padding: 1.7rem 0 0 0;
+          }
+        }
+        span {
+          margin-left: 0.8rem;
+        }
+      }
+    }
+  }
+}
+//sec4--------------------->
+section.sec4 {
+  padding: 4.4rem 2rem 8rem 2rem;
+  background-color: $main_color;
+  @include mq($sm) {
+    padding: 4.6rem 0 5rem 0;
+  }
+  .sec4.inner {
+    .sec4_container {
+      color: #fff;
+      @include mq($sm) {
+        padding: 0;
+      }
+      .sec4_swiper {
+        position: relative;
+
+        .swiper {
+          margin-top: 3.8rem;
+
+          .swiper-wrapper {
+            .swiper-slide {
+              transition: 0.3s ease;
+              img {
+                width: 100%;
+                height: auto;
+                @include mq($sm) {
+                  aspect-ratio: 335 / 200;
+                }
+              }
+              p.name {
+                font-size: 2.2rem;
+                font-weight: 700;
+                margin: 1.7rem 0 1rem 0;
+                text-align: center;
+                line-height: 1.5;
+                overflow-wrap: break-word;
+                @include mq($sm) {
+                  margin: 2.7rem 0 1rem 0;
+                }
+              }
+              p.voice_text {
+                font-weight: 400;
+                font-size: 1.8rem;
+              }
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+        .swiper-button-prev {
+          left: -5.7%;
+          top: 42%;
+          width: 40px;
+          height: 40px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url(../img/other/arrow-swiper.svg);
+          @include mq($sm) {
+            left: 0;
+          }
+        }
+
+        .swiper-button-next {
+          right: -5.7%;
+          top: 42%;
+          width: 40px;
+          height: 40px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: scale(-1, 1);
+          background-image: url(../img/other/arrow-swiper.svg);
+          @include mq($sm) {
+            right: 0;
+          }
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+          transition: opacity 0.3s ease;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        // デフォルト矢印を完全に消す
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+//sec5--------------------->
+section.sec5 {
+  padding: 3.5rem 0 9rem;
+  @include mq($sm) {
+    padding: 4.6rem 0 3.7rem;
+  }
+  .sec5.inner {
+    @include mq($sm) {
+      padding-inline: 7rem;
+    }
+    @media screen and (max-width: 400px) {
+      padding-inline: 2rem;
+    }
+    .sec5_container {
+      .top_sec_title {
+        h2 {
+          @include mq($sm) {
+            padding-right: 1rem;
+          }
+        }
+      }
+      @include mq($sm) {
+        padding-left: 1rem;
+      }
+      .guide_content {
+        display: flex;
+        flex-direction: column;
+        gap: 5.8rem;
+        margin-top: 5.3rem;
+        position: relative;
+        padding-left: 5.4rem;
+        margin-bottom: 2rem;
+        @include mq($sm) {
+          padding-left: 0;
+          gap: 3.6rem;
+          margin-top: 3.6rem;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 16px;
+          left: 6rem;
+          width: 3px;
+          height: calc(100% - 1rem);
+          background-color: #cb0000;
+          z-index: 1;
+          @include mq($sm) {
+            left: 0.6rem;
+            height: calc(100% - 3rem);
+          }
+        }
+        .guide_list_1,
+        .guide_list_2,
+        .guide_list_3,
+        .guide_list_4 {
+          display: flex;
+          position: relative;
+          @include mq($sm) {
+            flex-direction: column;
+            padding-left: 3.8rem;
+          }
+
+          span.circle {
+            position: absolute;
+            left: -2px;
+            top: 0.5rem;
+            width: 20px;
+            height: 20px;
+            z-index: 3;
+          }
+
+          span.circle::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #cb0000;
+            border-radius: 50%;
+          }
+
+          p.guide_title {
+            color: #cb0000;
+            width: 19rem;
+            margin-left: 7rem;
+            font-size: 2.2rem;
+            line-height: 1.5;
+            font-weight: bold;
+            @include mq($sm) {
+              margin-left: 0;
+              margin-bottom: 0.9rem;
+            }
+          }
+          p.guide_text {
+            @include mq($sm) {
+              font-size: 1.6rem;
+              line-height: 1.875;
+            }
+          }
+        }
+        .arrow {
+          position: absolute;
+          width: 0.3rem;
+          height: 0;
+          background-color: transparent;
+          left: 6rem;
+          top: calc(100% - 4rem);
+          z-index: 2;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 2.4rem;
+            left: -1.1rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-bottom: 3px solid #cb0000;
+            border-right: 3px solid #cb0000;
+            transform: rotate(45deg);
+            @include mq($sm) {
+              left: -6.5rem;
+              top: 0;
+            }
+          }
+        }
+        .guide_content::before {
+          height: calc(100% - 5.5rem);
+        }
+      }
+    }
+  }
+}
+
+//sec6--------------------->
+section.sec6 {
+  padding: 0 0 7rem 0;
+  @include mq($sm) {
+    padding: 0 0 5rem 0;
+  }
+  .sec6.inner {
+    .sec6_container {
+      .faq-section {
+        margin-top: 3rem;
+        border-top: 1px solid #000000;
+        @include mq($sm) {
+          margin-top: 3.7rem;
+        }
+        .faq-item {
+          .faq-question {
+            display: flex;
+            align-items: center;
+            font-size: 1.7rem;
+            line-height: 1.765;
+            cursor: pointer;
+            position: relative;
+            user-select: none;
+            border-bottom: 1px solid #000000;
+            span.icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              background-color: black;
+              color: #fff;
+              font-size: 20px;
+              font-weight: bold;
+              flex-shrink: 0;
+              margin: 0 1rem 0 2rem;
+              line-height: 1.5;
+              @include mq($sm) {
+                margin: 0 2rem 0 0rem;
+              }
+            }
+            p {
+              padding: 2rem 0 1.4rem;
+              @include mq($sm) {
+                font-size: 1.6rem;
+                line-height: 1.875;
+                padding: 1.7rem 4.7rem 0.9rem 0;
+              }
+            }
+            span.arrow-icon {
+              position: absolute;
+              right: 30px;
+              width: 13.62px;
+              height: 9.42px;
+              transition: transform 0.3s ease;
+              @include mq($sm) {
+                right: 12px;
+              }
+              &::after {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 11px;
+                border-bottom: 1px solid #000000;
+                border-right: 1px solid #000000;
+                transform: rotate(45deg);
+                transition: transform 0.3s ease;
+              }
+
+              &.open::after {
+                transform: rotate(-135deg);
+              }
+            }
+          }
+
+          .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 2rem;
+            transition: max-height 0.3s ease-in-out, padding 0.3s ease-in,
+              transform 0.3s ease;
+            &.highlighted {
+              background-color: #feeeee;
+              display: flex;
+              align-items: flex-start;
+              font-size: 1.7rem;
+              line-height: 1.765;
+              color: #000000;
+              padding: 0;
+              & {
+                flex-grow: 1;
+              }
+              span.icon.answer-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background-color: #c0392b;
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0 1rem 0 2rem;
+                flex-shrink: 0;
+                @include mq($sm) {
+                  margin: 0 2rem 0 0rem;
+                }
+              }
+            }
+            p {
+              padding: 2.1rem 0 1.7rem;
+              @include mq($sm) {
+                font-size: 1.6rem;
+                line-height: 1.875;
+                padding: 1.7rem 4.7rem 0.6rem 0;
+              }
+            }
+          }
+
+          &.open {
+            .faq-question {
+              border-bottom: none;
+            }
+
+            .faq-answer {
+              transition: max-height 0.3s ease-in-out, padding 0.3s ease-in,
+                transform 0.3s ease;
+              border-bottom: 1px solid #000000;
+            }
+
+            .faq-answer.highlighted {
+              align-items: center;
+              font-weight: bold;
+              color: #cb0000;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//sec7--------------------->
+section.sec7 {
+  padding-bottom: 20.5rem;
+  @include mq($sm) {
+    padding-bottom: 19.1rem;
+  }
+  .sec7.inner {
+    .sec7_container {
+      ul.blog_list {
+        padding-top: 3.3rem;
+        display: flex;
+        gap: 5rem;
+        @include mq($sm) {
+          padding-top: 3.9rem;
+          flex-direction: column;
+          gap: 4.1rem;
+        }
+        li.blog_item {
+          position: relative;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.05) translateY(-4px);
+            opacity: 0.7;
+          }
+          a {
+            h3 {
+              font-size: 2rem;
+              font-weight: bold;
+              margin-top: 2.2rem;
+              line-height: 1.25;
+              @include mq($sm) {
+                margin-top: 3rem;
+                line-height: 1.5;
+              }
+            }
+            p {
+              text-align: right;
+              font-size: 1.7rem;
+              line-height: 1.765;
+              margin-top: 1.1rem;
+              @include mq($sm) {
+                margin-top: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .blog_btnbox {
+      text-align: right;
+      margin-top: 3.7rem;
+      text-decoration: underline;
+      line-height: 1.667;
+      @include mq($sm) {
+        text-align: center;
+      }
+      a {
+        transition: 0.3s;
+        font-size: 1.8rem;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@use "../../foundation/variable" as *;
+@use "../../foundation/base" as *;
+@use "../../foundation/normalize";
+
+section.profile_card {
+  padding: 7rem 0 6rem;
+  @include mq($sm) {
+    padding: 5rem 0 4rem;
+  }
+  .profile.inner {
+    .profile_img {
+      position: relative;
+      picture {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      span.img_title {
+        width: 10rem;
+      }
+    }
+    .profile_card_body {
+      flex: 1 1 70%;
+      h1.profile_card_title {
+        font-size: 2.5rem;
+        line-height: 1.6;
+        margin: 5rem 0 1.5rem;
+        @include mq($sm) {
+          font-size: 2rem;
+          line-height: 1.5;
+          margin: 3rem 0 0.6rem;
+        }
+      }
+      time {
+        font-size: 1.7rem;
+        line-height: 1.765;
+      }
+      .profile_card_content {
+        display: grid;
+        grid-template-columns: 40rem 44rem;
+        gap: 4rem;
+        align-items: start;
+        margin-top: 5.7rem;
+        @include mq($sm) {
+          grid-template-columns: 1fr;
+          gap: 2.8rem;
+          margin-top: 2.1rem;
+          font-size: 1.8rem;
+          line-height: 1.667;
+        }
+        .profile_card_table-wrapper {
+          table.profile_card_table {
+            width: 100%;
+            border: 0.5px solid #707070;
+            tbody {
+              table,
+              th,
+              td {
+                border: 0.5px solid #333;
+                width: 260px;
+              }
+              tr {
+                th {
+                  background: #e5e5e5;
+                  width: 140px;
+                  font-weight: 700;
+                  padding: 0.7rem 2rem 0;
+                  @include mq($sm) {
+                    padding: 0.7rem 1rem 0;
+                    font-size: 1.8rem;
+                    line-height: 1.667;
+                  }
+                }
+                td {
+                  padding: 0.7rem 2rem 0;
+                  @include mq($sm) {
+                    padding: 0.7rem 1rem 0;
+                    font-size: 1.8rem;
+                    line-height: 1.667;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.result {
+  div.result_details.inner {
+    div.result_details_content {
+      padding-bottom: 15.7rem;
+      @include mq($sm) {
+        padding-bottom: 19.7rem;
+      }
+      div.article {
+        margin-top: 0;
+        div.article_page.result_page {
+          gap: 20rem;
+          @include mq($sm) {
+            gap: 2.2rem;
+          }
+          div.article_pagebox {
+            flex: 1 1 50%;
+            max-width: 50%;
+            a.article_link {
+              display: block;
+              h2.article_title_prev.result_details_prev,
+              h2.article_title_next.result_details_next {
+                width: 34rem;
+                @include mq($sm) {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      div.related.result_content {
+        div.related_content_box {
+          div.related_content {
+            ul {
+              li.related_content_item {
+                a {
+                  div.related_content_item_left {
+                    img {
+                      width: 26rem;
+                      @include mq($sm) {
+                        width: 16rem;
+                      }
+                    }
+                    span.img_title.related_img_title {
+                      width: 10rem;
+                      @include mq($sm) {
+                        width: 8rem;
+                      }
+                    }
+                  }
+                  div.related_content_textbox {
+                    h3.sp_only {
+                      margin-top: 0;
+                    }
+                    p {
+                      time {
+                        font-size: 1.7rem;
+                        line-height: 1.765;
+                        margin-left: 0.4rem;
+                        @include mq($sm) {
+                          margin-left: 0rem;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

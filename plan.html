@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。"
+    />
+    <meta name="keywords" content="音楽,学校,歌手" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="img/icon_logo/fvicon_music.svg" sizes="any" />
+    <meta property="og:title" content="きたむらミュージックスクール" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hamakoro-i.com/music_school/" />
+    <meta property="og:image" content="https://hamakoro-i.com/music_school/img/top/music-pc_fv.jpg" />
+    <title>きたむらミュージックスクール</title>
+    <!---------------------------------スタイルシート-------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!---------------------------------ヘッダー部分------------------------------------------->
+    <header class="header">
+      <div class="header_container">
+        <a href="index.html">
+          <h1 class="header_logo">
+            <picture>
+              <source
+                srcset="img/icon_logo/music-school_logo_sp.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="img/icon_logo/music-school_logo.jpg"
+                alt="きたむらミュージックスクールのロゴ"
+              />
+            </picture>
+          </h1>
+        </a>
+        <button class="toggle_menu js_toggolenav">
+          <span class="toggle_line"></span>
+        </button>
+        <nav class="header_nav">
+          <ul class="header_list">
+            <li class="header_item">
+              <a href="plan.html" class="">料金</a>
+            </li>
+            <li class="header_item">
+              <a href="blog_list.html" class="">ブログ</a>
+            </li>
+            <li class="header_item">
+              <a href="result_list.html" class="">卒業実績</a>
+            </li>
+          </ul>
+          <a href="contact_form.html" class="c_button button__head"
+            >お問い合わせ</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page_fv">
+        <div class="page_fv_container">
+          <div class="page_fv_overlay"></div>
+          <picture>
+            <source
+              srcset="img/sp/plan/plan_fv_sp.jpg"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="img/plan/plan_fv_pc.jpg"
+              alt="ギター"
+              width="1080"
+              height="200"
+              decoding="async"
+            />
+          </picture>
+          <h1 class="page_fv_title">プラン・料金</h1>
+        </div>
+      </section>
+      <nav class="breadcrumb">
+        <div class="breadcrumb_container">
+          <ul class="breadcrumb_list">
+            <li>
+              <a class="breadcrumb_link" href="index.html">ホーム</a>
+            </li>
+            <li class="breadcrumb_item">プラン・料金</li>
+          </ul>
+        </div>
+      </nav>
+      <section class="plan_sec1">
+        <div class="plan sec1 inner">
+          <div class="sec_title">
+            <h2>料金体系</h2>
+          </div>
+          <div class="plan_breakdown">
+            <div class="plan_fee_box">
+              <p>入会金 39,000円</p>
+            </div>
+            <img src="img/plan/plus_icon.svg" />
+            <div class="plan_fee_box">
+              <p>月額料金</p>
+            </div>
+          </div>
+          <p>
+            きたむらミュージックスクールでは、個人に合わせたサポートを行う完全オーダーメイドのプランを用意しており、サポート内容により月額料金が異なります。担当者があなたに最適なプランを提案いたしますので、お気軽にお問い合わせください。※すべての料金は税込価格となります。
+          </p>
+        </div>
+      </section>
+      <section class="plan_sec2">
+        <div class="plan_sec2 inner">
+          <div class="plan_sec2_container">
+            <div class="sec_title">
+              <h2>プラン内容・月額料金</h2>
+            </div>
+            <div
+            class="school_content"
+              data-simplebar
+              data-simplebar-auto-hide="false"
+            >
+              <table class="plan_table">
+                <tr>
+                  <th class="plan_head-title blank"></th>
+                  <th class="plan_head-title basic">
+                    ベーシック<br class="sp_only" />プラン
+                  </th>
+                  <th class="plan_head-title standard">
+                    <span class="plan_recommend">おすすめ</span
+                    ><br />スタンダード<br class="sp_only" />プラン
+                  </th>
+                  <th class="plan_head-title premium">
+                    プレミアム<br class="sp_only" />プラン
+                  </th>
+                </tr>
+                <tr>
+                  <th class="plan_title_price">月額料金</th>
+                  <td class="plan_title_price_basic">39,000円</td>
+                  <td class="plan_title_price_standard_red">59,000円</td>
+                  <td class="plan_title_price_premium">128,000円</td>
+                </tr>
+                <tr>
+                  <th class="plan_title">マンツーマン授業</th>
+                  <td class="plan_text_plan_circle">週１回</td>
+                  <td class="plan_text_plan_circle_red">週２回</td>
+                  <td class="plan_text_plan_circle">無制限</td>
+                </tr>
+                <tr>
+                  <th class="plan_title">ビジネス基本講座</th>
+                  <td class="plan_text_circle_plan_circle"></td>
+                  <td class="plan_text_circle_plan_circle_red"></td>
+                  <td class="plan_text_circle_plan_circle"></td>
+                </tr>
+                <tr>
+                  <th class="plan_title">練習ROOM利用</th>
+                  <td class="plan_text_plan_circle">月10時間</td>
+                  <td class="plan_text_plan_circle_red">月20時間</td>
+                  <td class="plan_text_plan_circle">無制限</td>
+                </tr>
+                <tr>
+                  <th class="plan_title">ビジネスコンサル</th>
+                  <td class="plan_text_plan_border"></td>
+                  <td class="plan_text_plan_circle_red">月２回</td>
+                  <td class="plan_text_plan_circle">月３回</td>
+                </tr>
+                <tr class="border_bottom">
+                  <th class="plan_title">
+                    コミュニティ<br class="sp_only" />参加資格
+                  </th>
+                  <td class="plan_text_plan_border"></td>
+                  <td class="plan_text_plan_border"></td>
+                  <td class="plan_text_plan_circle last"></td>
+                </tr>
+              </table>
+            </div>
+            <p class="plan_last_text">
+              ※各サービスは１回ごとのオプション追加が可能です。詳しくは事務局までお問い合わせください。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="back-to-top" id="page-top">
+      <img
+        src="img/other/arrow-top.svg"
+        class="back-to-top_btn"
+        _alt="トップへ戻るボタン"
+      />
+      <a href="contact_form.html" class="c_button fixed-buttons__contact"
+        >お問い合わせ</a
+      >
+    </div>
+    <footer class="footer">
+      <div class="footer_container inner">
+        <nav class="footer_nav">
+          <ul class="footer_list">
+            <li class="footer_item">
+              <a href="index.html" class="">ホーム </a>
+            </li>
+            <li class="footer_item">
+              <a href="plan.html" class="">料金</a>
+            </li>
+            <li class="footer_item">
+              <a href="blog_list.html" class="">ブログ</a>
+            </li>
+            <li class="footer_item">
+              <a href="result_list.html" class="">卒業実績</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer_logo">
+          <img
+            src="img/icon_logo/logo-white.svg"
+            alt="きたむらミュージックスクールのロゴ"
+          />
+        </div>
+        <div class="footer_copyright">
+          Copyright © 0000 KITAMURA music school Inc. All Rights
+        </div>
+        <div class="footer_sns">
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="img/icon_logo/icon-twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/icon_logo/icon-facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/icon_logo/icon-youtube.svg" alt="youtube"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/icon_logo/icon-instagram.svg" alt="instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

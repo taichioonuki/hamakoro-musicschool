@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@use "../../foundation/variable" as *;
+@use "../../foundation/base" as *;
+@use "../../foundation/normalize";
+
+section.contact_done {
+  padding: 6.7rem 0 9rem 0;
+  text-align: center;
+  @include mq($sm) {
+  padding: 4.7rem 0 5rem 0;
+  }
+  .contact_textbox {
+    margin-bottom: 4rem;
+    @include mq($sm) {
+      text-align: left;
+    }
+  }
+}
