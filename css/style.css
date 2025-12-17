@@ -514,22 +514,22 @@ header.header div.header_container a {
       -ms-flex-align: center;
           align-items: center;
 }
-header.header div.header_container a h1.header_logo {
+header.header div.header_container a .header_logo {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-header.header div.header_container a h1.header_logo:hover {
+header.header div.header_container a .header_logo:hover {
   opacity: 0.7;
 }
-header.header div.header_container a h1.header_logo img {
+header.header div.header_container a .header_logo img {
   width: 192px;
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container a h1.header_logo img {
+  header.header div.header_container a .header_logo img {
     width: 208px;
   }
 }
-header.header div.header_container a h1.header_logo .logo_text {
+header.header div.header_container a .header_logo .logo_text {
   display: none;
 }
 header.header div.header_container nav.header_nav {
@@ -784,6 +784,15 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: 1px solid #CB0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .c_button:hover {
   background-color: #fff;
@@ -1092,24 +1101,28 @@ nav.breadcrumb .breadcrumb_container .breadcrumb_item {
 #page-top.back-to-top .fixed-buttons__contact {
   width: 30rem;
   height: 6rem;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
   text-align: center;
   font-size: 2rem;
   line-height: 1.65;
-  padding: 1.7rem 0 1rem 0;
   letter-spacing: 0.4rem;
   -webkit-transition: opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   transition: opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-}
-#page-top.back-to-top .fixed-buttons__contact:hover {
-  opacity: 0.7;
 }
 @media screen and (max-width: 767px) {
   #page-top.back-to-top .fixed-buttons__contact {
     width: 33.5rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.4rem 0 1.3rem 0;
   }
 }
 
@@ -1383,7 +1396,7 @@ section.sec_fv .sec_fv_container picture img {
   width: 100%;
   height: auto;
 }
-section.sec_fv .sec_fv_container h1.top_title {
+section.sec_fv .sec_fv_container h2.top_title {
   position: absolute;
   text-align: center;
   top: 39.6%;
@@ -1397,7 +1410,7 @@ section.sec_fv .sec_fv_container h1.top_title {
   z-index: 2;
 }
 @media screen and (max-width: 767px) {
-  section.sec_fv .sec_fv_container h1.top_title {
+  section.sec_fv .sec_fv_container h2.top_title {
     font-size: 3rem;
     width: 30rem;
     line-height: 1.6;
@@ -3135,41 +3148,63 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar
   }
 }
 
-section.contact_done {
+.contact_done {
   padding: 6.7rem 0 9rem 0;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  section.contact_done {
+  .contact_done {
     padding: 4.7rem 0 5rem 0;
   }
 }
-section.contact_done .contact_textbox {
+.contact_done .contact_textbox {
   margin-bottom: 4rem;
 }
 @media screen and (max-width: 767px) {
-  section.contact_done .contact_textbox {
+  .contact_done .contact_textbox {
     text-align: left;
   }
 }
+.contact_done .submit_button_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-section.contact_error {
+.contact_error {
   padding: 6.8rem 0 9rem;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  section.contact_error {
+  .contact_error {
     padding: 4.2rem 0 5rem;
   }
 }
-section.contact_error .inner .contact_error_textbox {
+.contact_error .inner .contact_error_textbox {
   margin-bottom: 4rem;
 }
 @media screen and (max-width: 767px) {
-  section.contact_error .inner .contact_error_textbox {
+  .contact_error .inner .contact_error_textbox {
     text-align: left;
     margin-bottom: 0.9rem;
   }
+}
+.contact_error .submit_button_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.search_sec {
