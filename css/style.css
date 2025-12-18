@@ -513,20 +513,18 @@ header.header div.header_container a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
-header.header div.header_container a .header_logo {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-header.header div.header_container a .header_logo:hover {
+header.header div.header_container a:hover {
   opacity: 0.7;
 }
 header.header div.header_container a .header_logo img {
-  width: 192px;
+  width: 19.2rem;
 }
 @media screen and (max-width: 767px) {
   header.header div.header_container a .header_logo img {
-    width: 208px;
+    width: 20.8rem;
   }
 }
 header.header div.header_container a .header_logo .logo_text {
@@ -579,8 +577,8 @@ header.header div.header_container nav.header_nav ul.header_list li.header_item 
           align-items: center;
   height: 100%;
   position: relative;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 header.header div.header_container nav.header_nav ul.header_list li.header_item a:hover {
   opacity: 0.7;
@@ -614,6 +612,8 @@ header.header div.header_container nav.header_nav ul.header_list li.header_item 
 header.header div.header_container nav.header_nav a.c_button.button__head {
   font-size: 1.5rem;
   line-height: 2.2;
+  -webkit-transition: background-color 0.4s, color 0.4s;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 @media screen and (max-width: 767px) {
@@ -656,8 +656,10 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
     width: 32px;
     height: 4px;
     border-radius: 5px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: top 0.4s ease, -webkit-transform 0.4s ease;
+    transition: top 0.4s ease, -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease, top 0.4s ease;
+    transition: transform 0.4s ease, top 0.4s ease, -webkit-transform 0.4s ease;
     background-color: #fff;
   }
   header .toggle_menu .toggle_line::after {
@@ -670,8 +672,10 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
     width: 32px;
     height: 4px;
     border-radius: 5px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: top 0.4s ease, -webkit-transform 0.4s ease;
+    transition: top 0.4s ease, -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease, top 0.4s ease;
+    transition: transform 0.4s ease, top 0.4s ease, -webkit-transform 0.4s ease;
     background-color: #fff;
   }
   header.open .toggle_menu .toggle_line {
@@ -680,8 +684,6 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
   header.open .toggle_menu .toggle_line::before {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
     top: -2px;
     width: 32px;
   }
@@ -738,10 +740,10 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
   .header_item {
     -webkit-transform: translateX(50px);
             transform: translateX(50px);
-    -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
-    transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   }
   header.open .header_item {
     -webkit-transform: translateX(0);
@@ -765,8 +767,8 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
     text-decoration: none;
     padding: 1.5rem 25rem 1rem 2rem;
     white-space: nowrap;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
   }
   .header_item a::after {
     display: none;
@@ -781,8 +783,8 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
   height: 45px;
   padding: 6px 29px 4px 29px;
   color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: background-color 0.4s, color 0.4s;
+  transition: background-color 0.4s, color 0.4s;
   border: 1px solid #CB0000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -928,6 +930,11 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li a.breadcrumb_link {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li a.breadcrumb_link:hover {
+  opacity: 0.7;
 }
 nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
   line-height: 1.45;
@@ -977,10 +984,8 @@ nav.breadcrumb .breadcrumb_container .breadcrumb_item {
   display: flex;
   gap: 5rem;
   margin-bottom: 7rem;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 @media screen and (max-width: 767px) {
   .blog_list ul li.blog_item a {
@@ -999,8 +1004,6 @@ nav.breadcrumb .breadcrumb_container .breadcrumb_item {
 }
 .blog_list ul li.blog_item a:hover {
   opacity: 0.7;
-  -webkit-transform: scale(1.05) translateY(-4px);
-          transform: scale(1.05) translateY(-4px);
 }
 .blog_list ul li.blog_item a .blog_item_left {
   position: relative;
@@ -1145,7 +1148,11 @@ div.article div.article_page {
     gap: 2.2rem;
   }
 }
-div.article div.article_page div.article_pagebox a.article_link h2.article_title_prev {
+div.article div.article_page div.article_pagebox a.article_link {
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+div.article div.article_page div.article_pagebox a.article_link .article_title_prev {
   width: 26rem;
   background-color: #000;
   color: #fff;
@@ -1154,12 +1161,12 @@ div.article div.article_page div.article_pagebox a.article_link h2.article_title
   padding: 0.4rem 0 0.3rem 2rem;
 }
 @media screen and (max-width: 767px) {
-  div.article div.article_page div.article_pagebox a.article_link h2.article_title_prev {
+  div.article div.article_page div.article_pagebox a.article_link .article_title_prev {
     width: 100%;
   }
 }
 @media screen and (max-width: 375px) {
-  div.article div.article_page div.article_pagebox a.article_link h2.article_title_prev {
+  div.article div.article_page div.article_pagebox a.article_link .article_title_prev {
     width: 15.6rem;
     padding: 0.4rem 0 0.3rem 2rem;
   }
@@ -1171,11 +1178,6 @@ div.article div.article_page div.article_pagebox a.article_link div.article_text
   margin-top: 1.5rem;
   gap: 1.6rem;
   height: 68px;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-div.article div.article_page div.article_pagebox a.article_link div.article_textbox:hover {
-  opacity: 0.7;
 }
 div.article div.article_page div.article_pagebox a.article_link div.article_textbox img {
   width: 98px;
@@ -1204,6 +1206,9 @@ div.article div.article_page div.article_pagebox a.article_link .article_title_n
     line-height: 1.765;
     padding: 0.4rem 2rem 0.3rem 0;
   }
+}
+div.article div.article_page div.article_pagebox a.article_link:hover {
+  opacity: 0.7;
 }
 
 div.related {
@@ -1245,10 +1250,8 @@ div.related div.related_content_box div.related_content ul li.related_content_it
   display: flex;
   gap: 3rem;
   margin-bottom: 3rem;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 @media screen and (max-width: 767px) {
   div.related div.related_content_box div.related_content ul li.related_content_item a {
@@ -1257,8 +1260,6 @@ div.related div.related_content_box div.related_content ul li.related_content_it
   }
 }
 div.related div.related_content_box div.related_content ul li.related_content_item a:hover {
-  -webkit-transform: scale(1.05) translateY(-4px);
-          transform: scale(1.05) translateY(-4px);
   opacity: 0.7;
 }
 div.related div.related_content_box div.related_content ul li.related_content_item a div.related_content_item_left {
@@ -1347,8 +1348,8 @@ div.related div.related_content_box div.related_content ul .related_content_item
   border: 1px solid #000;
   color: #000;
   font-weight: bold;
-  -webkit-transition: all 0.15s linear;
-  transition: all 0.15s linear;
+  -webkit-transition: background-color 0.4s linear, color 0.4s linear;
+  transition: background-color 0.4s linear, color 0.4s linear;
 }
 @media screen and (max-width: 767px) {
   .page .Pagination-Item-Link {
@@ -1548,7 +1549,6 @@ section.sec1 .sec1.inner .vision_content .arrow {
   vertical-align: middle;
   top: -15%;
   left: 50%;
-  /* 💥 追加点: 要素自身の幅の半分だけ左に戻す */
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -1678,8 +1678,8 @@ section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper {
   margin-top: 3.8rem;
 }
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .swiper-slide {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
@@ -1744,8 +1744,8 @@ section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-next {
 }
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-prev,
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-next {
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-prev:hover,
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-next:hover {
@@ -2137,14 +2137,12 @@ section.sec7 .sec7.inner .sec7_container ul.blog_list {
 }
 section.sec7 .sec7.inner .sec7_container ul.blog_list li.blog_item {
   position: relative;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-section.sec7 .sec7.inner .sec7_container ul.blog_list li.blog_item:hover {
-  -webkit-transform: scale(1.05) translateY(-4px);
-          transform: scale(1.05) translateY(-4px);
+section.sec7 .sec7.inner .sec7_container ul.blog_list li.blog_item a {
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+section.sec7 .sec7.inner .sec7_container ul.blog_list li.blog_item a:hover {
   opacity: 0.7;
 }
 section.sec7 .sec7.inner .sec7_container ul.blog_list li.blog_item a h3 {
@@ -2182,8 +2180,8 @@ section.sec7 .sec7.inner .blog_btnbox {
   }
 }
 section.sec7 .sec7.inner .blog_btnbox a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
   font-size: 1.8rem;
 }
 section.sec7 .sec7.inner .blog_btnbox a:hover {
@@ -2494,26 +2492,21 @@ section.plan_sec2 .plan_sec2.inner .plan_table tr.border_bottom th.plan_title {
 
 @media screen and (max-width: 768px) {
   .plan_table {
-    min-width: 668px; /* 数値は調整OK */
+    min-width: 668px;
   }
 }
 @media screen and (max-width: 768px) {
   .simplebar-track.simplebar-horizontal {
-    /* 常に表示 */
     opacity: 1 !important;
     display: block !important;
-    /* 背景（横バー）のデザイン */
     height: 25px !important;
     background: #e5e5e5 !important;
     bottom: -17px;
   }
   .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
-    /* スクロールバーの親要素も常に表示 */
     height: 100% !important;
     display: block !important;
-    /* transition: opacity 0s !important; /* アニメーションを無効化（必要に応じて） */
   }
-  /* つまみ本体のデザインを適用し、常に不透明にする */
   .simplebar-track.simplebar-horizontal .simplebar-scrollbar::before {
     border-radius: 0;
     background-color: rgba(80, 80, 80, 0.251);
@@ -2728,6 +2721,11 @@ section.sec1_blog_details .sec1_blog_details.inner .sec1_left_content .blog_deta
   color: #CB0000;
   line-height: 1.65;
   text-decoration: underline;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+section.sec1_blog_details .sec1_blog_details.inner .sec1_left_content .blog_details_content02 a.sec1_left_textlink:hover {
+  opacity: 0.7;
 }
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar {
   -webkit-box-flex: 1;
@@ -2760,6 +2758,13 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar
   width: 100%;
   height: auto;
   padding: 1.5rem;
+}
+section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_mail .banner a {
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_mail .banner a:hover {
+  opacity: 0.7;
 }
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_mail .banner a img {
   width: 100%;
@@ -2813,8 +2818,8 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar
   height: 100%;
   cursor: pointer;
   pointer-events: auto;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
   z-index: 2;
   background-image: url(../img/icon_logo/icon-search.svg);
 }
@@ -2839,24 +2844,22 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar
 }
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_posts ul.post_list li.post_item {
   margin-bottom: 1.5rem;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 @media screen and (max-width: 767px) {
   section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_posts ul.post_list li.post_item {
     margin-bottom: 2.1rem;
   }
 }
-section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_posts ul.post_list li.post_item:hover {
-  opacity: 0.7;
-}
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_posts ul.post_list li.post_item a.post_link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1.5rem;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_posts ul.post_list li.post_item a.post_link:hover {
+  opacity: 0.7;
 }
 @media screen and (max-width: 767px) {
   section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_posts ul.post_list li.post_item a.post_link {
@@ -2887,13 +2890,6 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar
 }
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_category ul.category_list li.category_item {
   border-bottom: 0.5px solid #000;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_category ul.category_list li.category_item:hover {
-  opacity: 0.7;
 }
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_category ul.category_list li.category_item a.category_link {
   display: block;
@@ -2901,6 +2897,11 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar
   font-size: 1.7rem;
   line-height: 1.647;
   padding: 1.2rem 0 0.4rem 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_category ul.category_list li.category_item a.category_link:hover {
+  opacity: 0.7;
 }
 @media screen and (max-width: 767px) {
   section.sec1_blog_details .sec1_blog_details.inner aside.sidebar section.sidebar_category ul.category_list li.category_item a.category_link {
@@ -3295,6 +3296,10 @@ section.page_fv .page_fv_overlay.result_overlay {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.result_container .result.inner .achievement_grid .achievement_card a {
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_img {
   position: relative;
 }
@@ -3310,6 +3315,9 @@ section.page_fv .page_fv_overlay.result_overlay {
 .result_container .result.inner .achievement_grid .achievement_card a .time_right {
   text-align: right;
   line-height: 1.778;
+}
+.result_container .result.inner .achievement_grid .achievement_card a:hover {
+  opacity: 0.7;
 }
 
 .page.result {
@@ -3435,13 +3443,13 @@ section.result div.result_details.inner div.result_details_content div.article d
 section.result div.result_details.inner div.result_details_content div.article div.article_page.result_page div.article_pagebox a.article_link {
   display: block;
 }
-section.result div.result_details.inner div.result_details_content div.article div.article_page.result_page div.article_pagebox a.article_link h2.article_title_prev.result_details_prev,
-section.result div.result_details.inner div.result_details_content div.article div.article_page.result_page div.article_pagebox a.article_link h2.article_title_next.result_details_next {
+section.result div.result_details.inner div.result_details_content div.article div.article_page.result_page div.article_pagebox a.article_link .article_title_prev.result_details_prev,
+section.result div.result_details.inner div.result_details_content div.article div.article_page.result_page div.article_pagebox a.article_link .article_title_next.result_details_next {
   width: 34rem;
 }
 @media screen and (max-width: 767px) {
-  section.result div.result_details.inner div.result_details_content div.article div.article_page.result_page div.article_pagebox a.article_link h2.article_title_prev.result_details_prev,
-  section.result div.result_details.inner div.result_details_content div.article div.article_page.result_page div.article_pagebox a.article_link h2.article_title_next.result_details_next {
+  section.result div.result_details.inner div.result_details_content div.article div.article_page.result_page div.article_pagebox a.article_link .article_title_prev.result_details_prev,
+  section.result div.result_details.inner div.result_details_content div.article div.article_page.result_page div.article_pagebox a.article_link .article_title_next.result_details_next {
     width: 100%;
   }
 }
@@ -3506,8 +3514,8 @@ footer.footer .footer_container nav.footer_nav ul.footer_list {
   }
 }
 footer.footer .footer_container nav.footer_nav ul.footer_list li.footer_item a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 footer.footer .footer_container nav.footer_nav ul.footer_list li.footer_item a:hover {
   opacity: 0.7;
@@ -3551,8 +3559,8 @@ footer.footer .footer_container .footer_sns ul {
   gap: 1.2rem;
 }
 footer.footer .footer_container .footer_sns ul li a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 footer.footer .footer_container .footer_sns ul li a:hover {
   opacity: 0.7;

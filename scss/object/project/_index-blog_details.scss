@@ -156,6 +156,10 @@ section.sec1_blog_details {
           color: $main_color;
           line-height: 1.65;
           text-decoration: underline;
+          transition: opacity 0.4s;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
     }
@@ -183,6 +187,10 @@ section.sec1_blog_details {
           height: auto;
           padding: 1.5rem;
           a {
+            transition: opacity 0.4s;
+            &:hover {
+              opacity: 0.7;
+            }
             img {
               width: 100%;
               max-width: 100%;
@@ -228,7 +236,7 @@ section.sec1_blog_details {
                 height: 100%;
                 cursor: pointer;
                 pointer-events: auto;
-                transition: 0.3s;
+                transition: opacity 0.4s;
                 z-index: 2;
                 background-image: url(../img/icon_logo/icon-search.svg);
                 &:hover {
@@ -251,16 +259,16 @@ section.sec1_blog_details {
           }
           li.post_item {
             margin-bottom: 1.5rem;
-            transition: transform 0.3s ease;
             @include mq($sm) {
               margin-bottom: 2.1rem;
-            }
-            &:hover {
-              opacity: 0.7;
             }
             a.post_link {
               display: flex;
               gap: 1.5rem;
+              transition: opacity 0.4s;
+              &:hover {
+                opacity: 0.7;
+              }
               @include mq($sm) {
                 gap: 2rem;
               }
@@ -288,16 +296,16 @@ section.sec1_blog_details {
         ul.category_list {
           li.category_item {
             border-bottom: 0.5px solid #000;
-            transition: transform 0.3s ease;
-            &:hover {
-              opacity: 0.7;
-            }
             a.category_link {
               display: block;
               cursor: pointer;
               font-size: 1.7rem;
               line-height: 1.647;
               padding: 1.2rem 0 0.4rem 0;
+              transition: opacity 0.4s;
+              &:hover {
+                opacity: 0.7;
+              }
               @include mq($sm) {
                 padding: 1.2rem 0 0.1rem 0;
               }

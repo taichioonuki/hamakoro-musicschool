@@ -109,8 +109,8 @@ section.result {
             max-width: 50%;
             a.article_link {
               display: block;
-              h2.article_title_prev.result_details_prev,
-              h2.article_title_next.result_details_next {
+              .article_title_prev.result_details_prev,
+              .article_title_next.result_details_next {
                 width: 34rem;
                 @include mq($sm) {
                   width: 100%;

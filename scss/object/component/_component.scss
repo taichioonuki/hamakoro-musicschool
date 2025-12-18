@@ -10,7 +10,7 @@
   height: 45px;
   padding: 6px 29px 4px 29px;
   color: #fff;
-  transition: 0.3s;
+  transition: background-color 0.4s, color 0.4s;
   border: 1px solid $main_color;
   display: flex;
   justify-content: center;
@@ -127,6 +127,10 @@ nav.breadcrumb {
           display: flex;
           align-items: center;
           height: 100%;
+          transition: opacity 0.4s;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
       li:last-child {
@@ -176,7 +180,7 @@ nav.breadcrumb {
       display: flex;
       gap: 5rem;
       margin-bottom: 7rem;
-      transition: transform 0.3s ease;
+      transition: opacity 0.4s;
       @include mq($sm) {
         flex-direction: column;
         gap: 3rem;
@@ -187,7 +191,6 @@ nav.breadcrumb {
       }
       &:hover {
         opacity: 0.7;
-        transform: scale(1.05) translateY(-4px);
       }
       .blog_item_left {
         position: relative;
@@ -307,7 +310,8 @@ div.article {
     }
     div.article_pagebox {
       a.article_link {
-        h2.article_title_prev {
+        transition: opacity 0.4s;
+        .article_title_prev {
           width: 26rem;
           background-color: #000;
           color: #fff;
@@ -327,10 +331,6 @@ div.article {
           margin-top: 1.5rem;
           gap: 1.6rem;
           height: 68px;
-          transition: opacity 0.3s ease;
-          &:hover {
-            opacity: 0.7;
-          }
           img {
             width: 98px;
           }
@@ -355,6 +355,9 @@ div.article {
             line-height: 1.765;
             padding: 0.4rem 2rem 0.3rem 0;
           }
+        }
+        &:hover {
+          opacity: 0.7;
         }
       }
     }
@@ -395,13 +398,12 @@ div.related {
           display: flex;
           gap: 3rem;
           margin-bottom: 3rem;
-          transition: transform 0.3s ease;
+          transition: opacity 0.4s;
           @include mq($sm) {
             gap: 2rem;
             margin-bottom: 2rem;
           }
           &:hover {
-            transform: scale(1.05) translateY(-4px);
             opacity: 0.7;
           }
           div.related_content_item_left {
@@ -481,8 +483,7 @@ div.related {
     border: 1px solid #000;
     color: #000;
     font-weight: bold;
-    transition: all 0.15s linear;
-
+    transition: background-color 0.4s linear, color 0.4s linear;
     @include mq($sm) {
       width: 4.4rem;
       height: 4.4rem;

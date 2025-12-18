@@ -276,29 +276,25 @@ section.plan_sec2 {
 
 @media screen and (max-width: 768px) {
   .plan_table {
-    min-width: 668px; /* 数値は調整OK */
+    min-width: 668px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .simplebar-track.simplebar-horizontal {
-    /* 常に表示 */
     opacity: 1 !important;
     display: block !important;
-    /* 背景（横バー）のデザイン */
+
     height: 25px !important;
     background: #e5e5e5 !important;
     bottom: -17px;
   }
 
   .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
-    /* スクロールバーの親要素も常に表示 */
     height: 100% !important;
     display: block !important;
-    /* transition: opacity 0s !important; /* アニメーションを無効化（必要に応じて） */
   }
 
-  /* つまみ本体のデザインを適用し、常に不透明にする */
   .simplebar-track.simplebar-horizontal .simplebar-scrollbar::before {
     border-radius: 0;
     background-color: rgba(80, 80, 80, 0.251);

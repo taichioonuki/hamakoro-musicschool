@@ -149,8 +149,6 @@ section.sec1 {
         vertical-align: middle;
         top: -15%;
         left: 50%;
-
-        /* 💥 追加点: 要素自身の幅の半分だけ左に戻す */
         transform: translateX(-50%);
       }
     }
@@ -269,7 +267,7 @@ section.sec4 {
 
           .swiper-wrapper {
             .swiper-slide {
-              transition: 0.3s ease;
+              transition: opacity 0.4s;
               img {
                 width: 100%;
                 height: auto;
@@ -328,7 +326,7 @@ section.sec4 {
         }
         .swiper-button-prev,
         .swiper-button-next {
-          transition: opacity 0.3s ease;
+          transition: opacity 0.4s;
 
           &:hover {
             opacity: 0.7;
@@ -639,13 +637,11 @@ section.sec7 {
         }
         li.blog_item {
           position: relative;
-          transition: transform 0.3s ease;
-
-          &:hover {
-            transform: scale(1.05) translateY(-4px);
-            opacity: 0.7;
-          }
           a {
+            transition: opacity 0.4s;
+            &:hover {
+              opacity: 0.7;
+            }
             h3 {
               font-size: 2rem;
               font-weight: bold;
@@ -678,7 +674,7 @@ section.sec7 {
         text-align: center;
       }
       a {
-        transition: 0.3s;
+        transition: opacity 0.4s;
         font-size: 1.8rem;
         &:hover {
           opacity: 0.7;
