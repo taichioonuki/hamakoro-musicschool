@@ -175,6 +175,7 @@ section.sec1_blog_details {
         color: #fff;
         padding: 1rem 0;
         text-align: center;
+        font-weight: 700;
         @include mq($sm) {
           padding: 0.9rem 0 0.8rem 0;
         }

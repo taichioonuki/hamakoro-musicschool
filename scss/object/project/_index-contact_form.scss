@@ -164,10 +164,14 @@
   .submit_button_container {
     text-align: center;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include mq($sm) {
       margin-top: 3.5rem;
     }
     .submit_button {
+      font-weight: 700;
       width: 25rem;
       height: 5rem;
       font-size: 2.5rem;

@@ -140,9 +140,9 @@ section.plan_sec2 {
             .plan_title_price_standard_red,
             .plan_title_price_premium {
               font-size: 2.2rem;
-              font-weight: 700;
               line-height: 1.5;
               padding-top: 2.9rem;
+              font-weight: 700;
             }
             .plan_title_price_standard_red {
               color: $main_color;
@@ -151,6 +151,7 @@ section.plan_sec2 {
           .plan_title {
             border-right: 1px solid #000;
             padding: 3.2rem 0 2.8rem 2rem;
+            font-weight: 500;
             @include mq($sm) {
               font-size: 1.6rem;
               line-height: 1.563;
