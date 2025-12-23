@@ -38,12 +38,8 @@ section.plan_sec1 {
           line-height: 1.65;
         }
       }
-      img {
-        width: 19px;
-        margin-top: 0.5rem;
-        @include mq($sm) {
-          margin-top: 0rem;
-        }
+      .plan_fee_icon {
+        width: 1.9rem;
       }
     }
     p {
@@ -101,13 +97,13 @@ section.plan_sec2 {
               &.basic,
               &.premium {
                 padding-top: 4.3rem;
-                background: linear-gradient(to bottom, white 30px, black 30px);
+                background: linear-gradient(to bottom, white 3rem, black 3rem);
                 @include mq($sm) {
                   padding-top: 3.5rem;
                   background: linear-gradient(
                     to bottom,
-                    white 26px,
-                    black 25px
+                    white 2.6rem,
+                    black 2.5rem
                   );
                   padding-bottom: 0.5rem;
                 }
@@ -286,9 +282,9 @@ section.plan_sec2 {
     opacity: 1 !important;
     display: block !important;
 
-    height: 25px !important;
+    height: 2.5rem !important;
     background: #e5e5e5 !important;
-    bottom: -17px;
+    bottom: -1.7rem;
   }
 
   .simplebar-track.simplebar-horizontal .simplebar-scrollbar {

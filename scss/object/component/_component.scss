@@ -51,15 +51,6 @@
       pointer-events: none; // オーバーレイがクリックを邪魔しない
       mix-blend-mode: multiply;
     }
-    picture {
-      position: relative;
-      z-index: 0;
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-    }
     h1.page_fv_title {
       position: absolute;
       text-align: center;
@@ -194,15 +185,11 @@ nav.breadcrumb {
       }
       .blog_item_left {
         position: relative;
-        picture {
-          source {
-          }
-          img {
-            width: 26rem;
-            @include mq($sm) {
-              width: 100%;
-            }
-          }
+        @include mq($sm) {
+          width: 100%;
+        }
+        .blog_item_img {
+          width: 26rem;
         }
       }
       .blog_item_right {
@@ -330,9 +317,17 @@ div.article {
           display: flex;
           margin-top: 1.5rem;
           gap: 1.6rem;
-          height: 68px;
-          img {
-            width: 98px;
+          @include mq($sm) {
+            gap: 0;
+          }
+          .article_textbox_img {
+            flex-basis: 9.8rem;
+            width: 9.8rem;
+            flex-shrink: 0;
+            @include mq($sm) {
+              width: 0;
+              flex-basis: 0;
+            }
           }
           p.article_text {
             font-size: 1.6rem;
@@ -409,22 +404,7 @@ div.related {
           div.related_content_item_left {
             position: relative;
             flex-shrink: 0;
-            flex-basis: 200px;
-            @include mq($sm) {
-              flex-basis: 160px;
-            }
-            picture {
-              source {
-              }
-              img {
-                @include mq($sm) {
-                  width: 16rem;
-                  height: 11rem;
-                }
-              }
-            }
-            span.img_title {
-            }
+            flex-basis: 20rem;
           }
           div.related_content_textbox {
             h3 {
