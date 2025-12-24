@@ -117,7 +117,7 @@ section.plan_sec2 {
               }
             }
             &:nth-child(odd) {
-              background-color: #00000026;
+              background-color: #50505026;
             }
             .plan_title_price {
               font-size: 1.7rem;
@@ -263,21 +263,19 @@ section.plan_sec2 {
 .scroll__inner {
   overflow-x: auto;
   overflow-y: hidden !important;
-  width: 100%;
-  max-width: 100%;
 }
 
 .scroll__inner .simplebar-placeholder {
   height: auto !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .plan_table {
     min-width: 668px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .simplebar-track.simplebar-horizontal {
     opacity: 1 !important;
     display: block !important;

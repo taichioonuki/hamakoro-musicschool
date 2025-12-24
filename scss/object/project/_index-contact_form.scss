@@ -53,7 +53,6 @@
     pointer-events: none;
     padding-top: 0.4rem;
     @include mq($sm) {
-      width: 100%;
       padding-top: 0;
       font-size: 1.6rem;
       line-height: 2.063;
@@ -151,11 +150,11 @@
       font-size: 1.5rem;
       min-height: 30rem;
       max-width: 71.1rem;
-      width: 100%;
       line-height: 1.677;
       @include mq($sm) {
         height: 19rem;
         min-height: 0rem;
+        width: 100%;
       }
     }
   }

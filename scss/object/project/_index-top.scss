@@ -30,6 +30,7 @@ section.sec_fv {
       font-weight: 700;
       line-height: 1.5;
       z-index: 2;
+      white-space: nowrap; // 意図しない改行を防ぐ
       @include mq($sm) {
         font-size: 3rem;
         width: 30rem;
@@ -193,7 +194,7 @@ section.sec3 {
           .sec3_item_img {
             width: 35rem;
             @include mq($sm) {
-            width: 100%;
+              width: 100%;
             }
           }
           &:last-child {

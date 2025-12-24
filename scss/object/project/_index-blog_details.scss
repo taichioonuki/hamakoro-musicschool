@@ -45,6 +45,12 @@ section.sec1_blog_details {
             gap: 0.2rem;
           }
         }
+        a {
+          transition: opacity 0.4s;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
       }
       .blog_details_content {
         p.text_top {
@@ -107,12 +113,8 @@ section.sec1_blog_details {
           background-color: #000;
           position: absolute;
           left: 0.1rem;
-          top: 0.6rem;
+          top: 1rem;
           height: 2rem;
-          @include mq($sm) {
-            height: 5rem;
-            top: 0;
-          }
         }
         .sec1_left_textbox {
           background: #e8e8e8;
@@ -168,7 +170,6 @@ section.sec1_blog_details {
         line-height: 1.833;
       }
       h3.sidebar_title {
-        width: 100%;
         background: #000;
         color: #fff;
         padding: 1rem 0;
@@ -182,8 +183,6 @@ section.sec1_blog_details {
         margin-bottom: 3rem;
         .banner {
           border: 1px solid #000;
-          width: 100%;
-          height: auto;
           padding: 1.5rem;
           a {
             transition: opacity 0.4s;
