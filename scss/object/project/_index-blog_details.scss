@@ -51,6 +51,13 @@ section.sec1_blog_details {
             opacity: 0.7;
           }
         }
+        .sns_img {
+          width: 10.5rem;
+          height: 4rem;
+          @include mq($sm) {
+          }width: 6.5rem;
+          height: 4rem;
+        }
       }
       .blog_details_content {
         p.text_top {
@@ -113,8 +120,9 @@ section.sec1_blog_details {
           background-color: #000;
           position: absolute;
           left: 0.1rem;
-          top: 1rem;
-          height: 2rem;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 80%;
         }
         .sec1_left_textbox {
           background: #e8e8e8;
@@ -169,30 +177,42 @@ section.sec1_blog_details {
         font-size: 1.8rem;
         line-height: 1.833;
       }
-      h3.sidebar_title {
+
+      // 共通：タイトル（h3からpに変更したもの）
+      .sidebar_title {
         background: #000;
         color: #fff;
         padding: 1rem 0;
         text-align: center;
         font-weight: 700;
+        margin: 0; // pタグの初期余白を消去
         @include mq($sm) {
           padding: 0.9rem 0 0.8rem 0;
         }
       }
-      section.sidebar_mail {
+
+      // 無料メールマガジン
+      .sidebar_mail {
         margin-bottom: 3rem;
         .banner {
           border: 1px solid #000;
           padding: 1.5rem;
           a {
+            display: block; // リンクを広げる
             transition: opacity 0.4s;
             &:hover {
               opacity: 0.7;
             }
           }
+          img {
+            width: 100%; // バナーのサイズを枠に合わせる
+            vertical-align: bottom;
+          }
         }
       }
-      section.sidebar_search {
+
+      // ブログ内検索
+      .sidebar_search {
         margin-bottom: 3rem;
         .search_box {
           border: 1px solid #000;
@@ -200,16 +220,20 @@ section.sec1_blog_details {
           @include mq($sm) {
             padding: 2rem;
           }
-          form.search-container {
+          .search-container {
             background: #e8e8e8;
             position: relative;
-            input.search-input {
+            display: flex;
+            .search-input {
               width: calc(100% - 4rem);
               height: 4rem;
               padding: 0 1.5rem;
               font-size: 1.4rem;
+              border: none;
+              background: transparent;
               @include mq($sm) {
                 height: 5.4rem;
+                width: calc(100% - 5.4rem);
               }
             }
             .search_icon {
@@ -223,16 +247,16 @@ section.sec1_blog_details {
                 width: 5.4rem;
                 height: 5.4rem;
               }
-              button.search-button {
+              .search-button {
                 background-repeat: no-repeat;
                 background-position: center;
                 width: 100%;
                 height: 100%;
                 cursor: pointer;
-                pointer-events: auto;
+                border: none;
                 transition: opacity 0.4s;
-                z-index: 2;
                 background-image: url(../img/icon_logo/icon-search.svg);
+                background-color: transparent;
                 &:hover {
                   opacity: 0.7;
                 }
@@ -244,25 +268,27 @@ section.sec1_blog_details {
           }
         }
       }
-      section.sidebar_posts {
+
+      // おすすめの記事
+      .sidebar_posts {
         margin-bottom: 3rem;
-        ul.post_list {
+        .post_list {
           margin-top: 1.5rem;
           @include mq($sm) {
             margin-top: 2rem;
           }
-
-          li.post_item {
+          .post_item {
             &:not(:last-child) {
               margin-bottom: 1.5rem;
               @include mq($sm) {
                 margin-bottom: 2.1rem;
               }
             }
-
-            a.post_link {
+            .post_link {
               display: flex;
               gap: 1.5rem;
+              text-decoration: none;
+              color: inherit;
               transition: opacity 0.4s;
               &:hover {
                 opacity: 0.7;
@@ -270,20 +296,24 @@ section.sec1_blog_details {
               @include mq($sm) {
                 gap: 2rem;
               }
-
               .post_img_wrapper {
                 flex-shrink: 0;
                 width: 9.5rem;
-
                 @include mq($sm) {
                   width: 16rem;
                   height: 11rem;
                 }
+                img {
+                  width: 100%;
+                  height: auto;
+                }
               }
-
-              h3 {
+              // h3からp(post_item_title)に変更
+              .post_item_title {
                 font-size: 1.7rem;
                 line-height: 1.647;
+                font-weight: 700;
+                margin: 0;
                 @include mq($sm) {
                   margin-top: 1rem;
                 }
@@ -292,16 +322,20 @@ section.sec1_blog_details {
           }
         }
       }
-      section.sidebar_category {
-        ul.category_list {
-          li.category_item {
+
+      // カテゴリー
+      .sidebar_category {
+        margin-bottom: 3rem; // 最後のマージンも必要であれば追加
+        .category_list {
+          .category_item {
             border-bottom: 0.5px solid #000;
-            a.category_link {
+            .category_link {
               display: block;
-              cursor: pointer;
               font-size: 1.7rem;
               line-height: 1.647;
               padding: 1.2rem 0 0.4rem 0;
+              text-decoration: none;
+              color: inherit;
               transition: opacity 0.4s;
               &:hover {
                 opacity: 0.7;
