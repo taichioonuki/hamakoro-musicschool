@@ -216,8 +216,9 @@ section.sec3 {
           }
         }
         p {
-          padding: 3.7rem 0 6.9rem 5rem;
+          margin-top: 3.7rem;
           line-height: 1.833;
+          padding-left: 5rem;
           @include mq($sm) {
             font-size: 1.6rem;
             line-height: 1.875;

@@ -422,21 +422,24 @@ html {
     font-size: 2.6666666667vw;
   }
 }
-html body {
+
+body {
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-weight: 500;
   font-size: 1.8rem;
   position: relative;
   line-height: 1.667;
   letter-spacing: 0;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 767px) {
-  html body {
+  body {
     font-size: 1.6rem;
     line-height: 1.875;
   }
 }
-html body .inner {
+
+.inner {
   width: 100%;
   max-width: 94rem;
   margin-inline: auto;
@@ -445,12 +448,12 @@ html body .inner {
   /* 375px 以下 → 上書き */
 }
 @media screen and (max-width: 767px) {
-  html body .inner {
+  .inner {
     padding-inline: 3rem;
   }
 }
 @media (max-width: 375px) {
-  html body .inner {
+  .inner {
     padding-inline: 2rem;
   }
 }
@@ -871,6 +874,15 @@ span.img_title.related_img_title {
 
 nav.breadcrumb {
   background-color: #e8e8e8;
+  width: 100%;
+}
+nav.breadcrumb:first-child {
+  padding-top: 8rem;
+}
+@media screen and (max-width: 767px) {
+  nav.breadcrumb:first-child {
+    padding-top: 5rem;
+  }
 }
 nav.breadcrumb .breadcrumb_container ul.breadcrumb_list {
   display: -webkit-box;
@@ -880,30 +892,42 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.6rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  line-height: 2.063;
-  padding-left: 10rem;
+  -webkit-column-gap: 1.7rem;
+     -moz-column-gap: 1.7rem;
+          column-gap: 1.7rem;
 }
 @media screen and (max-width: 767px) {
   nav.breadcrumb .breadcrumb_container ul.breadcrumb_list {
-    line-height: 2.063;
-    padding: 0.3rem 0 0rem 2rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  nav.breadcrumb .breadcrumb_container ul.breadcrumb_list::-webkit-scrollbar {
+    display: none;
   }
 }
-nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:not(:last-child)::after {
-  content: ">";
-  margin-left: 1.7rem;
-  display: inline-block;
-}
 nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li {
-  height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 5rem;
+}
+@media screen and (max-width: 767px) {
+  nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li {
+    height: 3.6rem;
+  }
+}
+nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:not(:last-child)::after {
+  content: ">";
+  font-size: 1.6rem;
+  margin-left: 1.7rem;
+  color: #000;
 }
 nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li a.breadcrumb_link {
   display: -webkit-box;
@@ -913,6 +937,8 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li a.breadcrumb_link {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  text-decoration: none;
+  color: #000;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
@@ -926,9 +952,6 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
   nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
     line-height: 1.25;
   }
-}
-nav.breadcrumb .breadcrumb_container .breadcrumb_item {
-  margin-left: 2rem;
 }
 
 .sec_title {
@@ -1619,8 +1642,9 @@ section.sec3 .sec3.inner .sec3_container .sec3_list .sec3_textbox h3 {
   }
 }
 section.sec3 .sec3.inner .sec3_container .sec3_list p {
-  padding: 3.7rem 0 6.9rem 5rem;
+  margin-top: 3.7rem;
   line-height: 1.833;
+  padding-left: 5rem;
 }
 @media screen and (max-width: 767px) {
   section.sec3 .sec3.inner .sec3_container .sec3_list p {
@@ -3358,21 +3382,21 @@ section.profile_card .profile.inner .profile_card_body .profile_card_content .pr
   background: #e5e5e5;
   width: 14rem;
   font-weight: 700;
-  padding: 0.7rem 2rem 0;
+  padding: 0.4rem 2rem;
 }
 @media screen and (max-width: 767px) {
   section.profile_card .profile.inner .profile_card_body .profile_card_content .profile_card_table-wrapper table.profile_card_table tbody tr th {
-    padding: 0.7rem 1rem 0;
+    padding: 0.4rem 1rem;
     font-size: 1.8rem;
     line-height: 1.667;
   }
 }
 section.profile_card .profile.inner .profile_card_body .profile_card_content .profile_card_table-wrapper table.profile_card_table tbody tr td {
-  padding: 0.7rem 2rem 0;
+  padding: 0.4rem 2rem;
 }
 @media screen and (max-width: 767px) {
   section.profile_card .profile.inner .profile_card_body .profile_card_content .profile_card_table-wrapper table.profile_card_table tbody tr td {
-    padding: 0.7rem 1rem 0;
+    padding: 0.4rem 1rem;
     font-size: 1.8rem;
     line-height: 1.667;
   }
@@ -3520,6 +3544,9 @@ footer.footer .footer_container .footer_sns ul {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.2rem;
+}
+footer.footer .footer_container .footer_sns ul li {
+  width: 2.2rem;
 }
 footer.footer .footer_container .footer_sns ul li a {
   -webkit-transition: opacity 0.4s;

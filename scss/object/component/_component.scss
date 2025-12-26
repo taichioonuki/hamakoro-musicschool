@@ -93,46 +93,64 @@ span.img_title {
 //共通パーツ【パンくずリスト】
 nav.breadcrumb {
   background-color: #e8e8e8;
+  width: 100%;
+  &:first-child {
+    padding-top: 8rem;
+
+    @include mq($sm) {
+      padding-top: 5rem;
+    }
+  }
+
   .breadcrumb_container {
     ul.breadcrumb_list {
       display: flex;
       align-items: center;
       font-size: 1.6rem;
-      flex-wrap: wrap;
-      line-height: 2.063;
-      padding-left: 10rem;
+      column-gap: 1.7rem;
       @include mq($sm) {
-        line-height: 2.063;
-        padding: 0.3rem 0 0rem 2rem;
-      }
-      li:not(:last-child)::after {
-        content: ">";
-        margin-left: 1.7rem;
-        display: inline-block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
       li {
-        height: 5rem;
         display: flex;
         align-items: center;
+        flex-shrink: 0; // 横スクロール時に潰れないようにする
+        height: 5rem;
+        @include mq($sm) {
+          height: 3.6rem;
+        }
+        &:not(:last-child)::after {
+          content: ">";
+          font-size: 1.6rem;
+          margin-left: 1.7rem; // column-gapと合わせて調整
+          color: #000;
+        }
+
         a.breadcrumb_link {
           display: flex;
           align-items: center;
           height: 100%;
+          text-decoration: none;
+          color: #000;
           transition: opacity 0.4s;
           &:hover {
             opacity: 0.7;
           }
         }
       }
+
       li:last-child {
         line-height: 1.45;
         @include mq($sm) {
           line-height: 1.25;
         }
       }
-    }
-    .breadcrumb_item {
-      margin-left: 2rem;
     }
   }
 }

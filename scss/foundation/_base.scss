@@ -14,34 +14,34 @@ html {
   @media (min-width: 300px) and (max-width: 374px) {
     font-size: calc(10 / 375 * 100vw);
   }
+}
+body {
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  position: relative;
+  line-height: 1.667;
+  letter-spacing: 0;
+  overflow-x: hidden;
+  @include mq($sm) {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
+}
+.inner {
+  width: 100%;
+  max-width: 94rem;
+  margin-inline: auto;
+  padding-inline: 3rem;
+  /* 767px 以下 */
+  @include mq($sm) {
+    padding-inline: 3rem;
+  }
 
-  body {
-    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
-      "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-    font-weight: 500;
-    font-size: 1.8rem;
-    position: relative;
-    line-height: 1.667;
-    letter-spacing: 0;
-    @include mq($sm) {
-      font-size: 1.6rem;
-      line-height: 1.875;
-    }
-    .inner {
-      width: 100%;
-      max-width: 94rem;
-      margin-inline: auto;
-      padding-inline: 3rem;
-      /* 767px 以下 */
-      @include mq($sm) {
-        padding-inline: 3rem;
-      }
-
-      /* 375px 以下 → 上書き */
-      @media (max-width: 375px) {
-        padding-inline: 2rem;
-      }
-    }
+  /* 375px 以下 → 上書き */
+  @media (max-width: 375px) {
+    padding-inline: 2rem;
   }
 }
 
