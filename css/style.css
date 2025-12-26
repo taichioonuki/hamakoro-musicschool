@@ -2940,11 +2940,13 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
 .contact_form_container p {
   text-align: center;
   margin-bottom: 6.5rem;
+  line-height: 1.6666666667;
 }
 @media screen and (max-width: 767px) {
   .contact_form_container p {
     text-align: left;
     margin-bottom: 3.2rem;
+    line-height: 1.875;
   }
 }
 
@@ -3016,7 +3018,7 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 0.6rem 2rem 1rem 2rem;
+  padding: 0 2rem;
   border: 0.5px solid #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3087,6 +3089,7 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   position: relative;
   display: grid;
   place-content: center;
+  cursor: pointer;
 }
 .contact_form .purpose_group .checkbox_container .checkbox_item input[type=checkbox]:checked {
   border-color: #000;
