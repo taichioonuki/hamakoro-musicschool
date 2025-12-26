@@ -1802,8 +1802,8 @@ section.sec5 .sec5.inner .sec5_container .guide_content {
 section.sec5 .sec5.inner .sec5_container .guide_content::before {
   content: "";
   position: absolute;
-  top: 1.6rem;
-  left: 6rem;
+  top: 2rem;
+  left: 4.2rem;
   width: 0.3rem;
   height: calc(100% - 1rem);
   background-color: #cb0000;
@@ -1900,7 +1900,7 @@ section.sec5 .sec5.inner .sec5_container .guide_content .arrow::after {
   content: "";
   position: absolute;
   top: 2.4rem;
-  left: -1.1rem;
+  left: -2.9rem;
   width: 2.5rem;
   height: 2.5rem;
   border-bottom: 3px solid #cb0000;
@@ -2118,6 +2118,11 @@ section.sec7 .sec7.inner .sec7_container ul.blog_list {
   display: -ms-flexbox;
   display: flex;
   gap: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 @media screen and (max-width: 767px) {
   section.sec7 .sec7.inner .sec7_container ul.blog_list {
@@ -2131,6 +2136,7 @@ section.sec7 .sec7.inner .sec7_container ul.blog_list {
 }
 section.sec7 .sec7.inner .sec7_container ul.blog_list li.blog_item {
   position: relative;
+  width: calc((100% - 10rem) / 3);
 }
 section.sec7 .sec7.inner .sec7_container ul.blog_list li.blog_item a {
   -webkit-transition: opacity 0.4s;

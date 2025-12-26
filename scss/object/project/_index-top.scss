@@ -361,8 +361,8 @@ section.sec5 {
         &::before {
           content: "";
           position: absolute;
-          top: 1.6rem;
-          left: 6rem;
+          top: 2rem;
+          left: 4.2rem;
           width: 0.3rem;
           height: calc(100% - 1rem);
           background-color: #cb0000;
@@ -432,7 +432,7 @@ section.sec5 {
             content: "";
             position: absolute;
             top: 2.4rem;
-            left: -1.1rem;
+            left: -2.9rem;
             width: 2.5rem;
             height: 2.5rem;
             border-bottom: 3px solid #cb0000;
@@ -609,6 +609,8 @@ section.sec7 {
         padding-top: 3.3rem;
         display: flex;
         gap: 5rem;
+        flex-wrap: wrap; // 折り返しを許可
+        justify-content: flex-start; // 左寄せを明示
         @include mq($sm) {
           padding-top: 3.9rem;
           flex-direction: column;
@@ -616,6 +618,7 @@ section.sec7 {
         }
         li.blog_item {
           position: relative;
+          width: calc((100% - (5rem * 2)) / 3);
           a {
             transition: opacity 0.4s;
             &:hover {
