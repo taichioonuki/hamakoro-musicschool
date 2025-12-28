@@ -223,6 +223,7 @@ section.sec3 {
             font-size: 1.6rem;
             line-height: 1.875;
             padding: 1.7rem 0 0 0;
+            margin-top: 0;
           }
         }
         span {
@@ -237,7 +238,7 @@ section.sec4 {
   padding: 4.4rem 2rem 8rem 2rem;
   background-color: $main_color;
   @include mq($sm) {
-    padding: 4.6rem 0 5rem 0;
+    padding: 4.6rem 0 0.5rem 0;
   }
   .sec4.inner {
     .sec4_container {
@@ -254,6 +255,9 @@ section.sec4 {
           .swiper-wrapper {
             .swiper-slide {
               transition: opacity 0.4s;
+              .swiper_img {
+                height: 20rem;
+              }
               p.name {
                 font-size: 2.2rem;
                 font-weight: 700;
@@ -328,18 +332,13 @@ section.sec5 {
     padding: 4.6rem 0 3.7rem;
   }
   .sec5.inner {
+    padding-inline: 4.5rem;
     @include mq($sm) {
-      padding-inline: 7rem;
-    }
-    @media screen and (max-width: 400px) {
-      padding-inline: 2rem;
+      padding-inline: 3rem;
     }
     .sec5_container {
       .top_sec_title {
         h2 {
-          @include mq($sm) {
-            padding-right: 1rem;
-          }
         }
       }
       @include mq($sm) {
@@ -380,7 +379,7 @@ section.sec5 {
           position: relative;
           @include mq($sm) {
             flex-direction: column;
-            padding-left: 3.8rem;
+            padding-left: 2rem;
           }
 
           span.circle {
@@ -404,7 +403,7 @@ section.sec5 {
           p.guide_title {
             color: #cb0000;
             width: 19rem;
-            margin-left: 7rem;
+            margin-left: 5.3rem;
             font-size: 2.2rem;
             line-height: 1.5;
             font-weight: bold;
@@ -606,7 +605,7 @@ section.sec7 {
   .sec7.inner {
     .sec7_container {
       ul.blog_list {
-        margin-top: 3.3rem;
+        margin-top: 3rem;
         display: flex;
         gap: 5rem;
         flex-wrap: wrap; // 折り返しを許可
