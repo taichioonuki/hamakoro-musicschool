@@ -1102,6 +1102,7 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
   visibility: hidden;
   -webkit-transition: opacity 0.6s ease, visibility 0.6s ease;
   transition: opacity 0.6s ease, visibility 0.6s ease;
+  pointer-events: none;
 }
 @media screen and (max-width: 767px) {
   #page-top.back-to-top {
@@ -1124,8 +1125,10 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
   margin-bottom: 3rem;
   border-radius: 50%;
   cursor: pointer;
+  overflow: hidden;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  pointer-events: auto;
 }
 #page-top.back-to-top img.back-to-top_btn:hover {
   opacity: 0.6;

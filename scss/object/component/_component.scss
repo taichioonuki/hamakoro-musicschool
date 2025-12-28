@@ -253,6 +253,7 @@ nav.breadcrumb {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.6s ease, visibility 0.6s ease; // ← ふわっと出る設定
+  pointer-events: none;
   @media screen and (max-width: 767px) {
     left: 0;
     right: 0;
@@ -271,7 +272,9 @@ nav.breadcrumb {
     margin-bottom: 3rem;
     border-radius: 50%;
     cursor: pointer;
+    overflow: hidden;
     transition: opacity 0.3s ease;
+    pointer-events: auto;
     &:hover {
       opacity: 0.6;
     }
