@@ -55,17 +55,17 @@ section.sec1_blog_details {
           width: 10.5rem;
           height: 4rem;
           @include mq($sm) {
-          }width: 6.5rem;
-          height: 4rem;
+            width: 6.5rem;
+            height: 4rem;
+          }
         }
       }
       .blog_details_content {
-        p.text_top {
-          margin-top: 4.8rem;
-          @include mq($sm) {
-            margin-top: 2.7rem;
-          }
+        margin-top: 4.8rem;
+        @include mq($sm) {
+          margin-top: 2.7rem;
         }
+
         h2 {
           font-size: 2rem;
           line-height: 2;
@@ -93,7 +93,6 @@ section.sec1_blog_details {
           border-bottom: 0.5px solid #000;
           padding-bottom: 4.1rem;
           @include mq($sm) {
-            margin-bottom: 3.85rem;
             padding-bottom: 3.8rem;
           }
         }

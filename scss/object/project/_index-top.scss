@@ -606,13 +606,13 @@ section.sec7 {
   .sec7.inner {
     .sec7_container {
       ul.blog_list {
-        padding-top: 3.3rem;
+        margin-top: 3.3rem;
         display: flex;
         gap: 5rem;
         flex-wrap: wrap; // 折り返しを許可
         justify-content: flex-start; // 左寄せを明示
         @include mq($sm) {
-          padding-top: 3.9rem;
+          margin-top: 3.9rem;
           flex-direction: column;
           gap: 4.1rem;
         }
