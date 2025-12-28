@@ -7,11 +7,15 @@ html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   word-break: break-all;
-  font-size: 62.5%;
-  @media (min-width: 767px) and (max-width: 940px) {
+  font-size: 62.5%; 
+
+  // タブレット〜PC未満：画面幅いっぱいに可変
+  @media (min-width: 768px) and (max-width: 940px) {
     font-size: calc(10 / 940 * 100vw);
   }
-  @media (min-width: 300px) and (max-width: 374px) {
+
+  // スマホ：375px以下はすべて可変にする（上限を375pxとする場合）
+  @media (max-width: 767px) {
     font-size: calc(10 / 375 * 100vw);
   }
 }
