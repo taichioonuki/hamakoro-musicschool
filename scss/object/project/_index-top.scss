@@ -368,7 +368,7 @@ section.sec5 {
           background-color: #cb0000;
           z-index: 1;
           @include mq($sm) {
-            left: 0.6rem;
+            left: -1.2rem;
             height: calc(100% - 3rem);
           }
         }
@@ -439,7 +439,7 @@ section.sec5 {
             border-right: 3px solid #cb0000;
             transform: rotate(45deg);
             @include mq($sm) {
-              left: -6.5rem;
+              left: -8.3rem;
               top: 0;
             }
           }
@@ -619,6 +619,9 @@ section.sec7 {
         li.blog_item {
           position: relative;
           width: calc((100% - (5rem * 2)) / 3);
+          @include mq($sm) {
+            width: 100%;
+          }
           a {
             transition: opacity 0.4s;
             &:hover {

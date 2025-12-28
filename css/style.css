@@ -1855,7 +1855,7 @@ section.sec5 .sec5.inner .sec5_container .guide_content::before {
 }
 @media screen and (max-width: 767px) {
   section.sec5 .sec5.inner .sec5_container .guide_content::before {
-    left: 0.6rem;
+    left: -1.2rem;
     height: calc(100% - 3rem);
   }
 }
@@ -1954,7 +1954,7 @@ section.sec5 .sec5.inner .sec5_container .guide_content .arrow::after {
 }
 @media screen and (max-width: 767px) {
   section.sec5 .sec5.inner .sec5_container .guide_content .arrow::after {
-    left: -6.5rem;
+    left: -8.3rem;
     top: 0;
   }
 }
@@ -2181,6 +2181,11 @@ section.sec7 .sec7.inner .sec7_container ul.blog_list {
 section.sec7 .sec7.inner .sec7_container ul.blog_list li.blog_item {
   position: relative;
   width: calc((100% - 10rem) / 3);
+}
+@media screen and (max-width: 767px) {
+  section.sec7 .sec7.inner .sec7_container ul.blog_list li.blog_item {
+    width: 100%;
+  }
 }
 section.sec7 .sec7.inner .sec7_container ul.blog_list li.blog_item a {
   -webkit-transition: opacity 0.4s;
