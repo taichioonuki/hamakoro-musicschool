@@ -2937,7 +2937,6 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts 
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_item_title {
   font-size: 1.7rem;
   line-height: 1.647;
-  font-weight: 700;
   margin: 0;
 }
 @media screen and (max-width: 767px) {
