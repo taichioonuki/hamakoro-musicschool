@@ -35,7 +35,7 @@ footer.footer {
     .footer_logo {
       width: 3.2rem;
       margin: 2rem auto 2.3rem auto;
-      transition: 0.3s;
+      transition: opacity 0.4s;
       @include mq($sm) {
         margin: 2rem auto 2.7rem auto;
       }

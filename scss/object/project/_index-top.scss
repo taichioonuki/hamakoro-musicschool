@@ -507,7 +507,7 @@ section.sec6 {
               right: 3rem;
               width: 1.362rem;
               height: 0.942rem;
-              transition: transform 0.3s ease;
+              transition: transform 0.4s ease;
               @include mq($sm) {
                 right: 1.2rem;
               }
@@ -519,7 +519,7 @@ section.sec6 {
                 border-bottom: 1px solid #000000;
                 border-right: 1px solid #000000;
                 transform: rotate(45deg);
-                transition: transform 0.3s ease;
+                transition: transform 0.4s ease;
               }
 
               &.open::after {
@@ -532,8 +532,8 @@ section.sec6 {
             max-height: 0;
             overflow: hidden;
             padding: 0 2rem;
-            transition: max-height 0.3s ease-in-out, padding 0.3s ease-in,
-              transform 0.3s ease;
+            transition: max-height 0.4s ease-in-out, padding 0.4s ease-in,
+              transform 0.4s ease;
             &.highlighted {
               background-color: #feeeee;
               display: flex;
@@ -579,8 +579,8 @@ section.sec6 {
             }
 
             .faq-answer {
-              transition: max-height 0.3s ease-in-out, padding 0.3s ease-in,
-                transform 0.3s ease;
+              transition: max-height 0.4s ease-in-out, padding 0.4s ease-in,
+                transform 0.4s ease;
               border-bottom: 1px solid #000000;
             }
 
