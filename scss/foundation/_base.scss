@@ -7,7 +7,7 @@ html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   word-break: break-all;
-  font-size: 62.5%; 
+  font-size: 62.5%;
 
   // タブレット〜PC未満：画面幅いっぱいに可変
   @media (min-width: 768px) and (max-width: 940px) {
@@ -21,7 +21,7 @@ html {
 }
 body {
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
-    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-weight: 500;
   font-size: 1.8rem;
   position: relative;
