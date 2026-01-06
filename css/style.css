@@ -1272,6 +1272,7 @@ div.related div.related_content_box h2 {
   color: #fff;
   padding: 0.9rem 0 0.8rem 3rem;
   line-height: 1.833;
+  font-weight: 500;
 }
 @media screen and (max-width: 767px) {
   div.related div.related_content_box h2 {
@@ -3037,7 +3038,6 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   width: 16.9rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-weight: 700;
   font-size: 2rem;
   line-height: 1.5;
   pointer-events: none;

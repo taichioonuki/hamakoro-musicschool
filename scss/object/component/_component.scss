@@ -397,6 +397,7 @@ div.related {
       color: #fff;
       padding: 0.9rem 0 0.8rem 3rem;
       line-height: 1.833;
+      font-weight: 500;
       @include mq($sm) {
         text-align: center;
         font-size: 1.8rem;
