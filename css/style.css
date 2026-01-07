@@ -1447,6 +1447,7 @@ section.sec_fv .sec_fv_container h2.top_title {
 }
 @media screen and (max-width: 767px) {
   section.sec_fv .sec_fv_container h2.top_title {
+    white-space: normal;
     font-size: 3rem;
     width: 30rem;
     line-height: 1.6;

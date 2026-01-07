@@ -30,8 +30,9 @@ section.sec_fv {
       font-weight: 700;
       line-height: 1.5;
       z-index: 2;
-      white-space: nowrap; // 意図しない改行を防ぐ
+      white-space: nowrap;
       @include mq($sm) {
+        white-space: normal;
         font-size: 3rem;
         width: 30rem;
         line-height: 1.6;
