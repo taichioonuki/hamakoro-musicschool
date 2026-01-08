@@ -85,7 +85,7 @@ section.sec1 {
         gap: 3rem;
         p.vision_en {
           color: $main_color;
-          font-size: 2.5rem; // 25px
+          font-size: 2.5rem;
           font-weight: 700;
           flex: 1;
           text-align: end;
@@ -104,7 +104,7 @@ section.sec1 {
           border-radius: 50%; // 円形にする
         }
         p.vision_jp {
-          font-size: 2.3rem; // 23px
+          font-size: 2.3rem;
           line-height: 2.174;
           flex: 1;
           text-align: left;

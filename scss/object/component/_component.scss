@@ -6,9 +6,9 @@
 //共通パーツ【ボタン】
 .c_button {
   background-color: $main_color;
-  width: 150px;
-  height: 45px;
-  padding: 6px 29px 4px 29px;
+  width: 15rem;
+  height: 4.5rem;
+  padding: 0.6rem 2.9rem 0.4rem 2.9rem;
   color: #fff;
   transition: background-color 0.4s, color 0.4s;
   border: 1px solid $main_color;
