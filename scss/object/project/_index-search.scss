@@ -31,12 +31,6 @@ section.search_sec {
           li.blog_item {
             a {
               div.blog_item_right {
-                h3 {
-                  margin-bottom: 0.2rem;
-                  @include mq($sm) {
-                    margin-bottom: 0.6rem;
-                  }
-                }
                 div.time_right {
                   p {
                     margin-top: 0;
@@ -52,5 +46,15 @@ section.search_sec {
         }
       }
     }
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  line-height: 1.25;
+  @include mq($sm) {
+    margin-bottom: 0.6rem;
   }
 }

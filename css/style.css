@@ -3289,14 +3289,6 @@ section.search_sec div.search_sec.inner div.search_sec_container div.search_sec_
   font-size: 1.8rem;
   line-height: 1.667;
 }
-section.search_sec div.search_sec.inner div.search_sec_container div.blog ul li.blog_item a div.blog_item_right h3 {
-  margin-bottom: 0.2rem;
-}
-@media screen and (max-width: 767px) {
-  section.search_sec div.search_sec.inner div.search_sec_container div.blog ul li.blog_item a div.blog_item_right h3 {
-    margin-bottom: 0.6rem;
-  }
-}
 section.search_sec div.search_sec.inner div.search_sec_container div.blog ul li.blog_item a div.blog_item_right div.time_right p {
   margin-top: 0;
 }
@@ -3304,6 +3296,18 @@ section.search_sec div.search_sec.inner div.search_sec_container div.blog ul li.
   section.search_sec div.search_sec.inner div.search_sec_container div.blog ul li.blog_item a div.blog_item_right div.time_right p {
     font-size: 1.7rem;
     line-height: 1.765;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  line-height: 1.25;
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    margin-bottom: 0.6rem;
   }
 }
 
