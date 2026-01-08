@@ -8,7 +8,6 @@
   background-color: $main_color;
   width: 15rem;
   height: 4.5rem;
-  padding: 0.6rem 2.9rem 0.4rem 2.9rem;
   color: #fff;
   transition: background-color 0.4s, color 0.4s;
   border: 1px solid $main_color;
@@ -93,7 +92,6 @@ span.img_title {
 //共通パーツ【パンくずリスト】
 nav.breadcrumb {
   background-color: #e8e8e8;
-  width: 100%;
   &:first-child {
     padding-top: 8rem;
 
@@ -135,7 +133,6 @@ nav.breadcrumb {
         a.breadcrumb_link {
           display: flex;
           align-items: center;
-          height: 100%;
           text-decoration: none;
           color: #000;
           transition: opacity 0.4s;
@@ -203,9 +200,6 @@ nav.breadcrumb {
         }
         .blog_item_left {
           position: relative;
-          @include mq($sm) {
-            width: 100%;
-          }
           .blog_item_img {
             width: 26rem;
             @include mq($sm) {

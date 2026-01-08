@@ -440,7 +440,6 @@ body {
 }
 
 .inner {
-  width: 100%;
   max-width: 94rem;
   margin-inline: auto;
   padding-inline: 3rem;
@@ -500,7 +499,6 @@ header.header div.header_container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
 }
 @media screen and (max-width: 767px) {
   header.header div.header_container {
@@ -509,7 +507,6 @@ header.header div.header_container {
   }
 }
 header.header div.header_container a {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,11 +556,6 @@ header.header div.header_container nav.header_nav ul.header_list {
   display: flex;
   height: 8rem;
 }
-@media screen and (max-width: 767px) {
-  header.header div.header_container nav.header_nav ul.header_list {
-    height: auto;
-  }
-}
 header.header div.header_container nav.header_nav ul.header_list li.header_item {
   margin-right: 3.3rem;
 }
@@ -587,7 +579,6 @@ header.header div.header_container nav.header_nav ul.header_list li.header_item 
   position: absolute;
   left: 0;
   bottom: 2.5rem;
-  width: 100%;
   height: 0.2rem;
   background-color: #000;
   -webkit-transform: scaleX(0);
@@ -771,7 +762,6 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: 100%;
     height: 5.8rem;
     padding: 0 2rem;
     background-color: #cb0000;
@@ -793,7 +783,6 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
   background-color: #CB0000;
   width: 15rem;
   height: 4.5rem;
-  padding: 0.6rem 2.9rem 0.4rem 2.9rem;
   color: #fff;
   -webkit-transition: background-color 0.4s, color 0.4s;
   transition: background-color 0.4s, color 0.4s;
@@ -891,7 +880,6 @@ span.img_title.related_img_title {
 
 nav.breadcrumb {
   background-color: #e8e8e8;
-  width: 100%;
 }
 nav.breadcrumb:first-child {
   padding-top: 8rem;
@@ -953,7 +941,6 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li a.breadcrumb_link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
   text-decoration: none;
   color: #000;
   -webkit-transition: opacity 0.4s;
@@ -1031,11 +1018,6 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
 }
 .blog_list ul li.blog_item a .blog_item_left {
   position: relative;
-}
-@media screen and (max-width: 767px) {
-  .blog_list ul li.blog_item a .blog_item_left {
-    width: 100%;
-  }
 }
 .blog_list ul li.blog_item a .blog_item_left .blog_item_img {
   width: 26rem;
