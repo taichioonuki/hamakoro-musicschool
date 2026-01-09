@@ -48,12 +48,14 @@ section.profile_card {
         .profile_card_table-wrapper {
           table.profile_card_table {
             border: 0.5px solid #707070;
+            border-collapse: collapse;
             tbody {
               table,
               th,
               td {
                 border: 0.5px solid #333;
                 width: 26rem;
+                vertical-align: middle;
               }
               tr {
                 th {
