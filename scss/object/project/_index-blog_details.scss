@@ -125,7 +125,7 @@ section.sec1_blog_details {
         }
         .sec1_left_textbox {
           background: #e8e8e8;
-          margin-top: 1.7rem;
+          margin: 1.7rem 0 2.7rem 0;
           position: relative;
           @include mq($sm) {
             margin-top: 1.95rem;
@@ -151,7 +151,6 @@ section.sec1_blog_details {
           }
           p.question {
             padding: 1.8rem 3rem 1rem 6.7rem;
-            margin-bottom: 2.7rem;
             @include mq($sm) {
               padding: 1.8rem 2rem 1rem 7rem;
             }

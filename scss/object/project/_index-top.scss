@@ -250,10 +250,8 @@ section.sec4 {
       }
       .sec4_swiper {
         position: relative;
-
+        margin-top: 3.8rem;
         .swiper {
-          margin-top: 3.8rem;
-
           .swiper-wrapper {
             .swiper-slide {
               transition: opacity 0.4s;
@@ -381,6 +379,7 @@ section.sec5 {
         .guide_list_4 {
           display: flex;
           position: relative;
+          padding-left: 7rem;
           @include mq($sm) {
             flex-direction: column;
             padding-left: 3.8rem;
@@ -407,7 +406,6 @@ section.sec5 {
           p.guide_title {
             color: #cb0000;
             width: 19rem;
-            margin-left: 7rem;
             font-size: 2.2rem;
             line-height: 1.5;
             font-weight: bold;

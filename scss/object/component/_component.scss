@@ -181,9 +181,16 @@ nav.breadcrumb {
 
 //共通パーツ リスト
 .blog_list {
+  margin-top: 4.2rem;
+  @include mq($sm) {
+    margin-top: 3.9rem;
+  }
   ul {
     li.blog_item {
       margin-bottom: 7rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
       @include mq($sm) {
         margin-bottom: 4rem;
       }
@@ -463,8 +470,9 @@ div.related {
 
 //ページネーション
 .page {
+  margin-top: 7rem;
   @include mq($sm) {
-    padding-top: 2rem;
+    margin-top: 5.9rem;
   }
 
   .Pagination {

@@ -58,19 +58,13 @@ section.plan_sec2 {
   }
   .plan_sec2.inner {
     .plan_sec2_container {
-      .sec_title {
-        h2 {
-          margin-bottom: 4.7rem;
-          @include mq($sm) {
-            margin-bottom: 1rem;
-          }
-        }
-      }
       table.plan_table {
         font-size: 1.7rem;
         line-height: 1.471;
+        margin-top: 4.7rem;
         @include mq($sm) {
           margin-bottom: 2.5rem;
+          margin-top: 1rem;
         }
         td {
           text-align: center;

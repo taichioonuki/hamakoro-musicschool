@@ -988,8 +988,19 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
   }
 }
 
+.blog_list {
+  margin-top: 4.2rem;
+}
+@media screen and (max-width: 767px) {
+  .blog_list {
+    margin-top: 3.9rem;
+  }
+}
 .blog_list ul li.blog_item {
   margin-bottom: 7rem;
+}
+.blog_list ul li.blog_item:last-child {
+  margin-bottom: 0;
 }
 @media screen and (max-width: 767px) {
   .blog_list ul li.blog_item {
@@ -1335,9 +1346,12 @@ div.related div.related_content_box div.related_content ul .related_content_item
   margin-bottom: 0;
 }
 
+.page {
+  margin-top: 7rem;
+}
 @media screen and (max-width: 767px) {
   .page {
-    padding-top: 2rem;
+    margin-top: 5.9rem;
   }
 }
 .page .Pagination {
@@ -1695,8 +1709,6 @@ section.sec4 .sec4.inner .sec4_container {
 }
 section.sec4 .sec4.inner .sec4_container .sec4_swiper {
   position: relative;
-}
-section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper {
   margin-top: 3.8rem;
 }
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .swiper-slide {
@@ -1842,6 +1854,7 @@ section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_4 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  padding-left: 7rem;
 }
 @media screen and (max-width: 767px) {
   section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_1,
@@ -1883,7 +1896,6 @@ section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_3 p.guide_ti
 section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_4 p.guide_title {
   color: #cb0000;
   width: 19rem;
-  margin-left: 7rem;
   font-size: 2.2rem;
   line-height: 1.5;
   font-weight: bold;
@@ -2289,21 +2301,15 @@ section.plan_sec2 {
     padding-bottom: 18.6rem;
   }
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container .sec_title h2 {
-  margin-bottom: 4.7rem;
-}
-@media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .sec_title h2 {
-    margin-bottom: 1rem;
-  }
-}
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table {
   font-size: 1.7rem;
   line-height: 1.471;
+  margin-top: 4.7rem;
 }
 @media screen and (max-width: 767px) {
   section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table {
     margin-bottom: 2.5rem;
+    margin-top: 1rem;
   }
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table td {
@@ -2539,14 +2545,6 @@ section.blog {
     padding: 4.7rem 0 20.3rem 0;
   }
 }
-section.blog div.blog_sec.inner div.blog_sec_container div.sec_title h2 {
-  margin-bottom: 3.4rem;
-}
-@media screen and (max-width: 767px) {
-  section.blog div.blog_sec.inner div.blog_sec_container div.sec_title h2 {
-    margin-bottom: 3.8rem;
-  }
-}
 
 section.sec1_blog_details {
   padding: 7rem 0 18.3rem 0;
@@ -2708,7 +2706,7 @@ section.sec1_blog_details .sec1_blog_details.inner .sec1_left_content .blog_deta
 }
 section.sec1_blog_details .sec1_blog_details.inner .sec1_left_content .blog_details_content02 .sec1_left_textbox {
   background: #e8e8e8;
-  margin-top: 1.7rem;
+  margin: 1.7rem 0 2.7rem 0;
   position: relative;
 }
 @media screen and (max-width: 767px) {
@@ -2739,7 +2737,6 @@ section.sec1_blog_details .sec1_blog_details.inner .sec1_left_content .blog_deta
 }
 section.sec1_blog_details .sec1_blog_details.inner .sec1_left_content .blog_details_content02 .sec1_left_textbox p.question {
   padding: 1.8rem 3rem 1rem 6.7rem;
-  margin-bottom: 2.7rem;
 }
 @media screen and (max-width: 767px) {
   section.sec1_blog_details .sec1_blog_details.inner .sec1_left_content .blog_details_content02 .sec1_left_textbox p.question {
@@ -3282,7 +3279,6 @@ section.search_sec div.search_sec.inner div.search_sec_container div.search_sec_
 }
 section.search_sec div.search_sec.inner div.search_sec_container div.search_sec_title p {
   font-size: 1.8rem;
-  margin-bottom: 4rem;
 }
 section.search_sec div.search_sec.inner div.search_sec_container div.search_sec_title p span {
   font-weight: 700;
@@ -3301,14 +3297,14 @@ section.search_sec div.search_sec.inner div.search_sec_container div.blog ul li.
   }
 }
 
-h2 {
+.search_right {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
   line-height: 1.25;
 }
 @media screen and (max-width: 767px) {
-  h2 {
+  .search_right {
     margin-bottom: 0.6rem;
   }
 }
