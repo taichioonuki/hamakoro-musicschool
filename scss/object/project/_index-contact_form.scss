@@ -137,6 +137,7 @@
   .content_group {
     align-items: flex-start;
     margin-top: 2.1rem;
+    margin-bottom: 5rem;
     @include mq($sm) {
       margin-top: 0rem;
     }
@@ -164,13 +165,9 @@
   // 送信ボタン
   .submit_button_container {
     text-align: center;
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    @include mq($sm) {
-      margin-top: 3.5rem;
-    }
     .submit_button {
       font-weight: 700;
       width: 25rem;

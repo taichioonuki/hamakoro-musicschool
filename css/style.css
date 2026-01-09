@@ -3138,6 +3138,7 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 2.1rem;
+  margin-bottom: 5rem;
 }
 @media screen and (max-width: 767px) {
   .contact_form .content_group {
@@ -3168,7 +3169,6 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
 }
 .contact_form .submit_button_container {
   text-align: center;
-  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3178,11 +3178,6 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .contact_form .submit_button_container {
-    margin-top: 3.5rem;
-  }
 }
 .contact_form .submit_button_container .submit_button {
   font-weight: 700;
