@@ -39,11 +39,6 @@ body {
   padding-inline: 3rem;
   /* 767px 以下 */
   @include mq($sm) {
-    padding-inline: 3rem;
-  }
-
-  /* 375px 以下 → 上書き */
-  @media (max-width: 375px) {
     padding-inline: 2rem;
   }
 }

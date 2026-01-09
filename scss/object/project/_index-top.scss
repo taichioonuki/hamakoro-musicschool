@@ -330,7 +330,7 @@ section.sec5 {
   }
   .sec5.inner {
     @include mq($sm) {
-      padding-inline: 7rem;
+      padding-inline: 3rem;
     }
     @media screen and (max-width: 400px) {
       padding-inline: 2rem;
