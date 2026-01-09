@@ -1624,6 +1624,7 @@ section.sec3 .sec3.inner .sec3_container .sec3_list .sec3_item {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 3.9rem;
+    row-gap: 3rem;
   }
 }
 section.sec3 .sec3.inner .sec3_container .sec3_list .sec3_item:last-child {
@@ -1655,7 +1656,7 @@ section.sec3 .sec3.inner .sec3_container .sec3_list .sec3_textbox h3 {
 @media screen and (max-width: 767px) {
   section.sec3 .sec3.inner .sec3_container .sec3_list .sec3_textbox h3 {
     font-size: 2rem;
-    padding: 3rem 0 0.8rem 0;
+    padding: 0 0 0.8rem 0;
   }
 }
 section.sec3 .sec3.inner .sec3_container .sec3_list p {
@@ -1667,7 +1668,8 @@ section.sec3 .sec3.inner .sec3_container .sec3_list p {
   section.sec3 .sec3.inner .sec3_container .sec3_list p {
     font-size: 1.6rem;
     line-height: 1.875;
-    padding: 1.7rem 0 0 0;
+    padding-left: 0rem;
+    margin-top: 1.7rem;
   }
 }
 section.sec3 .sec3.inner .sec3_container .sec3_list span {

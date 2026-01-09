@@ -188,6 +188,7 @@ section.sec3 {
           @include mq($sm) {
             flex-direction: column;
             margin-bottom: 3.9rem;
+            row-gap: 3rem;
           }
           &:last-child {
             margin-bottom: 0;
@@ -212,7 +213,7 @@ section.sec3 {
             border-bottom: 2px solid #cb0000;
             @include mq($sm) {
               font-size: 2rem;
-              padding: 3rem 0 0.8rem 0;
+              padding: 0 0 0.8rem 0;
             }
           }
         }
@@ -223,7 +224,8 @@ section.sec3 {
           @include mq($sm) {
             font-size: 1.6rem;
             line-height: 1.875;
-            padding: 1.7rem 0 0 0;
+            padding-left: 0rem;
+            margin-top: 1.7rem;
           }
         }
         span {
