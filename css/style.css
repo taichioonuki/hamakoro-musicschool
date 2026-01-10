@@ -1976,6 +1976,12 @@ section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question {
       -ms-user-select: none;
           user-select: none;
   border-bottom: 1px solid #000000;
+  padding: 1.5rem 2rem;
+}
+@media screen and (max-width: 767px) {
+  section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question {
+    padding: 1.3rem 2rem;
+  }
 }
 section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question span.icon {
   display: -webkit-box;
@@ -1996,7 +2002,7 @@ section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question sp
   font-weight: bold;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin: 0 1rem 0 2rem;
+  margin: 0 1rem 0 0rem;
   line-height: 1.5;
 }
 @media screen and (max-width: 767px) {
@@ -2004,14 +2010,10 @@ section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question sp
     margin: 0 2rem 0 0rem;
   }
 }
-section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question p {
-  padding: 2rem 0 1.4rem;
-}
 @media screen and (max-width: 767px) {
   section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question p {
     font-size: 1.6rem;
     line-height: 1.875;
-    padding: 1.7rem 4.7rem 0.9rem 0;
   }
 }
 section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question span.arrow-icon {
