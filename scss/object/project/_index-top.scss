@@ -365,11 +365,11 @@ section.sec5 {
           top: 2rem;
           left: 4.2rem;
           width: 0.3rem;
-          height: calc(100% - 1rem);
+          height: calc(100% - 2.5rem);
           background-color: #cb0000;
           z-index: 1;
           @include mq($sm) {
-            left: -1.2rem;
+            left: -1.1rem;
             height: calc(100% - 3rem);
           }
         }
@@ -432,16 +432,16 @@ section.sec5 {
           &::after {
             content: "";
             position: absolute;
+            background-image: url(../img/other/vector.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
             top: 2.4rem;
             left: -2.9rem;
-            width: 2.5rem;
-            height: 2.5rem;
-            border-bottom: 3px solid #cb0000;
-            border-right: 3px solid #cb0000;
-            transform: rotate(45deg);
+            width: 3.1rem;
+            height: 1.5rem;
             @include mq($sm) {
               left: -8.3rem;
-              top: 0;
+              top: 1.7rem;
             }
           }
         }
