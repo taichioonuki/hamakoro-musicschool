@@ -33,6 +33,16 @@ body {
     line-height: 1.875;
   }
 }
+
+main {
+  padding-top: 8rem; // パンくずから移動してきた余白
+
+  @include mq($sm) {
+    padding-top: 5rem;
+  }
+}
+
+
 .inner {
   max-width: 94rem;
   margin-inline: auto;

@@ -92,14 +92,6 @@ span.img_title {
 //共通パーツ【パンくずリスト】
 nav.breadcrumb {
   background-color: #e8e8e8;
-  &:first-child {
-    padding-top: 8rem;
-
-    @include mq($sm) {
-      padding-top: 5rem;
-    }
-  }
-
   .breadcrumb_container {
     ul.breadcrumb_list {
       display: flex;

@@ -439,6 +439,15 @@ body {
   }
 }
 
+main {
+  padding-top: 8rem;
+}
+@media screen and (max-width: 767px) {
+  main {
+    padding-top: 5rem;
+  }
+}
+
 .inner {
   max-width: 94rem;
   margin-inline: auto;
@@ -874,14 +883,6 @@ span.img_title.related_img_title {
 
 nav.breadcrumb {
   background-color: #e8e8e8;
-}
-nav.breadcrumb:first-child {
-  padding-top: 8rem;
-}
-@media screen and (max-width: 767px) {
-  nav.breadcrumb:first-child {
-    padding-top: 5rem;
-  }
 }
 nav.breadcrumb .breadcrumb_container ul.breadcrumb_list {
   display: -webkit-box;
