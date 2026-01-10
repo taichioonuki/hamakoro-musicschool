@@ -241,7 +241,7 @@ section.plan_sec2 {
       font-size: 1.7rem;
       line-height: 1.471;
       @include mq($sm) {
-        margin-top: 3.5rem;
+        margin-top: 2rem;
         line-height: 1.875;
         font-size: 1.6rem;
       }
@@ -271,22 +271,21 @@ section.plan_sec2 {
 }
 
 @media screen and (max-width: 767px) {
-  .simplebar-track.simplebar-horizontal {
-    opacity: 1 !important;
-    display: block !important;
-
-    height: 2.5rem !important;
-    background: #e5e5e5 !important;
-    bottom: -1.7rem;
+  .scroll-area {
+    padding-bottom: 2.5rem;
   }
 
   .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
     height: 100% !important;
     display: block !important;
   }
-
-  .simplebar-track.simplebar-horizontal .simplebar-scrollbar::before {
+  .simplebar-track .simplebar-scrollbar::before {
+    background: rgba(80, 80, 80, 0.15);
     border-radius: 0;
-    background-color: rgba(80, 80, 80, 0.251);
+  }
+
+  .simplebar-track {
+    background: rgba(80, 80, 80, 0.25);
+    height: 2.5rem !important;
   }
 }

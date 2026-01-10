@@ -4,7 +4,7 @@
 @use "../../foundation/normalize";
 
 section.profile_card {
-  padding: 7rem 0 6rem;
+  padding: 7rem 0 5.5rem;
   @include mq($sm) {
     padding: 5rem 0 4rem;
   }
