@@ -894,17 +894,13 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list {
   -webkit-column-gap: 1.7rem;
      -moz-column-gap: 1.7rem;
           column-gap: 1.7rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-@media screen and (max-width: 767px) {
-  nav.breadcrumb .breadcrumb_container ul.breadcrumb_list {
-    overflow-x: auto;
-    white-space: nowrap;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  nav.breadcrumb .breadcrumb_container ul.breadcrumb_list::-webkit-scrollbar {
-    display: none;
-  }
+nav.breadcrumb .breadcrumb_container ul.breadcrumb_list::-webkit-scrollbar {
+  display: none;
 }
 nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li {
   display: -webkit-box;
