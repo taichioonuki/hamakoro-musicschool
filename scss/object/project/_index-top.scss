@@ -255,6 +255,12 @@ section.sec4 {
           .swiper-wrapper {
             .swiper-slide {
               transition: opacity 0.4s;
+              .swiper_img {
+                aspect-ratio: 270 / 190;
+                @include mq($sm) {
+                  aspect-ratio: 335 / 200;
+                }
+              }
               p.name {
                 font-size: 2.2rem;
                 font-weight: 700;

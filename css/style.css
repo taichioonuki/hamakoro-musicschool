@@ -1702,6 +1702,14 @@ section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .s
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
+section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .swiper-slide .swiper_img {
+  aspect-ratio: 270/190;
+}
+@media screen and (max-width: 767px) {
+  section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .swiper-slide .swiper_img {
+    aspect-ratio: 335/200;
+  }
+}
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .swiper-slide p.name {
   font-size: 2.2rem;
   font-weight: 700;
