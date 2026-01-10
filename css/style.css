@@ -583,6 +583,7 @@ header.header div.header_container nav.header_nav ul.header_list li.header_item 
   left: 0;
   bottom: 2.5rem;
   height: 0.2rem;
+  width: 100%;
   background-color: #000;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
