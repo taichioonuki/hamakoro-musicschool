@@ -109,122 +109,125 @@
             当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。<br />
             通常３営業日以内にメールにてご連絡させていただきます。
           </p>
+          <div class="form_wrapper">
+            <form action="contact_send.html" method="POST" class="contact_form">
+              <div class="form_group">
+                <label for="company-name" class="form_label">
+                  <span class="label_text">会社名</span>
+                </label>
+                <input
+                  type="text"
+                  id="company-name"
+                  name="company-name"
+                  placeholder="きたむらミュージックスクール"
+                  class="form_input"
+                />
+              </div>
 
-          <form action="contact_send.html" method="POST" class="contact_form">
-            <div class="form_group">
-              <label for="company-name" class="form_label">
-                <span class="label_text">会社名</span>
-              </label>
-              <input
-                type="text"
-                id="company-name"
-                name="company-name"
-                placeholder="きたむらミュージックスクール"
-                class="form_input"
-              />
-            </div>
+              <div class="form_group">
+                <label for="name" class="form_label">
+                  <span class="label_text">お名前</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="北村　翔平"
+                  class="form_input"
+                />
+              </div>
 
-            <div class="form_group">
-              <label for="name" class="form_label">
-                <span class="label_text">お名前</span>
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="北村　翔平"
-                class="form_input"
-              />
-            </div>
-
-            <div class="form_group">
-              <label for="email" class="form_label">
-                <span class="label_text">メールアドレス</span>
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="info@kitamura.musicschool.jp"
-                class="form_input"
-              />
-            </div>
-            <div class="form_group">
-              <label for="tel" class="form_label">
-                <span class="label_text">電話番号</span>
-              </label>
-              <input
-                type="tel"
-                id="tel"
-                name="tel"
-                placeholder="090-1234-5678"
-                class="form_input"
-              />
-            </div>
-            <div class="form_group purpose_group">
-              <label class="form_label purpose_label"
-                >目　的　<br class="pc_only" />(複数選択可)</label
-              >
-              <div class="checkbox_container">
-                <div class="checkbox_item">
-                  <input
-                    type="checkbox"
-                    id="plan-query"
-                    name="purpose[]"
-                    value="プランについてのお問い合わせ"
-                  />
-                  <label for="plan-query" class="check"
-                    >プランについてのお問い合わせ</label
-                  >
-                </div>
-                <div class="checkbox_item">
-                  <input
-                    type="checkbox"
-                    id="hearing-reserve"
-                    name="purpose[]"
-                    value="ヒアリングのご予約"
-                  />
-                  <label for="hearing-reserve" class="check"
-                    >ヒアリングのご予約</label
-                  >
-                </div>
-                <div class="checkbox_item">
-                  <input
-                    type="checkbox"
-                    id="document-request"
-                    name="purpose[]"
-                    value="資料請求"
-                  />
-                  <label for="document-request" class="check">資料請求</label>
-                </div>
-                <div class="checkbox_item">
-                  <input
-                    type="checkbox"
-                    id="other"
-                    name="source[]"
-                    value="その他"
-                  />
-                  <label for="other" class="check">その他</label>
+              <div class="form_group">
+                <label for="email" class="form_label">
+                  <span class="label_text">メールアドレス</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="info@kitamura.musicschool.jp"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_group">
+                <label for="tel" class="form_label">
+                  <span class="label_text">電話番号</span>
+                </label>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder="090-1234-5678"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_group purpose_group">
+                <label class="form_label purpose_label"
+                  >目　的　<br class="pc_only" />(複数選択可)</label
+                >
+                <div class="checkbox_container">
+                  <div class="checkbox_item">
+                    <input
+                      type="checkbox"
+                      id="plan-query"
+                      name="purpose[]"
+                      value="プランについてのお問い合わせ"
+                    />
+                    <label for="plan-query" class="check"
+                      >プランについてのお問い合わせ</label
+                    >
+                  </div>
+                  <div class="checkbox_item">
+                    <input
+                      type="checkbox"
+                      id="hearing-reserve"
+                      name="purpose[]"
+                      value="ヒアリングのご予約"
+                    />
+                    <label for="hearing-reserve" class="check"
+                      >ヒアリングのご予約</label
+                    >
+                  </div>
+                  <div class="checkbox_item">
+                    <input
+                      type="checkbox"
+                      id="document-request"
+                      name="purpose[]"
+                      value="資料請求"
+                    />
+                    <label for="document-request" class="check">資料請求</label>
+                  </div>
+                  <div class="checkbox_item">
+                    <input
+                      type="checkbox"
+                      id="other"
+                      name="source[]"
+                      value="その他"
+                    />
+                    <label for="other" class="check">その他</label>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="form_group content_group">
-              <label for="content" class="form_label">
-                <span class="label_text">内　容</span>
-              </label>
-              <textarea
-                id="content"
-                name="content"
-                rows="10"
-                placeholder="内容に関する詳細や備考等をご入力ください。"
-                class="form_textarea"
-              ></textarea>
-            </div>
-            <div class="submit_button_container">
-              <button type="submit" class="c_button submit_button">送信</button>
-            </div>
-          </form>
+              <div class="form_group content_group">
+                <label for="content" class="form_label">
+                  <span class="label_text">内　容</span>
+                </label>
+                <textarea
+                  id="content"
+                  name="content"
+                  rows="10"
+                  placeholder="内容に関する詳細や備考等をご入力ください。"
+                  class="form_textarea"
+                ></textarea>
+              </div>
+              <div class="submit_button_container">
+                <button type="submit" class="c_button submit_button">
+                  送信
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>
