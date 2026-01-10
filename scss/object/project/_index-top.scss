@@ -285,6 +285,7 @@ section.sec4 {
           background-image: url(../img/other/arrow-swiper.svg);
           @include mq($sm) {
             left: 0;
+            top: 39%;
           }
         }
 
@@ -300,6 +301,7 @@ section.sec4 {
           background-image: url(../img/other/arrow-swiper.svg);
           @include mq($sm) {
             right: 0;
+            top: 39%;
           }
         }
         .swiper-button-prev,
@@ -327,12 +329,6 @@ section.sec5 {
     padding: 4.6rem 0 3.7rem;
   }
   .sec5.inner {
-    @include mq($sm) {
-      padding-inline: 3rem;
-    }
-    @media screen and (max-width: 400px) {
-      padding-inline: 2rem;
-    }
     .sec5_container {
       .top_sec_title {
         h2 {
@@ -353,7 +349,7 @@ section.sec5 {
         padding-left: 5.4rem;
         margin-bottom: 2rem;
         @include mq($sm) {
-          padding-left: 0;
+          padding-left: 1rem;
           gap: 3.6rem;
           margin-top: 3.6rem;
         }
@@ -367,7 +363,7 @@ section.sec5 {
           background-color: #cb0000;
           z-index: 1;
           @include mq($sm) {
-            left: -1.1rem;
+            left: -0.2rem;
             height: calc(100% - 3rem);
           }
         }
@@ -380,7 +376,7 @@ section.sec5 {
           padding-left: 7rem;
           @include mq($sm) {
             flex-direction: column;
-            padding-left: 3.8rem;
+            padding-left: 2rem;
           }
 
           span.circle {
@@ -438,7 +434,7 @@ section.sec5 {
             width: 3.1rem;
             height: 1.5rem;
             @include mq($sm) {
-              left: -8.3rem;
+              left: -7.4rem;
               top: 1.7rem;
             }
           }
@@ -477,7 +473,7 @@ section.sec6 {
             border-bottom: 1px solid #000000;
             padding: 1.5rem 2rem;
             @include mq($sm) {
-              padding: 1.3rem 2rem;
+              padding: 1.3rem 3rem 1.3rem 0;
             }
             span.icon {
               display: flex;
@@ -535,6 +531,14 @@ section.sec6 {
             padding: 0 2rem;
             transition: max-height 0.4s ease-in-out, padding 0.4s ease-in,
               transform 0.4s ease;
+            .faq-answer-inner {
+              padding: 1.5rem 2rem; // ここで余白を確保
+              display: flex;
+              align-items: center;
+              @include mq($sm) {
+                padding: 1.3rem 3rem 1.3rem 0;
+              }
+            }
             &.highlighted {
               background-color: #feeeee;
               display: flex;
@@ -557,7 +561,7 @@ section.sec6 {
                 color: #fff;
                 font-size: 2rem;
                 font-weight: bold;
-                margin: 0 1rem 0 2rem;
+                margin: 0 1rem 0 0;
                 flex-shrink: 0;
                 @include mq($sm) {
                   margin: 0 2rem 0 0rem;
@@ -565,11 +569,9 @@ section.sec6 {
               }
             }
             p {
-              padding: 2.1rem 0 1.7rem;
               @include mq($sm) {
                 font-size: 1.6rem;
                 line-height: 1.875;
-                padding: 1.7rem 4.7rem 0.6rem 0;
               }
             }
           }

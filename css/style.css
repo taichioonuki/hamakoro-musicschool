@@ -1721,6 +1721,7 @@ section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-prev {
 @media screen and (max-width: 767px) {
   section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-prev {
     left: 0;
+    top: 39%;
   }
 }
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-next {
@@ -1738,6 +1739,7 @@ section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-next {
 @media screen and (max-width: 767px) {
   section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-next {
     right: 0;
+    top: 39%;
   }
 }
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper-button-prev,
@@ -1760,16 +1762,6 @@ section.sec5 {
 @media screen and (max-width: 767px) {
   section.sec5 {
     padding: 4.6rem 0 3.7rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  section.sec5 .sec5.inner {
-    padding-inline: 3rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  section.sec5 .sec5.inner {
-    padding-inline: 2rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1798,7 +1790,7 @@ section.sec5 .sec5.inner .sec5_container .guide_content {
 }
 @media screen and (max-width: 767px) {
   section.sec5 .sec5.inner .sec5_container .guide_content {
-    padding-left: 0;
+    padding-left: 1rem;
     gap: 3.6rem;
     margin-top: 3.6rem;
   }
@@ -1815,7 +1807,7 @@ section.sec5 .sec5.inner .sec5_container .guide_content::before {
 }
 @media screen and (max-width: 767px) {
   section.sec5 .sec5.inner .sec5_container .guide_content::before {
-    left: -1.1rem;
+    left: -0.2rem;
     height: calc(100% - 3rem);
   }
 }
@@ -1838,7 +1830,7 @@ section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 3.8rem;
+    padding-left: 2rem;
   }
 }
 section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_1 span.circle,
@@ -1913,7 +1905,7 @@ section.sec5 .sec5.inner .sec5_container .guide_content .arrow::after {
 }
 @media screen and (max-width: 767px) {
   section.sec5 .sec5.inner .sec5_container .guide_content .arrow::after {
-    left: -8.3rem;
+    left: -7.4rem;
     top: 1.7rem;
   }
 }
@@ -1958,7 +1950,7 @@ section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question {
 }
 @media screen and (max-width: 767px) {
   section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question {
-    padding: 1.3rem 2rem;
+    padding: 1.3rem 3rem 1.3rem 0;
   }
 }
 section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-question span.icon {
@@ -2036,6 +2028,20 @@ section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer {
   transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, transform 0.4s ease;
   transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, transform 0.4s ease, -webkit-transform 0.4s ease;
 }
+section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer .faq-answer-inner {
+  padding: 1.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer .faq-answer-inner {
+    padding: 1.3rem 3rem 1.3rem 0;
+  }
+}
 section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer.highlighted {
   background-color: #feeeee;
   display: -webkit-box;
@@ -2071,7 +2077,7 @@ section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer.high
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
-  margin: 0 1rem 0 2rem;
+  margin: 0 1rem 0 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -2080,14 +2086,10 @@ section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer.high
     margin: 0 2rem 0 0rem;
   }
 }
-section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer p {
-  padding: 2.1rem 0 1.7rem;
-}
 @media screen and (max-width: 767px) {
   section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer p {
     font-size: 1.6rem;
     line-height: 1.875;
-    padding: 1.7rem 4.7rem 0.6rem 0;
   }
 }
 section.sec6 .sec6.inner .sec6_container .faq-section .faq-item.open .faq-question {

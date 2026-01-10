@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//アコーディオン
 // アコーディオン開閉機能
 document.addEventListener("DOMContentLoaded", function () {
   // 質問と回答の両方（.faq-question と .faq-answer）にイベントを設定
