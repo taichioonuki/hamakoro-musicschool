@@ -5,10 +5,6 @@
 
 //FV--------------------->
 section.sec_fv {
-  padding-top: 8rem;
-  @include mq($sm) {
-    padding-top: 5rem;
-  }
   .sec_fv_container {
     position: relative;
     .sec_fv_overlay {
@@ -66,11 +62,7 @@ section.sec1 {
         @include mq($sm) {
           font-size: 1.8rem;
           line-height: 1.667;
-          margin: 0.7rem 9rem 2rem;
-        }
-        @media screen and (max-width: 541px) {
           margin: 0.7rem 0rem 2rem;
-          text-align: left;
         }
       }
     }

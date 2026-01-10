@@ -36,10 +36,6 @@
 
 //共通パーツ【ページタイトル】
 .page_fv {
-  padding-top: 8rem;
-  @include mq($sm) {
-    padding-top: 5rem;
-  }
   .page_fv_container {
     position: relative;
     .page_fv_overlay {
@@ -251,9 +247,9 @@ nav.breadcrumb {
   pointer-events: none;
 
   @media screen and (max-width: 767px) {
-    left: 0;
-    right: 0;
-    align-items: center;
+    left: auto;
+    right: 2rem;
+    align-items: flex-end;
   }
 
   &.is-visible {
