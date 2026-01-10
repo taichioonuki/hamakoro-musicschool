@@ -121,11 +121,10 @@ section.sec1_blog_details {
             margin: 3.9rem 0 2.7rem 0;
           }
         }
-        ul {
-          border-bottom: 0.5px solid #000;
-          padding-bottom: 4.1rem;
+        hr {
+          margin-top: 4.1rem;
           @include mq($sm) {
-            padding-bottom: 3.8rem;
+            margin-top: 3.8rem;
           }
         }
       }
