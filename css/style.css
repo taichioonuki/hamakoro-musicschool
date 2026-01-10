@@ -2310,6 +2310,11 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table {
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table td {
   text-align: center;
+  height: 8.5rem;
+  vertical-align: middle;
+}
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table th {
+  vertical-align: middle;
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr td:not(:first-child):not(:last-child) {
   border-right: 1px solid #333;
@@ -2331,14 +2336,68 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.blank {
   background-color: #fff;
 }
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title .plan-head__inner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title .plan-head__inner_red {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title .plan-head__inner p {
+  width: 100%;
+  height: 5rem;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.65;
+  color: #fff;
+  background: #000;
+}
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title .plan-head__inner_red p {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.65;
+  color: #fff;
+}
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.basic, section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.premium {
-  padding-top: 4.3rem;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(3rem, white), color-stop(3rem, black));
   background: linear-gradient(to bottom, white 3rem, black 3rem);
 }
 @media screen and (max-width: 767px) {
   section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.basic, section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.premium {
-    padding-top: 3.5rem;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(2.6rem, white), color-stop(2.5rem, black));
     background: linear-gradient(to bottom, white 2.6rem, black 2.5rem);
     padding-bottom: 0.5rem;
@@ -2346,10 +2405,23 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .standard {
   background-color: #CB0000;
-  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .standard span.plan_recommend {
   font-size: 1.7rem;
+  padding-top: 1rem;
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr:nth-child(odd) {
   background-color: rgba(80, 80, 80, 0.1490196078);
@@ -2357,7 +2429,7 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price {
   font-size: 1.7rem;
   font-weight: 700;
-  padding: 3rem 0 2.4rem 2rem;
+  padding: 0 2rem;
   line-height: 1.765;
   border-top: 1px solid #333;
   border-right: 1px solid #333;
@@ -2366,7 +2438,6 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
   section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price {
     font-size: 1.6rem;
     line-height: 1.875;
-    padding: 3rem 0 2.4rem 1rem;
   }
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price_basic,
@@ -2374,7 +2445,6 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price_premium {
   font-size: 2.2rem;
   line-height: 1.5;
-  padding-top: 2.9rem;
   font-weight: 700;
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price_standard_red {
@@ -2382,76 +2452,35 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_title {
   border-right: 1px solid #000;
-  padding: 3.2rem 0 2.8rem 2rem;
+  padding: 0 2rem;
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
   section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_title {
     font-size: 1.6rem;
     line-height: 1.563;
-    padding: 3.2rem 0.6rem 2.8rem 1rem;
   }
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_circle {
-  padding-top: 4.5rem;
-  position: relative;
-}
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_circle::after {
-  position: absolute;
-  content: "";
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_circle {
+  display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: #000;
   border-radius: 50%;
-  top: 2rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  background: #000;
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_circle.last::after {
   top: 3.5rem;
-}
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_circle_red {
-  padding-top: 4.5rem;
-  position: relative;
-}
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_circle_red::after {
-  position: absolute;
-  content: "";
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #CB0000;
-  border-radius: 50%;
-  top: 2rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_circle_plan_circle,
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_circle_plan_circle_red {
   position: relative;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_circle_plan_circle::after {
-  position: absolute;
-  content: "";
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_circle_red {
+  display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: #000;
   border-radius: 50%;
-  top: 3.5rem;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_circle_plan_circle_red::after {
-  position: absolute;
-  content: "";
-  width: 1.5rem;
-  height: 1.5rem;
   background-color: #CB0000;
-  border-radius: 50%;
-  top: 3.5rem;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_border,
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_border_red {
@@ -2494,12 +2523,7 @@ section.plan_sec2 .plan_sec2.inner .border_bottom {
   border-bottom: 1px solid #000;
 }
 section.plan_sec2 .plan_sec2.inner .plan_table tr.border_bottom th.plan_title {
-  padding: 3.2rem 0 2.6rem 2rem;
-}
-@media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_table tr.border_bottom th.plan_title {
-    padding: 2rem 0 1.5rem 1rem;
-  }
+  padding: 0 2rem;
 }
 
 .scroll__inner {
