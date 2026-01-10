@@ -1,0 +1,4 @@
+AuthUserFile "/home/hamakoro0222/hamakoro-i.com/public_html/hamakoro-musicschool/.htpasswd"
+AuthName "Member Site"
+AuthType Basic
+Require valid-user
