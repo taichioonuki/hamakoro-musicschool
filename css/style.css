@@ -1073,9 +1073,9 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.4s ease, visibility 0.4s ease;
@@ -1086,10 +1086,9 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
   #page-top.back-to-top {
     left: 0;
     right: 0;
-    margin-right: 0;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 #page-top.back-to-top.is-visible {
@@ -1099,7 +1098,6 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
 #page-top.back-to-top img.back-to-top_btn {
   width: 6.8rem;
   height: 6.8rem;
-  margin-right: 11.6rem;
   margin-bottom: 3rem;
   border-radius: 50%;
   cursor: pointer;
@@ -1113,7 +1111,6 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
 }
 @media screen and (max-width: 767px) {
   #page-top.back-to-top img.back-to-top_btn {
-    margin-right: 2rem;
     margin-bottom: 2rem;
   }
 }
@@ -1137,12 +1134,11 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
   letter-spacing: 0.4rem;
   -webkit-transition: opacity 0.4s ease, background-color 0.4s ease, color 0.4s ease;
   transition: opacity 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  pointer-events: auto;
 }
 @media screen and (max-width: 767px) {
   #page-top.back-to-top .fixed-buttons__contact {
     width: 33.5rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 

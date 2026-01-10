@@ -244,17 +244,18 @@ nav.breadcrumb {
   bottom: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease; // ← ふわっと出る設定
+  transition: opacity 0.4s ease, visibility 0.4s ease;
   pointer-events: none;
+
   @media screen and (max-width: 767px) {
     left: 0;
     right: 0;
-    margin-right: 0;
-    align-items: flex-end;
+    align-items: center;
   }
+
   &.is-visible {
     opacity: 1;
     visibility: visible;
@@ -263,18 +264,18 @@ nav.breadcrumb {
   img.back-to-top_btn {
     width: 6.8rem;
     height: 6.8rem;
-    margin-right: 11.6rem;
     margin-bottom: 3rem;
     border-radius: 50%;
     cursor: pointer;
     overflow: hidden;
     transition: opacity 0.4s ease;
     pointer-events: auto;
+
     &:hover {
       opacity: 0.7;
     }
+
     @media screen and (max-width: 767px) {
-      margin-right: 2rem;
       margin-bottom: 2rem;
     }
   }
@@ -292,10 +293,9 @@ nav.breadcrumb {
     line-height: 1.65;
     letter-spacing: 0.4rem;
     transition: opacity 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+    pointer-events: auto;
     @media screen and (max-width: 767px) {
       width: 33.5rem;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 }
