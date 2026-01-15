@@ -16,10 +16,10 @@ html {
 
   // スマホ：375px以下はすべて可変にする（上限を375pxとする場合）
   @media (max-width: 767px) {
-
-  // スマホ：375px以下はすべて可変にする（上限を375pxとする場合）
-  @media (max-width: 767px) {
-    font-size: calc(10 / 375 * 100vw);
+    // スマホ：375px以下はすべて可変にする（上限を375pxとする場合）
+    @media (max-width: 767px) {
+      font-size: calc(10 / 375 * 100vw);
+    }
   }
 }
 body {
@@ -44,7 +44,6 @@ main {
     padding-top: 5rem;
   }
 }
-
 
 .inner {
   max-width: 94rem;
