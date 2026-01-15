@@ -63,8 +63,8 @@ section.plan_sec2 {
         line-height: 1.471;
         margin-top: 4.7rem;
         @include mq($sm) {
-          margin-bottom: 2.5rem;
-          margin-top: 1rem;
+          margin-bottom: 2rem;
+          margin-top: 2rem;
         }
         td {
           text-align: center;
@@ -97,7 +97,7 @@ section.plan_sec2 {
                 width: 100%;
                 height: 100%;
                 display: flex;
-                align-items: flex-end; // 下半分へ
+                align-items: flex-end;
               }
               .plan-head__inner_red {
                 width: 100%;
@@ -106,11 +106,13 @@ section.plan_sec2 {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                @include mq($sm) {
+                }
               }
 
               .plan-head__inner p {
                 width: 100%;
-                height: 5rem; // 8remの半分
+                height: 5rem;
                 margin: 0;
                 display: flex;
                 flex-direction: column;
@@ -121,12 +123,19 @@ section.plan_sec2 {
                 line-height: 1.65;
                 color: #fff;
                 background: #000;
+                @include mq($sm) {
+                  height: 6.6rem;
+                  line-height: 1.25;
+                }
               }
               .plan-head__inner_red p {
                 font-size: 2rem;
                 font-weight: 700;
                 line-height: 1.65;
                 color: #fff;
+                @include mq($sm) {
+                  line-height: 1.25;
+                }
               }
 
               &.basic,
@@ -139,6 +148,9 @@ section.plan_sec2 {
                     black 2.5rem
                   );
                   padding-bottom: 0.5rem;
+                  @include mq($sm) {
+                    padding-bottom: 0rem;
+                  }
                 }
               }
             }
@@ -150,7 +162,6 @@ section.plan_sec2 {
               align-items: center;
               span.plan_recommend {
                 font-size: 1.7rem;
-                padding-top: 1rem;
               }
             }
             &:nth-child(odd) {
@@ -166,6 +177,7 @@ section.plan_sec2 {
               @include mq($sm) {
                 font-size: 1.6rem;
                 line-height: 1.875;
+                padding: 0 1rem;
               }
             }
             .plan_title_price_basic,
@@ -186,6 +198,7 @@ section.plan_sec2 {
             @include mq($sm) {
               font-size: 1.6rem;
               line-height: 1.563;
+              padding: 0 1rem;
             }
           }
           .plan_circle {
@@ -241,7 +254,7 @@ section.plan_sec2 {
       font-size: 1.7rem;
       line-height: 1.471;
       @include mq($sm) {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         line-height: 1.875;
         font-size: 1.6rem;
       }
@@ -251,6 +264,9 @@ section.plan_sec2 {
     }
     .plan_table tr.border_bottom th.plan_title {
       padding: 0 2rem;
+      @include mq($sm) {
+        padding: 0 1rem;
+      }
     }
   }
 }
@@ -266,11 +282,9 @@ section.plan_sec2 {
 
 @media screen and (max-width: 767px) {
   .plan_table {
-    min-width: 66.8rem;
+    width: 72.1rem;
   }
-}
 
-@media screen and (max-width: 767px) {
   .scroll-area {
     padding-bottom: 2.5rem;
   }
