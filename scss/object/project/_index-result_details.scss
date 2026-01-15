@@ -87,12 +87,12 @@ section.profile_card {
 }
 
 section.result {
+  padding-bottom: 15.7rem;
+  @include mq($sm) {
+    padding-bottom: 19.7rem;
+  }
   div.result_details.inner {
     div.result_details_content {
-      padding-bottom: 15.7rem;
-      @include mq($sm) {
-        padding-bottom: 19.7rem;
-      }
       div.article {
         margin-top: 0;
         div.article_page.result_page {

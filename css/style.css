@@ -3521,11 +3521,11 @@ section.profile_card .profile.inner .profile_card_body .profile_card_content .pr
   }
 }
 
-section.result div.result_details.inner div.result_details_content {
+section.result {
   padding-bottom: 15.7rem;
 }
 @media screen and (max-width: 767px) {
-  section.result div.result_details.inner div.result_details_content {
+  section.result {
     padding-bottom: 19.7rem;
   }
 }
