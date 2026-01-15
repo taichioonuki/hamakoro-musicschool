@@ -153,7 +153,10 @@ section.sec1_blog_details {
           left: 0.1rem;
           top: 50%;
           transform: translateY(-50%);
-          height: 50%;
+          height: calc(100% - 1.2rem);
+          @include mq($sm) {
+            height: calc(100% - 1rem);
+          }
         }
         .sec1_left_textbox {
           background: #e8e8e8;

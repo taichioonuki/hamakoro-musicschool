@@ -2746,7 +2746,12 @@ section.sec1_blog_details .sec1_blog_details.inner .sec1_left_content .blog_deta
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  height: 50%;
+  height: calc(100% - 1.2rem);
+}
+@media screen and (max-width: 767px) {
+  section.sec1_blog_details .sec1_blog_details.inner .sec1_left_content .blog_details_content02 h3::before {
+    height: calc(100% - 1rem);
+  }
 }
 section.sec1_blog_details .sec1_blog_details.inner .sec1_left_content .blog_details_content02 .sec1_left_textbox {
   background: #e8e8e8;
