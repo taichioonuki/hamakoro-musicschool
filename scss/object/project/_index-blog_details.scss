@@ -323,14 +323,8 @@ section.sec1_blog_details {
                 gap: 2rem;
               }
               .post_img_wrapper {
-                .post_img {
-                  flex-shrink: 0;
-                  width: 9.5rem;
-                  @include mq($sm) {
-                    height: 11rem;
-                  }
-                }
-                // h3からp(post_item_title)に変更
+                flex-shrink: 0;
+                width: 9.5rem;
                 .post_item_title {
                   font-size: 1.7rem;
                   line-height: 1.647;
@@ -343,24 +337,23 @@ section.sec1_blog_details {
             }
           }
         }
-
-        // カテゴリー
-        .sidebar_category {
-          margin-bottom: 3rem; // 最後のマージンも必要であれば追加
-          .category_list {
-            .category_item {
-              border-bottom: 0.5px solid #000;
-              .category_link {
-                display: block;
-                font-size: 1.7rem;
-                line-height: 1.647;
-                padding: 1.2rem 0 0.6rem 0;
-                text-decoration: none;
-                color: inherit;
-                transition: opacity 0.4s;
-                &:hover {
-                  opacity: 0.7;
-                }
+      }
+      // カテゴリー
+      .sidebar_category {
+        margin-bottom: 3rem; // 最後のマージンも必要であれば追加
+        .category_list {
+          .category_item {
+            border-bottom: 0.5px solid #000;
+            .category_link {
+              display: block;
+              font-size: 1.7rem;
+              line-height: 1.647;
+              padding: 1.2rem 0 0.6rem 0;
+              text-decoration: none;
+              color: inherit;
+              transition: opacity 0.4s;
+              &:hover {
+                opacity: 0.7;
               }
             }
           }

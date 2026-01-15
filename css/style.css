@@ -2942,15 +2942,10 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts 
     gap: 2rem;
   }
 }
-section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper .post_img {
+section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 9.5rem;
-}
-@media screen and (max-width: 767px) {
-  section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper .post_img {
-    height: 11rem;
-  }
 }
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper .post_item_title {
   font-size: 1.7rem;
@@ -2962,13 +2957,13 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts 
     margin-top: 1rem;
   }
 }
-section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .sidebar_category {
+section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_category {
   margin-bottom: 3rem;
 }
-section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .sidebar_category .category_list .category_item {
+section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_category .category_list .category_item {
   border-bottom: 0.5px solid #000;
 }
-section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .sidebar_category .category_list .category_item .category_link {
+section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_category .category_list .category_item .category_link {
   display: block;
   font-size: 1.7rem;
   line-height: 1.647;
@@ -2978,7 +2973,7 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts 
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
-section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .sidebar_category .category_list .category_item .category_link:hover {
+section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_category .category_list .category_item .category_link:hover {
   opacity: 0.7;
 }
 
