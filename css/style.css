@@ -625,8 +625,8 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
     top: 0;
     right: 0;
     background: #CB0000;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
+    -webkit-transition: background 0.4s;
+    transition: background 0.4s;
   }
   header .open {
     background: #CB0000;
@@ -689,8 +689,10 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
   header.open .toggle_menu .toggle_line::after {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: top 0.4s, -webkit-transform 0.4s;
+    transition: top 0.4s, -webkit-transform 0.4s;
+    transition: transform 0.4s, top 0.4s;
+    transition: transform 0.4s, top 0.4s, -webkit-transform 0.4s;
     top: -0.2rem;
     width: 3.2rem;
   }

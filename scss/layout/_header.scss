@@ -114,7 +114,7 @@ header.header {
     top: 0;
     right: 0;
     background: $main-color;
-    transition: all 0.4s;
+    transition: background 0.4s;
   }
 
   header .open {
@@ -176,7 +176,7 @@ header.header {
 
   header.open .toggle_menu .toggle_line::after {
     transform: rotate(45deg);
-    transition: 0.4s;
+    transition: transform 0.4s, top 0.4s;
     top: -0.2rem;
     width: 3.2rem;
   }
