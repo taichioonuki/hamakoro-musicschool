@@ -2284,29 +2284,31 @@ section.plan_sec2 {
     padding-bottom: 18.6rem;
   }
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table {
-  font-size: 1.7rem;
-  line-height: 1.471;
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper {
   margin-top: 4.7rem;
 }
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table {
+  font-size: 1.7rem;
+  line-height: 1.471;
+}
 @media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table {
+  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table {
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table td {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table td {
   text-align: center;
   height: 8.5rem;
   vertical-align: middle;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table th {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table th {
   vertical-align: middle;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr td:not(:first-child):not(:last-child) {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr td:not(:first-child):not(:last-child) {
   border-right: 1px solid #333;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title {
   font-size: 2rem;
   font-weight: 700;
   width: 22rem;
@@ -2316,14 +2318,14 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
   height: 8rem;
 }
 @media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title {
+  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title {
     line-height: 1.25;
   }
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.blank {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title.blank {
   background-color: #fff;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title .plan-head__inner {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title .plan-head__inner {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -2333,7 +2335,7 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
       -ms-flex-align: end;
           align-items: flex-end;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title .plan-head__inner_red {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title .plan-head__inner_red {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -2350,7 +2352,7 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
       -ms-flex-pack: center;
           justify-content: center;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title .plan-head__inner p {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title .plan-head__inner p {
   width: 100%;
   height: 5rem;
   margin: 0;
@@ -2374,39 +2376,39 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
   background: #000;
 }
 @media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title .plan-head__inner p {
+  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title .plan-head__inner p {
     height: 6.6rem;
     line-height: 1.25;
   }
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title .plan-head__inner_red p {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title .plan-head__inner_red p {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.65;
   color: #fff;
 }
 @media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title .plan-head__inner_red p {
+  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title .plan-head__inner_red p {
     line-height: 1.25;
   }
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.basic, section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.premium {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title.basic, section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title.premium {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(3rem, white), color-stop(3rem, black));
   background: linear-gradient(to bottom, white 3rem, black 3rem);
 }
 @media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.basic, section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.premium {
+  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title.basic, section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title.premium {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(2.6rem, white), color-stop(2.5rem, black));
     background: linear-gradient(to bottom, white 2.6rem, black 2.5rem);
     padding-bottom: 0.5rem;
   }
 }
 @media screen and (max-width: 767px) and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.basic, section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_head-title.premium {
+  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title.basic, section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title.premium {
     padding-bottom: 0rem;
   }
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .standard {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .standard {
   background-color: #CB0000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2422,13 +2424,13 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
       -ms-flex-align: center;
           align-items: center;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .standard span.plan_recommend {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .standard span.plan_recommend {
   font-size: 1.7rem;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr:nth-child(odd) {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr:nth-child(odd) {
   background-color: rgba(80, 80, 80, 0.1490196078);
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_title_price {
   font-size: 1.7rem;
   font-weight: 700;
   padding: 0 2rem;
@@ -2437,60 +2439,60 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody t
   border-right: 1px solid #333;
 }
 @media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price {
+  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_title_price {
     font-size: 1.6rem;
     line-height: 1.875;
     padding: 0 1rem;
   }
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price_basic,
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price_standard_red,
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price_premium {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_title_price_basic,
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_title_price_standard_red,
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_title_price_premium {
   font-size: 2.2rem;
   line-height: 1.5;
   font-weight: 700;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody tr .plan_title_price_standard_red {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_title_price_standard_red {
   color: #CB0000;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_title {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_title {
   border-right: 1px solid #000;
   padding: 0 2rem;
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_title {
+  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_title {
     font-size: 1.6rem;
     line-height: 1.563;
     padding: 0 1rem;
   }
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_circle {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_circle {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   background: #000;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_circle.last::after {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_text_plan_circle.last::after {
   top: 3.5rem;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_circle_plan_circle,
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_circle_plan_circle_red {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_text_circle_plan_circle,
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_text_circle_plan_circle_red {
   position: relative;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_circle_red {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_circle_red {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   background-color: #CB0000;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_border,
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_border_red {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_text_plan_border,
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_text_plan_border_red {
   position: relative;
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_border::after {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_text_plan_border::after {
   position: absolute;
   content: "";
   width: 3rem;
@@ -2500,7 +2502,7 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .plan_text_plan_border_red::after {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody .plan_text_plan_border_red::after {
   position: absolute;
   content: "";
   width: 3rem;
@@ -2511,26 +2513,26 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container table.plan_table tbody .
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-section.plan_sec2 .plan_sec2.inner .plan_last_text {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_last_text {
   margin-top: 2.8rem;
   font-size: 1.7rem;
   line-height: 1.471;
 }
 @media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_last_text {
+  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_last_text {
     margin-top: 1.5rem;
     line-height: 1.875;
     font-size: 1.6rem;
   }
 }
-section.plan_sec2 .plan_sec2.inner .border_bottom {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .border_bottom {
   border-bottom: 1px solid #000;
 }
-section.plan_sec2 .plan_sec2.inner .plan_table tr.border_bottom th.plan_title {
+section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table tr.border_bottom th.plan_title {
   padding: 0 2rem;
 }
 @media screen and (max-width: 767px) {
-  section.plan_sec2 .plan_sec2.inner .plan_table tr.border_bottom th.plan_title {
+  section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table tr.border_bottom th.plan_title {
     padding: 0 1rem;
   }
 }
