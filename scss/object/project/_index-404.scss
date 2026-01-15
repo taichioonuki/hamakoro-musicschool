@@ -3,7 +3,7 @@
 @use "../../foundation/base" as *;
 @use "../../foundation/normalize";
 
-section.contact_error {
+.contact_error {
   padding: 6.8rem 0 9rem;
   text-align: center;
   @include mq($sm) {
@@ -17,5 +17,10 @@ section.contact_error {
         margin-bottom: 0.9rem;
       }
     }
+  }
+  .submit_button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

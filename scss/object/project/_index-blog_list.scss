@@ -8,16 +8,4 @@ section.blog {
   @include mq($sm) {
     padding: 4.7rem 0 20.3rem 0;
   }
-  div.blog_sec.inner {
-    div.blog_sec_container {
-      div.sec_title {
-        h2 {
-          margin-bottom: 3.4rem;
-          @include mq($sm) {
-            margin-bottom: 3.8rem;
-          }
-        }
-      }
-    }
-  }
 }

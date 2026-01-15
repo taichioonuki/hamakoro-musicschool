@@ -13,9 +13,16 @@
     <meta property="og:title" content="きたむらミュージックスクール" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hamakoro-i.com/music_school/" />
-    <meta property="og:image" content="https://hamakoro-i.com/music_school/img/top/music-pc_fv.jpg" />
+    <meta
+      property="og:image"
+      content="https://hamakoro-i.com/music_school/img/top/music-pc_fv.jpg"
+    />
     <title>きたむらミュージックスクール</title>
     <!---------------------------------スタイルシート-------------------------------------->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -32,7 +39,7 @@
     <header class="header">
       <div class="header_container">
         <a href="index.html">
-          <h1 class="header_logo">
+          <div class="header_logo">
             <picture>
               <source
                 srcset="img/icon_logo/music-school_logo_sp.jpg"
@@ -43,7 +50,7 @@
                 alt="きたむらミュージックスクールのロゴ"
               />
             </picture>
-          </h1>
+          </div>
         </a>
         <button class="toggle_menu js_toggolenav">
           <span class="toggle_line"></span>
@@ -87,7 +94,7 @@
         </div>
       </section>
       <nav class="breadcrumb">
-        <div class="breadcrumb_container">
+        <div class="breadcrumb_container inner">
           <ul class="breadcrumb_list">
             <li>
               <a class="breadcrumb_link" href="index.html">ホーム</a>
@@ -96,7 +103,7 @@
           </ul>
         </div>
       </nav>
-      <section class="contact_done">
+      <div class="contact_done">
         <div class="inner">
           <div class="contact_textbox">
             <p>
@@ -105,21 +112,17 @@
             </p>
           </div>
           <div class="submit_button_container">
-            <a href="index.html">
-              <button type="submit" class="c_button contact_button">
-                ホームへ戻る
-              </button></a
+            <a class="c_button contact_button" href="index.html">
+              ホームへ戻る</a
             >
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <div class="back-to-top" id="page-top">
-      <img
-        src="img/other/arrow-top.svg"
-        class="back-to-top_btn"
-        _alt="トップへ戻るボタン"
-      />
+      <div class="back-to-top_btn">
+        <img src="img/other/arrow-top.svg" alt="トップへ戻るボタン" />
+      </div>
       <a href="contact_form.html" class="c_button fixed-buttons__contact"
         >お問い合わせ</a
       >
@@ -143,10 +146,11 @@
           </ul>
         </nav>
         <div class="footer_logo">
-          <img
-            src="img/icon_logo/logo-white.svg"
-            alt="きたむらミュージックスクールのロゴ"
-          />
+          <a href="index.html">
+            <img
+              src="img/icon_logo/logo-white.svg"
+              alt="きたむらミュージックスクールのロゴ"
+          /></a>
         </div>
         <div class="footer_copyright">
           Copyright © 0000 KITAMURA music school Inc. All Rights
@@ -154,22 +158,22 @@
         <div class="footer_sns">
           <ul>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-twitter.svg" alt="twitter"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-facebook.svg" alt="facebook"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-youtube.svg" alt="youtube"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-instagram.svg" alt="instagram"
               /></a>
             </li>

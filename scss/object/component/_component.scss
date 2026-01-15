@@ -6,12 +6,14 @@
 //共通パーツ【ボタン】
 .c_button {
   background-color: $main_color;
-  width: 150px;
-  height: 45px;
-  padding: 6px 29px 4px 29px;
+  width: 15rem;
+  height: 4.5rem;
   color: #fff;
-  transition: 0.3s;
+  transition: background-color 0.4s, color 0.4s;
   border: 1px solid $main_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     background-color: #fff;
     color: $main_color;
@@ -34,10 +36,6 @@
 
 //共通パーツ【ページタイトル】
 .page_fv {
-  padding-top: 8rem;
-  @include mq($sm) {
-    padding-top: 5rem;
-  }
   .page_fv_container {
     position: relative;
     .page_fv_overlay {
@@ -47,15 +45,6 @@
       z-index: 1;
       pointer-events: none; // オーバーレイがクリックを邪魔しない
       mix-blend-mode: multiply;
-    }
-    picture {
-      position: relative;
-      z-index: 0;
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
     }
     h1.page_fv_title {
       position: absolute;
@@ -104,37 +93,47 @@ nav.breadcrumb {
       display: flex;
       align-items: center;
       font-size: 1.6rem;
-      flex-wrap: wrap;
-      line-height: 2.063;
-      padding-left: 10rem;
-      @include mq($sm) {
-        line-height: 2.063;
-        padding: 0.3rem 0 0rem 2rem;
-      }
-      li:not(:last-child)::after {
-        content: ">";
-        margin-left: 1.7rem;
-        display: inline-block;
+      column-gap: 1.7rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
       }
       li {
-        height: 5rem;
         display: flex;
         align-items: center;
+        flex-shrink: 0; // 横スクロール時に潰れないようにする
+        height: 5rem;
+        @include mq($sm) {
+          height: 3.6rem;
+        }
+        &:not(:last-child)::after {
+          content: ">";
+          font-size: 1.6rem;
+          margin-left: 1.7rem; // column-gapと合わせて調整
+          color: #000;
+        }
+
         a.breadcrumb_link {
           display: flex;
           align-items: center;
-          height: 100%;
+          text-decoration: none;
+          color: #000;
+          transition: opacity 0.4s;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
+
       li:last-child {
         line-height: 1.45;
         @include mq($sm) {
           line-height: 1.25;
         }
       }
-    }
-    .breadcrumb_item {
-      margin-left: 2rem;
     }
   }
 }
@@ -168,61 +167,64 @@ nav.breadcrumb {
 
 //共通パーツ リスト
 .blog_list {
+  margin-top: 4.2rem;
+  @include mq($sm) {
+    margin-top: 3.9rem;
+  }
   ul {
-    li.blog_item a {
-      display: flex;
-      gap: 5rem;
+    li.blog_item {
       margin-bottom: 7rem;
-      transition: transform 0.3s ease;
+      &:last-child {
+        margin-bottom: 0;
+      }
       @include mq($sm) {
-        flex-direction: column;
-        gap: 3rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3.9rem;
+      }
+      a {
+        display: flex;
+        gap: 5rem;
+        transition: opacity 0.4s;
         @include mq($sm) {
-          margin-bottom: 3.9rem;
+          flex-direction: column;
+          gap: 3rem;
         }
-      }
-      &:hover {
-        opacity: 0.7;
-        transform: scale(1.05) translateY(-4px);
-      }
-      .blog_item_left {
-        position: relative;
-        picture {
-          source {
-          }
-          img {
+        &:hover {
+          opacity: 0.7;
+        }
+        .blog_item_left {
+          position: relative;
+          .blog_item_img {
             width: 26rem;
             @include mq($sm) {
               width: 100%;
             }
           }
         }
-      }
-      .blog_item_right {
-        h3 {
-          font-size: 2rem;
-          line-height: 1.25;
-          font-weight: 700;
-          margin-bottom: 0.3rem;
-          @include mq($sm) {
-            margin-bottom: 0.6rem;
-            line-height: 1.5;
+        .blog_item_right {
+          h3 {
+            font-size: 2rem;
+            line-height: 1.25;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            @include mq($sm) {
+              margin-bottom: 0.6rem;
+              line-height: 1.5;
+            }
           }
-        }
-        .time_right {
-          font-size: 1.7rem;
-          line-height: 1.765;
-          @include mq($sm) {
-            text-align: right;
+          .time_right {
+            font-size: 1.7rem;
+            line-height: 1.765;
+            @include mq($sm) {
+              text-align: right;
+            }
           }
-        }
-        p {
-          margin-top: 1.1rem;
-          @include mq($sm) {
-            font-size: 1.6rem;
-            margin-top: 0.8rem;
-            line-height: 1.875;
+          p {
+            margin-top: 1.1rem;
+            @include mq($sm) {
+              font-size: 1.6rem;
+              margin-top: 0.8rem;
+              line-height: 1.875;
+            }
           }
         }
       }
@@ -238,34 +240,38 @@ nav.breadcrumb {
   bottom: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.6s ease, visibility 0.6s ease; // ← ふわっと出る設定
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  pointer-events: none;
+
   @media screen and (max-width: 767px) {
-    left: 0;
-    right: 0;
-    margin-right: 0;
+    left: auto;
+    right: 2rem;
     align-items: flex-end;
   }
+
   &.is-visible {
     opacity: 1;
     visibility: visible;
   }
 
-  img.back-to-top_btn {
+  .back-to-top_btn {
     width: 6.8rem;
     height: 6.8rem;
-    margin-right: 11.6rem;
     margin-bottom: 3rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: opacity 0.3s ease;
+    overflow: hidden;
+    transition: opacity 0.4s ease;
+    pointer-events: auto;
+
     &:hover {
-      opacity: 0.6;
+      opacity: 0.7;
     }
+
     @media screen and (max-width: 767px) {
-      margin-right: 2rem;
       margin-bottom: 2rem;
     }
   }
@@ -273,21 +279,19 @@ nav.breadcrumb {
   .fixed-buttons__contact {
     width: 30rem;
     height: 6rem;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-weight: 700;
     text-align: center;
     font-size: 2rem;
     line-height: 1.65;
-    padding: 1.7rem 0 1rem 0;
     letter-spacing: 0.4rem;
-    transition: opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    &:hover {
-      opacity: 0.7;
-    }
+    transition: opacity 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+    pointer-events: auto;
     @media screen and (max-width: 767px) {
       width: 33.5rem;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 1.4rem 0 1.3rem 0;
     }
   }
 }
@@ -306,7 +310,8 @@ div.article {
     }
     div.article_pagebox {
       a.article_link {
-        h2.article_title_prev {
+        transition: opacity 0.4s;
+        .article_title_prev {
           width: 26rem;
           background-color: #000;
           color: #fff;
@@ -325,13 +330,17 @@ div.article {
           display: flex;
           margin-top: 1.5rem;
           gap: 1.6rem;
-          height: 68px;
-          transition: opacity 0.3s ease;
-          &:hover {
-            opacity: 0.7;
+          @include mq($sm) {
+            gap: 0;
           }
-          img {
-            width: 98px;
+          .article_textbox_img {
+            flex-basis: 9.8rem;
+            width: 9.8rem;
+            flex-shrink: 0;
+            @include mq($sm) {
+              width: 0;
+              flex-basis: 0;
+            }
           }
           p.article_text {
             font-size: 1.6rem;
@@ -355,6 +364,9 @@ div.article {
             padding: 0.4rem 2rem 0.3rem 0;
           }
         }
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
   }
@@ -362,9 +374,9 @@ div.article {
 
 //関連記事
 div.related {
-  padding-top: 10rem;
+  margin-top: 10rem;
   @include mq($sm) {
-    padding-top: 7.1rem;
+    margin-top: 6.5rem;
   }
   div.related_content_box {
     h2 {
@@ -372,6 +384,7 @@ div.related {
       color: #fff;
       padding: 0.9rem 0 0.8rem 3rem;
       line-height: 1.833;
+      font-weight: 700;
       @include mq($sm) {
         text-align: center;
         font-size: 1.8rem;
@@ -390,57 +403,51 @@ div.related {
             margin-bottom: 0;
           }
         }
-        li.related_content_item a {
-          display: flex;
-          gap: 3rem;
+        li.related_content_item {
           margin-bottom: 3rem;
-          transition: transform 0.3s ease;
           @include mq($sm) {
-            gap: 2rem;
             margin-bottom: 2rem;
           }
-          &:hover {
-            transform: scale(1.05) translateY(-4px);
-            opacity: 0.7;
-          }
-          div.related_content_item_left {
-            position: relative;
-            flex-shrink: 0;
-            flex-basis: 200px;
+          a {
+            display: flex;
+            gap: 3rem;
+            transition: opacity 0.4s;
             @include mq($sm) {
-              flex-basis: 160px;
+              gap: 2rem;
             }
-            picture {
-              source {
-              }
-              img {
+            &:hover {
+              opacity: 0.7;
+            }
+            div.related_content_item_left {
+              position: relative;
+              .related_img {
+                width: 20rem;
+                height: 14rem;
                 @include mq($sm) {
                   width: 16rem;
                   height: 11rem;
                 }
               }
             }
-            span.img_title {
-            }
-          }
-          div.related_content_textbox {
-            h3 {
-              font-size: 2rem;
-              font-weight: 700;
-              line-height: 1.25;
-              margin-bottom: 1.3rem;
-              flex-grow: 1;
-              @include mq($sm) {
-                font-size: 1.7rem;
-                line-height: 1.647;
-                margin-bottom: 0.4rem;
-                margin-top: 1rem;
+            div.related_content_textbox {
+              h3 {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1.25;
+                margin-bottom: 1.3rem;
+                flex-grow: 1;
+                @include mq($sm) {
+                  font-size: 1.7rem;
+                  line-height: 1.647;
+                  margin-bottom: 0.4rem;
+                  margin-top: 1rem;
+                }
               }
-            }
-            p.time {
-              margin-left: 0.4rem;
-              @include mq($sm) {
-                margin-left: 0;
+              p.time {
+                margin-left: 0.4rem;
+                @include mq($sm) {
+                  margin-left: 0;
+                }
               }
             }
           }
@@ -455,8 +462,9 @@ div.related {
 
 //ページネーション
 .page {
+  margin-top: 7rem;
   @include mq($sm) {
-    padding-top: 2rem;
+    margin-top: 5.9rem;
   }
 
   .Pagination {
@@ -480,8 +488,7 @@ div.related {
     border: 1px solid #000;
     color: #000;
     font-weight: bold;
-    transition: all 0.15s linear;
-
+    transition: background-color 0.4s linear, color 0.4s linear;
     @include mq($sm) {
       width: 4.4rem;
       height: 4.4rem;

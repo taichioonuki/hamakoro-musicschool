@@ -13,16 +13,24 @@
     <meta property="og:title" content="きたむらミュージックスクール" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hamakoro-i.com/music_school/" />
-    <meta property="og:image" content="https://hamakoro-i.com/music_school/img/top/music-pc_fv.jpg" />
+    <meta
+      property="og:image"
+      content="https://hamakoro-i.com/music_school/img/top/music-pc_fv.jpg"
+    />
     <title>きたむらミュージックスクール</title>
     <!---------------------------------スタイルシート-------------------------------------->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -32,7 +40,7 @@
     <header class="header">
       <div class="header_container">
         <a href="index.html">
-          <h1 class="header_logo">
+          <div class="header_logo">
             <picture>
               <source
                 srcset="img/icon_logo/music-school_logo_sp.jpg"
@@ -43,7 +51,7 @@
                 alt="きたむらミュージックスクールのロゴ"
               />
             </picture>
-          </h1>
+          </div>
         </a>
         <button class="toggle_menu js_toggolenav">
           <span class="toggle_line"></span>
@@ -87,7 +95,7 @@
         </div>
       </section>
       <nav class="breadcrumb">
-        <div class="breadcrumb_container">
+        <div class="breadcrumb_container inner">
           <ul class="breadcrumb_list">
             <li>
               <a class="breadcrumb_link" href="index.html">ホーム</a>
@@ -105,7 +113,9 @@
             <div class="plan_fee_box">
               <p>入会金 39,000円</p>
             </div>
-            <img src="img/plan/plus_icon.svg" />
+            <div class="plan_fee_icon">
+              <img src="img/plan/plus_icon.svg" alt="プラス" />
+            </div>
             <div class="plan_fee_box">
               <p>月額料金</p>
             </div>
@@ -121,78 +131,118 @@
             <div class="sec_title">
               <h2>プラン内容・月額料金</h2>
             </div>
-            <div
-            class="school_content"
-              data-simplebar
-              data-simplebar-auto-hide="false"
-            >
-              <table class="plan_table">
-                <tr>
-                  <th class="plan_head-title blank"></th>
-                  <th class="plan_head-title basic">
-                    ベーシック<br class="sp_only" />プラン
-                  </th>
-                  <th class="plan_head-title standard">
-                    <span class="plan_recommend">おすすめ</span
-                    ><br />スタンダード<br class="sp_only" />プラン
-                  </th>
-                  <th class="plan_head-title premium">
-                    プレミアム<br class="sp_only" />プラン
-                  </th>
-                </tr>
-                <tr>
-                  <th class="plan_title_price">月額料金</th>
-                  <td class="plan_title_price_basic">39,000円</td>
-                  <td class="plan_title_price_standard_red">59,000円</td>
-                  <td class="plan_title_price_premium">128,000円</td>
-                </tr>
-                <tr>
-                  <th class="plan_title">マンツーマン授業</th>
-                  <td class="plan_text_plan_circle">週１回</td>
-                  <td class="plan_text_plan_circle_red">週２回</td>
-                  <td class="plan_text_plan_circle">無制限</td>
-                </tr>
-                <tr>
-                  <th class="plan_title">ビジネス基本講座</th>
-                  <td class="plan_text_circle_plan_circle"></td>
-                  <td class="plan_text_circle_plan_circle_red"></td>
-                  <td class="plan_text_circle_plan_circle"></td>
-                </tr>
-                <tr>
-                  <th class="plan_title">練習ROOM利用</th>
-                  <td class="plan_text_plan_circle">月10時間</td>
-                  <td class="plan_text_plan_circle_red">月20時間</td>
-                  <td class="plan_text_plan_circle">無制限</td>
-                </tr>
-                <tr>
-                  <th class="plan_title">ビジネスコンサル</th>
-                  <td class="plan_text_plan_border"></td>
-                  <td class="plan_text_plan_circle_red">月２回</td>
-                  <td class="plan_text_plan_circle">月３回</td>
-                </tr>
-                <tr class="border_bottom">
-                  <th class="plan_title">
-                    コミュニティ<br class="sp_only" />参加資格
-                  </th>
-                  <td class="plan_text_plan_border"></td>
-                  <td class="plan_text_plan_border"></td>
-                  <td class="plan_text_plan_circle last"></td>
-                </tr>
-              </table>
+            <div class="plan_table_wrapper">
+              <div
+                class="scroll-area"
+                data-simplebar
+                data-simplebar-auto-hide="false"
+              >
+                <table class="plan_table">
+                  <tr>
+                    <th class="plan_head-title blank"></th>
+                    <th class="plan_head-title basic">
+                      <div class="plan-head__inner">
+                        <p>ベーシック<br class="sp_only" />プラン</p>
+                      </div>
+                    </th>
+                    <th class="plan_head-title standard">
+                      <div class="plan-head__inner_red">
+                        <p>
+                          <span class="plan_recommend">おすすめ</span
+                          ><br />スタンダード<br class="sp_only" />プラン
+                        </p>
+                      </div>
+                    </th>
+                    <th class="plan_head-title premium">
+                      <div class="plan-head__inner">
+                        <p>プレミアム<br class="sp_only" />プラン</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="plan_title_price">月額料金</th>
+                    <td class="plan_title_price_basic">39,000円</td>
+                    <td class="plan_title_price_standard_red">59,000円</td>
+                    <td class="plan_title_price_premium">128,000円</td>
+                  </tr>
+                  <tr>
+                    <th class="plan_title">マンツーマン授業</th>
+                    <td class="plan_text_plan_circle">
+                      <span class="plan_circle"></span>
+                      <p>週１回</p>
+                    </td>
+                    <td class="plan_text_plan_circle_red">
+                      <span class="plan_circle_red"></span>
+                      <p>週２回</p>
+                    </td>
+                    <td class="plan_text_plan_circle">
+                      <span class="plan_circle"></span>
+                      <p>無制限</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="plan_title">ビジネス基本講座</th>
+                    <td class="plan_text_circle_plan_circle">
+                      <span class="plan_circle"></span>
+                    </td>
+                    <td class="plan_text_circle_plan_circle_red">
+                      <span class="plan_circle_red"></span>
+                    </td>
+                    <td class="plan_text_circle_plan_circle">
+                      <span class="plan_circle"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="plan_title">練習ROOM利用</th>
+                    <td class="plan_text_plan_circle">
+                      <span class="plan_circle"></span>
+                      <p>月10時間</p>
+                    </td>
+                    <td class="plan_text_plan_circle_red">
+                      <span class="plan_circle_red"></span>
+                      <p>月20時間</p>
+                    </td>
+                    <td class="plan_text_plan_circle">
+                      <span class="plan_circle"></span>
+                      <p>無制限</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="plan_title">ビジネスコンサル</th>
+                    <td class="plan_text_plan_border"></td>
+                    <td class="plan_text_plan_circle_red">
+                      <span class="plan_circle_red"></span>
+                      <p>月２回</p>
+                    </td>
+                    <td class="plan_text_plan_circle">
+                      <span class="plan_circle"></span>
+                      <p>月３回</p>
+                    </td>
+                  </tr>
+                  <tr class="border_bottom">
+                    <th class="plan_title">
+                      コミュニティ<br class="sp_only" />参加資格
+                    </th>
+                    <td class="plan_text_plan_border"></td>
+                    <td class="plan_text_plan_border"></td>
+                    <td class="plan_text_plan_circle last">
+                      <span class="plan_circle"></span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p class="plan_last_text">
+                ※各サービスは１回ごとのオプション追加が可能です。詳しくは事務局までお問い合わせください。
+              </p>
             </div>
-            <p class="plan_last_text">
-              ※各サービスは１回ごとのオプション追加が可能です。詳しくは事務局までお問い合わせください。
-            </p>
           </div>
         </div>
       </section>
     </main>
     <div class="back-to-top" id="page-top">
-      <img
-        src="img/other/arrow-top.svg"
-        class="back-to-top_btn"
-        _alt="トップへ戻るボタン"
-      />
+      <div class="back-to-top_btn">
+        <img src="img/other/arrow-top.svg" alt="トップへ戻るボタン" />
+      </div>
       <a href="contact_form.html" class="c_button fixed-buttons__contact"
         >お問い合わせ</a
       >
@@ -216,10 +266,11 @@
           </ul>
         </nav>
         <div class="footer_logo">
-          <img
-            src="img/icon_logo/logo-white.svg"
-            alt="きたむらミュージックスクールのロゴ"
-          />
+          <a href="index.html">
+            <img
+              src="img/icon_logo/logo-white.svg"
+              alt="きたむらミュージックスクールのロゴ"
+          /></a>
         </div>
         <div class="footer_copyright">
           Copyright © 0000 KITAMURA music school Inc. All Rights
@@ -227,22 +278,22 @@
         <div class="footer_sns">
           <ul>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-twitter.svg" alt="twitter"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-facebook.svg" alt="facebook"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-youtube.svg" alt="youtube"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-instagram.svg" alt="instagram"
               /></a>
             </li>
@@ -250,7 +301,14 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.js"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
