@@ -329,10 +329,6 @@ section.sec1_blog_details {
                   @include mq($sm) {
                     height: 11rem;
                   }
-                  img {
-                    width: 100%;
-                    height: auto;
-                  }
                 }
                 // h3からp(post_item_title)に変更
                 .post_item_title {

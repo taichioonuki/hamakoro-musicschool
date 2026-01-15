@@ -123,11 +123,10 @@ section.result {
               li.related_content_item {
                 a {
                   div.related_content_item_left {
-                    img {
-                      width: 26rem;
-                      @include mq($sm) {
-                        width: 16rem;
-                      }
+                    width: 26rem;
+                    flex-shrink: 0;
+                    @include mq($sm) {
+                      width: 16rem;
                     }
                     span.img_title.related_img_title {
                       width: 10rem;

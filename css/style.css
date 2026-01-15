@@ -1090,7 +1090,7 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
   opacity: 1;
   visibility: visible;
 }
-#page-top.back-to-top img.back-to-top_btn {
+#page-top.back-to-top .back-to-top_btn {
   width: 6.8rem;
   height: 6.8rem;
   margin-bottom: 3rem;
@@ -1101,11 +1101,11 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
   transition: opacity 0.4s ease;
   pointer-events: auto;
 }
-#page-top.back-to-top img.back-to-top_btn:hover {
+#page-top.back-to-top .back-to-top_btn:hover {
   opacity: 0.7;
 }
 @media screen and (max-width: 767px) {
-  #page-top.back-to-top img.back-to-top_btn {
+  #page-top.back-to-top .back-to-top_btn {
     margin-bottom: 2rem;
   }
 }
@@ -2952,10 +2952,6 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts 
     height: 11rem;
   }
 }
-section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper .post_img img {
-  width: 100%;
-  height: auto;
-}
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper .post_item_title {
   font-size: 1.7rem;
   line-height: 1.647;
@@ -3539,11 +3535,13 @@ section.result div.result_details.inner div.result_details_content div.article d
     width: 100%;
   }
 }
-section.result div.result_details.inner div.result_details_content div.related.result_content div.related_content_box div.related_content ul li.related_content_item a div.related_content_item_left img {
+section.result div.result_details.inner div.result_details_content div.related.result_content div.related_content_box div.related_content ul li.related_content_item a div.related_content_item_left {
   width: 26rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 @media screen and (max-width: 767px) {
-  section.result div.result_details.inner div.result_details_content div.related.result_content div.related_content_box div.related_content ul li.related_content_item a div.related_content_item_left img {
+  section.result div.result_details.inner div.result_details_content div.related.result_content div.related_content_box div.related_content ul li.related_content_item a div.related_content_item_left {
     width: 16rem;
   }
 }
