@@ -22,7 +22,7 @@ section.page_fv {
       column-gap: 10.6rem;
       justify-content: center;
       margin-top: 3.5rem;
-      @media (min-width: 767px) {
+      @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
         margin-top: 3.7rem;
         margin-bottom: 7.1rem;

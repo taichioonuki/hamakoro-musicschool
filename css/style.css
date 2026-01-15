@@ -472,7 +472,7 @@ img {
     display: none !important;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .sp_only {
     display: none !important;
   }
@@ -3364,7 +3364,7 @@ section.page_fv .page_fv_overlay.result_overlay {
           justify-content: center;
   margin-top: 3.5rem;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .result_container .result.inner .achievement_grid {
     grid-template-columns: 1fr 1fr;
     margin-top: 3.7rem;
