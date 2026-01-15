@@ -1773,11 +1773,6 @@ section.sec5 {
     padding: 4.6rem 0 3.7rem;
   }
 }
-@media screen and (max-width: 767px) {
-  section.sec5 .sec5.inner .sec5_container {
-    padding-left: 2rem;
-  }
-}
 section.sec5 .sec5.inner .sec5_container .guide_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1794,7 +1789,7 @@ section.sec5 .sec5.inner .sec5_container .guide_content {
 }
 @media screen and (max-width: 767px) {
   section.sec5 .sec5.inner .sec5_container .guide_content {
-    padding-left: 1rem;
+    padding-left: 3rem;
     gap: 3.6rem;
     margin-top: 3.6rem;
   }
@@ -1803,15 +1798,15 @@ section.sec5 .sec5.inner .sec5_container .guide_content::before {
   content: "";
   position: absolute;
   top: 2rem;
-  left: 4.2rem;
+  left: 6.3rem;
   width: 0.3rem;
-  height: calc(100% - 2.5rem);
+  height: calc(100% - 0.5rem);
   background-color: #cb0000;
   z-index: 1;
 }
 @media screen and (max-width: 767px) {
   section.sec5 .sec5.inner .sec5_container .guide_content::before {
-    left: -0.2rem;
+    left: 1.8rem;
     height: calc(100% - 3rem);
   }
 }
@@ -1834,8 +1829,7 @@ section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 2rem;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
   }
 }
 section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_1 span.circle,
@@ -1843,11 +1837,19 @@ section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_2 span.circl
 section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_3 span.circle,
 section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_4 span.circle {
   position: absolute;
-  left: -2rem;
+  left: 0rem;
   top: 0.5rem;
   width: 2rem;
   height: 2rem;
   z-index: 3;
+}
+@media screen and (max-width: 767px) {
+  section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_1 span.circle,
+  section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_2 span.circle,
+  section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_3 span.circle,
+  section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_4 span.circle {
+    left: -2rem;
+  }
 }
 section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_1 span.circle::after,
 section.sec5 .sec5.inner .sec5_container .guide_content .guide_list_2 span.circle::after,
@@ -1903,15 +1905,15 @@ section.sec5 .sec5.inner .sec5_container .guide_content .arrow::after {
   background-image: url(../img/other/vector.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  top: 2.4rem;
-  left: -2.9rem;
-  width: 3.1rem;
-  height: 1.5rem;
+  top: 4rem;
+  left: -1.4rem;
+  width: 3.5rem;
+  height: 2rem;
 }
 @media screen and (max-width: 767px) {
   section.sec5 .sec5.inner .sec5_container .guide_content .arrow::after {
-    left: -7.4rem;
-    top: 1.7rem;
+    left: -5.8rem;
+    top: 1.2rem;
   }
 }
 section.sec5 .sec5.inner .sec5_container .guide_content .guide_content::before {
