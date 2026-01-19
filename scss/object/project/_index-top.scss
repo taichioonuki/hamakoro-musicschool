@@ -427,11 +427,11 @@ section.sec5 {
             background-size: contain;
             background-repeat: no-repeat;
             top: 4rem;
-            left: -1.4rem;
+            left: -1.3rem;
             width: 3.5rem;
             height: 2rem;
             @include mq($sm) {
-              left: -5.8rem;
+              left: -5.75rem;
               top: 1.2rem;
             }
           }
