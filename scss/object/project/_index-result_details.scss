@@ -4,19 +4,13 @@
 @use "../../foundation/normalize";
 
 section.profile_card {
-  padding: 7rem 0 6rem;
+  padding: 7rem 0 5.5rem;
   @include mq($sm) {
     padding: 5rem 0 4rem;
   }
   .profile.inner {
     .profile_img {
       position: relative;
-      picture {
-        img {
-          max-width: 100%;
-          height: auto;
-        }
-      }
       span.img_title {
         width: 10rem;
       }
@@ -27,6 +21,7 @@ section.profile_card {
         font-size: 2.5rem;
         line-height: 1.6;
         margin: 5rem 0 1.5rem;
+        font-weight: 700;
         @include mq($sm) {
           font-size: 2rem;
           line-height: 1.5;
@@ -52,31 +47,32 @@ section.profile_card {
         }
         .profile_card_table-wrapper {
           table.profile_card_table {
-            width: 100%;
             border: 0.5px solid #707070;
+            border-collapse: collapse;
             tbody {
               table,
               th,
               td {
                 border: 0.5px solid #333;
-                width: 260px;
+                width: 26rem;
+                vertical-align: middle;
               }
               tr {
                 th {
                   background: #e5e5e5;
-                  width: 140px;
+                  width: 14rem;
                   font-weight: 700;
-                  padding: 0.7rem 2rem 0;
+                  padding: 0.4rem 2rem;
                   @include mq($sm) {
-                    padding: 0.7rem 1rem 0;
+                    padding: 0.4rem 1rem;
                     font-size: 1.8rem;
                     line-height: 1.667;
                   }
                 }
                 td {
-                  padding: 0.7rem 2rem 0;
+                  padding: 0.4rem 2rem;
                   @include mq($sm) {
-                    padding: 0.7rem 1rem 0;
+                    padding: 0.4rem 1rem;
                     font-size: 1.8rem;
                     line-height: 1.667;
                   }
@@ -91,12 +87,12 @@ section.profile_card {
 }
 
 section.result {
+  padding-bottom: 15.7rem;
+  @include mq($sm) {
+    padding-bottom: 19.7rem;
+  }
   div.result_details.inner {
     div.result_details_content {
-      padding-bottom: 15.7rem;
-      @include mq($sm) {
-        padding-bottom: 19.7rem;
-      }
       div.article {
         margin-top: 0;
         div.article_page.result_page {
@@ -109,8 +105,8 @@ section.result {
             max-width: 50%;
             a.article_link {
               display: block;
-              h2.article_title_prev.result_details_prev,
-              h2.article_title_next.result_details_next {
+              .article_title_prev.result_details_prev,
+              .article_title_next.result_details_next {
                 width: 34rem;
                 @include mq($sm) {
                   width: 100%;
@@ -127,11 +123,10 @@ section.result {
               li.related_content_item {
                 a {
                   div.related_content_item_left {
-                    img {
-                      width: 26rem;
-                      @include mq($sm) {
-                        width: 16rem;
-                      }
+                    width: 26rem;
+                    flex-shrink: 0;
+                    @include mq($sm) {
+                      width: 16rem;
                     }
                     span.img_title.related_img_title {
                       width: 10rem;

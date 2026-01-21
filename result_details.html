@@ -13,9 +13,16 @@
     <meta property="og:title" content="きたむらミュージックスクール" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hamakoro-i.com/music_school/" />
-    <meta property="og:image" content="https://hamakoro-i.com/music_school/img/top/music-pc_fv.jpg" />
+    <meta
+      property="og:image"
+      content="https://hamakoro-i.com/music_school/img/top/music-pc_fv.jpg"
+    />
     <title>きたむらミュージックスクール</title>
     <!---------------------------------スタイルシート-------------------------------------->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -32,7 +39,7 @@
     <header class="header">
       <div class="header_container">
         <a href="index.html">
-          <h1 class="header_logo">
+          <div class="header_logo">
             <picture>
               <source
                 srcset="img/icon_logo/music-school_logo_sp.jpg"
@@ -43,7 +50,7 @@
                 alt="きたむらミュージックスクールのロゴ"
               />
             </picture>
-          </h1>
+          </div>
         </a>
         <button class="toggle_menu js_toggolenav">
           <span class="toggle_line"></span>
@@ -67,11 +74,8 @@
       </div>
     </header>
     <main>
-      <section class="page_fv">
-        <div class="page_fv_container"></div>
-      </section>
       <nav class="breadcrumb">
-        <div class="breadcrumb_container">
+        <div class="breadcrumb_container inner">
           <ul class="breadcrumb_list">
             <li>
               <a class="breadcrumb_link" href="index.html">ホーム</a>
@@ -79,7 +83,10 @@
             <li class="breadcrumb_item">
               <a class="breadcrumb_link" href="result_list.html">卒業実績</a>
             </li>
-            <li class="breadcrumb_item">ポップス</li>
+            <li class="breadcrumb_item">
+              <a class="breadcrumb_link" href="result_list.html">ポップス</a>
+            </li>
+
             <li class="breadcrumb_item">
               タイトルが入ります。タイトルが入ります。タイトルが入ります。
             </li>
@@ -108,7 +115,7 @@
             <h1 class="profile_card_title">
               タイトルが入ります。タイトルが入ります。タイトルが入ります。
             </h1>
-            <time>0000.00.00</time>
+            <time datetime="2025-12-25">0000.00.00</time>
             <div class="profile_card_content">
               <div class="profile_card_table-wrapper">
                 <table class="profile_card_table">
@@ -150,14 +157,17 @@
               <div class="article_page result_page">
                 <div class="article_pagebox">
                   <a href="result_details.html" class="article_link">
-                    <h2 class="article_title_prev result_details_prev">
+                    <div class="article_title_prev result_details_prev">
                       ◀︎ 前の記事
-                    </h2>
+                    </div>
                     <div class="article_textbox">
-                      <img
-                        src="img/blog_details/blog_pc_03.jpg"
-                        class="pc_only"
-                      />
+                      <div class="article_textbox_img">
+                        <img
+                          src="img/blog_details/blog_pc_03.jpg"
+                          class="pc_only"
+                          alt="歌う女性の画像"
+                        />
+                      </div>
                       <p class="article_text">
                         タイトルが入ります。タイトルが入ります。タイトルが入
                       </p>
@@ -166,15 +176,17 @@
                 </div>
                 <div class="article_pagebox">
                   <a href="result_details.html" class="article_link">
-                    <h2 class="article_title_next result_details_next">
+                    <div class="article_title_next result_details_next">
                       次の記事 ▶︎
-                    </h2>
+                    </div>
                     <div class="article_textbox">
-                      <img
-                        src="img/blog_details/blog_pc_03.jpg"
-                        class="pc_only"
-                        alt="歌う女性の画像"
-                      />
+                      <div class="article_textbox_img">
+                        <img
+                          src="img/blog_details/blog_pc_03.jpg"
+                          class="pc_only"
+                          alt="歌う女性の画像"
+                        />
+                      </div>
                       <p class="article_text">
                         タイトルが入ります。タイトルが入ります。タイトルが入
                       </p>
@@ -207,7 +219,7 @@
                             タイトルが入ります。タイトルが入ります。タイトルが入ります。
                           </h3>
                           <h3 class="sp_only">タイトルが入ります。タイトル</h3>
-                          <p><time>0000.00.00</time></p>
+                          <p><time datetime="2025-12-25">0000.00.00</time></p>
                         </div>
                       </a>
                     </li>
@@ -230,7 +242,7 @@
                             タイトルが入ります。タイトルが入ります。タイトルが入ります。
                           </h3>
                           <h3 class="sp_only">タイトルが入ります。タイトル</h3>
-                          <p><time>0000.00.00</time></p>
+                          <p><time datetime="2025-12-25">0000.00.00</time></p>
                         </div>
                       </a>
                     </li>
@@ -253,7 +265,7 @@
                             タイトルが入ります。タイトルが入ります。タイトルが入ります。
                           </h3>
                           <h3 class="sp_only">タイトルが入ります。タイトル</h3>
-                          <p><time>0000.00.00</time></p>
+                          <p><time datetime="2025-12-25">0000.00.00</time></p>
                         </div>
                       </a>
                     </li>
@@ -266,11 +278,9 @@
       </section>
     </main>
     <div class="back-to-top" id="page-top">
-      <img
-        src="img/other/arrow-top.svg"
-        class="back-to-top_btn"
-        _alt="トップへ戻るボタン"
-      />
+      <div class="back-to-top_btn">
+        <img src="img/other/arrow-top.svg" alt="トップへ戻るボタン" />
+      </div>
       <a href="contact_form.html" class="c_button fixed-buttons__contact"
         >お問い合わせ</a
       >
@@ -294,10 +304,11 @@
           </ul>
         </nav>
         <div class="footer_logo">
-          <img
-            src="img/icon_logo/logo-white.svg"
-            alt="きたむらミュージックスクールのロゴ"
-          />
+          <a href="index.html">
+            <img
+              src="img/icon_logo/logo-white.svg"
+              alt="きたむらミュージックスクールのロゴ"
+          /></a>
         </div>
         <div class="footer_copyright">
           Copyright © 0000 KITAMURA music school Inc. All Rights
@@ -305,22 +316,22 @@
         <div class="footer_sns">
           <ul>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-twitter.svg" alt="twitter"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-facebook.svg" alt="facebook"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-youtube.svg" alt="youtube"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-instagram.svg" alt="instagram"
               /></a>
             </li>

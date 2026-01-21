@@ -2,11 +2,6 @@
 // 色の変数
 $main_color:#CB0000;
 
-// フォントサイズの変数
-$font-size-base: 16px;
-$font-size-sm: 14px;
-$font-size-lg: 18px;
-
 $sm: 767px;
 
 @mixin mq($breakpoint) {

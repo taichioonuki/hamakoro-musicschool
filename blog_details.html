@@ -20,6 +20,10 @@
     <title>きたむらミュージックスクール</title>
     <!---------------------------------スタイルシート-------------------------------------->
     <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
@@ -35,7 +39,7 @@
     <header class="header">
       <div class="header_container">
         <a href="index.html">
-          <h1 class="header_logo">
+          <div class="header_logo">
             <picture>
               <source
                 srcset="img/icon_logo/music-school_logo_sp.jpg"
@@ -46,7 +50,7 @@
                 alt="きたむらミュージックスクールのロゴ"
               />
             </picture>
-          </h1>
+          </div>
         </a>
         <button class="toggle_menu js_toggolenav">
           <span class="toggle_line"></span>
@@ -70,92 +74,136 @@
       </div>
     </header>
     <main>
-      <section class="page_fv">
-        <nav class="breadcrumb">
-          <div class="breadcrumb_container">
-            <ul class="breadcrumb_list">
-              <li>
-                <a class="breadcrumb_link" href="index.html">ホーム</a>
-              </li>
-              <li class="breadcrumb_item">
-                <a class="breadcrumb_link" href="blog_list.html">ブログ</a>
-              </li>
-              <li class="breadcrumb_item">ギター</li>
-              <li class="breadcrumb_item">
-                アルペジオが劇的に向上する３つの習慣
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </section>
+      <nav class="breadcrumb">
+        <div class="breadcrumb_container inner">
+          <ul class="breadcrumb_list">
+            <li>
+              <a class="breadcrumb_link" href="index.html">ホーム</a>
+            </li>
+            <li class="breadcrumb_item">
+              <a class="breadcrumb_link" href="blog_list.html">ブログ</a>
+            </li>
+            <li class="breadcrumb_item">
+              <a class="breadcrumb_link" href="blog_list.html">ギター</a>
+            </li>
+            <li class="breadcrumb_item">
+              アルペジオが劇的に向上する３つの習慣
+            </li>
+          </ul>
+        </div>
+      </nav>
       <section class="sec1_blog_details">
         <div class="sec1_blog_details inner">
           <div class="sec1_left_content">
-            <picture>
-              <source
-                srcset="img/sp/blog_details/blog_sp_01.jpg"
-                media="(max-width: 767px)"
-              />
-              <img
-                src="img/blog_details/blog_pc_01.jpg"
-                alt="ギター"
-                width="1080"
-                height="200"
-                decoding="async"
-              />
-            </picture>
+            <div class="sec1_left_img">
+              <picture>
+                <source
+                  srcset="img/sp/blog_details/blog_sp_01.jpg"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="img/blog_details/blog_pc_01.jpg"
+                  alt="ギター"
+                  width="1080"
+                  height="200"
+                  decoding="async"
+                />
+              </picture>
+            </div>
             <span class="img_title">ギター</span>
-            <h1>アルペジオが劇的に向上する3つの習慣</h1>
-            <time>0000.00.00</time>
+            <h1>アルペジオが劇的に向上する３つの習慣</h1>
+            <time datetime="2025-12-25">0000.00.00</time>
             <div class="sns_content">
               <ul class="sns_list">
                 <li class="sns_item">
-                  <picture>
-                    <source
-                      srcset="img/icon_logo/facebook_sp.svg"
-                      media="(max-width: 767px)"
-                    />
-                    <img
-                      src="img/icon_logo/facebook.svg"
-                      alt="フェイスブック"
-                    />
-                  </picture>
+                  <div class="sns_img_fb">
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="img/icon_logo/facebook_sp.svg"
+                          media="(max-width: 767px)"
+                        />
+                        <img
+                          src="img/icon_logo/facebook.svg"
+                          alt="フェイスブック"
+                          width="40"
+                          height="40"
+                        />
+                      </picture>
+                    </a>
+                  </div>
                 </li>
                 <li class="sns_item">
-                  <picture>
-                    <source
-                      srcset="img/icon_logo/twitter_sp.svg"
-                      media="(max-width: 767px)"
-                    />
-                    <img src="img/icon_logo/twitter.svg" alt="ツイッター" />
-                  </picture>
+                  <div class="sns_img_tw">
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="img/icon_logo/twitter_sp.svg"
+                          media="(max-width: 767px)"
+                        />
+                        <img
+                          src="img/icon_logo/twitter.svg"
+                          alt="ツイッター"
+                          width="40"
+                          height="40"
+                        />
+                      </picture>
+                    </a>
+                  </div>
                 </li>
                 <li class="sns_item">
-                  <picture>
-                    <source
-                      srcset="img/icon_logo/hatena_sp.svg"
-                      media="(max-width: 767px)"
-                    />
-                    <img src="img/icon_logo/hatena.svg" alt="はてな" />
-                  </picture>
+                  <div class="sns_img_hatana">
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="img/icon_logo/hatena_sp.svg"
+                          media="(max-width: 767px)"
+                        />
+                        <img
+                          src="img/icon_logo/hatena.svg"
+                          alt="はてな"
+                          width="40"
+                          height="40"
+                        />
+                      </picture>
+                    </a>
+                  </div>
                 </li>
                 <li class="sns_item">
-                  <picture>
-                    <source
-                      srcset="img/icon_logo/line_sp.svg"
-                      media="(max-width: 767px)"
-                    />
-                    <img src="img/icon_logo/line.svg" alt="ライン" />
-                  </picture>
+                  <div class="sns_img_line">
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="img/icon_logo/line_sp.svg"
+                          media="(max-width: 767px)"
+                        />
+                        <img
+                          src="img/icon_logo/line.svg"
+                          alt="ライン"
+                          width="40"
+                          height="40"
+                        />
+                      </picture>
+                    </a>
+                  </div>
                 </li>
                 <li class="sns_item">
-                  <picture>
-                    <source
-                      srcset="img/icon_logo/pocket_sp.svg"
-                      media="(max-width: 767px)"
-                    />
-                    <img src="img/icon_logo/pocket.svg" alt="ポケット" />
-                  </picture>
+                  <div class="sns_img_pocket">
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="img/icon_logo/pocket_sp.svg"
+                          media="(max-width: 767px)"
+                        />
+                        <img
+                          src="img/icon_logo/pocket.svg"
+                          alt="ポケット"
+                          width="40"
+                          height="40"
+                        />
+                      </picture>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -173,15 +221,18 @@
               <p class="text_bottom sp_only">
                 本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
               </p>
-              <img
-                src="img/blog_details/blog_pc_02.jpg"
-                alt="犬を抱いている男性がピアノを弾く"
-              />
+              <div class="text_bottom_img">
+                <img
+                  src="img/blog_details/blog_pc_02.jpg"
+                  alt="犬を抱いている男性がピアノを弾く"
+                />
+              </div>
               <ul>
                 <li>・リストが入ります</li>
                 <li>・リストが入ります</li>
                 <li>・リストが入ります</li>
               </ul>
+              <hr />
             </div>
             <div class="blog_details_content02">
               <h3>H3見出しが入ります。H3見出しが入ります。</h3>
@@ -196,13 +247,15 @@
               <div class="article_page">
                 <div class="article_pagebox">
                   <a href="blog_details.html" class="article_link">
-                    <h2 class="article_title_prev">◀︎ 前の記事</h2>
+                    <div class="article_title_prev">◀︎ 前の記事</div>
                     <div class="article_textbox">
-                      <img
-                        src="img/blog_details/blog_pc_03.jpg"
-                        class="pc_only"
-                        alt="歌う女性の画像"
-                      />
+                      <div class="article_textbox_img">
+                        <img
+                          src="img/blog_details/blog_pc_03.jpg"
+                          class="pc_only"
+                          alt="歌う女性の画像"
+                        />
+                      </div>
                       <p class="article_text">
                         タイトルが入ります。タイトルが入ります。タイトルが入
                       </p>
@@ -211,13 +264,15 @@
                 </div>
                 <div class="article_pagebox">
                   <a href="blog_details.html" class="article_link">
-                    <h2 class="article_title_next">次の記事 ▶︎</h2>
+                    <div class="article_title_next">次の記事 ▶︎</div>
                     <div class="article_textbox">
-                      <img
-                        src="img/blog_details/blog_pc_03.jpg"
-                        class="pc_only"
-                        alt="歌う女性の画像"
-                      />
+                      <div class="article_textbox_img">
+                        <img
+                          src="img/blog_details/blog_pc_03.jpg"
+                          class="pc_only"
+                          alt="歌う女性の画像"
+                        />
+                      </div>
                       <p class="article_text">
                         タイトルが入ります。タイトルが入ります。タイトルが入
                       </p>
@@ -240,6 +295,8 @@
                               media="(max-width: 767px)"
                             />
                             <img
+                              class="related_img"
+                              class="related_img"
                               src="img/blog/blog_pc_03.jpg"
                               alt="歌う女性の画像"
                               width="1080"
@@ -256,7 +313,9 @@
                             タイトルが入ります。タイトルが入ります。タイトルが入ります。
                           </h3>
                           <h3 class="sp_only">タイトルが入ります。タイトル</h3>
-                          <p class="time"><time>0000.00.00</time></p>
+                          <p class="time">
+                            <time datetime="2025-12-25">0000.00.00</time>
+                          </p>
                         </div>
                       </a>
                     </li>
@@ -269,6 +328,8 @@
                               media="(max-width: 767px)"
                             />
                             <img
+                              class="related_img"
+                              class="related_img"
                               src="img/blog/blog_pc_03.jpg"
                               alt="歌う女性の画像"
                               width="1080"
@@ -285,7 +346,9 @@
                             タイトルが入ります。タイトルが入ります。タイトルが入ります。
                           </h3>
                           <h3 class="sp_only">タイトルが入ります。タイトル</h3>
-                          <p class="time"><time>0000.00.00</time></p>
+                          <p class="time">
+                            <time datetime="2025-12-25">0000.00.00</time>
+                          </p>
                         </div>
                       </a>
                     </li>
@@ -298,6 +361,8 @@
                               media="(max-width: 767px)"
                             />
                             <img
+                              class="related_img"
+                              class="related_img"
                               src="img/blog/blog_pc_03.jpg"
                               alt="歌う女性の画像"
                               width="1080"
@@ -314,7 +379,9 @@
                             タイトルが入ります。タイトルが入ります。タイトルが入ります。
                           </h3>
                           <h3 class="sp_only">タイトルが入ります。タイトル</h3>
-                          <p class="time"><time>0000.00.00</time></p>
+                          <p class="time">
+                            <time datetime="2025-12-25">0000.00.00</time>
+                          </p>
                         </div>
                       </a>
                     </li>
@@ -324,16 +391,16 @@
             </div>
           </div>
           <aside class="sidebar">
-            <section class="sidebar_mail">
-              <h3 class="sidebar_title">無料メールマガジン</h3>
+            <div class="sidebar_mail">
+              <p class="sidebar_title">無料メールマガジン</p>
               <div class="banner">
-                <a href=""
+                <a href="#"
                   ><img src="img/blog_details/banner.jpg" alt="バナー広告"
                 /></a>
               </div>
-            </section>
-            <section class="sidebar_search">
-              <h3 class="sidebar_title">ブログ内を検索</h3>
+            </div>
+            <div class="sidebar_search">
+              <p class="sidebar_title">ブログ内を検索</p>
               <div class="search_box">
                 <form
                   action="search.html"
@@ -351,32 +418,50 @@
                   </div>
                 </form>
               </div>
-            </section>
-            <section class="sidebar_posts">
-              <h3 class="sidebar_title">おすすめの記事</h3>
+            </div>
+            <div class="sidebar_posts">
+              <p class="sidebar_title">おすすめの記事</p>
               <ul class="post_list">
                 <li class="post_item">
-                  <a href="#" class="post_link">
-                    <img src="img/blog_details/side_img.jpg" />
-                    <p class="post_title">タイトルが入ります。タイトル</p>
+                  <a href="blog_details.html" class="post_link">
+                    <div class="post_img_wrapper">
+                      <img
+                        class="post_img"
+                        src="img/blog_details/side_img.jpg"
+                        alt="タイトル"
+                      />
+                    </div>
+                    <p class="post_item_title">タイトルが入ります。タイトル</p>
                   </a>
                 </li>
                 <li class="post_item">
-                  <a href="#" class="post_link">
-                    <img src="img/blog_details/side_img.jpg" />
-                    <p class="post_title">タイトルが入ります。タイトル</p>
+                  <a href="blog_details.html" class="post_link">
+                    <div class="post_img_wrapper">
+                      <img
+                        class="post_img"
+                        src="img/blog_details/side_img.jpg"
+                        alt="タイトル"
+                      />
+                    </div>
+                    <p class="post_item_title">タイトルが入ります。タイトル</p>
                   </a>
                 </li>
                 <li class="post_item">
-                  <a href="#" class="post_link">
-                    <img src="img/blog_details/side_img.jpg" />
-                    <p class="post_title">タイトルが入ります。タイトル</p>
+                  <a href="blog_details.html" class="post_link">
+                    <div class="post_img_wrapper">
+                      <img
+                        class="post_img"
+                        src="img/blog_details/side_img.jpg"
+                        alt="タイトル"
+                      />
+                    </div>
+                    <p class="post_item_title">タイトルが入ります。タイトル</p>
                   </a>
                 </li>
               </ul>
-            </section>
-            <section class="sidebar_category">
-              <h3 class="sidebar_title">カテゴリー</h3>
+            </div>
+            <div class="sidebar_category">
+              <p class="sidebar_title">カテゴリー</p>
               <ul class="category_list">
                 <li class="category_item">
                   <a href="#" class="category_link">カテゴリー</a>
@@ -394,17 +479,15 @@
                   <a href="#" class="category_link">カテゴリー</a>
                 </li>
               </ul>
-            </section>
+            </div>
           </aside>
         </div>
       </section>
     </main>
     <div class="back-to-top" id="page-top">
-      <img
-        src="img/other/arrow-top.svg"
-        class="back-to-top_btn"
-        _alt="トップへ戻るボタン"
-      />
+      <div class="back-to-top_btn">
+        <img src="img/other/arrow-top.svg" alt="トップへ戻るボタン" />
+      </div>
       <a href="contact_form.html" class="c_button fixed-buttons__contact"
         >お問い合わせ</a
       >
@@ -428,10 +511,11 @@
           </ul>
         </nav>
         <div class="footer_logo">
-          <img
-            src="img/icon_logo/logo-white.svg"
-            alt="きたむらミュージックスクールのロゴ"
-          />
+          <a href="index.html">
+            <img
+              src="img/icon_logo/logo-white.svg"
+              alt="きたむらミュージックスクールのロゴ"
+          /></a>
         </div>
         <div class="footer_copyright">
           Copyright © 0000 KITAMURA music school Inc. All Rights
@@ -439,22 +523,22 @@
         <div class="footer_sns">
           <ul>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-twitter.svg" alt="twitter"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-facebook.svg" alt="facebook"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-youtube.svg" alt="youtube"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="index.html" target="_blank" rel="noopener"
                 ><img src="img/icon_logo/icon-instagram.svg" alt="instagram"
               /></a>
             </li>

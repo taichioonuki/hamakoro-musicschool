@@ -6,7 +6,7 @@
 section.sec1_blog_details {
   padding: 7rem 0 18.3rem 0;
   @include mq($sm) {
-    padding: 5.3rem 0 19.7rem 0;
+    padding: 5.3rem 0 16.7rem 0;
   }
   .sec1_blog_details.inner {
     display: flex;
@@ -18,10 +18,8 @@ section.sec1_blog_details {
     .sec1_left_content {
       position: relative;
       flex: 1 1 60%;
-      picture {
-        img {
-          max-width: 60rem;
-        }
+      .sec1_left_img {
+        max-width: 60rem;
       }
       h1 {
         font-size: 2.5rem;
@@ -47,14 +45,60 @@ section.sec1_blog_details {
             gap: 0.2rem;
           }
         }
-      }
-      .blog_details_content {
-        p.text_top {
-          margin-top: 4.8rem;
-          @include mq($sm) {
-            margin-top: 2.7rem;
+        a {
+          transition: opacity 0.4s;
+          &:hover {
+            opacity: 0.7;
           }
         }
+
+        .sns_img_fb {
+          width: 10.5rem;
+          height: 4rem;
+          @include mq($sm) {
+            width: 6.5rem;
+            height: 4rem;
+          }
+        }
+        .sns_img_tw {
+          width: 8.8rem;
+          height: 4rem;
+          @include mq($sm) {
+            width: 6.5rem;
+            height: 4rem;
+          }
+        }
+        .sns_img_hatana {
+          width: 9.3rem;
+          height: 4rem;
+          @include mq($sm) {
+            width: 6.5rem;
+            height: 4rem;
+          }
+        }
+        .sns_img_line {
+          width: 8.1rem;
+          height: 4rem;
+          @include mq($sm) {
+            width: 6.5rem;
+            height: 4rem;
+          }
+        }
+        .sns_img_pocket {
+          width: 9.1rem;
+          height: 4rem;
+          @include mq($sm) {
+            width: 6.5rem;
+            height: 4rem;
+          }
+        }
+      }
+      .blog_details_content {
+        margin-top: 4.8rem;
+        @include mq($sm) {
+          margin-top: 2.7rem;
+        }
+
         h2 {
           font-size: 2rem;
           line-height: 2;
@@ -71,19 +115,17 @@ section.sec1_blog_details {
             margin-top: 1.7rem;
           }
         }
-        img {
+        .text_bottom_img {
           margin: 1.7rem 0 2.8rem 0;
           width: 33.5rem;
           @include mq($sm) {
             margin: 3.9rem 0 2.7rem 0;
           }
         }
-        ul {
-          border-bottom: 0.5px solid #000;
-          padding-bottom: 4.1rem;
+        hr {
+          margin-top: 4.1rem;
           @include mq($sm) {
-            margin-bottom: 3.85rem;
-            padding-bottom: 3.8rem;
+            margin-top: 3.8rem;
           }
         }
       }
@@ -109,16 +151,16 @@ section.sec1_blog_details {
           background-color: #000;
           position: absolute;
           left: 0.1rem;
-          top: 0.6rem;
-          height: 2rem;
+          top: 50%;
+          transform: translateY(-50%);
+          height: calc(100% - 1.2rem);
           @include mq($sm) {
-            height: 5rem;
-            top: 0;
+            height: calc(100% - 1rem);
           }
         }
         .sec1_left_textbox {
           background: #e8e8e8;
-          margin-top: 1.7rem;
+          margin: 1.7rem 0 2.7rem 0;
           position: relative;
           @include mq($sm) {
             margin-top: 1.95rem;
@@ -127,24 +169,23 @@ section.sec1_blog_details {
             content: "";
             display: inline-block;
             position: absolute;
-            width: 30px;
-            height: 30px;
-            top: 20px;
-            left: 30px;
+            width: 3rem;
+            height: 3rem;
+            top: 2rem;
+            left: 3rem;
             background-image: url(https://hamakoro-i.com/music_school/img/icon_logo/quotation.svg);
             background-repeat: no-repeat;
             background-size: contain;
             vertical-align: middle;
             @include mq($sm) {
-              width: 26px;
-              height: 24px;
-              top: 22px;
-              left: 27px;
+              width: 2.6rem;
+              height: 2.4rem;
+              top: 2.2rem;
+              left: 2.7rem;
             }
           }
           p.question {
             padding: 1.8rem 3rem 1rem 6.7rem;
-            margin-bottom: 2.7rem;
             @include mq($sm) {
               padding: 1.8rem 2rem 1rem 7rem;
             }
@@ -156,6 +197,10 @@ section.sec1_blog_details {
           color: $main_color;
           line-height: 1.65;
           text-decoration: underline;
+          transition: opacity 0.4s;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
     }
@@ -165,32 +210,38 @@ section.sec1_blog_details {
         font-size: 1.8rem;
         line-height: 1.833;
       }
-      h3.sidebar_title {
-        width: 100%;
+
+      // 共通：タイトル（h3からpに変更したもの）
+      .sidebar_title {
         background: #000;
         color: #fff;
         padding: 1rem 0;
         text-align: center;
+        font-weight: 700;
+        margin: 0; // pタグの初期余白を消去
         @include mq($sm) {
           padding: 0.9rem 0 0.8rem 0;
         }
       }
-      section.sidebar_mail {
+
+      // 無料メールマガジン
+      .sidebar_mail {
         margin-bottom: 3rem;
         .banner {
           border: 1px solid #000;
-          width: 100%;
-          height: auto;
           padding: 1.5rem;
           a {
-            img {
-              width: 100%;
-              max-width: 100%;
+            display: block; // リンクを広げる
+            transition: opacity 0.4s;
+            &:hover {
+              opacity: 0.7;
             }
           }
         }
       }
-      section.sidebar_search {
+
+      // ブログ内検索
+      .sidebar_search {
         margin-bottom: 3rem;
         .search_box {
           border: 1px solid #000;
@@ -198,16 +249,20 @@ section.sec1_blog_details {
           @include mq($sm) {
             padding: 2rem;
           }
-          form.search-container {
+          .search-container {
             background: #e8e8e8;
             position: relative;
-            input.search-input {
+            display: flex;
+            .search-input {
               width: calc(100% - 4rem);
               height: 4rem;
               padding: 0 1.5rem;
               font-size: 1.4rem;
+              border: none;
+              background: transparent;
               @include mq($sm) {
                 height: 5.4rem;
+                width: calc(100% - 5.4rem);
               }
             }
             .search_icon {
@@ -221,16 +276,16 @@ section.sec1_blog_details {
                 width: 5.4rem;
                 height: 5.4rem;
               }
-              button.search-button {
+              .search-button {
                 background-repeat: no-repeat;
                 background-position: center;
                 width: 100%;
                 height: 100%;
                 cursor: pointer;
-                pointer-events: auto;
-                transition: 0.3s;
-                z-index: 2;
+                border: none;
+                transition: opacity 0.4s;
                 background-image: url(../img/icon_logo/icon-search.svg);
+                background-color: transparent;
                 &:hover {
                   opacity: 0.7;
                 }
@@ -242,64 +297,66 @@ section.sec1_blog_details {
           }
         }
       }
-      section.sidebar_posts {
+
+      // おすすめの記事
+      .sidebar_posts {
         margin-bottom: 3rem;
-        ul.post_list {
+        .post_list {
           margin-top: 1.5rem;
           @include mq($sm) {
             margin-top: 2rem;
           }
-          li.post_item {
-            margin-bottom: 1.5rem;
-            transition: transform 0.3s ease;
-            @include mq($sm) {
-              margin-bottom: 2.1rem;
+          .post_item {
+            &:not(:last-child) {
+              margin-bottom: 1.5rem;
+              @include mq($sm) {
+                margin-bottom: 2.1rem;
+              }
             }
-            &:hover {
-              opacity: 0.7;
-            }
-            a.post_link {
+            .post_link {
               display: flex;
               gap: 1.5rem;
+              text-decoration: none;
+              color: inherit;
+              transition: opacity 0.4s;
+              &:hover {
+                opacity: 0.7;
+              }
               @include mq($sm) {
                 gap: 2rem;
               }
-              img {
+              .post_img_wrapper {
+                flex-shrink: 0;
                 width: 9.5rem;
-                @include mq($sm) {
-                  width: 16rem;
-                  height: 11rem;
-                  object-fit: cover; // ← これが重要
-                  flex-shrink: 0; // ← これも必要
-                }
-              }
-              p.post_title {
-                font-size: 1.7rem;
-                line-height: 1.647;
-                @include mq($sm) {
-                  margin-top: 1rem;
+                .post_item_title {
+                  font-size: 1.7rem;
+                  line-height: 1.647;
+                  margin: 0;
+                  @include mq($sm) {
+                    margin-top: 1rem;
+                  }
                 }
               }
             }
           }
         }
       }
-      section.sidebar_category {
-        ul.category_list {
-          li.category_item {
+      // カテゴリー
+      .sidebar_category {
+        margin-bottom: 3rem; // 最後のマージンも必要であれば追加
+        .category_list {
+          .category_item {
             border-bottom: 0.5px solid #000;
-            transition: transform 0.3s ease;
-            &:hover {
-              opacity: 0.7;
-            }
-            a.category_link {
+            .category_link {
               display: block;
-              cursor: pointer;
               font-size: 1.7rem;
               line-height: 1.647;
-              padding: 1.2rem 0 0.4rem 0;
-              @include mq($sm) {
-                padding: 1.2rem 0 0.1rem 0;
+              padding: 1.2rem 0 0.6rem 0;
+              text-decoration: none;
+              color: inherit;
+              transition: opacity 0.4s;
+              &:hover {
+                opacity: 0.7;
               }
             }
           }

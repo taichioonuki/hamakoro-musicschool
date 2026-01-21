@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//アコーディオン
 // アコーディオン開閉機能
 document.addEventListener("DOMContentLoaded", function () {
   // 質問と回答の両方（.faq-question と .faq-answer）にイベントを設定
@@ -139,7 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // 固定ボタンの表示・非表示を制御
 document.addEventListener("DOMContentLoaded", function () {
   const pageTop = document.querySelector("#page-top");
@@ -162,20 +160,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // フッター手前で止まるように位置調整
   function Position() {
-    const scrollHeight = document.documentElement.scrollHeight;
-    const scrollPosition = window.innerHeight + window.scrollY;
-    const footHeight = document.querySelector("footer").offsetHeight;
+    const footer = document.querySelector("footer");
+    const footerRect = footer.getBoundingClientRect();
+    const btnHeight = pageTop.offsetHeight;
+    const windowHeight = window.innerHeight;
 
-    if (scrollHeight - scrollPosition <= footHeight) {
-      pageTop.style.position = "absolute";
-      pageTop.style.bottom = footHeight + "px";
-      pageTop.style.right = "0";
+    if (footerRect.top <= windowHeight) {
+      const overlap = windowHeight - footerRect.top;
+
+      pageTop.style.transform = `translateY(-${overlap}px)`;
     } else {
-      pageTop.style.position = "fixed";
-      pageTop.style.bottom = "0";
-      pageTop.style.right = "0";
+      pageTop.style.transform = "translateY(0)";
     }
   }
 
