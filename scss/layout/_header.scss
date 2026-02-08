@@ -9,6 +9,7 @@ header.header {
   background-color: #fff;
   position: fixed;
   z-index: 999;
+  top: 0;
   @include mq($sm) {
     height: 5rem;
   }

@@ -9,7 +9,9 @@
   width: 15rem;
   height: 4.5rem;
   color: #fff;
-  transition: background-color 0.4s, color 0.4s;
+  transition:
+    background-color 0.4s,
+    color 0.4s;
   border: 1px solid $main_color;
   display: flex;
   justify-content: center;
@@ -122,6 +124,7 @@ nav.breadcrumb {
           text-decoration: none;
           color: #000;
           transition: opacity 0.4s;
+          height: 5rem;
           &:hover {
             opacity: 0.7;
           }
@@ -243,7 +246,9 @@ nav.breadcrumb {
   align-items: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
   pointer-events: none;
 
   @media screen and (max-width: 767px) {
@@ -288,7 +293,10 @@ nav.breadcrumb {
     font-size: 2rem;
     line-height: 1.65;
     letter-spacing: 0.4rem;
-    transition: opacity 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+    transition:
+      opacity 0.4s ease,
+      background-color 0.4s ease,
+      color 0.4s ease;
     pointer-events: auto;
     @media screen and (max-width: 767px) {
       width: 33.5rem;
@@ -488,7 +496,9 @@ div.related {
     border: 1px solid #000;
     color: #000;
     font-weight: bold;
-    transition: background-color 0.4s linear, color 0.4s linear;
+    transition:
+      background-color 0.4s linear,
+      color 0.4s linear;
     @include mq($sm) {
       width: 4.4rem;
       height: 4.4rem;

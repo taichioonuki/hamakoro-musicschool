@@ -21,25 +21,20 @@ html {
   }
 }
 body {
-  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
-    "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-family:
+    "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans JP",
+    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-weight: 500;
   font-size: 1.8rem;
   position: relative;
   line-height: 1.667;
   letter-spacing: 0;
   overflow-x: hidden;
+  margin-top: 8rem;
   @include mq($sm) {
     font-size: 1.6rem;
     line-height: 1.875;
-  }
-}
-
-main {
-  padding-top: 8rem; // パンくずから移動してきた余白
-
-  @include mq($sm) {
-    padding-top: 5rem;
+    margin-top: 5rem;
   }
 }
 
