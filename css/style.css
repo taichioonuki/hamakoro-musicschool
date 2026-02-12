@@ -2931,6 +2931,7 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_search
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_search .search_box .search-container .search_icon .search-button {
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 50%;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -2999,9 +3000,6 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts 
   section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper .post_item_title {
     margin-top: 1rem;
   }
-}
-section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_category {
-  margin-bottom: 3rem;
 }
 section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_category .category_list .category_item {
   border-bottom: 0.5px solid #000;

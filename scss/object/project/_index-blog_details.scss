@@ -279,6 +279,7 @@ section.sec1_blog_details {
               .search-button {
                 background-repeat: no-repeat;
                 background-position: center;
+                background-size: 50%;
                 width: 100%;
                 height: 100%;
                 cursor: pointer;
@@ -343,7 +344,6 @@ section.sec1_blog_details {
       }
       // カテゴリー
       .sidebar_category {
-        margin-bottom: 3rem; // 最後のマージンも必要であれば追加
         .category_list {
           .category_item {
             border-bottom: 0.5px solid #000;
