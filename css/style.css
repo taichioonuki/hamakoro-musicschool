@@ -1472,6 +1472,12 @@ section.sec1 .sec1.inner .top_sec_title p {
 }
 section.sec1 .sec1.inner .vision_content {
   position: relative;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 767px) {
+  section.sec1 .sec1.inner .vision_content {
+    margin-top: 3.4rem;
+  }
 }
 section.sec1 .sec1.inner .vision_content .vision_list_1,
 section.sec1 .sec1.inner .vision_content .vision_list_2,
@@ -1534,14 +1540,6 @@ section.sec1 .sec1.inner .vision_content .vision_list_3 p.vision_jp {
   section.sec1 .sec1.inner .vision_content .vision_list_3 p.vision_jp {
     font-size: 2rem;
     line-height: 2.5;
-  }
-}
-section.sec1 .sec1.inner .vision_content .vision_list_1 {
-  margin-top: 2rem;
-}
-@media screen and (max-width: 767px) {
-  section.sec1 .sec1.inner .vision_content .vision_list_1 {
-    margin-top: 3.4rem;
   }
 }
 section.sec1 .sec1.inner .vision_content .vision_list_2 {

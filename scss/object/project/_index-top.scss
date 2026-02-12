@@ -68,6 +68,10 @@ section.sec1 {
     }
     .vision_content {
       position: relative;
+      margin-top: 2rem;
+      @include mq($sm) {
+        margin-top: 3.4rem;
+      }
       .vision_list_1,
       .vision_list_2,
       .vision_list_3 {
@@ -105,12 +109,6 @@ section.sec1 {
             font-size: 2rem;
             line-height: 2.5;
           }
-        }
-      }
-      .vision_list_1 {
-        margin-top: 2rem;
-        @include mq($sm) {
-          margin-top: 3.4rem;
         }
       }
       .vision_list_2 {
