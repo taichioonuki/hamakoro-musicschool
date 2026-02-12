@@ -2571,11 +2571,12 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table tr.border_bo
     display: block !important;
   }
   .simplebar-track .simplebar-scrollbar::before {
-    background: rgba(80, 80, 80, 0.15);
     border-radius: 0;
+    opacity: 1;
+    background: rgba(80, 80, 80, 0.25);
   }
   .simplebar-track {
-    background: rgba(80, 80, 80, 0.25);
+    background: rgba(80, 80, 80, 0.15);
     height: 2.5rem !important;
   }
 }
