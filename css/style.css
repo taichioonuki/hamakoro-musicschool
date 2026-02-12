@@ -503,30 +503,43 @@ header.header div.header_container {
     height: 5rem;
   }
 }
-header.header div.header_container a {
+header.header div.header_container h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 8rem;
 }
-header.header div.header_container a:has(.header_logo) {
+@media screen and (max-width: 767px) {
+  header.header div.header_container h1 {
+    height: 5rem;
+  }
+}
+header.header div.header_container h1:has(.header_logo) {
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
-header.header div.header_container a:has(.header_logo):hover {
+header.header div.header_container h1:has(.header_logo):hover {
   opacity: 0.7;
 }
-header.header div.header_container a .header_logo {
+header.header div.header_container h1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 19.2rem;
+  height: 100%;
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container a .header_logo {
+  header.header div.header_container h1 a {
     width: 20.8rem;
   }
 }
-header.header div.header_container a .header_logo .logo_text {
+header.header div.header_container h1 a .logo_text {
   display: none;
 }
 header.header div.header_container nav.header_nav {
@@ -1053,7 +1066,7 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li:last-child {
 
 #page-top.back-to-top {
   position: fixed;
-  z-index: 9999;
+  z-index: 99;
   right: 0;
   bottom: 0;
   display: -webkit-box;
