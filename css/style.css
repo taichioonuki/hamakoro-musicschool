@@ -3426,8 +3426,10 @@ section.page_fv .page_fv_overlay.result_overlay {
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_img span.img_title {
   width: 10rem;
 }
+.result_container .result.inner .achievement_grid .achievement_card a .achievement_content {
+  padding: 2rem 0 1rem;
+}
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_content p.achievement_title {
-  margin: 2rem 0 1rem;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.25;
@@ -3462,11 +3464,11 @@ section.profile_card .profile.inner .profile_card_body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 70%;
           flex: 1 1 70%;
+  margin-top: 5rem;
 }
 section.profile_card .profile.inner .profile_card_body h1.profile_card_title {
   font-size: 2.5rem;
   line-height: 1.6;
-  margin: 5rem 0 1.5rem;
   font-weight: 700;
 }
 @media screen and (max-width: 767px) {
@@ -3476,9 +3478,10 @@ section.profile_card .profile.inner .profile_card_body h1.profile_card_title {
     margin: 3rem 0 0.6rem;
   }
 }
-section.profile_card .profile.inner .profile_card_body time {
+section.profile_card .profile.inner .profile_card_body .resultdeta_time {
   font-size: 1.7rem;
   line-height: 1.765;
+  margin-top: 1.5rem;
 }
 section.profile_card .profile.inner .profile_card_body .profile_card_content {
   display: grid;
