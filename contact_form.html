@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -82,10 +82,7 @@
               srcset="img/sp/contact/contact_sp.jpg"
               media="(max-width: 767px)"
             />
-            <img
-              src="img/contact/contact_pc.jpg"
-              alt="ギター"
-            />
+            <img src="img/contact/contact_pc.jpg" alt="ギター" />
           </picture>
           <h1 class="page_fv_title">お問い合わせ</h1>
         </div>
@@ -159,53 +156,61 @@
                 />
               </div>
               <div class="form_group purpose_group">
-                <label class="form_label purpose_label"
-                  >目　的　<br class="pc_only" />(複数選択可)</label
-                >
-                <div class="checkbox_container">
-                  <div class="checkbox_item">
-                    <input
-                      type="checkbox"
-                      id="plan-query"
-                      name="purpose[]"
-                      value="プランについてのお問い合わせ"
-                    />
-                    <label for="plan-query" class="check"
-                      >プランについてのお問い合わせ</label
-                    >
-                  </div>
-                  <div class="checkbox_item">
-                    <input
-                      type="checkbox"
-                      id="hearing-reserve"
-                      name="purpose[]"
-                      value="ヒアリングのご予約"
-                    />
-                    <label for="hearing-reserve" class="check"
-                      >ヒアリングのご予約</label
-                    >
-                  </div>
-                  <div class="checkbox_item">
-                    <input
-                      type="checkbox"
-                      id="document-request"
-                      name="purpose[]"
-                      value="資料請求"
-                    />
-                    <label for="document-request" class="check">資料請求</label>
-                  </div>
-                  <div class="checkbox_item">
-                    <input
-                      type="checkbox"
-                      id="other"
-                      name="source[]"
-                      value="その他"
-                    />
-                    <label for="other" class="check">その他</label>
-                  </div>
-                </div>
-              </div>
+                <fieldset class="purpose_fieldset">
+                  <legend class="form_label purpose_label">
+                    目　的 <br class="pc_only" />
+                    （複数選択可）
+                  </legend>
 
+                  <div class="checkbox_container">
+                    <div class="checkbox_item">
+                      <input
+                        type="checkbox"
+                        id="plan-query"
+                        name="purpose[]"
+                        value="プランについてのお問い合わせ"
+                      />
+                      <label for="plan-query" class="check">
+                        プランについてのお問い合わせ
+                      </label>
+                    </div>
+
+                    <div class="checkbox_item">
+                      <input
+                        type="checkbox"
+                        id="hearing-reserve"
+                        name="purpose[]"
+                        value="ヒアリングのご予約"
+                      />
+                      <label for="hearing-reserve" class="check">
+                        ヒアリングのご予約
+                      </label>
+                    </div>
+
+                    <div class="checkbox_item">
+                      <input
+                        type="checkbox"
+                        id="document-request"
+                        name="purpose[]"
+                        value="資料請求"
+                      />
+                      <label for="document-request" class="check">
+                        資料請求
+                      </label>
+                    </div>
+
+                    <div class="checkbox_item">
+                      <input
+                        type="checkbox"
+                        id="other"
+                        name="purpose[]"
+                        value="その他"
+                      />
+                      <label for="other" class="check"> その他 </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
               <div class="form_group content_group">
                 <label for="content" class="form_label">
                   <span class="label_text">内　容</span>
