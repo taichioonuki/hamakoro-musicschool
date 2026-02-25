@@ -230,7 +230,7 @@ section.sec4 {
   padding: 4.4rem 2rem 8rem 2rem;
   background-color: $main_color;
   @include mq($sm) {
-    padding: 4.6rem 0 5rem 0;
+    padding: 4.6rem 0 4rem 0;
   }
   .sec4.inner {
     .sec4_container {
@@ -474,7 +474,7 @@ section.sec6 {
             border-bottom: 1px solid #000000;
             padding: 1.5rem 2rem;
             @include mq($sm) {
-              padding: 1.3rem 3rem 1.3rem 0;
+              padding: 1.3rem 5rem 1.3rem 0;
             }
             span.icon {
               display: flex;

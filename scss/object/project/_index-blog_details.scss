@@ -4,7 +4,7 @@
 @use "../../foundation/normalize";
 
 section.sec1_blog_details {
-  padding: 7rem 0 18.3rem 0;
+  padding: 7rem 0 19rem 0;
   @include mq($sm) {
     padding: 5.3rem 0 16.7rem 0;
   }

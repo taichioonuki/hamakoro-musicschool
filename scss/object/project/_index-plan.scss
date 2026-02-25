@@ -60,6 +60,9 @@ section.plan_sec2 {
     .plan_sec2_container {
       .plan_table_wrapper {
         margin-top: 4.7rem;
+        @include mq($sm) {
+          margin-top: 0;
+        }
         table.plan_table {
           font-size: 1.7rem;
           line-height: 1.471;
