@@ -16,7 +16,6 @@
 
     @include mq($sm) {
       text-align: left;
-      margin-bottom: 3.2rem;
       line-height: calc(30 / 16);
     }
   }
@@ -24,6 +23,9 @@
 
 .form_wrapper {
   margin-top: 6.5rem;
+  @include mq($sm) {
+    margin-top: 3.6rem;
+  }
 
   .contact_form {
     max-width: 90rem;
@@ -63,9 +65,9 @@
     padding: 0 2rem;
     border: 0.5px solid #000;
     line-height: 2.2;
-
     @include mq($sm) {
       width: 100%;
+      flex: none;
     }
   }
 
@@ -78,6 +80,9 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 1rem;
+    @include mq($sm) {
+      margin-bottom: -1rem;
+    }
     .purpose_fieldset {
       display: contents;
 
@@ -129,6 +134,9 @@
     .check {
       padding-left: 2rem;
       cursor: pointer;
+      @include mq($sm) {
+        padding-left: 1rem;
+      }
     }
   }
 
@@ -138,6 +146,9 @@
     .label_text {
       margin-top: 1rem;
       display: block;
+      @include mq($sm) {
+        margin-top: 0;
+      }
     }
     .form_textarea {
       flex: 1;
@@ -172,6 +183,9 @@
   }
 }
 
-.contact_btn{
+.contact_btn {
   margin-right: 10rem;
+  @include mq($sm) {
+    margin-right: 2rem;
+  }
 }

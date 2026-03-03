@@ -6,7 +6,7 @@
 section.sec1_blog_details {
   padding: 7rem 0 19rem 0;
   @include mq($sm) {
-    padding: 5.3rem 0 16.7rem 0;
+    padding: 5.3rem 0 19.7rem 0;
   }
   .sec1_blog_details.inner {
     display: flex;
@@ -329,6 +329,11 @@ section.sec1_blog_details {
               .post_img_wrapper {
                 flex-shrink: 0;
                 width: 9.5rem;
+                overflow: hidden;
+                @include mq($sm) {
+                  width: 16rem;
+                  height: 11rem;
+                }
                 .post_item_title {
                   font-size: 1.7rem;
                   line-height: 1.647;
