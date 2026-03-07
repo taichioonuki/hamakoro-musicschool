@@ -3157,11 +3157,11 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 2.7rem;
 }
 @media screen and (max-width: 767px) {
   .form_wrapper .purpose_group {
-    margin-bottom: -1rem;
+    margin-bottom: 0.6rem;
   }
 }
 .form_wrapper .purpose_group .purpose_fieldset {
@@ -3198,7 +3198,13 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1rem;
+}
+.form_wrapper .purpose_group .checkbox_item:last-child {
+  margin-bottom: 0;
 }
 .form_wrapper .purpose_group input[type=checkbox] {
   width: 2rem;

@@ -79,9 +79,9 @@
   .purpose_group {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 2.7rem;
     @include mq($sm) {
-      margin-bottom: -1rem;
+      margin-bottom: 0.6rem;
     }
     .purpose_fieldset {
       display: contents;
@@ -109,7 +109,11 @@
 
     .checkbox_item {
       display: flex;
+      align-items: center;
       margin-bottom: 1rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     input[type="checkbox"] {
