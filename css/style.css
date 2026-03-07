@@ -3455,7 +3455,7 @@ section.page_fv .page_fv_overlay.result_overlay {
   width: 10rem;
 }
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_content {
-  padding: 2rem 0 1rem;
+  margin: 2rem 0 1rem;
 }
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_content p.achievement_title {
   font-size: 2rem;
