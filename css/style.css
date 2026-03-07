@@ -940,6 +940,11 @@ nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li a.breadcrumb_link {
   transition: opacity 0.4s;
   height: 5rem;
 }
+@media screen and (max-width: 767px) {
+  nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li a.breadcrumb_link {
+    height: 3.6rem;
+  }
+}
 nav.breadcrumb .breadcrumb_container ul.breadcrumb_list li a.breadcrumb_link:hover {
   opacity: 0.7;
 }
