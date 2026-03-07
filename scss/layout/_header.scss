@@ -45,10 +45,10 @@ header.header {
         @include mq($sm) {
           width: 20.8rem;
         }
-        .logo_text {
-          display: none;
-        }
       }
+    }
+    .logo_text {
+      display: none;
     }
     button.toggle_menu.js_toggolenav {
       span.toggle_line {

@@ -539,7 +539,7 @@ header.header div.header_container h1 a {
     width: 20.8rem;
   }
 }
-header.header div.header_container h1 a .logo_text {
+header.header div.header_container .logo_text {
   display: none;
 }
 header.header div.header_container nav.header_nav {
