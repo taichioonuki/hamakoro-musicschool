@@ -2329,7 +2329,7 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper tabl
   vertical-align: middle;
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr td:not(:first-child):not(:last-child) {
-  border-right: 1px solid #333;
+  border-right: 1px solid #000;
 }
 section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_head-title {
   font-size: 2rem;
@@ -2458,8 +2458,8 @@ section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper tabl
   font-weight: 700;
   padding: 0 2rem;
   line-height: 1.765;
-  border-top: 1px solid #333;
-  border-right: 1px solid #333;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
 }
 @media screen and (max-width: 767px) {
   section.plan_sec2 .plan_sec2.inner .plan_sec2_container .plan_table_wrapper table.plan_table tbody tr .plan_title_price {

@@ -81,7 +81,7 @@ section.plan_sec2 {
           tbody {
             tr {
               td:not(:first-child):not(:last-child) {
-                border-right: 1px solid #333;
+                border-right: 1px solid #000;
               }
               .plan_head-title {
                 font-size: 2rem;
@@ -180,8 +180,8 @@ section.plan_sec2 {
                 font-weight: 700;
                 padding: 0 2rem;
                 line-height: 1.765;
-                border-top: 1px solid #333;
-                border-right: 1px solid #333;
+                border-top: 1px solid #000;
+                border-right: 1px solid #000;
                 @include mq($sm) {
                   font-size: 1.6rem;
                   line-height: 1.875;
