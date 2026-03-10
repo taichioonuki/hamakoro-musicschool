@@ -31,24 +31,42 @@ header.header {
       @include mq($sm) {
         height: 5rem;
       }
-      &:has(.header_logo) {
-        transition: opacity 0.4s;
-        &:hover {
-          opacity: 0.7;
+      .logo_img {
+        width: 3.2rem;
+        @include mq($sm) {
+          width: 2rem;
+        }
+      }
+      .logo_text {
+        font-size: 2rem;
+        line-height: 1.15;
+        font-weight: 700;
+        display: inline-block;
+        margin-left: 1rem;
+        margin-top: 0.3rem;
+        @include mq($sm) {
+          font-size: 1.3rem;
+          line-height: 1.077;
+        }
+      }
+      .logo_text_smallsize {
+        font-size: 1.5rem;
+        line-height: 1.533;
+        @include mq($sm) {
+          font-size: 1.3rem;
+          line-height: 1.077;
+          margin-left: -0.4rem;
         }
       }
       a {
         display: flex;
         align-items: center;
-        width: 19.2rem;
         height: 100%;
-        @include mq($sm) {
-          width: 20.8rem;
+        transition: opacity 0.4s;
+        &:hover {
+          opacity: 0.7;
         }
       }
-    }
-    .logo_text {
-      display: none;
     }
     button.toggle_menu.js_toggolenav {
       span.toggle_line {
