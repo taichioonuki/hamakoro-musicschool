@@ -47,6 +47,7 @@ header.header {
         @include mq($sm) {
           font-size: 1.3rem;
           line-height: 1.077;
+          margin-left: 0.6rem;
         }
       }
       .logo_text_smallsize {

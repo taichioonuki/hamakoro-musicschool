@@ -537,6 +537,8 @@ header.header div.header_container h1 .logo_text {
   header.header div.header_container h1 .logo_text {
     font-size: 1.3rem;
     line-height: 1.077;
+    margin-left: 0.6rem;
+    margin-top: 0.8rem;
   }
 }
 header.header div.header_container h1 .logo_text_smallsize {
