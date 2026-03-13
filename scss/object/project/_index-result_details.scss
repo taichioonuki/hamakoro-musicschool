@@ -17,20 +17,26 @@ section.profile_card {
     }
     .profile_card_body {
       flex: 1 1 70%;
+      margin-top: 5rem;
+      @include mq($sm) {
+        margin-top: 3rem;
+      }
       h1.profile_card_title {
         font-size: 2.5rem;
         line-height: 1.6;
-        margin: 5rem 0 1.5rem;
         font-weight: 700;
         @include mq($sm) {
           font-size: 2rem;
           line-height: 1.5;
-          margin: 3rem 0 0.6rem;
         }
       }
-      time {
+      .resultdeta_time {
         font-size: 1.7rem;
         line-height: 1.765;
+        margin-top: 1.5rem;
+        @include mq($sm) {
+          margin-top: 1rem;
+        }
       }
       .profile_card_content {
         display: grid;
@@ -40,7 +46,7 @@ section.profile_card {
         margin-top: 5.7rem;
         @include mq($sm) {
           grid-template-columns: 1fr;
-          gap: 2.8rem;
+          gap: 2rem;
           margin-top: 2.1rem;
           font-size: 1.8rem;
           line-height: 1.667;

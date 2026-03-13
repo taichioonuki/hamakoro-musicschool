@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -38,20 +38,22 @@
     <!---------------------------------ヘッダー部分------------------------------------------->
     <header class="header">
       <div class="header_container">
-        <a href="index.html">
-          <div class="header_logo">
-            <picture>
-              <source
-                srcset="img/icon_logo/music-school_logo_sp.jpg"
-                media="(max-width: 767px)"
-              />
+        <div class="header_logo">
+          <a href="index.html">
+            <div class="logo_img">
               <img
-                src="img/icon_logo/music-school_logo.jpg"
-                alt="きたむらミュージックスクールのロゴ"
+                src="img/icon_logo/music-school_logo_pc.svg"
+                alt="きたむらミュージックスクール"
               />
-            </picture>
-          </div>
-        </a>
+            </div>
+            <span class="logo_text"
+              >きたむら<br class="pc_only" />
+              <span class="logo_text_smallsize"
+                >ミュージックスクール</span
+              ></span
+            >
+          </a>
+        </div>
         <button class="toggle_menu js_toggolenav">
           <span class="toggle_line"></span>
         </button>
@@ -101,13 +103,7 @@
                   srcset="img/sp/blog_details/blog_sp_01.jpg"
                   media="(max-width: 767px)"
                 />
-                <img
-                  src="img/blog_details/blog_pc_01.jpg"
-                  alt="ギター"
-                  width="1080"
-                  height="200"
-                  decoding="async"
-                />
+                <img src="img/blog_details/blog_pc_01.jpg" alt="ギター" />
               </picture>
             </div>
             <span class="img_title">ギター</span>
@@ -126,8 +122,6 @@
                         <img
                           src="img/icon_logo/facebook.svg"
                           alt="フェイスブック"
-                          width="40"
-                          height="40"
                         />
                       </picture>
                     </a>
@@ -141,12 +135,7 @@
                           srcset="img/icon_logo/twitter_sp.svg"
                           media="(max-width: 767px)"
                         />
-                        <img
-                          src="img/icon_logo/twitter.svg"
-                          alt="ツイッター"
-                          width="40"
-                          height="40"
-                        />
+                        <img src="img/icon_logo/twitter.svg" alt="ツイッター" />
                       </picture>
                     </a>
                   </div>
@@ -159,12 +148,7 @@
                           srcset="img/icon_logo/hatena_sp.svg"
                           media="(max-width: 767px)"
                         />
-                        <img
-                          src="img/icon_logo/hatena.svg"
-                          alt="はてな"
-                          width="40"
-                          height="40"
-                        />
+                        <img src="img/icon_logo/hatena.svg" alt="はてな" />
                       </picture>
                     </a>
                   </div>
@@ -177,12 +161,7 @@
                           srcset="img/icon_logo/line_sp.svg"
                           media="(max-width: 767px)"
                         />
-                        <img
-                          src="img/icon_logo/line.svg"
-                          alt="ライン"
-                          width="40"
-                          height="40"
-                        />
+                        <img src="img/icon_logo/line.svg" alt="ライン" />
                       </picture>
                     </a>
                   </div>
@@ -195,12 +174,7 @@
                           srcset="img/icon_logo/pocket_sp.svg"
                           media="(max-width: 767px)"
                         />
-                        <img
-                          src="img/icon_logo/pocket.svg"
-                          alt="ポケット"
-                          width="40"
-                          height="40"
-                        />
+                        <img src="img/icon_logo/pocket.svg" alt="ポケット" />
                       </picture>
                     </a>
                   </div>
@@ -249,10 +223,9 @@
                   <a href="blog_details.html" class="article_link">
                     <div class="article_title_prev">◀︎ 前の記事</div>
                     <div class="article_textbox">
-                      <div class="article_textbox_img">
+                      <div class="article_textbox_img pc_only">
                         <img
                           src="img/blog_details/blog_pc_03.jpg"
-                          class="pc_only"
                           alt="歌う女性の画像"
                         />
                       </div>
@@ -266,10 +239,9 @@
                   <a href="blog_details.html" class="article_link">
                     <div class="article_title_next">次の記事 ▶︎</div>
                     <div class="article_textbox">
-                      <div class="article_textbox_img">
+                      <div class="article_textbox_img pc_only">
                         <img
                           src="img/blog_details/blog_pc_03.jpg"
-                          class="pc_only"
                           alt="歌う女性の画像"
                         />
                       </div>
@@ -289,21 +261,18 @@
                     <li class="related_content_item">
                       <a href="blog_list.html">
                         <div class="related_content_item_left">
-                          <picture>
-                            <source
-                              srcset="img/sp/blog/blog_sp_03.jpg"
-                              media="(max-width: 767px)"
-                            />
-                            <img
-                              class="related_img"
-                              class="related_img"
-                              src="img/blog/blog_pc_03.jpg"
-                              alt="歌う女性の画像"
-                              width="1080"
-                              height="200"
-                              decoding="async"
-                            />
-                          </picture>
+                          <div class="related_img">
+                            <picture>
+                              <source
+                                srcset="img/sp/blog/blog_sp_03.jpg"
+                                media="(max-width: 767px)"
+                              />
+                              <img
+                                src="img/blog/blog_pc_03.jpg"
+                                alt="歌う女性の画像"
+                              />
+                            </picture>
+                          </div>
                           <span class="img_title related_img_title"
                             >ギター</span
                           >
@@ -322,21 +291,18 @@
                     <li class="related_content_item">
                       <a href="blog_list.html">
                         <div class="related_content_item_left">
-                          <picture>
-                            <source
-                              srcset="img/sp/blog/blog_sp_03.jpg"
-                              media="(max-width: 767px)"
-                            />
-                            <img
-                              class="related_img"
-                              class="related_img"
-                              src="img/blog/blog_pc_03.jpg"
-                              alt="歌う女性の画像"
-                              width="1080"
-                              height="200"
-                              decoding="async"
-                            />
-                          </picture>
+                          <div class="related_img">
+                            <picture>
+                              <source
+                                srcset="img/sp/blog/blog_sp_03.jpg"
+                                media="(max-width: 767px)"
+                              />
+                              <img
+                                src="img/blog/blog_pc_03.jpg"
+                                alt="歌う女性の画像"
+                              />
+                            </picture>
+                          </div>
                           <span class="img_title related_img_title"
                             >ギター</span
                           >
@@ -355,21 +321,18 @@
                     <li class="related_content_item">
                       <a href="blog_list.html">
                         <div class="related_content_item_left">
-                          <picture>
-                            <source
-                              srcset="img/sp/blog/blog_sp_03.jpg"
-                              media="(max-width: 767px)"
-                            />
-                            <img
-                              class="related_img"
-                              class="related_img"
-                              src="img/blog/blog_pc_03.jpg"
-                              alt="歌う女性の画像"
-                              width="1080"
-                              height="200"
-                              decoding="async"
-                            />
-                          </picture>
+                          <div class="related_img">
+                            <picture>
+                              <source
+                                srcset="img/sp/blog/blog_sp_03.jpg"
+                                media="(max-width: 767px)"
+                              />
+                              <img
+                                src="img/blog/blog_pc_03.jpg"
+                                alt="歌う女性の画像"
+                              />
+                            </picture>
+                          </div>
                           <span class="img_title related_img_title"
                             >ギター</span
                           >
@@ -425,11 +388,7 @@
                 <li class="post_item">
                   <a href="blog_details.html" class="post_link">
                     <div class="post_img_wrapper">
-                      <img
-                        class="post_img"
-                        src="img/blog_details/side_img.jpg"
-                        alt="タイトル"
-                      />
+                      <img src="img/blog_details/side_img.jpg" alt="タイトル" />
                     </div>
                     <p class="post_item_title">タイトルが入ります。タイトル</p>
                   </a>
@@ -437,11 +396,7 @@
                 <li class="post_item">
                   <a href="blog_details.html" class="post_link">
                     <div class="post_img_wrapper">
-                      <img
-                        class="post_img"
-                        src="img/blog_details/side_img.jpg"
-                        alt="タイトル"
-                      />
+                      <img src="img/blog_details/side_img.jpg" alt="タイトル" />
                     </div>
                     <p class="post_item_title">タイトルが入ります。タイトル</p>
                   </a>
@@ -449,11 +404,7 @@
                 <li class="post_item">
                   <a href="blog_details.html" class="post_link">
                     <div class="post_img_wrapper">
-                      <img
-                        class="post_img"
-                        src="img/blog_details/side_img.jpg"
-                        alt="タイトル"
-                      />
+                      <img src="img/blog_details/side_img.jpg" alt="タイトル" />
                     </div>
                     <p class="post_item_title">タイトルが入ります。タイトル</p>
                   </a>

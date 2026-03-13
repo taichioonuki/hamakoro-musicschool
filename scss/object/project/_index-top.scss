@@ -68,6 +68,10 @@ section.sec1 {
     }
     .vision_content {
       position: relative;
+      margin-top: 2rem;
+      @include mq($sm) {
+        margin-top: 3.4rem;
+      }
       .vision_list_1,
       .vision_list_2,
       .vision_list_3 {
@@ -105,12 +109,6 @@ section.sec1 {
             font-size: 2rem;
             line-height: 2.5;
           }
-        }
-      }
-      .vision_list_1 {
-        margin-top: 2rem;
-        @include mq($sm) {
-          margin-top: 3.4rem;
         }
       }
       .vision_list_2 {
@@ -232,7 +230,7 @@ section.sec4 {
   padding: 4.4rem 2rem 8rem 2rem;
   background-color: $main_color;
   @include mq($sm) {
-    padding: 4.6rem 0 0.5rem 0;
+    padding: 4.6rem 0 4rem 0;
   }
   .sec4.inner {
     .sec4_container {
@@ -249,8 +247,14 @@ section.sec4 {
               transition: opacity 0.4s;
               .swiper_img {
                 aspect-ratio: 270 / 190;
+                overflow: hidden;
                 @include mq($sm) {
                   aspect-ratio: 335 / 200;
+                }
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
                 }
               }
               p.name {
@@ -470,7 +474,7 @@ section.sec6 {
             border-bottom: 1px solid #000000;
             padding: 1.5rem 2rem;
             @include mq($sm) {
-              padding: 1.3rem 3rem 1.3rem 0;
+              padding: 1.3rem 5rem 1.3rem 0;
             }
             span.icon {
               display: flex;
@@ -526,7 +530,9 @@ section.sec6 {
             max-height: 0;
             overflow: hidden;
             padding: 0 2rem;
-            transition: max-height 0.4s ease-in-out, padding 0.4s ease-in,
+            transition:
+              max-height 0.4s ease-in-out,
+              padding 0.4s ease-in,
               transform 0.4s ease;
             .faq-answer-inner {
               padding: 1.5rem 2rem; // ここで余白を確保
@@ -579,7 +585,9 @@ section.sec6 {
             }
 
             .faq-answer {
-              transition: max-height 0.4s ease-in-out, padding 0.4s ease-in,
+              transition:
+                max-height 0.4s ease-in-out,
+                padding 0.4s ease-in,
                 transform 0.4s ease;
               border-bottom: 1px solid #000000;
             }

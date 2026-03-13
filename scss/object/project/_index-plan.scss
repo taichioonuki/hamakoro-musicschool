@@ -60,6 +60,9 @@ section.plan_sec2 {
     .plan_sec2_container {
       .plan_table_wrapper {
         margin-top: 4.7rem;
+        @include mq($sm) {
+          margin-top: 0;
+        }
         table.plan_table {
           font-size: 1.7rem;
           line-height: 1.471;
@@ -78,7 +81,7 @@ section.plan_sec2 {
           tbody {
             tr {
               td:not(:first-child):not(:last-child) {
-                border-right: 1px solid #333;
+                border-right: 1px solid #000;
               }
               .plan_head-title {
                 font-size: 2rem;
@@ -177,8 +180,8 @@ section.plan_sec2 {
                 font-weight: 700;
                 padding: 0 2rem;
                 line-height: 1.765;
-                border-top: 1px solid #333;
-                border-right: 1px solid #333;
+                border-top: 1px solid #000;
+                border-right: 1px solid #000;
                 @include mq($sm) {
                   font-size: 1.6rem;
                   line-height: 1.875;
@@ -300,12 +303,16 @@ section.plan_sec2 {
     display: block !important;
   }
   .simplebar-track .simplebar-scrollbar::before {
-    background: rgba(80, 80, 80, 0.15);
     border-radius: 0;
+    opacity: 1;
+    background: rgba(80, 80, 80, 0.25);
+    height: 2.3rem !important;
+    top: 0.1rem;
+    bottom: 0.1rem;
   }
 
   .simplebar-track {
-    background: rgba(80, 80, 80, 0.25);
+    background: rgba(80, 80, 80, 0.15);
     height: 2.5rem !important;
   }
 }

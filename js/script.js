@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 質問と回答の両方（.faq-question と .faq-answer）にイベントを設定
   // これにより、QまたはAのどこをクリックしても開閉がトリガーされます。
   const toggleElements = document.querySelectorAll(
-    ".faq-question, .faq-answer"
+    ".faq-question, .faq-answer",
   );
 
   // CSSのトランジション時間に合わせて調整してください
@@ -92,15 +92,20 @@ document.addEventListener("DOMContentLoaded", function () {
       if (faqItem.classList.contains("open")) {
         // --- 閉じる動作 ---
 
+        // クリックした瞬間に「open」クラスと矢印の回転を解除する
+        faqItem.classList.remove("open");
+        arrowIcon.classList.remove("open");
+
+        // 一旦現在の高さを数値で指定（transitionを効かせるため）
         answer.style.maxHeight = answer.scrollHeight + "px";
 
-        setTimeout(() => {
+        // 次のフレームで高さを0にする
+        requestAnimationFrame(() => {
           answer.style.maxHeight = "0";
-        }, 10);
+        });
 
+        // アニメーション完了後にフラグを解除
         setTimeout(() => {
-          faqItem.classList.remove("open");
-          arrowIcon.classList.remove("open");
           faqItem.classList.remove("is-animating");
         }, TRANSITION_DURATION);
       } else {

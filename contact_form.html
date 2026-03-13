@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -38,20 +38,22 @@
     <!---------------------------------ヘッダー部分------------------------------------------->
     <header class="header">
       <div class="header_container">
-        <a href="index.html">
-          <div class="header_logo">
-            <picture>
-              <source
-                srcset="img/icon_logo/music-school_logo_sp.jpg"
-                media="(max-width: 767px)"
-              />
+        <div class="header_logo">
+          <a href="index.html">
+            <div class="logo_img">
               <img
-                src="img/icon_logo/music-school_logo.jpg"
-                alt="きたむらミュージックスクールのロゴ"
+                src="img/icon_logo/music-school_logo_pc.svg"
+                alt="きたむらミュージックスクール"
               />
-            </picture>
-          </div>
-        </a>
+            </div>
+            <span class="logo_text"
+              >きたむら<br class="pc_only" />
+              <span class="logo_text_smallsize"
+                >ミュージックスクール</span
+              ></span
+            >
+          </a>
+        </div>
         <button class="toggle_menu js_toggolenav">
           <span class="toggle_line"></span>
         </button>
@@ -82,13 +84,7 @@
               srcset="img/sp/contact/contact_sp.jpg"
               media="(max-width: 767px)"
             />
-            <img
-              src="img/contact/contact_pc.jpg"
-              alt="ギター"
-              width="1080"
-              height="200"
-              decoding="async"
-            />
+            <img src="img/contact/contact_pc.jpg" alt="ギター" />
           </picture>
           <h1 class="page_fv_title">お問い合わせ</h1>
         </div>
@@ -162,53 +158,61 @@
                 />
               </div>
               <div class="form_group purpose_group">
-                <label class="form_label purpose_label"
-                  >目　的　<br class="pc_only" />(複数選択可)</label
-                >
-                <div class="checkbox_container">
-                  <div class="checkbox_item">
-                    <input
-                      type="checkbox"
-                      id="plan-query"
-                      name="purpose[]"
-                      value="プランについてのお問い合わせ"
-                    />
-                    <label for="plan-query" class="check"
-                      >プランについてのお問い合わせ</label
-                    >
-                  </div>
-                  <div class="checkbox_item">
-                    <input
-                      type="checkbox"
-                      id="hearing-reserve"
-                      name="purpose[]"
-                      value="ヒアリングのご予約"
-                    />
-                    <label for="hearing-reserve" class="check"
-                      >ヒアリングのご予約</label
-                    >
-                  </div>
-                  <div class="checkbox_item">
-                    <input
-                      type="checkbox"
-                      id="document-request"
-                      name="purpose[]"
-                      value="資料請求"
-                    />
-                    <label for="document-request" class="check">資料請求</label>
-                  </div>
-                  <div class="checkbox_item">
-                    <input
-                      type="checkbox"
-                      id="other"
-                      name="source[]"
-                      value="その他"
-                    />
-                    <label for="other" class="check">その他</label>
-                  </div>
-                </div>
-              </div>
+                <fieldset class="purpose_fieldset">
+                  <legend class="form_label purpose_label">
+                    目　的 <br class="pc_only" />
+                    (複数選択可)
+                  </legend>
 
+                  <div class="checkbox_container">
+                    <div class="checkbox_item">
+                      <input
+                        type="checkbox"
+                        id="plan-query"
+                        name="purpose[]"
+                        value="プランについてのお問い合わせ"
+                      />
+                      <label for="plan-query" class="check">
+                        プランについてのお問い合わせ
+                      </label>
+                    </div>
+
+                    <div class="checkbox_item">
+                      <input
+                        type="checkbox"
+                        id="hearing-reserve"
+                        name="purpose[]"
+                        value="ヒアリングのご予約"
+                      />
+                      <label for="hearing-reserve" class="check">
+                        ヒアリングのご予約
+                      </label>
+                    </div>
+
+                    <div class="checkbox_item">
+                      <input
+                        type="checkbox"
+                        id="document-request"
+                        name="purpose[]"
+                        value="資料請求"
+                      />
+                      <label for="document-request" class="check">
+                        資料請求
+                      </label>
+                    </div>
+
+                    <div class="checkbox_item">
+                      <input
+                        type="checkbox"
+                        id="other"
+                        name="purpose[]"
+                        value="その他"
+                      />
+                      <label for="other" class="check"> その他 </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
               <div class="form_group content_group">
                 <label for="content" class="form_label">
                   <span class="label_text">内　容</span>
@@ -216,14 +220,13 @@
                 <textarea
                   id="content"
                   name="content"
-                  rows="10"
                   placeholder="内容に関する詳細や備考等をご入力ください。"
                   class="form_textarea"
                 ></textarea>
               </div>
               <div class="submit_button_container">
                 <button type="submit" class="c_button submit_button">
-                  送信
+                  送 信
                 </button>
               </div>
             </form>
@@ -232,12 +235,9 @@
       </div>
     </main>
     <div class="back-to-top" id="page-top">
-      <div class="back-to-top_btn">
+      <div class="back-to-top_btn contact_btn">
         <img src="img/other/arrow-top.svg" alt="トップへ戻るボタン" />
       </div>
-      <a href="contact_form.html" class="c_button fixed-buttons__contact"
-        >お問い合わせ</a
-      >
     </div>
     <footer class="footer">
       <div class="footer_container inner">
