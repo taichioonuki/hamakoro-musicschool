@@ -503,7 +503,7 @@ header.header div.header_container {
     height: 5rem;
   }
 }
-header.header div.header_container h1 {
+header.header div.header_container .header_logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,19 +513,19 @@ header.header div.header_container h1 {
   height: 8rem;
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container h1 {
+  header.header div.header_container .header_logo {
     height: 5rem;
   }
 }
-header.header div.header_container h1 .logo_img {
+header.header div.header_container .header_logo .logo_img {
   width: 3.2rem;
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container h1 .logo_img {
+  header.header div.header_container .header_logo .logo_img {
     width: 2rem;
   }
 }
-header.header div.header_container h1 .logo_text {
+header.header div.header_container .header_logo .logo_text {
   font-size: 2rem;
   line-height: 1.15;
   font-weight: 700;
@@ -534,25 +534,24 @@ header.header div.header_container h1 .logo_text {
   margin-top: 0.3rem;
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container h1 .logo_text {
+  header.header div.header_container .header_logo .logo_text {
     font-size: 1.3rem;
     line-height: 1.077;
     margin-left: 0.6rem;
-    margin-top: 0.8rem;
   }
 }
-header.header div.header_container h1 .logo_text_smallsize {
+header.header div.header_container .header_logo .logo_text_smallsize {
   font-size: 1.5rem;
   line-height: 1.533;
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container h1 .logo_text_smallsize {
+  header.header div.header_container .header_logo .logo_text_smallsize {
     font-size: 1.3rem;
     line-height: 1.077;
     margin-left: -0.4rem;
   }
 }
-header.header div.header_container h1 a {
+header.header div.header_container .header_logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +562,7 @@ header.header div.header_container h1 a {
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
-header.header div.header_container h1 a:hover {
+header.header div.header_container .header_logo a:hover {
   opacity: 0.7;
 }
 header.header div.header_container nav.header_nav {
