@@ -9,7 +9,7 @@
     />
     <meta name="keywords" content="音楽,学校,歌手" />
     <meta name="robots" content="noindex" />
-    <link rel="icon" href="img/icon_logo/fvicon_music.svg" sizes="any" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/icon_logo/fvicon_music.svg" sizes="any" />
     <meta property="og:title" content="きたむらミュージックスクール" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hamakoro-i.com/music_school/" />
@@ -33,7 +33,7 @@
       rel="stylesheet"
       href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
   </head>
 
   <body>
@@ -44,7 +44,7 @@
           <a href="index.html">
             <div class="logo_img">
               <img
-                src="img/icon_logo/music-school_logo_pc.svg"
+                src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/music-school_logo_pc.svg"
                 alt="きたむらミュージックスクール"
               />
             </div>
@@ -82,8 +82,8 @@
         <div class="sec_fv_container">
           <div class="sec_fv_overlay"></div>
           <picture>
-            <source srcset="img/sp/top/fv-sp.jpg" media="(max-width: 767px)" />
-            <img src="img/top/music-pc_fv.jpg" alt="ギターを弾いてる女性" />
+            <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/fv-sp.jpg" media="(max-width: 767px)" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top/music-pc_fv.jpg" alt="ギターを弾いてる女性" />
           </picture>
           <h2 class="top_title">
             「音楽で生きる」<br class="sp_only" />を叶える
@@ -100,10 +100,10 @@
             </p>
             <picture>
               <source
-                srcset="img/other/semicircle-sp.svg"
+                srcset="<?php echo get_template_directory_uri(); ?>/img/other/semicircle-sp.svg"
                 media="(max-width: 767px)"
               />
-              <img src="img//other/semicircle.svg" alt="半円形の装飾" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img//other/semicircle.svg" alt="半円形の装飾" />
             </picture>
           </div>
           <div class="vision_content">
@@ -159,11 +159,11 @@
                 <div class="sec3_item_img">
                   <picture>
                     <source
-                      srcset="img/sp/top/reason01-sp.jpg"
+                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason01-sp.jpg"
                       media="(max-width: 767px)"
                     />
                     <img
-                      src="img/top/reason01.jpg"
+                      src="<?php echo get_template_directory_uri(); ?>/img/top/reason01.jpg"
                       alt="犬を抱いている男性がピアノを弾く"
                     />
                   </picture>
@@ -179,10 +179,10 @@
                 <div class="sec3_item_img">
                   <picture>
                     <source
-                      srcset="img/sp/top/reason02-sp.jpg"
+                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason02-sp.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="img/top/reason02.jpg" alt="サポートをする様子" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/reason02.jpg" alt="サポートをする様子" />
                   </picture>
                 </div>
                 <div class="sec3_textbox">
@@ -196,10 +196,10 @@
                 <div class="sec3_item_img">
                   <picture>
                     <source
-                      srcset="img/sp/top/reason03-sp.jpg"
+                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason03-sp.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="img/top/reason03.jpg" alt="ギターを持つ人" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/reason03.jpg" alt="ギターを持つ人" />
                   </picture>
                 </div>
                 <div class="sec3_textbox">
@@ -230,7 +230,7 @@
                     <a href="result_details.html">
                       <div class="swiper_img">
                         <img
-                          src="img/top/voice02.jpg"
+                          src="<?php echo get_template_directory_uri(); ?>/img/top/voice02.jpg"
                           alt="ピアノと女性の画像"
                         />
                       </div>
@@ -244,7 +244,7 @@
                     <a href="result_details.html">
                       <div class="swiper_img">
                         <img
-                          src="img/top/voice03.jpg"
+                          src="<?php echo get_template_directory_uri(); ?>/img/top/voice03.jpg"
                           alt="ギターを弾く男性の画像"
                         />
                       </div>
@@ -257,7 +257,7 @@
                   <div class="swiper-slide">
                     <a href="result_details.html">
                       <div class="swiper_img">
-                        <img src="img/top/voice01.jpg" alt="歌う男性の画像" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top/voice01.jpg" alt="歌う男性の画像" />
                       </div>
                       <p class="name">証券会社勤務　丸山さん</p>
                       <p class="voice_text">
@@ -269,7 +269,7 @@
                     <a href="result_details.html">
                       <div class="swiper_img">
                         <img
-                          src="img/top/voice03.jpg"
+                          src="<?php echo get_template_directory_uri(); ?>/img/top/voice03.jpg"
                           alt="ギターを弾く男性の画像"
                         />
                       </div>
@@ -283,7 +283,7 @@
                     <a href="result_details.html">
                       <div class="swiper_img">
                         <img
-                          src="img/top/voice02.jpg"
+                          src="<?php echo get_template_directory_uri(); ?>/img/top/voice02.jpg"
                           alt="ピアノと女性の画像"
                         />
                       </div>
@@ -296,7 +296,7 @@
                   <div class="swiper-slide">
                     <a href="result_details.html">
                       <div class="swiper_img">
-                        <img src="img/top/voice01.jpg" alt="歌う男性の画像" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top/voice01.jpg" alt="歌う男性の画像" />
                       </div>
                       <p class="name">証券会社勤務　丸山さん</p>
                       <p class="voice_text">
@@ -440,10 +440,10 @@
                 <a href="blog_details.html">
                   <picture>
                     <source
-                      srcset="img/sp/top/blog01-sp.jpg"
+                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog01-sp.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="img/top/blog01.jpg" alt="歌う女性の画像" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog01.jpg" alt="歌う女性の画像" />
                   </picture>
                   <span class="img_title">SNS</span>
                   <h3>フォロワーではなくファンを増やせとは？</h3>
@@ -454,10 +454,10 @@
                 <a href="blog_details.html">
                   <picture>
                     <source
-                      srcset="img/sp/top/blog02-sp.jpg"
+                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog02-sp.jpg"
                       media="(max-width: 767px)"
                     />
-                    <img src="img/top/blog02.jpg" alt="悩む男性の画像" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog02.jpg" alt="悩む男性の画像" />
                   </picture>
                   <span class="img_title">集客方法</span>
                   <h3>集客してる間は売れないという法則</h3>
@@ -468,11 +468,11 @@
                 <a href="blog_details.html">
                   <picture>
                     <source
-                      srcset="img/sp/top/blog03-sp.jpg"
+                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog03-sp.jpg"
                       media="(max-width: 767px)"
                     />
                     <img
-                      src="img/top/blog03.jpg"
+                      src="<?php echo get_template_directory_uri(); ?>/img/top/blog03.jpg"
                       alt="ギターを弾いている人の画像"
                     />
                   </picture>
@@ -491,7 +491,7 @@
     </main>
     <div class="back-to-top" id="page-top">
       <div class="back-to-top_btn">
-        <img src="img/other/arrow-top.svg" alt="トップへ戻るボタン" />
+        <img src="<?php echo get_template_directory_uri(); ?>/img/other/arrow-top.svg" alt="トップへ戻るボタン" />
       </div>
       <a href="contact_form.html" class="c_button fixed-buttons__contact"
         >お問い合わせ</a
@@ -518,7 +518,7 @@
         <div class="footer_logo">
           <a href="index.html">
             <img
-              src="img/icon_logo/logo-white.svg"
+              src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/logo-white.svg"
               alt="きたむらミュージックスクールのロゴ"
           /></a>
         </div>
@@ -529,29 +529,29 @@
           <ul>
             <li>
               <a href="index.html" target="_blank" rel="noopener"
-                ><img src="img/icon_logo/icon-twitter.svg" alt="twitter"
+                ><img src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/icon-twitter.svg" alt="twitter"
               /></a>
             </li>
             <li>
               <a href="index.html" target="_blank" rel="noopener"
-                ><img src="img/icon_logo/icon-facebook.svg" alt="facebook"
+                ><img src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/icon-facebook.svg" alt="facebook"
               /></a>
             </li>
             <li>
               <a href="index.html" target="_blank" rel="noopener"
-                ><img src="img/icon_logo/icon-youtube.svg" alt="youtube"
+                ><img src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/icon-youtube.svg" alt="youtube"
               /></a>
             </li>
             <li>
               <a href="index.html" target="_blank" rel="noopener"
-                ><img src="img/icon_logo/icon-instagram.svg" alt="instagram"
+                ><img src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/icon-instagram.svg" alt="instagram"
               /></a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
   </body>
 </html>
