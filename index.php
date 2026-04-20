@@ -1,557 +1,376 @@
-<!doctype html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。"
-    />
-    <meta name="keywords" content="音楽,学校,歌手" />
-    <meta name="robots" content="noindex" />
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/icon_logo/fvicon_music.svg" sizes="any" />
-    <meta property="og:title" content="きたむらミュージックスクール" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hamakoro-i.com/music_school/" />
-    <meta
-      property="og:image"
-      content="https://hamakoro-i.com/music_school/img/top/music-pc_fv.jpg"
-    />
-    <title>きたむらミュージックスクール</title>
-    <!---------------------------------スタイルシート-------------------------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
-    />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
-  </head>
-
-  <body>
-    <!---------------------------------ヘッダー部分------------------------------------------->
-    <header class="header">
-      <div class="header_container">
-        <h1 class="header_logo">
-          <a href="index.html">
-            <div class="logo_img">
-              <img
-                src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/music-school_logo_pc.svg"
-                alt="きたむらミュージックスクール"
-              />
-            </div>
-            <span class="logo_text"
-              >きたむら<br class="pc_only" />
-              <span class="logo_text_smallsize"
-                >ミュージックスクール</span
-              ></span
-            >
-          </a>
-        </h1>
-        <button class="toggle_menu js_toggolenav">
-          <span class="toggle_line"></span>
-        </button>
-        <nav class="header_nav">
-          <ul class="header_list">
-            <li class="header_item">
-              <a href="plan.html" class="">料金</a>
-            </li>
-            <li class="header_item">
-              <a href="blog_list.html" class="">ブログ</a>
-            </li>
-            <li class="header_item">
-              <a href="result_list.html" class="">卒業実績</a>
-            </li>
-          </ul>
-          <a href="contact_form.html" class="c_button button__head"
-            >お問い合わせ</a
-          >
-        </nav>
+<?php get_header(); ?>
+<main>
+  <section class="sec_fv">
+    <div class="sec_fv_container">
+      <div class="sec_fv_overlay"></div>
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/fv-sp.jpg" media="(max-width: 767px)" />
+        <img src="<?php echo get_template_directory_uri(); ?>/img/top/music-pc_fv.jpg" alt="ギターを弾いてる女性" />
+      </picture>
+      <h2 class="top_title">
+        「音楽で生きる」<br class="sp_only" />を叶える
+        <br class="pc_only" /><br class="sp_only" />ミュージックスクール
+      </h2>
+    </div>
+  </section>
+  <section class="sec1">
+    <div class="sec1 inner">
+      <div class="top_sec_title">
+        <h2>全人類、<br class="sp_only" />ミュージシャン計画。</h2>
+        <p>
+          私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。
+        </p>
+        <picture>
+          <source srcset="<?php echo get_template_directory_uri(); ?>/img/other/semicircle-sp.svg"
+            media="(max-width: 767px)" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img//other/semicircle.svg" alt="半円形の装飾" />
+        </picture>
       </div>
-    </header>
-    <main>
-      <section class="sec_fv">
-        <div class="sec_fv_container">
-          <div class="sec_fv_overlay"></div>
-          <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/fv-sp.jpg" media="(max-width: 767px)" />
-            <img src="<?php echo get_template_directory_uri(); ?>/img/top/music-pc_fv.jpg" alt="ギターを弾いてる女性" />
-          </picture>
-          <h2 class="top_title">
-            「音楽で生きる」<br class="sp_only" />を叶える
-            <br class="pc_only" /><br class="sp_only" />ミュージックスクール
+      <div class="vision_content">
+        <div class="vision_list_1">
+          <p class="vision_en">Enthusiasm</p>
+          <span class="circle"></span>
+          <p class="vision_jp">熱狂し</p>
+        </div>
+        <div class="vision_list_2">
+          <p class="vision_en">Envision</p>
+          <span class="circle"></span>
+          <p class="vision_jp">想像し</p>
+        </div>
+        <div class="vision_list_3">
+          <p class="vision_en">Effulgent</p>
+          <span class="circle"></span>
+          <p class="vision_jp">輝く存在へ</p>
+        </div>
+        <div class="arrow"></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec2">
+    <div class="sec2 inner">
+      <div class="sec2_container">
+        <div class="top_sec_title">
+          <h2>
+            音楽業界初！<br />
+            収益化までサポートする<br class="sp_only" />ミュージックスクール
+          </h2>
+          <p>
+            楽器や作詞作曲などの<br class="sp_only" />技術・知識はもちろんのこと<br />
+            自分で稼ぎつづけるための<br class="sp_only" />ビジネス面もサポートします！
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec3">
+    <div class="sec3 inner">
+      <div class="sec3_container">
+        <div class="top_sec_title">
+          <h2>
+            きたむらミュージック<br class="sp_only" />スクールが選ばれる理由
           </h2>
         </div>
-      </section>
-      <section class="sec1">
-        <div class="sec1 inner">
-          <div class="top_sec_title">
-            <h2>全人類、<br class="sp_only" />ミュージシャン計画。</h2>
-            <p>
-              私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。
-            </p>
-            <picture>
-              <source
-                srcset="<?php echo get_template_directory_uri(); ?>/img/other/semicircle-sp.svg"
-                media="(max-width: 767px)"
-              />
-              <img src="<?php echo get_template_directory_uri(); ?>/img//other/semicircle.svg" alt="半円形の装飾" />
-            </picture>
-          </div>
-          <div class="vision_content">
-            <div class="vision_list_1">
-              <p class="vision_en">Enthusiasm</p>
-              <span class="circle"></span>
-              <p class="vision_jp">熱狂し</p>
+        <div class="sec3_list">
+          <div class="sec3_item">
+            <div class="sec3_item_img">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason01-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/reason01.jpg" alt="犬を抱いている男性がピアノを弾く" />
+              </picture>
             </div>
-            <div class="vision_list_2">
-              <p class="vision_en">Envision</p>
-              <span class="circle"></span>
-              <p class="vision_jp">想像し</p>
-            </div>
-            <div class="vision_list_3">
-              <p class="vision_en">Effulgent</p>
-              <span class="circle"></span>
-              <p class="vision_jp">輝く存在へ</p>
-            </div>
-            <div class="arrow"></div>
-          </div>
-        </div>
-      </section>
-      <section class="sec2">
-        <div class="sec2 inner">
-          <div class="sec2_container">
-            <div class="top_sec_title">
-              <h2>
-                音楽業界初！<br />
-                収益化までサポートする<br class="sp_only" />ミュージックスクール
-              </h2>
+            <div class="sec3_textbox">
+              <h3>技術面はプロによるマンツーマン授業！</h3>
               <p>
-                楽器や作詞作曲などの<br
-                  class="sp_only"
-                />技術・知識はもちろんのこと<br />
-                自分で稼ぎつづけるための<br
-                  class="sp_only"
-                />ビジネス面もサポートします！
+                第一線で活躍するプロによるマンツーマン授業で、きめ細かな技術指導が受けられます。
+              </p>
+            </div>
+          </div>
+          <div class="sec3_item">
+            <div class="sec3_item_img">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason02-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/reason02.jpg" alt="サポートをする様子" />
+              </picture>
+            </div>
+            <div class="sec3_textbox">
+              <h3>収益化するためのビジネスサポート！</h3>
+              <p>
+                コンセプト設計や集客方法、マーケティングリサーチなど、音楽で稼ぎつづけるための方法やマインドセットをサポートするクラスをご用意。
+              </p>
+            </div>
+          </div>
+          <div class="sec3_item">
+            <div class="sec3_item_img">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason03-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/reason03.jpg" alt="ギターを持つ人" />
+              </picture>
+            </div>
+            <div class="sec3_textbox">
+              <h3>24時間365日使える練習ROOMを完備！</h3>
+              <p>
+                一年中使える個室の練習ROOMを完備しているため、お仕事帰りや合間の時間も自由に練習が可能です。<span class="indent">（アプリで予約が必要です）</span>
               </p>
             </div>
           </div>
         </div>
-      </section>
-      <section class="sec3">
-        <div class="sec3 inner">
-          <div class="sec3_container">
-            <div class="top_sec_title">
-              <h2>
-                きたむらミュージック<br class="sp_only" />スクールが選ばれる理由
-              </h2>
-            </div>
-            <div class="sec3_list">
-              <div class="sec3_item">
-                <div class="sec3_item_img">
-                  <picture>
-                    <source
-                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason01-sp.jpg"
-                      media="(max-width: 767px)"
-                    />
-                    <img
-                      src="<?php echo get_template_directory_uri(); ?>/img/top/reason01.jpg"
-                      alt="犬を抱いている男性がピアノを弾く"
-                    />
-                  </picture>
-                </div>
-                <div class="sec3_textbox">
-                  <h3>技術面はプロによるマンツーマン授業！</h3>
-                  <p>
-                    第一線で活躍するプロによるマンツーマン授業で、きめ細かな技術指導が受けられます。
-                  </p>
-                </div>
-              </div>
-              <div class="sec3_item">
-                <div class="sec3_item_img">
-                  <picture>
-                    <source
-                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason02-sp.jpg"
-                      media="(max-width: 767px)"
-                    />
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/reason02.jpg" alt="サポートをする様子" />
-                  </picture>
-                </div>
-                <div class="sec3_textbox">
-                  <h3>収益化するためのビジネスサポート！</h3>
-                  <p>
-                    コンセプト設計や集客方法、マーケティングリサーチなど、音楽で稼ぎつづけるための方法やマインドセットをサポートするクラスをご用意。
-                  </p>
-                </div>
-              </div>
-              <div class="sec3_item">
-                <div class="sec3_item_img">
-                  <picture>
-                    <source
-                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason03-sp.jpg"
-                      media="(max-width: 767px)"
-                    />
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/reason03.jpg" alt="ギターを持つ人" />
-                  </picture>
-                </div>
-                <div class="sec3_textbox">
-                  <h3>24時間365日使える練習ROOMを完備！</h3>
-                  <p>
-                    一年中使える個室の練習ROOMを完備しているため、お仕事帰りや合間の時間も自由に練習が可能です。<span
-                      class="indent"
-                      >（アプリで予約が必要です）</span
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="sec4">
-        <div class="sec4 inner">
-          <div class="sec4_container">
-            <div class="top_sec_title">
-              <h2>生徒さんたちの声</h2>
-            </div>
-            <div class="sec4_swiper">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <!-- スライド要素 -->
-                  <div class="swiper-slide">
-                    <a href="result_details.html">
-                      <div class="swiper_img">
-                        <img
-                          src="<?php echo get_template_directory_uri(); ?>/img/top/voice02.jpg"
-                          alt="ピアノと女性の画像"
-                        />
-                      </div>
-                      <p class="name">IT会社勤務　S.Eさん</p>
-                      <p class="voice_text">
-                        プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="result_details.html">
-                      <div class="swiper_img">
-                        <img
-                          src="<?php echo get_template_directory_uri(); ?>/img/top/voice03.jpg"
-                          alt="ギターを弾く男性の画像"
-                        />
-                      </div>
-                      <p class="name">都内大学生　田森さん</p>
-                      <p class="voice_text">
-                        就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="result_details.html">
-                      <div class="swiper_img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/top/voice01.jpg" alt="歌う男性の画像" />
-                      </div>
-                      <p class="name">証券会社勤務　丸山さん</p>
-                      <p class="voice_text">
-                        昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="result_details.html">
-                      <div class="swiper_img">
-                        <img
-                          src="<?php echo get_template_directory_uri(); ?>/img/top/voice03.jpg"
-                          alt="ギターを弾く男性の画像"
-                        />
-                      </div>
-                      <p class="name">都内大学生　田森さん</p>
-                      <p class="voice_text">
-                        就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="result_details.html">
-                      <div class="swiper_img">
-                        <img
-                          src="<?php echo get_template_directory_uri(); ?>/img/top/voice02.jpg"
-                          alt="ピアノと女性の画像"
-                        />
-                      </div>
-                      <p class="name">IT会社勤務　S.Eさん</p>
-                      <p class="voice_text">
-                        プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="result_details.html">
-                      <div class="swiper_img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/top/voice01.jpg" alt="歌う男性の画像" />
-                      </div>
-                      <p class="name">証券会社勤務　丸山さん</p>
-                      <p class="voice_text">
-                        昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-              <!-- ナビゲーション（矢印） -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="sec5">
-        <div class="sec5 inner">
-          <div class="sec5_container">
-            <div class="top_sec_title">
-              <h2>ご利用の流れ</h2>
-            </div>
-            <div class="guide_content">
-              <div class="guide_list_1">
-                <span class="circle"></span>
-                <p class="guide_title">お問い合わせ</p>
-                <p class="guide_text">
-                  まずはフォームまたはメールにてお問い合わせください。<br />
-                  ヒアリングの日程を調整します。
-                </p>
-              </div>
-              <div class="guide_list_2">
-                <span class="circle"></span>
-                <p class="guide_title">ヒアリング</p>
-                <p class="guide_text">
-                  現在の技術面や将来の目標などをお伺いします。<br />
-                  悩みや不安な事もお気軽にご相談ください。
-                </p>
-              </div>
-              <div class="guide_list_3">
-                <span class="circle"></span>
-                <p class="guide_title">プランのご提案</p>
-                <p class="guide_text">
-                  ライフスタイルや目標によって最適なプランをご提案します。<br />
-                  継続できるようサポートいたします。
-                </p>
-              </div>
-              <div class="guide_list_4">
-                <span class="circle"></span>
-                <p class="guide_title">ご入学</p>
-                <p class="guide_text">
-                  お申し込み完了後、レッスンがスタートします。<br />
-                  マンツーマン指導なので、いつからでもスタートが可能です。
-                </p>
-              </div>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="sec6">
-        <div class="sec6 inner">
-          <div class="sec6_container">
-            <div class="top_sec_title">
-              <h2>よくあるご質問</h2>
-            </div>
-            <div class="faq-section">
-              <div class="faq-item">
-                <div class="faq-question">
-                  <span class="icon">Q</span>
-                  <p>どのような生徒さんがどれぐらいの期間で稼いでいますか？</p>
-                  <span class="arrow-icon"></span>
-                </div>
-                <div class="faq-answer highlighted">
-                  <div class="faq-answer-inner">
-                    <span class="icon answer-icon">A</span>
-                    <p>
-                      途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-question">
-                  <span class="icon">Q</span>
-                  <p>途中でプランを変更することは可能ですか？</p>
-                  <span class="arrow-icon"></span>
-                </div>
-                <div class="faq-answer highlighted">
-                  <div class="faq-answer-inner">
-                    <span class="icon answer-icon">A</span>
-                    <p>
-                      途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-question">
-                  <span class="icon">Q</span>
-                  <p>入学金などの分割払いはできますか？</p>
-                  <span class="arrow-icon"></span>
-                </div>
-                <div class="faq-answer highlighted">
-                  <div class="faq-answer-inner">
-                    <span class="icon answer-icon">A</span>
-                    <p>
-                      途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-question">
-                  <span class="icon">Q</span>
-                  <p>休学することも可能ですか？</p>
-                  <span class="arrow-icon"></span>
-                </div>
-                <div class="faq-answer highlighted">
-                  <div class="faq-answer-inner">
-                    <span class="icon answer-icon">A</span>
-                    <p>
-                      途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="sec7">
-        <div class="sec7 inner">
-          <div class="sec7_container">
-            <div class="top_sec_title">
-              <h2>ブログ</h2>
-            </div>
-            <ul class="blog_list">
-              <li class="blog_item">
-                <a href="blog_details.html">
-                  <picture>
-                    <source
-                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog01-sp.jpg"
-                      media="(max-width: 767px)"
-                    />
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog01.jpg" alt="歌う女性の画像" />
-                  </picture>
-                  <span class="img_title">SNS</span>
-                  <h3>フォロワーではなくファンを増やせとは？</h3>
-                  <p><time datetime="2025-12-25">0000.00.00</time></p>
-                </a>
-              </li>
-              <li class="blog_item">
-                <a href="blog_details.html">
-                  <picture>
-                    <source
-                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog02-sp.jpg"
-                      media="(max-width: 767px)"
-                    />
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog02.jpg" alt="悩む男性の画像" />
-                  </picture>
-                  <span class="img_title">集客方法</span>
-                  <h3>集客してる間は売れないという法則</h3>
-                  <p><time datetime="2025-12-25">0000.00.00</time></p>
-                </a>
-              </li>
-              <li class="blog_item">
-                <a href="blog_details.html">
-                  <picture>
-                    <source
-                      srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog03-sp.jpg"
-                      media="(max-width: 767px)"
-                    />
-                    <img
-                      src="<?php echo get_template_directory_uri(); ?>/img/top/blog03.jpg"
-                      alt="ギターを弾いている人の画像"
-                    />
-                  </picture>
-                  <span class="img_title">ギター</span>
-                  <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                  <p><time datetime="2025-12-25">0000.00.00</time></p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="blog_btnbox">
-            <a href="blog_list.html">ブログ一覧へ</a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <div class="back-to-top" id="page-top">
-      <div class="back-to-top_btn">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/other/arrow-top.svg" alt="トップへ戻るボタン" />
       </div>
-      <a href="contact_form.html" class="c_button fixed-buttons__contact"
-        >お問い合わせ</a
-      >
     </div>
-    <footer class="footer">
-      <div class="footer_container inner">
-        <nav class="footer_nav">
-          <ul class="footer_list">
-            <li class="footer_item">
-              <a href="index.html" class="">ホーム </a>
-            </li>
-            <li class="footer_item">
-              <a href="plan.html" class="">料金</a>
-            </li>
-            <li class="footer_item">
-              <a href="blog_list.html" class="">ブログ</a>
-            </li>
-            <li class="footer_item">
-              <a href="result_list.html" class="">卒業実績</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer_logo">
-          <a href="index.html">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/logo-white.svg"
-              alt="きたむらミュージックスクールのロゴ"
-          /></a>
+  </section>
+  <section class="sec4">
+    <div class="sec4 inner">
+      <div class="sec4_container">
+        <div class="top_sec_title">
+          <h2>生徒さんたちの声</h2>
         </div>
-        <div class="footer_copyright">
-          Copyright © 0000 KITAMURA music school Inc. All Rights
-        </div>
-        <div class="footer_sns">
-          <ul>
-            <li>
-              <a href="index.html" target="_blank" rel="noopener"
-                ><img src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/icon-twitter.svg" alt="twitter"
-              /></a>
-            </li>
-            <li>
-              <a href="index.html" target="_blank" rel="noopener"
-                ><img src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/icon-facebook.svg" alt="facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="index.html" target="_blank" rel="noopener"
-                ><img src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/icon-youtube.svg" alt="youtube"
-              /></a>
-            </li>
-            <li>
-              <a href="index.html" target="_blank" rel="noopener"
-                ><img src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/icon-instagram.svg" alt="instagram"
-              /></a>
-            </li>
-          </ul>
+        <div class="sec4_swiper">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- スライド要素 -->
+              <div class="swiper-slide">
+                <a href="result_details.html">
+                  <div class="swiper_img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/voice02.jpg" alt="ピアノと女性の画像" />
+                  </div>
+                  <p class="name">IT会社勤務　S.Eさん</p>
+                  <p class="voice_text">
+                    プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="result_details.html">
+                  <div class="swiper_img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/voice03.jpg" alt="ギターを弾く男性の画像" />
+                  </div>
+                  <p class="name">都内大学生　田森さん</p>
+                  <p class="voice_text">
+                    就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="result_details.html">
+                  <div class="swiper_img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/voice01.jpg" alt="歌う男性の画像" />
+                  </div>
+                  <p class="name">証券会社勤務　丸山さん</p>
+                  <p class="voice_text">
+                    昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="result_details.html">
+                  <div class="swiper_img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/voice03.jpg" alt="ギターを弾く男性の画像" />
+                  </div>
+                  <p class="name">都内大学生　田森さん</p>
+                  <p class="voice_text">
+                    就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="result_details.html">
+                  <div class="swiper_img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/voice02.jpg" alt="ピアノと女性の画像" />
+                  </div>
+                  <p class="name">IT会社勤務　S.Eさん</p>
+                  <p class="voice_text">
+                    プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="result_details.html">
+                  <div class="swiper_img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/voice01.jpg" alt="歌う男性の画像" />
+                  </div>
+                  <p class="name">証券会社勤務　丸山さん</p>
+                  <p class="voice_text">
+                    昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- ナビゲーション（矢印） -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
-    </footer>
-    <script src="<?php echo get_template_directory_uri(); ?>/https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
-  </body>
-</html>
+    </div>
+  </section>
+  <section class="sec5">
+    <div class="sec5 inner">
+      <div class="sec5_container">
+        <div class="top_sec_title">
+          <h2>ご利用の流れ</h2>
+        </div>
+        <div class="guide_content">
+          <div class="guide_list_1">
+            <span class="circle"></span>
+            <p class="guide_title">お問い合わせ</p>
+            <p class="guide_text">
+              まずはフォームまたはメールにてお問い合わせください。<br />
+              ヒアリングの日程を調整します。
+            </p>
+          </div>
+          <div class="guide_list_2">
+            <span class="circle"></span>
+            <p class="guide_title">ヒアリング</p>
+            <p class="guide_text">
+              現在の技術面や将来の目標などをお伺いします。<br />
+              悩みや不安な事もお気軽にご相談ください。
+            </p>
+          </div>
+          <div class="guide_list_3">
+            <span class="circle"></span>
+            <p class="guide_title">プランのご提案</p>
+            <p class="guide_text">
+              ライフスタイルや目標によって最適なプランをご提案します。<br />
+              継続できるようサポートいたします。
+            </p>
+          </div>
+          <div class="guide_list_4">
+            <span class="circle"></span>
+            <p class="guide_title">ご入学</p>
+            <p class="guide_text">
+              お申し込み完了後、レッスンがスタートします。<br />
+              マンツーマン指導なので、いつからでもスタートが可能です。
+            </p>
+          </div>
+          <div class="arrow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec6">
+    <div class="sec6 inner">
+      <div class="sec6_container">
+        <div class="top_sec_title">
+          <h2>よくあるご質問</h2>
+        </div>
+        <div class="faq-section">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="icon">Q</span>
+              <p>どのような生徒さんがどれぐらいの期間で稼いでいますか？</p>
+              <span class="arrow-icon"></span>
+            </div>
+            <div class="faq-answer highlighted">
+              <div class="faq-answer-inner">
+                <span class="icon answer-icon">A</span>
+                <p>
+                  途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="icon">Q</span>
+              <p>途中でプランを変更することは可能ですか？</p>
+              <span class="arrow-icon"></span>
+            </div>
+            <div class="faq-answer highlighted">
+              <div class="faq-answer-inner">
+                <span class="icon answer-icon">A</span>
+                <p>
+                  途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="icon">Q</span>
+              <p>入学金などの分割払いはできますか？</p>
+              <span class="arrow-icon"></span>
+            </div>
+            <div class="faq-answer highlighted">
+              <div class="faq-answer-inner">
+                <span class="icon answer-icon">A</span>
+                <p>
+                  途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="icon">Q</span>
+              <p>休学することも可能ですか？</p>
+              <span class="arrow-icon"></span>
+            </div>
+            <div class="faq-answer highlighted">
+              <div class="faq-answer-inner">
+                <span class="icon answer-icon">A</span>
+                <p>
+                  途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec7">
+    <div class="sec7 inner">
+      <div class="sec7_container">
+        <div class="top_sec_title">
+          <h2>ブログ</h2>
+        </div>
+        <ul class="blog_list">
+          <li class="blog_item">
+            <a href="blog_details.html">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog01-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog01.jpg" alt="歌う女性の画像" />
+              </picture>
+              <span class="img_title">SNS</span>
+              <h3>フォロワーではなくファンを増やせとは？</h3>
+              <p><time datetime="2025-12-25">0000.00.00</time></p>
+            </a>
+          </li>
+          <li class="blog_item">
+            <a href="blog_details.html">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog02-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog02.jpg" alt="悩む男性の画像" />
+              </picture>
+              <span class="img_title">集客方法</span>
+              <h3>集客してる間は売れないという法則</h3>
+              <p><time datetime="2025-12-25">0000.00.00</time></p>
+            </a>
+          </li>
+          <li class="blog_item">
+            <a href="blog_details.html">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog03-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog03.jpg" alt="ギターを弾いている人の画像" />
+              </picture>
+              <span class="img_title">ギター</span>
+              <h3>アルペジオが劇的に向上する3つの習慣</h3>
+              <p><time datetime="2025-12-25">0000.00.00</time></p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="blog_btnbox">
+        <a href="blog_list.html">ブログ一覧へ</a>
+      </div>
+    </div>
+  </section>
+</main>
+<?php get_template_part('template-parts/fix-area'); ?>
+<?php get_footer(); ?>
