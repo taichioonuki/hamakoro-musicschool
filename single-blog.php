@@ -49,7 +49,8 @@
               <ul class="sns_list">
                 <li class="sns_item">
                   <div class="sns_img_fb">
-                    <a href="#">
+                    <a href="<?php echo esc_url('https://www.facebook.com/share.php?u=' . $url); ?>" target="_blank"
+                      rel="noopener noreferrer">
                       <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/img/icon_logo/facebook_sp.svg"
                           media="(max-width: 767px)" />
@@ -60,7 +61,8 @@
                 </li>
                 <li class="sns_item">
                   <div class="sns_img_tw">
-                    <a href="#">
+                    <a href="<?php echo esc_url('https://twitter.com/intent/tweet?text=' . get_the_title() . '&url=' . $url); ?>"
+                      target="_blank" rel="noopener noreferrer">
                       <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/img/icon_logo/twitter_sp.svg"
                           media="(max-width: 767px)" />
@@ -71,7 +73,8 @@
                 </li>
                 <li class="sns_item">
                   <div class="sns_img_hatana">
-                    <a href="#">
+                    <a href="<?php echo esc_url('http://b.hatena.ne.jp/add?mode=confirm&url=' . $url . '&title=' . $title); ?>"
+                      target="_blank" rel="noopener noreferrer">
                       <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/img/icon_logo/hatena_sp.svg"
                           media="(max-width: 767px)" />
@@ -82,7 +85,8 @@
                 </li>
                 <li class="sns_item">
                   <div class="sns_img_line">
-                    <a href="#">
+                    <a href="<?php echo esc_url('https://line.me/R/msg/text/?' . get_the_title() . ' ' . $url); ?>"
+                      target="_blank" rel="noopener noreferrer">
                       <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/img/icon_logo/line_sp.svg"
                           media="(max-width: 767px)" />
@@ -93,7 +97,8 @@
                 </li>
                 <li class="sns_item">
                   <div class="sns_img_pocket">
-                    <a href="#">
+                    <a href="<?php echo esc_url('https://getpocket.com/edit?url=' . $url . '&title=' . $title); ?>"
+                      target="_blank" rel="noopener noreferrer">
                       <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/img/icon_logo/pocket_sp.svg"
                           media="(max-width: 767px)" />
@@ -107,38 +112,7 @@
             <div class="blog_details_content">
               <?php the_content(); ?>
             </div>
-            <div class="article">
-              <div class="article_page">
-                <div class="article_pagebox">
-                  <a href="blog_details.html" class="article_link">
-                    <div class="article_title_prev">◀︎ 前の記事</div>
-                    <div class="article_textbox">
-                      <div class="article_textbox_img pc_only">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/blog_details/blog_pc_03.jpg"
-                          alt="歌う女性の画像" />
-                      </div>
-                      <p class="article_text">
-                        タイトルが入ります。タイトルが入ります。タイトルが入
-                      </p>
-                    </div>
-                  </a>
-                </div>
-                <div class="article_pagebox">
-                  <a href="blog_details.html" class="article_link">
-                    <div class="article_title_next">次の記事 ▶︎</div>
-                    <div class="article_textbox">
-                      <div class="article_textbox_img pc_only">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/blog_details/blog_pc_03.jpg"
-                          alt="歌う女性の画像" />
-                      </div>
-                      <p class="article_text">
-                        タイトルが入ります。タイトルが入ります。タイトルが入
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <?php get_template_part('template-parts/single-pagination'); ?>
             <div class="related">
               <div class="related_content_box">
                 <h2>関連記事</h2>
