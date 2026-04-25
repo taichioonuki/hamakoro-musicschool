@@ -98,100 +98,106 @@ section.sec1_blog_details {
         @include mq($sm) {
           margin-top: 2.7rem;
         }
-
+        p {
+          margin-block: 1.7rem;
+        }
         h2 {
+          margin-block: 3.3rem 1.5rem;
           font-size: 2rem;
-          line-height: 2;
-          font-weight: 700;
-          margin-top: 3.3rem;
+          font-weight: bold;
+          line-height: calc(40 / 20);
+          @include mq($sm) {
+            line-height: calc(30 / 20);
+          }
+        }
+
+        figure {
+          margin-block: 1.7rem;
+
           @include mq($sm) {
             margin-top: 3.9rem;
-            line-height: 1.5;
+          }
+
+          img {
+            width: 33.5rem;
+            aspect-ratio: 335 / 200;
+            object-fit: cover;
+
+            @include mq($sm) {
+              width: 100%;
+            }
           }
         }
-        p.text_bottom {
-          margin-top: 1.5rem;
-          @include mq($sm) {
-            margin-top: 1.7rem;
-          }
+
+        ul,
+        ol {
+          margin-block: 2.8rem;
+          padding-left: 1em;
         }
-        .text_bottom_img {
-          margin: 1.7rem 0 2.8rem 0;
-          width: 33.5rem;
-          @include mq($sm) {
-            margin: 3.9rem 0 2.7rem 0;
-          }
-        }
-        hr {
-          margin-top: 4.1rem;
-          @include mq($sm) {
-            margin-top: 3.8rem;
-          }
-        }
-      }
-      .blog_details_content02 {
-        margin-top: 4.3rem;
-        @include mq($sm) {
-          margin-top: 5rem;
+
+        li {
+          font-size: 1.8rem;
+          line-height: 1.6;
+          list-style: initial;
         }
         h3 {
+          margin-block: 4.3rem 1.7rem;
           font-size: 2rem;
-          line-height: 2;
-          font-weight: 700;
+          line-height: calc(40 / 20);
+          font-weight: bold;
+          padding-left: 1.1rem;
           position: relative;
-          padding-left: 0.9rem;
           @include mq($sm) {
-            line-height: 1.5;
+            line-height: calc(30 / 20);
+            margin-bottom: 2rem;
           }
         }
         h3::before {
           content: "";
-          display: block;
+          content: "";
           width: 0.3rem;
-          background-color: #000;
+          height: 2rem;
+          height: calc(100% - 2rem);
+          background: #000;
           position: absolute;
-          left: 0.1rem;
+          left: 0;
           top: 50%;
           transform: translateY(-50%);
-          height: calc(100% - 1.2rem);
           @include mq($sm) {
             height: calc(100% - 1rem);
           }
         }
-        .sec1_left_textbox {
-          background: #e8e8e8;
-          margin: 1.7rem 0 2.7rem 0;
+
+        blockquote {
+          display: flex;
+          column-gap: 0.8rem;
+          padding: 1.8rem 3rem 1rem;
+          margin-block: 1.7rem 2.9rem;
           position: relative;
+          border: none;
+          background: #e8e8e8;
           @include mq($sm) {
-            margin-top: 1.95rem;
+            column-gap: 1.7rem;
+            padding: 1.7rem 2rem 1.1rem 2.5rem;
+            margin-bottom: 2.6rem;
           }
-          &::after {
+
+          &::before {
             content: "";
+            background: url(https://hamakoro-i.com/music_school/img/icon_logo/quotation.svg)
+              center center / contain no-repeat;
             display: inline-block;
-            position: absolute;
-            width: 3rem;
-            height: 3rem;
-            top: 2rem;
-            left: 3rem;
-            background-image: url(https://hamakoro-i.com/music_school/img/icon_logo/quotation.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            vertical-align: middle;
-            @include mq($sm) {
-              width: 2.6rem;
-              height: 2.4rem;
-              top: 2.2rem;
-              left: 2.7rem;
-            }
+            width: 2.7rem;
+            height: 2.34rem;
           }
-          p.question {
-            padding: 1.8rem 3rem 1rem 6.7rem;
-            @include mq($sm) {
-              padding: 1.8rem 2rem 1rem 7rem;
-            }
+
+          p {
+            margin: 0;
+            flex: 1;
           }
         }
-        a.sec1_left_textlink {
+
+        a {
           font-size: 2rem;
           font-weight: 700;
           color: $main_color;
@@ -200,6 +206,14 @@ section.sec1_blog_details {
           transition: opacity 0.4s;
           &:hover {
             opacity: 0.7;
+          }
+        }
+        hr {
+          margin-block: 4.1rem;
+          border-bottom: 0.5px solid;
+          @include mq($sm) {
+            margin-bottom: 5rem;
+            // margin-top: 3.8rem;
           }
         }
       }
