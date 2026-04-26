@@ -55,7 +55,7 @@
           <a href="plan.html" class="">料金</a>
         </li>
         <li class="header_item">
-          <a href="blog_list.html" class="">ブログ</a>
+          <a href="<?php echo home_url('/blog'); ?>" class="">ブログ</a>
         </li>
         <li class="header_item">
           <a href="result_list.html" class="">卒業実績</a>
