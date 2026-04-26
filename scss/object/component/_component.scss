@@ -485,7 +485,7 @@ div.related {
     margin-top: 5.9rem;
   }
 
-  .Pagination {
+  .wp-pagenavi {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -496,7 +496,8 @@ div.related {
     }
   }
 
-  .Pagination-Item-Link {
+  .current,
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -514,16 +515,34 @@ div.related {
       height: 4.4rem;
     }
   }
-  .isActive {
+  .current {
     background: #000;
     color: #fff;
   }
-  a.Pagination-Item-Link:not(.isFirst):hover {
+  .page:not(.isFirst):hover {
     background: #000;
     color: #fff;
   }
-
-  .Pagination_ellipsis {
+  .last {
+    transition:
+      background-color 0.4s linear,
+      color 0.4s linear;
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+  .first {
+    transition:
+      background-color 0.4s linear,
+      color 0.4s linear;
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+  .extend {
     margin: 0 1rem;
+    border: none;
   }
 }

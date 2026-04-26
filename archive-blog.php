@@ -72,26 +72,9 @@
           </ul>
         </div>
         <div class="page">
-          <ul class="Pagination">
-            <li class="Pagination-Item">
-              <span class="Pagination-Item-Link isActive">1</span>
-            </li>
-            <li class="Pagination-Item">
-              <a class="Pagination-Item-Link" href=""><span class="Pagination">2</span></a>
-            </li>
-            <li class="Pagination-Item">
-              <a class="Pagination-Item-Link" href=""><span class="Pagination">3</span></a>
-            </li>
-            <li class="Pagination-Item">
-              <span class="Pagination_ellipsis">…</span>
-            </li>
-            <li class="Pagination-Item">
-              <a class="Pagination-Item-Link" href=""><span class="Pagination">9</span></a>
-            </li>
-          </ul>
+          <?php wp_pagenavi(); ?>
         </div>
       </div>
-    </div>
   </section>
 </main>
 <?php get_template_part('template-parts/fix-area'); ?>

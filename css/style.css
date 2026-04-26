@@ -1394,7 +1394,7 @@ div.related div.related_content_box div.related_content ul .related_content_item
     margin-top: 5.9rem;
   }
 }
-.page .Pagination {
+.page .wp-pagenavi {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1407,11 +1407,12 @@ div.related div.related_content_box div.related_content ul .related_content_item
   gap: 1rem;
 }
 @media screen and (max-width: 767px) {
-  .page .Pagination {
+  .page .wp-pagenavi {
     gap: 0.5rem;
   }
 }
-.page .Pagination-Item-Link {
+.page .current,
+.page a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1431,21 +1432,39 @@ div.related div.related_content_box div.related_content ul .related_content_item
   transition: background-color 0.4s linear, color 0.4s linear;
 }
 @media screen and (max-width: 767px) {
-  .page .Pagination-Item-Link {
+  .page .current,
+  .page a {
     width: 4.4rem;
     height: 4.4rem;
   }
 }
-.page .isActive {
+.page .current {
   background: #000;
   color: #fff;
 }
-.page a.Pagination-Item-Link:not(.isFirst):hover {
+.page .page:not(.isFirst):hover {
   background: #000;
   color: #fff;
 }
-.page .Pagination_ellipsis {
+.page .last {
+  -webkit-transition: background-color 0.4s linear, color 0.4s linear;
+  transition: background-color 0.4s linear, color 0.4s linear;
+}
+.page .last:hover {
+  background: #000;
+  color: #fff;
+}
+.page .first {
+  -webkit-transition: background-color 0.4s linear, color 0.4s linear;
+  transition: background-color 0.4s linear, color 0.4s linear;
+}
+.page .first:hover {
+  background: #000;
+  color: #fff;
+}
+.page .extend {
   margin: 0 1rem;
+  border: none;
 }
 
 section.sec_fv .sec_fv_container {
