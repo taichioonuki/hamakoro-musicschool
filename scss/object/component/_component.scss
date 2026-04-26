@@ -320,6 +320,12 @@ div.article {
       gap: 2.2rem;
     }
     div.article_pagebox {
+      width: 100%;
+      &:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
       a.article_link {
         transition: opacity 0.4s;
         .article_title_prev {
@@ -365,6 +371,7 @@ div.article {
           color: #fff;
           text-align: right;
           padding: 0.4rem 2rem 0.3rem 0;
+          font-size: 1.7rem;
           @include mq($sm) {
             width: 100%;
           }
