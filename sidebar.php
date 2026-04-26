@@ -57,21 +57,22 @@
   <div class="sidebar_category">
     <p class="sidebar_title">カテゴリー</p>
     <ul class="category_list">
-      <li class="category_item">
-        <a href="#" class="category_link">カテゴリー</a>
-      </li>
-      <li class="category_item">
-        <a href="#" class="category_link">カテゴリー</a>
-      </li>
-      <li class="category_item">
-        <a href="#" class="category_link">カテゴリー</a>
-      </li>
-      <li class="category_item">
-        <a href="#" class="category_link">カテゴリー</a>
-      </li>
-      <li class="category_item">
-        <a href="#" class="category_link">カテゴリー</a>
-      </li>
+      <?php
+      $terms = get_terms([
+        'taxonomy' => 'blog_cate',
+        'hide_empty' => true,
+      ]);
+      if (!is_wp_error($terms) && !empty($terms)):
+        foreach ($terms as $term):
+          $term_link = get_term_link($term->term_id);
+          ?>
+          <li class="category_item">
+            <a href="<?php echo esc_url($term_link); ?>" class="category_link"><?php echo esc_html($term->name); ?></a>
+          </li>
+          <?php
+        endforeach;
+      endif;
+      ?>
     </ul>
   </div>
 </aside>
