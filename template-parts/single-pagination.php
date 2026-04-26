@@ -4,7 +4,7 @@ $next_post = get_next_post();
 $add_class_result = '';
 
 if (is_singular('result')) {
-  $add_class_result = 'c-single-pagination--result';
+  $add_class_result = 'sec1_left_content--result';
 }
 ?>
 <div class="article <?php echo $add_class_result; ?>">

@@ -113,90 +113,9 @@
               <?php the_content(); ?>
             </div>
             <?php get_template_part('template-parts/single-pagination'); ?>
-            <div class="related">
-              <div class="related_content_box">
-                <h2>関連記事</h2>
-                <div class="related_content">
-                  <ul>
-                    <li class="related_content_item">
-                      <a href="blog_list.html">
-                        <div class="related_content_item_left">
-                          <div class="related_img">
-                            <picture>
-                              <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/blog/blog_sp_03.jpg"
-                                media="(max-width: 767px)" />
-                              <img src="<?php echo get_template_directory_uri(); ?>/img/blog/blog_pc_03.jpg"
-                                alt="歌う女性の画像" />
-                            </picture>
-                          </div>
-                          <span class="img_title related_img_title">ギター</span>
-                        </div>
-                        <div class="related_content_textbox">
-                          <h3 class="pc_only">
-                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                          </h3>
-                          <h3 class="sp_only">タイトルが入ります。タイトル</h3>
-                          <p class="time">
-                            <time datetime="2025-12-25">0000.00.00</time>
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="related_content_item">
-                      <a href="blog_list.html">
-                        <div class="related_content_item_left">
-                          <div class="related_img">
-                            <picture>
-                              <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/blog/blog_sp_03.jpg"
-                                media="(max-width: 767px)" />
-                              <img src="<?php echo get_template_directory_uri(); ?>/img/blog/blog_pc_03.jpg"
-                                alt="歌う女性の画像" />
-                            </picture>
-                          </div>
-                          <span class="img_title related_img_title">ギター</span>
-                        </div>
-                        <div class="related_content_textbox">
-                          <h3 class="pc_only">
-                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                          </h3>
-                          <h3 class="sp_only">タイトルが入ります。タイトル</h3>
-                          <p class="time">
-                            <time datetime="2025-12-25">0000.00.00</time>
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="related_content_item">
-                      <a href="blog_list.html">
-                        <div class="related_content_item_left">
-                          <div class="related_img">
-                            <picture>
-                              <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/blog/blog_sp_03.jpg"
-                                media="(max-width: 767px)" />
-                              <img src="<?php echo get_template_directory_uri(); ?>/img/blog/blog_pc_03.jpg"
-                                alt="歌う女性の画像" />
-                            </picture>
-                          </div>
-                          <span class="img_title related_img_title">ギター</span>
-                        </div>
-                        <div class="related_content_textbox">
-                          <h3 class="pc_only">
-                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                          </h3>
-                          <h3 class="sp_only">タイトルが入ります。タイトル</h3>
-                          <p class="time">
-                            <time datetime="2025-12-25">0000.00.00</time>
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <?php get_template_part('template-parts/related-articles'); ?>
+            <?php get_sidebar(); ?>
           </div>
-          <?php get_sidebar(); ?>
-        </div>
       </section>
       <?php
     endwhile;
