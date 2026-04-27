@@ -90,56 +90,56 @@ span.img_title {
 //共通パーツ【パンくずリスト】
 nav.breadcrumb {
   background-color: #e8e8e8;
+
   .breadcrumb_container {
-    ul.breadcrumb_list {
+    // コンテナ自体をフレックスボックスにして横並びにする
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    column-gap: 1.7rem;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    // 各アイテム（リンクや現在のページ名）
+    span[property="itemListElement"] {
       display: flex;
       align-items: center;
-      font-size: 1.6rem;
-      column-gap: 1.7rem;
-      overflow-x: auto;
-      white-space: nowrap;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
+      flex-shrink: 0;
+      height: 5rem;
+      @include mq($sm) {
+        height: 3.6rem;
       }
-      li {
-        display: flex;
-        align-items: center;
-        flex-shrink: 0; // 横スクロール時に潰れないようにする
-        height: 5rem;
-        @include mq($sm) {
-          height: 3.6rem;
-        }
-        &:not(:last-child)::after {
-          content: ">";
-          font-size: 1.6rem;
-          margin-left: 1.7rem; // column-gapと合わせて調整
-          color: #000;
-        }
 
-        a.breadcrumb_link {
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          color: #000;
-          transition: opacity 0.4s;
-          height: 5rem;
-          @include mq($sm) {
-            height: 3.6rem;
-          }
-          &:hover {
-            opacity: 0.7;
-          }
+      a {
+        text-decoration: none;
+        color: #000;
+        transition: opacity 0.4s;
+        &:hover {
+          opacity: 0.7;
         }
       }
 
-      li:last-child {
+      // リンクになっていない（現在地など）テキストの調整
+      span[property="name"] {
         line-height: 1.45;
         @include mq($sm) {
           line-height: 1.25;
         }
       }
+    }
+
+    // プラグインが出力する区切り文字「 > 」の調整
+    .breadcrumb_sign {
+      display: flex;
+      align-items: center;
+      margin: 0 1.7rem; // 左右に余白を作る
+      color: #000;
+      font-size: 1.6rem;
     }
   }
 }

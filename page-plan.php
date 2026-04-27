@@ -4,22 +4,14 @@
     <div class="page_fv_container">
       <div class="page_fv_overlay"></div>
       <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/plan/plan_fv_sp.jpg" media="(max-width: 767px)" />
+        <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/plan/plan_fv_sp.jpg"
+          media="(max-width: 767px)" />
         <img src="<?php echo get_template_directory_uri(); ?>/img/plan/plan_fv_pc.jpg" alt="ギター" />
       </picture>
       <h1 class="page_fv_title">プラン・料金</h1>
     </div>
   </section>
-  <nav class="breadcrumb">
-    <div class="breadcrumb_container inner">
-      <ul class="breadcrumb_list">
-        <li>
-          <a class="breadcrumb_link" href="index.html">ホーム</a>
-        </li>
-        <li class="breadcrumb_item">プラン・料金</li>
-      </ul>
-    </div>
-  </nav>
+  <?php get_template_part('template-parts/breadcrumbs'); ?>
   <section class="plan_sec1">
     <div class="plan sec1 inner">
       <div class="sec_title">
@@ -150,5 +142,5 @@
     </div>
   </section>
 </main>
-  <?php get_template_part('template-parts/fix-area'); ?>
+<?php get_template_part('template-parts/fix-area'); ?>
 <?php get_footer(); ?>

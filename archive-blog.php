@@ -11,16 +11,7 @@
       <h1 class="page_fv_title">ブログ</h1>
     </div>
   </section>
-  <nav class="breadcrumb">
-    <div class="breadcrumb_container inner">
-      <ul class="breadcrumb_list">
-        <li>
-          <a class="breadcrumb_link" href="index.html">ホーム</a>
-        </li>
-        <li class="breadcrumb_item">ブログ</li>
-      </ul>
-    </div>
-  </nav>
+  <?php get_template_part('template-parts/breadcrumbs'); ?>
   <section class="blog">
     <div class="blog_sec inner">
       <div class="blog_sec_container">
