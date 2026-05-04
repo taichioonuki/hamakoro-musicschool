@@ -4,9 +4,9 @@
     <div class="page_fv_container">
       <div class="page_fv_overlay"></div>
       <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>img/sp/blog/blog_fv_sp.jpg"
+        <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/blog/blog_fv_sp.jpg"
           media="(max-width: 767px)" />
-        <img src="<?php echo get_template_directory_uri(); ?>img/blog/blog_fv_pc.jpg" alt="ギター" />
+        <img src="<?php echo get_template_directory_uri(); ?>/img/blog/blog_fv_pc.jpg" alt="ギター" />
       </picture>
       <h1 class="page_fv_title">ブログ</h1>
     </div>
@@ -33,9 +33,9 @@
                           <?php the_post_thumbnail(); ?>
                         <?php else: ?>
                           <picture>
-                            <source srcset="<?php echo get_template_directory_uri(); ?>img/sp/blog/blog_sp_01.jpg"
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/blog/blog_sp_01.jpg"
                               media="(max-width: 767px)" />
-                            <img src="<?php echo get_template_directory_uri(); ?>img/blog/blog_pc_01.jpg" alt="ギター" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/blog/blog_pc_01.jpg" alt="ギター" />
                           </picture><?php endif; ?>
                       </div>
                       <span class="img_title"><?php
