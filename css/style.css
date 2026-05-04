@@ -3591,6 +3591,7 @@ section.profile_card .profile.inner .profile_card_body .profile_card_content {
       -ms-flex-align: start;
           align-items: start;
   margin-top: 5.7rem;
+  min-width: 0;
 }
 @media screen and (max-width: 767px) {
   section.profile_card .profile.inner .profile_card_body .profile_card_content {
@@ -3601,9 +3602,13 @@ section.profile_card .profile.inner .profile_card_body .profile_card_content {
     line-height: 1.667;
   }
 }
+section.profile_card .profile.inner .profile_card_body .profile_card_content .profile_card_table-wrapper {
+  min-width: 0;
+}
 section.profile_card .profile.inner .profile_card_body .profile_card_content .profile_card_table-wrapper table.profile_card_table {
   border: 0.5px solid #707070;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 section.profile_card .profile.inner .profile_card_body .profile_card_content .profile_card_table-wrapper table.profile_card_table tbody table,
 section.profile_card .profile.inner .profile_card_body .profile_card_content .profile_card_table-wrapper table.profile_card_table tbody th,
