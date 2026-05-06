@@ -1,13 +1,11 @@
 <?php
 $prev_post = get_previous_post();
 $next_post = get_next_post();
-$add_class_result = '';
 
-if (is_singular('result')) {
-  $add_class_result = 'sec1_left_content--result';
-}
+// resultページなら 'article--result' というクラスを付けます
+$article_class = 'article' . (is_singular('result') ? ' article--result' : '');
 ?>
-<div class="article <?php echo $add_class_result; ?>">
+<div class="<?php echo esc_attr($article_class); ?>">
   <div class="article_page">
     <div class="article_pagebox">
       <?php if (!empty($prev_post)): ?>
