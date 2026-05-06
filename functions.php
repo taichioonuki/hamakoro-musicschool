@@ -59,12 +59,20 @@ add_action('wp_enqueue_scripts', 'add_files');
 
 function my_page_conditions($query)
 {
+  // 管理画面ではなく、メインクエリの場合のみ実行
   if (!is_admin() && $query->is_main_query()) {
-    // カスタム投稿のスラッグを記述
-    if (is_post_type_archive('blog')) {
-      // 表示件数を指定
+    // カスタム投稿タイプ 'blog' または 'result' のアーカイブページの場合
+    if (is_post_type_archive(['blog', 'result'])) {
+      // 表示件数を10件に設定
       $query->set('posts_per_page', 10);
     }
   }
 }
 add_action('pre_get_posts', 'my_page_conditions');
+
+//管理画面で 投稿メニュー を非表示
+function remove_menus () {
+  global $menu;
+  remove_menu_page( 'edit.php' );
+}
+add_action('admin_menu', 'remove_menus');

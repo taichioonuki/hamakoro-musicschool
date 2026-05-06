@@ -52,16 +52,16 @@
     <nav class="header_nav">
       <ul class="header_list">
         <li class="header_item">
-          <a href="plan.html" class="">料金</a>
+          <a href="<?php echo home_url('/plan'); ?>" class="">料金</a>
         </li>
         <li class="header_item">
           <a href="<?php echo home_url('/blog'); ?>" class="">ブログ</a>
         </li>
         <li class="header_item">
-          <a href="result_list.html" class="">卒業実績</a>
+          <a href="<?php echo home_url('/result'); ?>" class="">卒業実績</a>
         </li>
       </ul>
-      <a href="contact_form.html" class="c_button button__head">お問い合わせ</a>
+      <a href="<?php echo home_url('/contact'); ?>" class="c_button button__head">お問い合わせ</a>
     </nav>
     </div>
   </header>
