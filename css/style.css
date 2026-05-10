@@ -431,13 +431,11 @@ body {
   line-height: 1.667;
   letter-spacing: 0;
   overflow-x: hidden;
-  margin-top: 8rem;
 }
 @media screen and (max-width: 767px) {
   body {
     font-size: 1.6rem;
     line-height: 1.875;
-    margin-top: 5rem;
   }
 }
 
@@ -589,15 +587,15 @@ header.header div.header_container nav.header_nav ul.header_list {
   display: flex;
   height: 8rem;
 }
-header.header div.header_container nav.header_nav ul.header_list li.header_item {
+header.header div.header_container nav.header_nav ul.header_list li {
   margin-right: 3.3rem;
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container nav.header_nav ul.header_list li.header_item {
+  header.header div.header_container nav.header_nav ul.header_list li {
     margin-right: 0;
   }
 }
-header.header div.header_container nav.header_nav ul.header_list li.header_item a {
+header.header div.header_container nav.header_nav ul.header_list li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,7 +605,7 @@ header.header div.header_container nav.header_nav ul.header_list li.header_item 
   height: 100%;
   position: relative;
 }
-header.header div.header_container nav.header_nav ul.header_list li.header_item a::after {
+header.header div.header_container nav.header_nav ul.header_list li a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -624,12 +622,12 @@ header.header div.header_container nav.header_nav ul.header_list li.header_item 
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-header.header div.header_container nav.header_nav ul.header_list li.header_item a:hover::after {
+header.header div.header_container nav.header_nav ul.header_list li a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container nav.header_nav ul.header_list li.header_item a {
+  header.header div.header_container nav.header_nav ul.header_list li a {
     height: 5.8rem;
   }
 }

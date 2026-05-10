@@ -1,0 +1,344 @@
+<?php get_header(); ?>
+<main>
+  <section class="sec_fv">
+    <div class="sec_fv_container">
+      <div class="sec_fv_overlay"></div>
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/fv-sp.jpg" media="(max-width: 767px)" />
+        <img src="<?php echo get_template_directory_uri(); ?>/img/top/music-pc_fv.jpg" alt="ギターを弾いてる女性" />
+      </picture>
+      <h2 class="top_title">
+        「音楽で生きる」<br class="sp_only" />を叶える
+        <br class="pc_only" /><br class="sp_only" />ミュージックスクール
+      </h2>
+    </div>
+  </section>
+  <section class="sec1">
+    <div class="sec1 inner">
+      <div class="top_sec_title">
+        <h2>全人類、<br class="sp_only" />ミュージシャン計画。</h2>
+        <p>
+          私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。
+        </p>
+        <picture>
+          <source srcset="<?php echo get_template_directory_uri(); ?>/img/other/semicircle-sp.svg"
+            media="(max-width: 767px)" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img//other/semicircle.svg" alt="半円形の装飾" />
+        </picture>
+      </div>
+      <div class="vision_content">
+        <div class="vision_list_1">
+          <p class="vision_en">Enthusiasm</p>
+          <span class="circle"></span>
+          <p class="vision_jp">熱狂し</p>
+        </div>
+        <div class="vision_list_2">
+          <p class="vision_en">Envision</p>
+          <span class="circle"></span>
+          <p class="vision_jp">想像し</p>
+        </div>
+        <div class="vision_list_3">
+          <p class="vision_en">Effulgent</p>
+          <span class="circle"></span>
+          <p class="vision_jp">輝く存在へ</p>
+        </div>
+        <div class="arrow"></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec2">
+    <div class="sec2 inner">
+      <div class="sec2_container">
+        <div class="top_sec_title">
+          <h2>
+            音楽業界初！<br />
+            収益化までサポートする<br class="sp_only" />ミュージックスクール
+          </h2>
+          <p>
+            楽器や作詞作曲などの<br class="sp_only" />技術・知識はもちろんのこと<br />
+            自分で稼ぎつづけるための<br class="sp_only" />ビジネス面もサポートします！
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec3">
+    <div class="sec3 inner">
+      <div class="sec3_container">
+        <div class="top_sec_title">
+          <h2>
+            きたむらミュージック<br class="sp_only" />スクールが選ばれる理由
+          </h2>
+        </div>
+        <div class="sec3_list">
+          <div class="sec3_item">
+            <div class="sec3_item_img">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason01-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/reason01.jpg" alt="犬を抱いている男性がピアノを弾く" />
+              </picture>
+            </div>
+            <div class="sec3_textbox">
+              <h3>技術面はプロによるマンツーマン授業！</h3>
+              <p>
+                第一線で活躍するプロによるマンツーマン授業で、きめ細かな技術指導が受けられます。
+              </p>
+            </div>
+          </div>
+          <div class="sec3_item">
+            <div class="sec3_item_img">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason02-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/reason02.jpg" alt="サポートをする様子" />
+              </picture>
+            </div>
+            <div class="sec3_textbox">
+              <h3>収益化するためのビジネスサポート！</h3>
+              <p>
+                コンセプト設計や集客方法、マーケティングリサーチなど、音楽で稼ぎつづけるための方法やマインドセットをサポートするクラスをご用意。
+              </p>
+            </div>
+          </div>
+          <div class="sec3_item">
+            <div class="sec3_item_img">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/reason03-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/reason03.jpg" alt="ギターを持つ人" />
+              </picture>
+            </div>
+            <div class="sec3_textbox">
+              <h3>24時間365日使える練習ROOMを完備！</h3>
+              <p>
+                一年中使える個室の練習ROOMを完備しているため、お仕事帰りや合間の時間も自由に練習が可能です。<span class="indent">（アプリで予約が必要です）</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec4">
+    <div class="sec4 inner">
+      <div class="sec4_container">
+        <div class="top_sec_title">
+          <h2>生徒さんたちの声</h2>
+        </div>
+        <div class="sec4_swiper">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <?php
+              $args = array(
+                'posts_per_page' => 6,
+                'post_type' => 'result', // カスタム投稿タイプ名
+                'orderby' => 'date',
+                'order' => 'DESC'
+              );
+              $the_query = new WP_Query($args);
+              ?>
+
+              <?php if ($the_query->have_posts()): ?>
+                <?php while ($the_query->have_posts()):
+                  $the_query->the_post(); ?>
+
+                  <!-- ここからループするスライド要素 -->
+                  <div class="swiper-slide">
+                    <a href="<?php the_permalink(); ?>">
+                      <div class="swiper_img">
+                        <?php if (has_post_thumbnail()): ?>
+                          <?php the_post_thumbnail('full'); ?>
+                        <?php else: ?>
+                          <img src="<?php echo get_template_directory_uri(); ?>/img/top/default.jpg" alt="デフォルト画像" />
+                        <?php endif; ?>
+                      </div>
+                      <p class="name"><?php the_field('job'); ?>&emsp;<?php the_field('name'); ?>さん</p>
+                      <div class="voice_text">
+                        <?php the_excerpt(); // または the_content(); ?>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- ここまで -->
+
+                <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
+
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec5">
+    <div class="sec5 inner">
+      <div class="sec5_container">
+        <div class="top_sec_title">
+          <h2>ご利用の流れ</h2>
+        </div>
+        <div class="guide_content">
+          <div class="guide_list_1">
+            <span class="circle"></span>
+            <p class="guide_title">お問い合わせ</p>
+            <p class="guide_text">
+              まずはフォームまたはメールにてお問い合わせください。<br />
+              ヒアリングの日程を調整します。
+            </p>
+          </div>
+          <div class="guide_list_2">
+            <span class="circle"></span>
+            <p class="guide_title">ヒアリング</p>
+            <p class="guide_text">
+              現在の技術面や将来の目標などをお伺いします。<br />
+              悩みや不安な事もお気軽にご相談ください。
+            </p>
+          </div>
+          <div class="guide_list_3">
+            <span class="circle"></span>
+            <p class="guide_title">プランのご提案</p>
+            <p class="guide_text">
+              ライフスタイルや目標によって最適なプランをご提案します。<br />
+              継続できるようサポートいたします。
+            </p>
+          </div>
+          <div class="guide_list_4">
+            <span class="circle"></span>
+            <p class="guide_title">ご入学</p>
+            <p class="guide_text">
+              お申し込み完了後、レッスンがスタートします。<br />
+              マンツーマン指導なので、いつからでもスタートが可能です。
+            </p>
+          </div>
+          <div class="arrow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec6">
+    <div class="sec6 inner">
+      <div class="sec6_container">
+        <div class="top_sec_title">
+          <h2>よくあるご質問</h2>
+        </div>
+        <div class="faq-section">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="icon">Q</span>
+              <p>どのような生徒さんがどれぐらいの期間で稼いでいますか？</p>
+              <span class="arrow-icon"></span>
+            </div>
+            <div class="faq-answer highlighted">
+              <div class="faq-answer-inner">
+                <span class="icon answer-icon">A</span>
+                <p>
+                  途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="icon">Q</span>
+              <p>途中でプランを変更することは可能ですか？</p>
+              <span class="arrow-icon"></span>
+            </div>
+            <div class="faq-answer highlighted">
+              <div class="faq-answer-inner">
+                <span class="icon answer-icon">A</span>
+                <p>
+                  途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="icon">Q</span>
+              <p>入学金などの分割払いはできますか？</p>
+              <span class="arrow-icon"></span>
+            </div>
+            <div class="faq-answer highlighted">
+              <div class="faq-answer-inner">
+                <span class="icon answer-icon">A</span>
+                <p>
+                  途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="icon">Q</span>
+              <p>休学することも可能ですか？</p>
+              <span class="arrow-icon"></span>
+            </div>
+            <div class="faq-answer highlighted">
+              <div class="faq-answer-inner">
+                <span class="icon answer-icon">A</span>
+                <p>
+                  途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec7">
+    <div class="sec7 inner">
+      <div class="sec7_container">
+        <div class="top_sec_title">
+          <h2>ブログ</h2>
+        </div>
+        <ul class="blog_list">
+          <li class="blog_item">
+            <a href="blog_details.html">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog01-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog01.jpg" alt="歌う女性の画像" />
+              </picture>
+              <span class="img_title">SNS</span>
+              <h3>フォロワーではなくファンを増やせとは？</h3>
+              <p><time datetime="2025-12-25">0000.00.00</time></p>
+            </a>
+          </li>
+          <li class="blog_item">
+            <a href="blog_details.html">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog02-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog02.jpg" alt="悩む男性の画像" />
+              </picture>
+              <span class="img_title">集客方法</span>
+              <h3>集客してる間は売れないという法則</h3>
+              <p><time datetime="2025-12-25">0000.00.00</time></p>
+            </a>
+          </li>
+          <li class="blog_item">
+            <a href="blog_details.html">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog03-sp.jpg"
+                  media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog03.jpg" alt="ギターを弾いている人の画像" />
+              </picture>
+              <span class="img_title">ギター</span>
+              <h3>アルペジオが劇的に向上する3つの習慣</h3>
+              <p><time datetime="2025-12-25">0000.00.00</time></p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="blog_btnbox">
+        <a href="blog_list.html">ブログ一覧へ</a>
+      </div>
+    </div>
+  </section>
+</main>
+<?php get_template_part('template-parts/fix-area'); ?>
+<?php get_footer(); ?>

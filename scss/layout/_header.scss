@@ -88,7 +88,7 @@ header.header {
       ul.header_list {
         display: flex;
         height: 8rem;
-        li.header_item {
+        li {
           margin-right: 3.3rem;
           @include mq($sm) {
             margin-right: 0;

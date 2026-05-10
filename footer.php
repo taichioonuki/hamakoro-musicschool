@@ -1,23 +1,19 @@
 <footer class="footer">
   <div class="footer_container inner">
     <nav class="footer_nav">
-      <ul class="footer_list">
-        <li class="footer_item">
-          <a href="index.html" class="">ホーム </a>
-        </li>
-        <li class="footer_item">
-          <a href="plan.html" class="">料金</a>
-        </li>
-        <li class="footer_item">
-          <a href="blog_list.html" class="">ブログ</a>
-        </li>
-        <li class="footer_item">
-          <a href="result_list.html" class="">卒業実績</a>
-        </li>
-      </ul>
+      <?php
+      wp_nav_menu(
+        array(
+          'theme_location' => 'footer',      // functions.phpで決めた識別子
+          'container' => false,         // 余計な div を出さない
+          'menu_class' => 'footer_list', // ul につくクラス名
+          'add_li_class' => 'footer_item', // li につくクラス名（※要フック）
+        )
+      );
+      ?>
     </nav>
     <div class="footer_logo">
-      <a href="index.html">
+      <a href="<?php echo esc_url(home_url('/')); ?>">
         <img src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/logo-white.svg"
           alt="きたむらミュージックスクールのロゴ" /></a>
     </div>

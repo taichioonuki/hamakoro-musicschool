@@ -50,18 +50,16 @@
       <span class="toggle_line"></span>
     </button>
     <nav class="header_nav">
-      <ul class="header_list">
-        <li class="header_item">
-          <a href="<?php echo home_url('/plan'); ?>" class="">料金</a>
-        </li>
-        <li class="header_item">
-          <a href="<?php echo home_url('/blog'); ?>" class="">ブログ</a>
-        </li>
-        <li class="header_item">
-          <a href="<?php echo home_url('/result'); ?>" class="">卒業実績</a>
-        </li>
-      </ul>
-      <a href="<?php echo home_url('/contact'); ?>" class="c_button button__head">お問い合わせ</a>
+      <?php
+      wp_nav_menu(
+        array(
+          'theme_location' => 'primary',     // 1で決めた識別子
+          'menu_class' => 'header_list', // ul につくクラス名
+          'add_li_class' => 'header_item', // li につくクラス名（※要フック）
+          'container' => false,
+        )
+      );
+      ?>
     </nav>
     </div>
   </header>
