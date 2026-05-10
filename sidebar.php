@@ -6,15 +6,7 @@
     </div>
   </div>
   <div class="sidebar_search">
-    <p class="sidebar_title">ブログ内を検索</p>
-    <div class="search_box">
-      <form action="search.html" method="GET" class="search-container">
-        <input type="search" name="q" class="search-input" placeholder="検索ワード" />
-        <div class="search_icon">
-          <button type="submit" class="search-button"></button>
-        </div>
-      </form>
-    </div>
+      <?php get_search_form(); ?>
   </div>
   <div class="sidebar_posts">
     <p class="sidebar_title">おすすめの記事</p>
