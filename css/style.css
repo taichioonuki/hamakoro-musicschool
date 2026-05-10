@@ -3173,6 +3173,16 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
     margin-bottom: 1.6rem;
   }
 }
+.form_wrapper .wpcf7-form-control-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: block;
+}
+.form_wrapper .form_input,
+.form_wrapper .form_textarea {
+  width: 100% !important;
+}
 .form_wrapper .form_label {
   width: 16.9rem;
   -ms-flex-negative: 0;
@@ -3270,6 +3280,70 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
       -ms-flex: 1;
           flex: 1;
 }
+.form_wrapper .purpose_group .checkbox_container .wpcf7-form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1.5rem;
+}
+.form_wrapper .purpose_group .checkbox_container .wpcf7-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+.form_wrapper .purpose_group .checkbox_container .wpcf7-list-item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin: 0;
+}
+.form_wrapper .purpose_group .checkbox_container .wpcf7-list-item input[type=checkbox] {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #000;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  margin: 0 1.5rem 0 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.form_wrapper .purpose_group .checkbox_container .wpcf7-list-item input[type=checkbox]:checked::after {
+  content: "";
+  width: 0.7rem;
+  height: 1.2rem;
+  border: solid #000;
+  border-width: 0 0.3rem 0.3rem 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.form_wrapper .purpose_group .checkbox_container .wpcf7-list-item .wpcf7-list-item-label {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+@media screen and (max-width: 767px) {
+  .form_wrapper .purpose_group .checkbox_container .wpcf7-list-item .wpcf7-list-item-label {
+    font-size: 1.6rem;
+  }
+}
 .form_wrapper .purpose_group .checkbox_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3349,12 +3423,28 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 .form_wrapper .submit_button_container .submit_button {
   width: 25rem;
   height: 5rem;
   font-size: 2.5rem;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 @media screen and (max-width: 767px) {
   .form_wrapper .submit_button_container .submit_button {
@@ -3362,14 +3452,13 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
     font-size: 2rem;
   }
 }
-
-.contact_btn {
-  margin-right: 10rem;
-}
-@media screen and (max-width: 767px) {
-  .contact_btn {
-    margin-right: 2rem;
-  }
+.form_wrapper .submit_button_container .wpcf7-spinner {
+  position: absolute;
+  right: 0; /* 右端に浮かせる */
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  margin: 0; /* 余計なマージンを消す */
 }
 
 .contact_done {

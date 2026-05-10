@@ -76,3 +76,6 @@ function remove_menus () {
   remove_menu_page( 'edit.php' );
 }
 add_action('admin_menu', 'remove_menus');
+
+// Contact Form 7 の自動改行（pタグ・brタグ挿入）を停止する
+add_filter('wpcf7_autop_or_not', '__return_false');
