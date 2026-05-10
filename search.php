@@ -4,268 +4,76 @@
   <section class="search_sec">
     <div class="search_sec inner">
       <div class="search_sec_container">
-        <div class="search_sec_title">
-          <p>「<span>キーワード</span>」の検索結果</p>
-          <p>28件</p>
-        </div>
-        <div class="blog_list search_list">
-          <ul>
-            <li class="blog_item">
-              <a href="blog_details.html">
-                <div class="blog_item_left">
-                  <div class="blog_item_img">
-                    <picture>
-                      <source srcset="img/sp/blog/blog_sp_01.jpg" media="(max-width: 767px)" />
-                      <img src="img/blog/blog_pc_01.jpg" alt="ギター" />
-                    </picture>
-                  </div>
-                  <span class="img_title">ギター</span>
-                </div>
-                <div class="blog_item_right">
-                  <h2 class="search_right">
-                    アルペジオが劇的に向上する3つの習慣
-                  </h2>
-                  <div class="time_right">
-                    <time datetime="2025-12-25">0000.00.00</time>
-                  </div>
-                  <p>
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog_item">
-              <a href="blog_details.html">
-                <div class="blog_item_left">
-                  <div class="blog_item_img">
-                    <picture>
-                      <source srcset="img/sp/blog/blog_sp_02.jpg" media="(max-width: 767px)" />
-                      <img src="img/blog/blog_pc_02.jpg" alt="悩む男性の画像" />
-                    </picture>
-                  </div>
-                  <span class="img_title">集客方法</span>
-                </div>
-                <div class="blog_item_right">
-                  <h2 class="search_right">
-                    集客してる間は売れないという法則
-                  </h2>
-                  <div class="time_right">
-                    <time datetime="2025-12-25">0000.00.00</time>
-                  </div>
-                  <p>
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog_item">
-              <a href="blog_details.html">
-                <div class="blog_item_left">
-                  <div class="blog_item_img">
-                    <picture>
-                      <source srcset="img/sp/blog/blog_sp_03.jpg" media="(max-width: 767px)" />
-                      <img src="img/blog/blog_pc_03.jpg" alt="歌う女性の画像" />
-                    </picture>
-                  </div>
-                  <span class="img_title">SNS</span>
-                </div>
-                <div class="blog_item_right">
-                  <h2 class="search_right">
-                    フォロワーではなくファンを増やせとは？
-                  </h2>
-                  <div class="time_right">
-                    <time datetime="2025-12-25">0000.00.00</time>
-                  </div>
-                  <p>
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog_item">
-              <a href="blog_details.html">
-                <div class="blog_item_left">
-                  <div class="blog_item_img">
-                    <picture>
-                      <source srcset="img/sp/blog/blog_sp_01.jpg" media="(max-width: 767px)" />
-                      <img src="img/blog/blog_pc_01.jpg" alt="ギター" />
-                    </picture>
-                  </div>
-                  <span class="img_title">ギター</span>
-                </div>
-                <div class="blog_item_right">
-                  <h2 class="search_right">
-                    アルペジオが劇的に向上する3つの習慣
-                  </h2>
-                  <div class="time_right">
-                    <time datetime="2025-12-25">0000.00.00</time>
-                  </div>
-                  <p>
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog_item">
-              <a href="blog_details.html">
-                <div class="blog_item_left">
-                  <div class="blog_item_img">
-                    <picture>
-                      <source srcset="img/sp/blog/blog_sp_02.jpg" media="(max-width: 767px)" />
-                      <img src="img/blog/blog_pc_02.jpg" alt="悩む男性の画像" />
-                    </picture>
-                  </div>
-                  <span class="img_title">集客方法</span>
-                </div>
-                <div class="blog_item_right">
-                  <h2 class="search_right">
-                    集客してる間は売れないという法則
-                  </h2>
-                  <div class="time_right">
-                    <time datetime="2025-12-25">0000.00.00</time>
-                  </div>
-                  <p>
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog_item">
-              <a href="blog_details.html">
-                <div class="blog_item_left">
-                  <div class="blog_item_img">
-                    <picture>
-                      <source srcset="img/sp/blog/blog_sp_03.jpg" media="(max-width: 767px)" />
-                      <img src="img/blog/blog_pc_03.jpg" alt="歌う女性の画像" />
-                    </picture>
-                  </div>
-                  <span class="img_title">SNS</span>
-                </div>
-                <div class="blog_item_right">
-                  <h2 class="search_right">
-                    フォロワーではなくファンを増やせとは？
-                  </h2>
-                  <div class="time_right">
-                    <time datetime="2025-12-25">0000.00.00</time>
-                  </div>
-                  <p>
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog_item">
-              <a href="blog_details.html">
-                <div class="blog_item_left">
-                  <div class="blog_item_img">
-                    <picture>
-                      <source srcset="img/sp/blog/blog_sp_01.jpg" media="(max-width: 767px)" />
-                      <img src="img/blog/blog_pc_01.jpg" alt="ギター" />
-                    </picture>
-                  </div>
-                  <span class="img_title">ギター</span>
-                </div>
-                <div class="blog_item_right">
-                  <h2 class="search_right">
-                    アルペジオが劇的に向上する3つの習慣
-                  </h2>
-                  <div class="time_right">
-                    <time datetime="2025-12-25">0000.00.00</time>
-                  </div>
-                  <p>
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog_item">
-              <a href="blog_details.html">
-                <div class="blog_item_left">
-                  <div class="blog_item_img">
-                    <picture>
-                      <source srcset="img/sp/blog/blog_sp_02.jpg" media="(max-width: 767px)" />
-                      <img src="img/blog/blog_pc_02.jpg" alt="悩む男性の画像" />
-                    </picture>
-                  </div>
-                  <span class="img_title">集客方法</span>
-                </div>
-                <div class="blog_item_right">
-                  <h2 class="search_right">
-                    集客してる間は売れないという法則
-                  </h2>
-                  <div class="time_right">
-                    <time datetime="2025-12-25">0000.00.00</time>
-                  </div>
-                  <p>
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog_item">
-              <a href="blog_details.html">
-                <div class="blog_item_left">
-                  <div class="blog_item_img">
-                    <picture>
-                      <source srcset="img/sp/blog/blog_sp_03.jpg" media="(max-width: 767px)" />
-                      <img src="img/blog/blog_pc_03.jpg" alt="歌う女性の画像" />
-                    </picture>
-                  </div>
-                  <span class="img_title">SNS</span>
-                </div>
-                <div class="blog_item_right">
-                  <h2 class="search_right">
-                    フォロワーではなくファンを増やせとは？
-                  </h2>
-                  <div class="time_right">
-                    <time datetime="2025-12-25">0000.00.00</time>
-                  </div>
-                  <p>
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog_item">
-              <a href="blog_details.html">
-                <div class="blog_item_left">
-                  <div class="blog_item_img">
-                    <picture>
-                      <source srcset="img/sp/blog/blog_sp_01.jpg" media="(max-width: 767px)" />
-                      <img src="img/blog/blog_pc_01.jpg" alt="ギター" />
-                    </picture>
-                  </div>
-                  <span class="img_title">ギター</span>
-                </div>
-                <div class="blog_item_right">
-                  <h2 class="search_right">
-                    アルペジオが劇的に向上する3つの習慣
-                  </h2>
-                  <div class="time_right">
-                    <time datetime="2025-12-25">0000.00.00</time>
-                  </div>
-                  <p>
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page">
-          <ul class="Pagination">
-            <li class="Pagination-Item">
-              <span class="Pagination-Item-Link isActive">1</span>
-            </li>
-            <li class="Pagination-Item">
-              <a class="Pagination-Item-Link" href=""><span class="Pagination">2</span></a>
-            </li>
-            <li class="Pagination-Item">
-              <a class="Pagination-Item-Link" href=""><span class="Pagination">3</span></a>
-            </li>
-          </ul>
-        </div>
+        <?php if (!empty(get_search_query())): ?>
+          <?php
+          if (have_posts()):
+            $total_posts = $wp_query->found_posts;
+            ?>
+            <div class="search_sec_title">
+              <p>「<span><?php echo get_search_query(); ?></span>」の検索結果</p>
+              <p><?php echo $total_posts ?>件</p>
+            </div>
+            <div class="blog_list search_list">
+              <ul>
+                <?php
+                while (have_posts()):
+                  the_post();
+                  ?>
+                  <li class="blog_item">
+                    <a href="<?php the_permalink(); ?>">
+                      <div class="blog_item_left">
+                        <div class="blog_item_img">
+                          <?php if (has_post_thumbnail()): ?>
+                            <?php the_post_thumbnail(); ?>
+                          <?php else: ?>
+                            <picture>
+                              <source srcset="img/sp/blog/blog_sp_01.jpg" media="(max-width: 767px)" />
+                              <img src="img/blog/blog_pc_01.jpg" alt="No image" />
+                            </picture><?php endif; ?>
+                        </div>
+                        <span class="img_title"><?php
+                        $terms = get_the_terms(get_the_ID(), 'blog_cate');
+                        if (!empty($terms) && !is_wp_error($terms)) {
+                          echo esc_html($terms[0]->name);
+                        }
+                        ?></span>
+                      </div>
+                      <div class="blog_item_right">
+                        <h2 class="search_right">
+                          <?php echo wp_trim_words(get_the_title(), 26, '...'); ?>
+                        </h2>
+                        <div class="time_right">
+                          <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                        </div>
+                        <p>
+                          <?php echo wp_trim_words(get_the_content(), 120, '...'); ?>
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <?php
+                endwhile;
+                ?>
+              </ul>
+            </div>
+            <div class="page">
+              <?php wp_pagenavi(); ?>
+            </div>
+          <?php else: ?>
+            <div class="p-search-result__no-result">
+              <p>検索されたキーワードにマッチする<br class="pc-none">記事はありませんでした。</p>
+              <a onclick="history.back()" class="c-button c-button--main">戻る</a>
+            </div>
+          <?php endif; ?>
+        <?php else: ?>
+          <div class="p-search-result__no-result">
+            <p>検索キーワードが未入力です。</p>
+            <a onclick="history.back()" class="c-button c-button--main">戻る</a>
+          </div>
+        <?php endif; ?>
       </div>
+    </div>
+    </div>
     </div>
   </section>
 </main>
