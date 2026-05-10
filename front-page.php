@@ -296,46 +296,50 @@
           <h2>ブログ</h2>
         </div>
         <ul class="blog_list">
-          <li class="blog_item">
-            <a href="blog_details.html">
-              <picture>
-                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog01-sp.jpg"
-                  media="(max-width: 767px)" />
-                <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog01.jpg" alt="歌う女性の画像" />
-              </picture>
-              <span class="img_title">SNS</span>
-              <h3>フォロワーではなくファンを増やせとは？</h3>
-              <p><time datetime="2025-12-25">0000.00.00</time></p>
-            </a>
-          </li>
-          <li class="blog_item">
-            <a href="blog_details.html">
-              <picture>
-                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog02-sp.jpg"
-                  media="(max-width: 767px)" />
-                <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog02.jpg" alt="悩む男性の画像" />
-              </picture>
-              <span class="img_title">集客方法</span>
-              <h3>集客してる間は売れないという法則</h3>
-              <p><time datetime="2025-12-25">0000.00.00</time></p>
-            </a>
-          </li>
-          <li class="blog_item">
-            <a href="blog_details.html">
-              <picture>
-                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog03-sp.jpg"
-                  media="(max-width: 767px)" />
-                <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog03.jpg" alt="ギターを弾いている人の画像" />
-              </picture>
-              <span class="img_title">ギター</span>
-              <h3>アルペジオが劇的に向上する3つの習慣</h3>
-              <p><time datetime="2025-12-25">0000.00.00</time></p>
-            </a>
+          <?php
+          $args = array(
+            'posts_per_page' => 3,
+            'post_type' => 'blog',
+            'taxonomy' => 'blog_recommend',
+            'term' => 'recommend',
+            'orderby' => 'date',
+            'order' => 'DESC'
+          );
+          $the_query = new WP_Query($args);
+          if ($the_query->have_posts()):
+            while ($the_query->have_posts()):
+              $the_query->the_post();
+              ?>
+              <li class="blog_item">
+                <a href="<?php the_permalink(); ?>">
+                  <?php if (has_post_thumbnail()): ?>
+                    <?php the_post_thumbnail(); ?>
+                  <?php else: ?>
+                    <picture>
+                      <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog01-sp.jpg"
+                        media="(max-width: 767px)" />
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog01.jpg" alt="歌う女性の画像" />
+                    <?php endif; ?>
+                  </picture>
+                  <span class="img_title"><?php
+                  $terms = get_the_terms(get_the_ID(), 'blog_cate');
+                  if (!empty($terms) && !is_wp_error($terms)) {
+                    echo esc_html($terms[0]->name);
+                  }
+                  ?></span>
+                  <h3><?php echo wp_trim_words(get_the_title(), 20, '...'); ?></h3>
+                  <p><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time></p>
+                </a>
+                <?php
+            endwhile;
+          endif;
+          wp_reset_postdata();
+          ?>
           </li>
         </ul>
       </div>
       <div class="blog_btnbox">
-        <a href="blog_list.html">ブログ一覧へ</a>
+        <a href="<?php echo esc_url(home_url('blog')); ?>">ブログ一覧へ</a>
       </div>
     </div>
   </section>
