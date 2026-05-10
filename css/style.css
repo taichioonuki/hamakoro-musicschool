@@ -3461,6 +3461,32 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   margin: 0; /* 余計なマージンを消す */
 }
 
+.wpcf7 form.invalid .wpcf7-response-output {
+  border: none;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #CB0000;
+}
+@media screen and (max-width: 767px) {
+  .wpcf7 form.invalid .wpcf7-response-output {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border: none;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #CB0000;
+}
+@media screen and (max-width: 767px) {
+  .wpcf7 form.sent .wpcf7-response-output {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+
 .contact_done {
   padding: 6.7rem 0 9rem 0;
   text-align: center;
