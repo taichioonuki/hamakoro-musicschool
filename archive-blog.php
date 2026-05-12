@@ -55,11 +55,11 @@
                       </p>
                     </div>
                   </a>
-                  <?php
+                </li>
+                <?php
               endwhile;
             endif;
             ?>
-            </li>
           </ul>
         </div>
         <div class="page">

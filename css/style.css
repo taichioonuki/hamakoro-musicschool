@@ -906,6 +906,10 @@ span.img_title.related_img_title {
 
 nav.breadcrumb {
   background-color: #e8e8e8;
+  margin-top: 5rem;
+}
+.page_fv + nav.breadcrumb {
+  margin-top: 0;
 }
 nav.breadcrumb .breadcrumb_container {
   display: -webkit-box;
@@ -3572,6 +3576,23 @@ section.search_sec div.search_sec.inner div.search_sec_container div.search_sec_
 section.search_sec div.search_sec.inner div.search_sec_container div.search_sec_title p {
   font-size: 1.8rem;
   line-height: 1.667;
+}
+section.search_sec div.search_sec.inner div.search_sec_container div.search_sec_title__no-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 3rem;
+}
+section.search_sec div.search_sec.inner div.search_sec_container div.search_sec_title__no-result p {
+  font-size: 1.6rem;
+  text-align: center;
 }
 section.search_sec div.search_sec.inner div.search_sec_container div.blog ul li.blog_item a div.blog_item_right div.time_right p {
   margin-top: 0;

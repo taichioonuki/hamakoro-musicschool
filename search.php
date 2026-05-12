@@ -60,15 +60,15 @@
               <?php wp_pagenavi(); ?>
             </div>
           <?php else: ?>
-            <div class="p-search-result__no-result">
+            <div class="search_sec_title__no-result">
               <p>検索されたキーワードにマッチする<br class="pc-none">記事はありませんでした。</p>
-              <a onclick="history.back()" class="c-button c-button--main">戻る</a>
+              <a onclick="history.back()" class="c_button contact_button">戻る</a>
             </div>
           <?php endif; ?>
         <?php else: ?>
-          <div class="p-search-result__no-result">
+          <div class="search_sec_title__no-result">
             <p>検索キーワードが未入力です。</p>
-            <a onclick="history.back()" class="c-button c-button--main">戻る</a>
+            <a onclick="history.back()" class="c_button contact_button">戻る</a>
           </div>
         <?php endif; ?>
       </div>
