@@ -30,7 +30,7 @@
               <?php the_title(); ?>
             </h1>
             <div class="resultdeta_time">
-              <time datetime="the_time('Y-m-d')"><?php the_time('Y.m.d'); ?></time>
+              <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
             </div>
             <div class="profile_card_content">
               <div class="profile_card_table-wrapper">
@@ -45,10 +45,14 @@
                   </tr>
                   <tr>
                     <th>ジャンル</th>
-                    <td><?php
-                    $terms = get_the_terms(get_the_ID(), 'genre');
-                    echo $terms[0]->name;
-                    ?></td>
+                    <td>
+                      <?php
+                      $terms = get_the_terms(get_the_ID(), 'genre');
+                      if (!empty($terms) && !is_wp_error($terms)) {
+                        echo esc_html($terms[0]->name);
+                      }
+                      ?>
+                    </td>
                   </tr>
                   <tr>
                     <th>実績</th>

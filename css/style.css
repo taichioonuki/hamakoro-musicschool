@@ -586,6 +586,9 @@ header.header div.header_container nav.header_nav ul.header_list {
   display: -ms-flexbox;
   display: flex;
   height: 8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header.header div.header_container nav.header_nav ul.header_list li {
   margin-right: 3.3rem;
@@ -609,7 +612,7 @@ header.header div.header_container nav.header_nav ul.header_list li a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 2.5rem;
+  bottom: 0rem;
   height: 0.2rem;
   width: 100%;
   background-color: #000;
@@ -631,6 +634,9 @@ header.header div.header_container nav.header_nav ul.header_list li a:hover::aft
     height: 5.8rem;
   }
 }
+header.header div.header_container nav.header_nav ul.header_list li:last-child a::after {
+  display: none;
+}
 header.header div.header_container nav.header_nav a.c_button.button__head {
   font-size: 1.5rem;
   line-height: 2.2;
@@ -643,6 +649,7 @@ header.header div.header_container nav.header_nav a.c_button.button__head {
   }
 }
 
+/* スマホ用メニューの設定（変更なし） */
 @media screen and (max-width: 767px) {
   header .toggle_menu {
     display: inline-block;
