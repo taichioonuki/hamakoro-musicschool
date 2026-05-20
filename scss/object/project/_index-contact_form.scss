@@ -44,16 +44,6 @@
       margin-bottom: 1.6rem;
     }
   }
-  .wpcf7-form-control-wrap {
-    flex-grow: 1; // これで右側の余白を埋めます
-    display: block;
-  }
-
-  .form_input,
-  .form_textarea {
-    width: 100% !important; // ラッパーの中で100%広がるようにする
-    // flex: 1; は消してもOK（親のspanがflex-growするので）
-  }
 
   .form_label {
     width: 16.9rem;
@@ -93,6 +83,7 @@
     @include mq($sm) {
       margin-bottom: 0.6rem;
     }
+
     .purpose_fieldset {
       display: contents;
 
@@ -115,59 +106,8 @@
 
     .checkbox_container {
       flex: 1;
-
-      // 1. 選択肢全体を縦に並べる設定
-      .wpcf7-form-control {
-        display: flex;
-        flex-direction: column; // これで縦一列になります
-        align-items: flex-start;
-        gap: 1.5rem; // 各選択肢の間隔
-      }
-
-      // 2. 「□」と「文字」のセットの設定
-      .wpcf7-list-item {
-        display: flex;
-        align-items: center;
-        margin: 0;
-
-        label {
-          display: flex;
-          align-items: center;
-          cursor: pointer;
-          margin: 0;
-        }
-
-        input[type="checkbox"] {
-          width: 2rem;
-          height: 2rem;
-          border: 1px solid #000;
-          appearance: none;
-          display: grid;
-          place-content: center;
-          cursor: pointer;
-          margin: 0 1.5rem 0 0;
-          flex-shrink: 0;
-
-          &:checked::after {
-            content: "";
-            width: 0.7rem;
-            height: 1.2rem;
-            border: solid #000;
-            border-width: 0 0.3rem 0.3rem 0;
-            transform: rotate(45deg);
-          }
-        }
-
-        .wpcf7-list-item-label {
-          font-size: 1.8rem;
-          line-height: 1;
-
-          @include mq($sm) {
-            font-size: 1.6rem;
-          }
-        }
-      }
     }
+
     .checkbox_item {
       display: flex;
       align-items: center;
@@ -178,22 +118,30 @@
     }
 
     input[type="checkbox"] {
-      width: 2rem;
-      height: 2rem;
+      position: relative;
+      width: 2rem ;
+      height: 2rem ;
+      min-width: 2rem;
+      min-height: 2rem;
       border: 1px solid #000;
       appearance: none;
-      display: grid;
-      place-content: center;
       cursor: pointer;
-    }
+      border-radius: 0;
+      background: #fff;
+      flex-shrink: 0;
 
-    input[type="checkbox"]:checked::after {
-      content: "";
-      width: 0.7rem;
-      height: 1.2rem;
-      border: solid #000;
-      border-width: 0 0.3rem 0.3rem 0;
-      transform: rotate(45deg);
+      &:checked {
+        background-color: #fff ;
+        border-color: #000 ;
+      }
+
+      &:checked::before {
+        border-color: #000 ;
+      }
+
+      &::after {
+        display: none ;
+      }
     }
 
     .check {
@@ -233,53 +181,217 @@
   .submit_button_container {
     display: flex;
     justify-content: center;
-    position: relative; // スピナーの基準点にする
 
     .submit_button {
       width: 25rem;
       height: 5rem;
       font-size: 2.5rem;
       font-weight: 700;
-      display: flex; // flexにする
-      align-items: center; // 上下中央
-      justify-content: center; // 左右中央
-      text-align: center; // 念のためテキスト中央揃え
-      padding: 0; // 余計な余白をリセット
-      cursor: pointer;
-      appearance: none; // ブラウザ固有のデザインをリセット
+
       @include mq($sm) {
         width: 33.5rem;
         font-size: 2rem;
       }
     }
-    .wpcf7-spinner {
-      position: absolute;
-      right: 0; /* 右端に浮かせる */
-      bottom: 50%;
-      transform: translateY(50%);
-      margin: 0; /* 余計なマージンを消す */
+  }
+}
+
+.contact_btn {
+  margin-right: 10rem;
+  @include mq($sm) {
+    margin-right: 2rem;
+  }
+}
+
+// ==========================================================================
+// Snow Monkey Forms 構造統合用スタイル（プラグインのコアCSSを完全上書き）
+// ==========================================================================
+
+// プラグイン全体のコンテナサイズ調整
+.snow-monkey-form {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.smf-text-control,
+.smf-email-control,
+.smf-tel-control,
+.smf-textarea-control {
+  width: 100%;
+  display: flex;
+}
+
+// ビジネススタイル（.smf-form--business）などの不要なグレー枠線・背景を完全に抹消
+.smf-form--business,
+.smf-form--simple-table,
+.smf-form {
+  .smf-item {
+    border: none;
+    margin-bottom: 5rem;
+    display: flex;
+
+    @include mq($sm) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  .smf-item__col {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  .smf-item__col--label {
+    width: 16.9rem;
+    flex: 0 0 16.9rem;
+    max-width: 16.9rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: normal;
+
+    @include mq($sm) {
+      width: 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 0.8rem;
+      padding-top: 0;
+    }
+  }
+
+  .smf-item__col--controls {
+    flex: 1 1 auto;
+    max-width: none;
+    width: 100%;
+  }
+
+  .smf-text-control__control {
+    flex: 1;
+    height: 4rem;
+    padding: 0 2rem;
+    border: 0.5px solid #000;
+    line-height: 2.2;
+    font-size: 1.5rem;
+    border-radius: 0;
+  }
+
+  .smf-control {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 0;
+    padding: 0 2rem;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: #b2b2b2;
+      font-size: 1.5rem;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #333;
+    }
+  }
+
+  input[type="text"].smf-control,
+  input[type="email"].smf-control,
+  input[type="tel"].smf-control {
+    height: 4rem;
+    line-height: 2.2;
+  }
+
+  .smf-textarea-control__control {
+    border-radius: 0;
+    --_border-radius: 0;
+    box-shadow: none;
+    min-height: 30rem;
+    border: 0.5px solid #000;
+    font-size: 1.5rem;
+    @include mq($sm) {
+      min-height: 19rem;
+    }
+  }
+
+  textarea.smf-control {
+    padding: 1.3rem 2rem 2rem;
+    resize: none;
+    height: auto;
+    border-radius: 0;
+  }
+
+  // チェックボックス
+  .smf-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+
+    .smf-checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 1.8rem;
+      cursor: pointer;
+      margin: 0;
+      line-height: 1;
+      @include mq($sm) {
+        font-size: 1.6rem;
+      }
     }
   }
 }
 
-.wpcf7 form.invalid .wpcf7-response-output {
-  border: none;
-  font-size: 1.8rem;
-  text-align: center;
-  color: $main_color;
-  @include mq($sm) {
-    font-size: 1.6rem;
-    line-height: 1.5;
+// 送信ボタン
+.smf-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+
+  .smf-button-control__control {
+    width: 25rem;
+    height: 5rem;
+    transition:
+      background-color 0.4s,
+      color 0.4s;
+    background-color: $main_color;
+    background-image: none;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    &:hover {
+      background-color: #fff;
+      color: $main_color;
+      border: 1px solid $main_color;
+    }
+
+    @include mq($sm) {
+      width: 33.5rem;
+      font-size: 2rem;
+    }
   }
 }
 
-.wpcf7 form.sent .wpcf7-response-output {
-  border: none;
-  font-size: 1.8rem;
-  text-align: center;
-  color: $main_color;
-  @include mq($sm) {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
+.smf-form
+  :is(
+    .smf-textarea-control__control:active,
+    .smf-textarea-control__control:focus,
+    .smf-textarea-control__control:focus-within,
+    .smf-textarea-control__control[aria-selected="true"]
+  ) {
+  --_border-color: #000;
+}
+
+.smf-form .smf-checkbox-control {
+  align-items: flex-start;
+  column-gap: 2rem;
 }

@@ -3182,16 +3182,6 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
     margin-bottom: 1.6rem;
   }
 }
-.form_wrapper .wpcf7-form-control-wrap {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: block;
-}
-.form_wrapper .form_input,
-.form_wrapper .form_textarea {
-  width: 100% !important;
-}
 .form_wrapper .form_label {
   width: 16.9rem;
   -ms-flex-negative: 0;
@@ -3289,70 +3279,6 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
       -ms-flex: 1;
           flex: 1;
 }
-.form_wrapper .purpose_group .checkbox_container .wpcf7-form-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 1.5rem;
-}
-.form_wrapper .purpose_group .checkbox_container .wpcf7-list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-}
-.form_wrapper .purpose_group .checkbox_container .wpcf7-list-item label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  margin: 0;
-}
-.form_wrapper .purpose_group .checkbox_container .wpcf7-list-item input[type=checkbox] {
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #000;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: grid;
-  place-content: center;
-  cursor: pointer;
-  margin: 0 1.5rem 0 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-.form_wrapper .purpose_group .checkbox_container .wpcf7-list-item input[type=checkbox]:checked::after {
-  content: "";
-  width: 0.7rem;
-  height: 1.2rem;
-  border: solid #000;
-  border-width: 0 0.3rem 0.3rem 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.form_wrapper .purpose_group .checkbox_container .wpcf7-list-item .wpcf7-list-item-label {
-  font-size: 1.8rem;
-  line-height: 1;
-}
-@media screen and (max-width: 767px) {
-  .form_wrapper .purpose_group .checkbox_container .wpcf7-list-item .wpcf7-list-item-label {
-    font-size: 1.6rem;
-  }
-}
 .form_wrapper .purpose_group .checkbox_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3366,24 +3292,30 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   margin-bottom: 0;
 }
 .form_wrapper .purpose_group input[type=checkbox] {
+  position: relative;
   width: 2rem;
   height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
   border: 1px solid #000;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  display: grid;
-  place-content: center;
   cursor: pointer;
+  border-radius: 0;
+  background: #fff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
-.form_wrapper .purpose_group input[type=checkbox]:checked::after {
-  content: "";
-  width: 0.7rem;
-  height: 1.2rem;
-  border: solid #000;
-  border-width: 0 0.3rem 0.3rem 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+.form_wrapper .purpose_group input[type=checkbox]:checked {
+  background-color: #fff;
+  border-color: #000;
+}
+.form_wrapper .purpose_group input[type=checkbox]:checked::before {
+  border-color: #000;
+}
+.form_wrapper .purpose_group input[type=checkbox]::after {
+  display: none;
 }
 .form_wrapper .purpose_group .check {
   padding-left: 2rem;
@@ -3432,13 +3364,257 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 .form_wrapper .submit_button_container .submit_button {
   width: 25rem;
   height: 5rem;
   font-size: 2.5rem;
   font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .form_wrapper .submit_button_container .submit_button {
+    width: 33.5rem;
+    font-size: 2rem;
+  }
+}
+
+.contact_btn {
+  margin-right: 10rem;
+}
+@media screen and (max-width: 767px) {
+  .contact_btn {
+    margin-right: 2rem;
+  }
+}
+
+.snow-monkey-form {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.smf-text-control,
+.smf-email-control,
+.smf-tel-control,
+.smf-textarea-control {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.smf-form--business .smf-item,
+.smf-form--simple-table .smf-item,
+.smf-form .smf-item {
+  border: none;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .smf-form--business .smf-item,
+  .smf-form--simple-table .smf-item,
+  .smf-form .smf-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 1.6rem;
+  }
+}
+.smf-form--business .smf-item__col,
+.smf-form--simple-table .smf-item__col,
+.smf-form .smf-item__col {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.smf-form--business .smf-item__col--label,
+.smf-form--simple-table .smf-item__col--label,
+.smf-form .smf-item__col--label {
+  width: 16.9rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.9rem;
+          flex: 0 0 16.9rem;
+  max-width: 16.9rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+@media screen and (max-width: 767px) {
+  .smf-form--business .smf-item__col--label,
+  .smf-form--simple-table .smf-item__col--label,
+  .smf-form .smf-item__col--label {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    padding-top: 0;
+  }
+}
+.smf-form--business .smf-item__col--controls,
+.smf-form--simple-table .smf-item__col--controls,
+.smf-form .smf-item__col--controls {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: none;
+  width: 100%;
+}
+.smf-form--business .smf-text-control__control,
+.smf-form--simple-table .smf-text-control__control,
+.smf-form .smf-text-control__control {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 4rem;
+  padding: 0 2rem;
+  border: 0.5px solid #000;
+  line-height: 2.2;
+  font-size: 1.5rem;
+  border-radius: 0;
+}
+.smf-form--business .smf-control,
+.smf-form--simple-table .smf-control,
+.smf-form .smf-control {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 0 2rem;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.smf-form--business .smf-control::-webkit-input-placeholder, .smf-form--simple-table .smf-control::-webkit-input-placeholder, .smf-form .smf-control::-webkit-input-placeholder {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+}
+.smf-form--business .smf-control::-moz-placeholder, .smf-form--simple-table .smf-control::-moz-placeholder, .smf-form .smf-control::-moz-placeholder {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+}
+.smf-form--business .smf-control:-ms-input-placeholder, .smf-form--simple-table .smf-control:-ms-input-placeholder, .smf-form .smf-control:-ms-input-placeholder {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+}
+.smf-form--business .smf-control::-ms-input-placeholder, .smf-form--simple-table .smf-control::-ms-input-placeholder, .smf-form .smf-control::-ms-input-placeholder {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+}
+.smf-form--business .smf-control::placeholder,
+.smf-form--simple-table .smf-control::placeholder,
+.smf-form .smf-control::placeholder {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+}
+.smf-form--business .smf-control:focus,
+.smf-form--simple-table .smf-control:focus,
+.smf-form .smf-control:focus {
+  outline: none;
+  border-color: #333;
+}
+.smf-form--business input[type=text].smf-control,
+.smf-form--business input[type=email].smf-control,
+.smf-form--business input[type=tel].smf-control,
+.smf-form--simple-table input[type=text].smf-control,
+.smf-form--simple-table input[type=email].smf-control,
+.smf-form--simple-table input[type=tel].smf-control,
+.smf-form input[type=text].smf-control,
+.smf-form input[type=email].smf-control,
+.smf-form input[type=tel].smf-control {
+  height: 4rem;
+  line-height: 2.2;
+}
+.smf-form--business .smf-textarea-control__control,
+.smf-form--simple-table .smf-textarea-control__control,
+.smf-form .smf-textarea-control__control {
+  border-radius: 0;
+  --_border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  min-height: 30rem;
+  border: 0.5px solid #000;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .smf-form--business .smf-textarea-control__control,
+  .smf-form--simple-table .smf-textarea-control__control,
+  .smf-form .smf-textarea-control__control {
+    min-height: 19rem;
+  }
+}
+.smf-form--business textarea.smf-control,
+.smf-form--simple-table textarea.smf-control,
+.smf-form textarea.smf-control {
+  padding: 1.3rem 2rem 2rem;
+  resize: none;
+  height: auto;
+  border-radius: 0;
+}
+.smf-form--business .smf-checkboxes,
+.smf-form--simple-table .smf-checkboxes,
+.smf-form .smf-checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 0.5rem;
+}
+.smf-form--business .smf-checkboxes .smf-checkbox,
+.smf-form--simple-table .smf-checkboxes .smf-checkbox,
+.smf-form .smf-checkboxes .smf-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin: 0;
+  line-height: 1;
+}
+@media screen and (max-width: 767px) {
+  .smf-form--business .smf-checkboxes .smf-checkbox,
+  .smf-form--simple-table .smf-checkboxes .smf-checkbox,
+  .smf-form .smf-checkboxes .smf-checkbox {
+    font-size: 1.6rem;
+  }
+}
+
+.smf-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
+}
+.smf-action .smf-button-control__control {
+  width: 25rem;
+  height: 5rem;
+  -webkit-transition: background-color 0.4s, color 0.4s;
+  transition: background-color 0.4s, color 0.4s;
+  background-color: #CB0000;
+  background-image: none;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3448,52 +3624,34 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   padding: 0;
-  cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+}
+.smf-action .smf-button-control__control:hover {
+  background-color: #fff;
+  color: #CB0000;
+  border: 1px solid #CB0000;
 }
 @media screen and (max-width: 767px) {
-  .form_wrapper .submit_button_container .submit_button {
+  .smf-action .smf-button-control__control {
     width: 33.5rem;
     font-size: 2rem;
   }
 }
-.form_wrapper .submit_button_container .wpcf7-spinner {
-  position: absolute;
-  right: 0; /* 右端に浮かせる */
-  bottom: 50%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  margin: 0; /* 余計なマージンを消す */
+
+.smf-form :is(.smf-textarea-control__control:active,
+.smf-textarea-control__control:focus,
+.smf-textarea-control__control:focus-within,
+.smf-textarea-control__control[aria-selected=true]) {
+  --_border-color: #000;
 }
 
-.wpcf7 form.invalid .wpcf7-response-output {
-  border: none;
-  font-size: 1.8rem;
-  text-align: center;
-  color: #CB0000;
-}
-@media screen and (max-width: 767px) {
-  .wpcf7 form.invalid .wpcf7-response-output {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
-}
-
-.wpcf7 form.sent .wpcf7-response-output {
-  border: none;
-  font-size: 1.8rem;
-  text-align: center;
-  color: #CB0000;
-}
-@media screen and (max-width: 767px) {
-  .wpcf7 form.sent .wpcf7-response-output {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
+.smf-form .smf-checkbox-control {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
 }
 
 .contact_done {
