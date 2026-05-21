@@ -64,21 +64,22 @@ function my_page_conditions($query)
 
     // カスタム投稿タイプ 'blog' または 'result' のアーカイブページの場合
     if (is_post_type_archive(['blog', 'result'])) {
-        $query->set('posts_per_page', 10);
+      $query->set('posts_per_page', 10);
     }
 
     // 検索結果ページの場合
     if ($query->is_search()) {
-        $query->set('post_type', 'blog');
+      $query->set('post_type', 'blog');
     }
   }
 }
 add_action('pre_get_posts', 'my_page_conditions');
 
 //管理画面で 投稿メニュー を非表示
-function remove_menus () {
+function remove_menus()
+{
   global $menu;
-  remove_menu_page( 'edit.php' );
+  remove_menu_page('edit.php');
 }
 add_action('admin_menu', 'remove_menus');
 
@@ -91,7 +92,35 @@ function register_my_menus()
 {
   register_nav_menus(array(
     'primary' => 'Primary Menu',
-    'footer'  => 'Footer Menu',
+    'footer' => 'Footer Menu',
   ));
 }
 add_action('after_setup_theme', 'register_my_menus');
+
+add_action('wp_enqueue_scripts', function () {
+  // フォームのID
+  $form_id = 'snow-monkey-form-269';
+
+  // 💡 リダイレクト先のURLを「/contact-send/」に設定しました！
+  $redirect_url = home_url('/contact-send/');
+
+  // JavaScriptをフッターに出力
+  ob_start();
+  ?>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var form = document.getElementById('<?php echo esc_js($form_id); ?>');
+      if (form) {
+        form.addEventListener('smf.submit', function (event) {
+          // 送信が正常に完了した（エラーがない）場合
+          if (event.detail.status === 'complete') {
+            window.location.href = '<?php echo esc_url($redirect_url); ?>';
+          }
+        });
+      }
+    });
+  </script>
+  <?php
+  $script = ob_get_clean();
+  wp_add_inline_script('snow-monkey-forms', strip_tags($script));
+});
