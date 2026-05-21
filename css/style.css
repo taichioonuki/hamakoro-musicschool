@@ -3865,6 +3865,18 @@ section.profile_card {
 }
 section.profile_card .profile.inner .profile_img {
   position: relative;
+  width: 100%;
+  aspect-ratio: 880/400;
+  overflow: hidden;
+}
+section.profile_card .profile.inner .profile_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 section.profile_card .profile.inner .profile_img span.img_title {
   width: 10rem;
