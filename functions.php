@@ -88,14 +88,15 @@ add_filter('wpcf7_autop_or_not', '__return_false');
 
 
 //管理画面「外観＞メニュー」 を表示
-function register_my_menus()
+function register_my_theme_menus()
 {
   register_nav_menus(array(
-    'primary' => 'Primary Menu',
-    'footer' => 'Footer Menu',
+    'primary' => 'PC用ナビゲーション',
+    'sp-menu' => 'スマホ用ナビゲーション',
+    'footer'  => 'Footer Menu',
   ));
 }
-add_action('after_setup_theme', 'register_my_menus');
+add_action('after_setup_theme', 'register_my_theme_menus');
 
 add_action('wp_enqueue_scripts', function () {
   // フォームのID
@@ -124,3 +125,11 @@ add_action('wp_enqueue_scripts', function () {
   $script = ob_get_clean();
   wp_add_inline_script('snow-monkey-forms', strip_tags($script));
 });
+
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);

@@ -93,7 +93,26 @@ header.header {
         display: flex;
         height: 8rem;
         align-items: center;
+        &.pc-menu-only {
+          display: flex;
+          height: 8rem;
+          align-items: center;
+        }
+        &.sp-menu-only {
+          display: none;
+        }
 
+        // スマホ画面（767px以下）のとき
+        @include mq($sm) {
+          &.pc-menu-only {
+            display: none;
+          }
+          &.sp-menu-only {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+        }
         li {
           margin-right: 3.3rem;
           @include mq($sm) {

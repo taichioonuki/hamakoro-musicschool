@@ -5,6 +5,8 @@
   if (have_posts()):
     while (have_posts()):
       the_post();
+      $url = get_permalink();
+      $title = get_the_title();
       ?>
       <section class="sec1_blog_details">
         <div class="sec1_blog_details inner">

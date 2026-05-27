@@ -22,7 +22,7 @@ footer.footer {
         @include mq($sm) {
           gap: 3rem;
         }
-        li.footer_item {
+        li {
           a {
             transition: opacity 0.4s;
             &:hover {
