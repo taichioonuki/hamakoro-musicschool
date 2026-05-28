@@ -64,7 +64,7 @@ if (!empty($terms)):
                     </span>
                   </div>
                   <div class="related_content_textbox">
-                    <h3><?php echo wp_trim_words(get_the_title(), 32, '...'); ?></h3>
+                    <h3><?php echo wp_trim_words(get_the_title(), 15, '...'); ?></h3>
                     <p class="time">
                       <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
                     </p>

@@ -40,7 +40,7 @@
                 </div>
                 <div class="achievement_content">
                   <p class="achievement_title">
-                    <?php echo wp_trim_words(get_the_title(), 32, '...'); ?>
+                    <?php echo wp_trim_words(get_the_title(), 20, '...'); ?>
                   </p>
                 </div>
                 <div class="time_right">

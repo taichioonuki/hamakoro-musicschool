@@ -472,6 +472,11 @@ div.related {
                   height: 11rem;
                 }
               }
+              .related_img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
             }
             div.related_content_textbox {
               h3 {

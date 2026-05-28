@@ -42,9 +42,8 @@
     </div>
   </div>
 </footer>
-<script
-  src="<?php echo get_template_directory_uri(); ?>/https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 <?php wp_footer(); ?>
 </body>
 
