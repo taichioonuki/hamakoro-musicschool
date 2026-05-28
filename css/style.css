@@ -595,7 +595,7 @@ header.header div.header_container nav.header_nav {
     color: #fff;
   }
 }
-header.header div.header_container nav.header_nav ul.header_list {
+header.header div.header_container nav.header_nav .header_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,7 +604,7 @@ header.header div.header_container nav.header_nav ul.header_list {
       -ms-flex-align: center;
           align-items: center;
 }
-header.header div.header_container nav.header_nav ul.header_list.pc-menu-only {
+header.header div.header_container nav.header_nav .header_list.pc-menu-only {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,14 +613,14 @@ header.header div.header_container nav.header_nav ul.header_list.pc-menu-only {
       -ms-flex-align: center;
           align-items: center;
 }
-header.header div.header_container nav.header_nav ul.header_list.sp-menu-only {
+header.header div.header_container nav.header_nav .header_list.sp-menu-only {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container nav.header_nav ul.header_list.pc-menu-only {
+  header.header div.header_container nav.header_nav .header_list.pc-menu-only {
     display: none;
   }
-  header.header div.header_container nav.header_nav ul.header_list.sp-menu-only {
+  header.header div.header_container nav.header_nav .header_list.sp-menu-only {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -631,15 +631,15 @@ header.header div.header_container nav.header_nav ul.header_list.sp-menu-only {
     width: 100%;
   }
 }
-header.header div.header_container nav.header_nav ul.header_list li {
+header.header div.header_container nav.header_nav .header_list li {
   margin-right: 3.3rem;
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container nav.header_nav ul.header_list li {
+  header.header div.header_container nav.header_nav .header_list li {
     margin-right: 0;
   }
 }
-header.header div.header_container nav.header_nav ul.header_list li a {
+header.header div.header_container nav.header_nav .header_list li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,7 +649,7 @@ header.header div.header_container nav.header_nav ul.header_list li a {
   height: 100%;
   position: relative;
 }
-header.header div.header_container nav.header_nav ul.header_list li a::after {
+header.header div.header_container nav.header_nav .header_list li a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -666,16 +666,16 @@ header.header div.header_container nav.header_nav ul.header_list li a::after {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-header.header div.header_container nav.header_nav ul.header_list li a:hover::after {
+header.header div.header_container nav.header_nav .header_list li a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 @media screen and (max-width: 767px) {
-  header.header div.header_container nav.header_nav ul.header_list li a {
+  header.header div.header_container nav.header_nav .header_list li a {
     height: 5.8rem;
   }
 }
-header.header div.header_container nav.header_nav ul.header_list li:last-child a::after {
+header.header div.header_container nav.header_nav .header_list li:last-child a::after {
   display: none;
 }
 header.header div.header_container nav.header_nav a.c_button.button__head {
