@@ -966,6 +966,11 @@ nav.breadcrumb {
   background-color: #e8e8e8;
   margin-top: 5rem;
 }
+@media screen and (max-width: 767px) {
+  nav.breadcrumb {
+    margin-top: 0rem;
+  }
+}
 .page_fv + nav.breadcrumb {
   margin-top: 0;
 }
@@ -1474,7 +1479,7 @@ div.related div.related_content_box div.related_content ul .related_content_item
 }
 @media screen and (max-width: 767px) {
   .page {
-    margin-top: 5.9rem;
+    margin-top: 5.8rem;
   }
 }
 .page .wp-pagenavi {
@@ -1547,17 +1552,19 @@ div.related div.related_content_box div.related_content ul .related_content_item
   background: #000;
   color: #fff;
 }
-.page .extend {
-  margin: 0 1rem;
-  border: none;
-}
 
 .wp-pagenavi a,
 .wp-pagenavi span {
   text-decoration: none;
   border: 1px solid #bfbfbf;
   padding: 0 !important;
-  margin: 0.2rem;
+  margin: 0 !important;
+}
+.wp-pagenavi a.extend,
+.wp-pagenavi span.extend {
+  margin: 0 1rem !important;
+  border: none;
+  display: inline-block;
 }
 
 section.sec_fv .sec_fv_container {

@@ -91,6 +91,9 @@ span.img_title {
 nav.breadcrumb {
   background-color: #e8e8e8;
   margin-top: 5rem;
+  @include mq($sm) {
+    margin-top: 0rem;
+  }
   .page_fv + & {
     margin-top: 0;
   }
@@ -518,7 +521,7 @@ div.related {
 .page {
   margin-top: 6.8rem;
   @include mq($sm) {
-    margin-top: 5.9rem;
+    margin-top: 5.8rem;
   }
 
   .wp-pagenavi {
@@ -578,15 +581,20 @@ div.related {
       color: #fff;
     }
   }
-  .extend {
-    margin: 0 1rem;
-    border: none;
-  }
 }
 .wp-pagenavi a,
 .wp-pagenavi span {
   text-decoration: none;
   border: 1px solid #bfbfbf;
   padding: 0 !important;
-  margin: 0.2rem;
+
+  // 1. 基本はすべて margin: 0 !important; にしてプラグインの2pxを消す
+  margin: 0 !important;
+
+  // 2. その中で、.extend だけは margin を 0 1rem !important で上書きする
+  &.extend {
+    margin: 0 1rem !important;
+    border: none;
+    display: inline-block;
+  }
 }
