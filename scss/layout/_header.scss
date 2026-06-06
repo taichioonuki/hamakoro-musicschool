@@ -147,6 +147,8 @@ header.header {
             }
           }
           &:last-child {
+            margin-right: 0;
+            font-size: 1.5rem;
             a::after {
               display: none;
             }

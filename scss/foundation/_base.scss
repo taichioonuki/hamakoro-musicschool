@@ -41,6 +41,10 @@ body {
 
 main {
   flex: 1;
+  padding-top: 8rem;
+  @include mq($sm) {
+    padding-top: 5rem;
+  }
 }
 
 .inner {

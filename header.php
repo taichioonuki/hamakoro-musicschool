@@ -51,25 +51,18 @@
     </button>
     <nav class="header_nav">
       <?php
-      // ==========================================
-      // 1. PC用メニュー（スマホ時はSCSSで非表示になるボタン等がある場合、識別子を明確に）
-      // ==========================================
       wp_nav_menu(
         array(
-          'theme_location' => 'primary',     // 外観＞メニューの「PC用ナビゲーション」
-          'menu_class' => 'header_list pc-menu-only', // PC用だと分かるようにクラスを1つ追加（後述）
+          'theme_location' => 'primary',
+          'menu_class' => 'header_list pc-menu-only',
           'add_li_class' => 'header_item',
           'container' => false,
         )
       );
-
-      // ==========================================
-      // 2. スマホ用メニュー（ハンバーガーメニューを開いた時に表示させたい中身）
-      // ==========================================
       wp_nav_menu(
         array(
-          'theme_location' => 'sp-menu',     // 外観＞メニューの「スマホ用ナビゲーション」
-          'menu_class' => 'header_list sp-menu-only', // スマホ用だと分かるようにクラスを1つ追加（後述）
+          'theme_location' => 'sp-menu',
+          'menu_class' => 'header_list sp-menu-only',
           'add_li_class' => 'header_item',
           'container' => false,
         )

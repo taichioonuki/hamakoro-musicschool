@@ -18,7 +18,7 @@
       <div class="top_sec_title">
         <h2>全人類、<br class="sp_only" />ミュージシャン計画。</h2>
         <p>
-          私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。
+          私たちは音楽を愛するすべての人が、音<br class="sp_only">楽に熱狂できる世界を目指しています。
         </p>
         <picture>
           <source srcset="<?php echo get_template_directory_uri(); ?>/img/other/semicircle-sp.svg"

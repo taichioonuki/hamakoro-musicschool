@@ -51,7 +51,7 @@
                         <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
                       </div>
                       <p>
-                        <?php echo wp_trim_words(get_the_content(), 120, '...'); ?>
+                        <?php echo wp_trim_words(get_the_content(), 95, '...'); ?>
                       </p>
                     </div>
                   </a>

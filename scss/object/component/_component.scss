@@ -176,7 +176,7 @@ nav.breadcrumb {
 
 //共通パーツ リスト
 .blog_list {
-  margin-top: 3.2rem;
+  margin-top: 3.5rem;
   @include mq($sm) {
     margin-top: 3.9rem;
   }
@@ -206,6 +206,11 @@ nav.breadcrumb {
             width: 26rem;
             @include mq($sm) {
               width: 100%;
+            }
+            .wp-post-image {
+              @include mq($sm) {
+                aspect-ratio: 335 / 200;
+              }
             }
           }
         }
@@ -511,7 +516,7 @@ div.related {
 
 //ページネーション
 .page {
-  margin-top: 7rem;
+  margin-top: 6.8rem;
   @include mq($sm) {
     margin-top: 5.9rem;
   }
@@ -521,9 +526,10 @@ div.related {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-
+    margin: 0 30rem;
     @include mq($sm) {
       gap: 0.5rem;
+      margin: 0;
     }
   }
 
@@ -576,4 +582,11 @@ div.related {
     margin: 0 1rem;
     border: none;
   }
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+  text-decoration: none;
+  border: 1px solid #bfbfbf;
+  padding: 0 !important;
+  margin: 0.2rem;
 }
