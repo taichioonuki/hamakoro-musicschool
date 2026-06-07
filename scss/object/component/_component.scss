@@ -90,10 +90,6 @@ span.img_title {
 //共通パーツ【パンくずリスト】
 nav.breadcrumb {
   background-color: #e8e8e8;
-  margin-top: 5rem;
-  @include mq($sm) {
-    margin-top: 0rem;
-  }
   .page_fv + & {
     margin-top: 0;
   }
@@ -370,6 +366,10 @@ div.article {
             @include mq($sm) {
               width: 0;
               flex-basis: 0;
+            }
+            .wp-post-image {
+              aspect-ratio: 98 / 68;
+              object-fit: cover;
             }
           }
           p.article_text {

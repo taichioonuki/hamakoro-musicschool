@@ -21,6 +21,12 @@ section.sec1_blog_details {
       .sec1_left_img {
         max-width: 60rem;
       }
+      .wp-post-image {
+        aspect-ratio: 600 / 350;
+        @include mq($sm) {
+          aspect-ratio: 335 / 200;
+        }
+      }
       h1 {
         font-size: 2.5rem;
         font-weight: 700;
@@ -108,6 +114,7 @@ section.sec1_blog_details {
           line-height: calc(40 / 20);
           @include mq($sm) {
             line-height: calc(30 / 20);
+            margin-block: 4rem 1.5rem;
           }
         }
 
@@ -132,13 +139,28 @@ section.sec1_blog_details {
         ul,
         ol {
           margin-block: 2.8rem;
-          padding-left: 1em;
-        }
-
-        li {
-          font-size: 1.8rem;
-          line-height: 1.6;
-          list-style: initial;
+          padding-left: 0;
+          li {
+            font-size: 1.8rem;
+            line-height: 1.6;
+            list-style: none;
+            padding-left: 1em;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0.6rem;
+              top: 0.6em;
+              width: 3px;
+              height: 3px;
+              background-color: currentColor;
+              border-radius: 50%;
+            }
+            @include mq($sm) {
+              font-size: 1.6rem;
+              line-height: 1.875;
+            }
+          }
         }
         h3 {
           margin-block: 4.3rem 1.7rem;
@@ -149,7 +171,7 @@ section.sec1_blog_details {
           position: relative;
           @include mq($sm) {
             line-height: calc(30 / 20);
-            margin-bottom: 2rem;
+            margin-block: 5rem 2rem;
           }
         }
         h3::before {
@@ -212,14 +234,18 @@ section.sec1_blog_details {
           margin-block: 4.1rem;
           border-bottom: 0.5px solid;
           @include mq($sm) {
-            margin-bottom: 5rem;
-            // margin-top: 3.8rem;
+            margin-top: 3.5rem;
           }
         }
       }
     }
+
+    .wp-block-separator {
+      border: none;
+      border-top: 0.5px solid #ccc;
+    }
     aside.sidebar {
-      flex: 1 1 40%;
+      flex: 1 1 20%;
       @include mq($sm) {
         font-size: 1.8rem;
         line-height: 1.833;
@@ -348,13 +374,17 @@ section.sec1_blog_details {
                   width: 16rem;
                   height: 11rem;
                 }
-                .post_item_title {
-                  font-size: 1.7rem;
-                  line-height: 1.647;
-                  margin: 0;
-                  @include mq($sm) {
-                    margin-top: 1rem;
-                  }
+                .wp-post-image {
+                  aspect-ratio: 95 / 75;
+                  object-fit: cover;
+                }
+              }
+              .post_item_title {
+                font-size: 1.7rem;
+                line-height: 1.647;
+                margin: 0;
+                @include mq($sm) {
+                  margin-top: 1rem;
                 }
               }
             }
