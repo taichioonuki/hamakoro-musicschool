@@ -52,7 +52,7 @@ if (!empty($terms)):
               ?>
               <li class="related_content_item"> <a href="<?php the_permalink(); ?>">
                   <div class="related_content_item_left">
-                    <div class="related_img">
+                    <div class="related_img <?php echo esc_attr($post_type); ?>_related_img">
                       <?php if (has_post_thumbnail()): ?>
                         <?php the_post_thumbnail(); ?>
                       <?php else: ?>
@@ -64,7 +64,7 @@ if (!empty($terms)):
                     </span>
                   </div>
                   <div class="related_content_textbox">
-                    <h3><?php echo wp_trim_words(get_the_title(), 15, '...'); ?></h3>
+                    <h3><?php echo wp_trim_words(get_the_title(), 20, '...'); ?></h3>
                     <p class="time">
                       <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
                     </p>

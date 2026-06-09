@@ -403,7 +403,6 @@ div.article {
   }
 }
 
-// resultページ用の上書き設定（ここだけで完結させる）
 div.article.article--result {
   div.article_page {
     gap: 20rem;
@@ -426,7 +425,7 @@ div.article.article--result {
 }
 //関連記事
 div.related {
-  margin-top: 9.2rem;
+  margin-top: 10rem;
   @include mq($sm) {
     margin-top: 6.5rem;
   }
@@ -447,7 +446,7 @@ div.related {
     div.related_content {
       margin-top: 3rem;
       @include mq($sm) {
-        margin-top: 2rem;
+        margin-top: 1.7rem;
       }
       ul {
         li.related_content_item {
@@ -472,18 +471,33 @@ div.related {
             }
             div.related_content_item_left {
               position: relative;
+
+              // 共通・またはblog用の基本サイズ
               .related_img {
                 width: 20rem;
                 height: 14rem;
+
                 @include mq($sm) {
                   width: 16rem;
                   height: 11rem;
                 }
-              }
-              .related_img img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+
+                // ★resultのときだけサイズを上書き（クラスが独立したため安全に上書き可能）
+                &.result_related_img {
+                  width: 26rem;
+                  height: 18.3rem;
+
+                  @include mq($sm) {
+                    width: 16rem; // スマホ用サイズ
+                    height: 11.3rem;
+                  }
+                }
               }
             }
             div.related_content_textbox {
@@ -496,8 +510,7 @@ div.related {
                 @include mq($sm) {
                   font-size: 1.7rem;
                   line-height: 1.647;
-                  margin-bottom: 0.4rem;
-                  margin-top: 1rem;
+                  margin-bottom: 0rem;
                 }
               }
               p.time {

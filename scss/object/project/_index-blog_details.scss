@@ -105,7 +105,11 @@ section.sec1_blog_details {
           margin-top: 2.7rem;
         }
         p {
-          margin-block: 1.7rem;
+          margin-bottom: 1.7rem;
+          &:last-child {
+            margin-bottom: 0;
+            display: inline-block;
+          }
         }
         h2 {
           margin-block: 3.3rem 1.5rem;
@@ -119,7 +123,7 @@ section.sec1_blog_details {
         }
 
         figure {
-          margin-block: 1.7rem;
+          margin-block: 0rem;
 
           @include mq($sm) {
             margin-top: 3.9rem;
@@ -211,6 +215,7 @@ section.sec1_blog_details {
             display: inline-block;
             width: 2.7rem;
             height: 2.34rem;
+            flex-shrink: 0;
           }
 
           p {
