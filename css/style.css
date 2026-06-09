@@ -3549,10 +3549,15 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
 .smf-form--simple-table .smf-item,
 .smf-form .smf-item {
   border: none;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.smf-form--business .smf-item:last-child,
+.smf-form--simple-table .smf-item:last-child,
+.smf-form .smf-item:last-child {
+  margin-bottom: 5.4rem;
 }
 @media screen and (max-width: 767px) {
   .smf-form--business .smf-item,
@@ -3701,6 +3706,11 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   height: auto;
   border-radius: 0;
 }
+.smf-form--business .smf-textarea-control__control,
+.smf-form--simple-table .smf-textarea-control__control,
+.smf-form .smf-textarea-control__control {
+  padding: 1.3rem 2rem;
+}
 .smf-form--business .smf-checkboxes,
 .smf-form--simple-table .smf-checkboxes,
 .smf-form .smf-checkboxes {
@@ -3713,6 +3723,12 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
           flex-direction: column;
   gap: 1.5rem;
   padding-top: 0.5rem;
+}
+.smf-form--business .smf-checkboxes .smf-label,
+.smf-form--simple-table .smf-checkboxes .smf-label,
+.smf-form .smf-checkboxes .smf-label {
+  height: auto;
+  margin: 0;
 }
 .smf-form--business .smf-checkboxes .smf-checkbox,
 .smf-form--simple-table .smf-checkboxes .smf-checkbox,
@@ -3734,6 +3750,35 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   .smf-form .smf-checkboxes .smf-checkbox {
     font-size: 1.6rem;
   }
+}
+.smf-form--business .smf-checkbox-control,
+.smf-form--simple-table .smf-checkbox-control,
+.smf-form .smf-checkbox-control {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .smf-form--business .smf-checkbox-control,
+  .smf-form--simple-table .smf-checkbox-control,
+  .smf-form .smf-checkbox-control {
+    -webkit-column-gap: 1rem;
+       -moz-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+}
+.smf-form--business .smf-checkbox-control input[type=checkbox],
+.smf-form--simple-table .smf-checkbox-control input[type=checkbox],
+.smf-form .smf-checkbox-control input[type=checkbox] {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
 }
 
 .smf-action {
@@ -3781,6 +3826,10 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   }
 }
 
+.smf-form--business + .smf-action {
+  margin: 0;
+}
+
 .smf-form :is(.smf-textarea-control__control:active,
 .smf-textarea-control__control:focus,
 .smf-textarea-control__control:focus-within,
@@ -3788,13 +3837,18 @@ section.sec1_blog_details .sec1_blog_details.inner aside.sidebar .sidebar_catego
   --_border-color: #000;
 }
 
-.smf-form .smf-checkbox-control {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-column-gap: 2rem;
-     -moz-column-gap: 2rem;
-          column-gap: 2rem;
+@media screen and (max-width: 767px) {
+  .target-item .smf-item__label__text br {
+    display: none;
+  }
+}
+.smf-form .smf-item.content_group .smf-item__col--label {
+  padding-top: 1.4rem;
+}
+@media screen and (max-width: 767px) {
+  .smf-form .smf-item.content_group .smf-item__col--label {
+    padding-top: 0;
+  }
 }
 
 .contact_done {

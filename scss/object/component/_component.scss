@@ -471,8 +471,6 @@ div.related {
             }
             div.related_content_item_left {
               position: relative;
-
-              // 共通・またはblog用の基本サイズ
               .related_img {
                 width: 20rem;
                 height: 14rem;
@@ -487,14 +485,12 @@ div.related {
                   height: 100%;
                   object-fit: cover;
                 }
-
-                // ★resultのときだけサイズを上書き（クラスが独立したため安全に上書き可能）
                 &.result_related_img {
                   width: 26rem;
                   height: 18.3rem;
 
                   @include mq($sm) {
-                    width: 16rem; // スマホ用サイズ
+                    width: 16rem;
                     height: 11.3rem;
                   }
                 }

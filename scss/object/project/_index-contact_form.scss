@@ -119,8 +119,8 @@
 
     input[type="checkbox"] {
       position: relative;
-      width: 2rem ;
-      height: 2rem ;
+      width: 2rem;
+      height: 2rem;
       min-width: 2rem;
       min-height: 2rem;
       border: 1px solid #000;
@@ -131,16 +131,16 @@
       flex-shrink: 0;
 
       &:checked {
-        background-color: #fff ;
-        border-color: #000 ;
+        background-color: #fff;
+        border-color: #000;
       }
 
       &:checked::before {
-        border-color: #000 ;
+        border-color: #000;
       }
 
       &::after {
-        display: none ;
+        display: none;
       }
     }
 
@@ -204,10 +204,8 @@
 }
 
 // ==========================================================================
-// Snow Monkey Forms 構造統合用スタイル（プラグインのコアCSSを完全上書き）
+// Snow Monkey Forms 
 // ==========================================================================
-
-// プラグイン全体のコンテナサイズ調整
 .snow-monkey-form {
   max-width: 90rem;
   margin: 0 auto;
@@ -220,15 +218,16 @@
   display: flex;
 }
 
-// ビジネススタイル（.smf-form--business）などの不要なグレー枠線・背景を完全に抹消
 .smf-form--business,
 .smf-form--simple-table,
 .smf-form {
   .smf-item {
     border: none;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     display: flex;
-
+    &:last-child {
+      margin-bottom: 5.4rem;
+    }
     @include mq($sm) {
       flex-direction: column;
       align-items: flex-start;
@@ -321,13 +320,20 @@
     height: auto;
     border-radius: 0;
   }
+  .smf-textarea-control__control {
+    padding: 1.3rem 2rem;
+  }
 
-  // チェックボックス
+  // チェックボックス全体のラッパー
   .smf-checkboxes {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding-top: 0.5rem;
+    .smf-label {
+      height: auto;
+      margin: 0;
+    }
 
     .smf-checkbox {
       display: flex;
@@ -339,6 +345,21 @@
       @include mq($sm) {
         font-size: 1.6rem;
       }
+    }
+  }
+
+  .smf-checkbox-control {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 2rem;
+    
+    @include mq($sm) {
+      column-gap: 1rem;
+    }
+    input[type="checkbox"] {
+      margin: 0; 
+      padding: 0;
+      vertical-align: middle;
     }
   }
 }
@@ -381,6 +402,10 @@
   }
 }
 
+.smf-form--business + .smf-action {
+  margin: 0;
+}
+
 .smf-form
   :is(
     .smf-textarea-control__control:active,
@@ -391,7 +416,22 @@
   --_border-color: #000;
 }
 
-.smf-form .smf-checkbox-control {
-  align-items: flex-start;
-  column-gap: 2rem;
+@include mq($sm) {
+  .target-item .smf-item__label__text br {
+    display: none;
+  }
+}
+
+// ==========================================================================
+// 「内容」項目の個別マージン・位置調整（!importantなし）
+// ==========================================================================
+
+// PC時の調整
+.smf-form .smf-item.content_group {
+  .smf-item__col--label {
+    padding-top: 1.4rem;
+    @include mq($sm) {
+      padding-top: 0;
+    }
+  }
 }
