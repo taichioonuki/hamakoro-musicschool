@@ -68,5 +68,6 @@ section.search_sec {
   line-height: 1.25;
   @include mq($sm) {
     margin-bottom: 0.6rem;
+    line-height: 1.5;
   }
 }

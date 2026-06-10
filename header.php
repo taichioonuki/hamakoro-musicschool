@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="私たちは音楽を愛するすべての人が、音楽に熱狂できる世界を目指しています。" />
   <meta name="keywords" content="音楽,学校,歌手" />
   <meta name="robots" content="noindex" />
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/icon_logo/fvicon_music.svg" sizes="any" />
@@ -12,7 +11,6 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://hamakoro-i.com/music_school/" />
   <meta property="og:image" content="https://hamakoro-i.com/music_school/img/top/music-pc_fv.jpg" />
-  <title>きたむらミュージックスクール</title>
   <!---------------------------------スタイルシート-------------------------------------->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
