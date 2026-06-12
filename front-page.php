@@ -23,7 +23,7 @@
         <picture>
           <source srcset="<?php echo get_template_directory_uri(); ?>/img/other/semicircle-sp.svg"
             media="(max-width: 767px)" />
-          <img src="<?php echo get_template_directory_uri(); ?>/img//other/semicircle.svg" alt="半円形の装飾" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/other/semicircle.svg" alt="半円形の装飾" />
         </picture>
       </div>
       <div class="vision_content">
