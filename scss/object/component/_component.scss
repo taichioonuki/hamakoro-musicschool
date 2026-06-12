@@ -121,6 +121,9 @@ nav.breadcrumb {
         text-decoration: none;
         color: #000;
         transition: opacity 0.4s;
+        height: 100%;
+        display: flex;
+        align-items: center;
         &:hover {
           opacity: 0.7;
         }

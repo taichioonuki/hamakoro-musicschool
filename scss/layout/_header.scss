@@ -115,8 +115,17 @@ header.header {
         }
         li {
           margin-right: 3.3rem;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          &:last-child {
+            height: 5.8rem;
+          }
           @include mq($sm) {
             margin-right: 0;
+            height: auto;
+            display: block;
+            width: 100%;
           }
 
           a {
@@ -129,7 +138,7 @@ header.header {
               content: "";
               position: absolute;
               left: 0;
-              bottom: 0rem;
+              bottom: 2.5rem;
               height: 0.2rem;
               width: 100%;
               background-color: #000;
@@ -144,6 +153,7 @@ header.header {
 
             @include mq($sm) {
               height: 5.8rem;
+              width: 100%;
             }
           }
           &:last-child {
@@ -304,7 +314,7 @@ header.header {
       display: none;
     }
     &:hover {
-      background-color: #000;
+      background-color: #000 !important;
     }
   }
 }
