@@ -254,3 +254,19 @@ function custom_meta_description(): void
     }
 }
 add_action('wp_head', 'custom_meta_description', 1);
+
+
+
+//スノーモンキーフォームのエラーメッセージ
+
+add_filter(
+    'snow_monkey_forms/validator/error_message',
+    function( $message, $validation_name, $name ) {
+        if ( 'required' === $validation_name ) {
+            return 'この項目は必須入力です。';
+        }
+        return $message;
+    },
+    10,
+    3
+);
