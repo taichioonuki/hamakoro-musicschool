@@ -263,7 +263,7 @@ add_filter(
     'snow_monkey_forms/validator/error_message',
     function( $message, $validation_name, $name ) {
         if ( 'required' === $validation_name ) {
-            return 'この項目は必須入力です。';
+            return 'この項目は必須です。';
         }
         return $message;
     },
