@@ -10,6 +10,7 @@
       ?>
       <section class="sec1_blog_details">
         <div class="sec1_blog_details inner">
+
           <div class="sec1_left_content">
             <div class="sec1_left_img">
               <?php if (has_post_thumbnail()): ?>
@@ -22,14 +23,17 @@
                 </picture>
               <?php endif; ?>
             </div>
+
             <span class="img_title"><?php
             $terms = get_the_terms(get_the_ID(), 'blog_cate');
             if (!empty($terms) && !is_wp_error($terms)) {
               echo esc_html($terms[0]->name);
             }
             ?></span>
+
             <h1><?php the_title(); ?></h1>
             <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+
             <div class="sns_content">
               <ul class="sns_list">
                 <li class="sns_item">
@@ -94,15 +98,17 @@
                 </li>
               </ul>
             </div>
+
             <div class="blog_details_content">
               <?php the_content(); ?>
             </div>
+
             <?php get_template_part('template-parts/single-pagination'); ?>
             <?php get_template_part('template-parts/related-articles'); ?>
-            <?php get_sidebar(); ?>
-          </div>
-      </section>
-      <?php
+          </div> <?php get_sidebar(); ?>
+
+        </div>
+      </section> <?php
     endwhile;
   endif;
   ?>

@@ -11,13 +11,16 @@
       <h1 class="page_fv_title">ブログ</h1>
     </div>
   </section>
+
   <?php get_template_part('template-parts/breadcrumbs'); ?>
+
   <section class="blog">
     <div class="blog_sec inner">
       <div class="blog_sec_container">
         <div class="sec_title">
           <h2>ブログ一覧</h2>
         </div>
+
         <div class="blog_list">
           <ul>
             <?php
@@ -36,7 +39,8 @@
                             <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/blog/blog_sp_01.jpg"
                               media="(max-width: 767px)" />
                             <img src="<?php echo get_template_directory_uri(); ?>/img/blog/blog_pc_01.jpg" alt="ギター" />
-                          </picture><?php endif; ?>
+                          </picture>
+                        <?php endif; ?>
                       </div>
                       <span class="img_title"><?php
                       $terms = get_the_terms(get_the_ID(), 'blog_cate');
@@ -45,6 +49,7 @@
                       }
                       ?></span>
                     </div>
+
                     <div class="blog_item_right">
                       <h3><?php echo wp_trim_words(get_the_title(), 26, '...'); ?></h3>
                       <div class="time_right">
@@ -62,10 +67,12 @@
             ?>
           </ul>
         </div>
+
         <div class="page">
           <?php wp_pagenavi(); ?>
         </div>
       </div>
+    </div>
   </section>
 </main>
 <?php get_template_part('template-parts/fix-area'); ?>

@@ -77,7 +77,6 @@ if (!empty($terms)):
         </div>
       </div>
     </div>
-    </div>
     <?php
   endif;
 endif;

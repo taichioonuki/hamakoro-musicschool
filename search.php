@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 <main class="search-page-override pagination-limit-3">
   <?php get_template_part('template-parts/breadcrumbs'); ?>
+
   <section class="search_sec">
     <div class="search_sec inner">
       <div class="search_sec_container">
+
         <?php if (!empty(get_search_query())): ?>
           <?php
           if (have_posts()):
@@ -13,6 +15,7 @@
               <p>「<span><?php echo get_search_query(); ?></span>」の検索結果</p>
               <p><?php echo $total_posts ?>件</p>
             </div>
+
             <div class="blog_list search_list">
               <ul>
                 <?php
@@ -27,9 +30,11 @@
                             <?php the_post_thumbnail(); ?>
                           <?php else: ?>
                             <picture>
-                              <source srcset="img/sp/blog/blog_sp_01.jpg" media="(max-width: 767px)" />
-                              <img src="img/blog/blog_pc_01.jpg" alt="No image" />
-                            </picture><?php endif; ?>
+                              <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/blog/blog_sp_01.jpg"
+                                media="(max-width: 767px)" />
+                              <img src="<?php echo get_template_directory_uri(); ?>/img/blog/blog_pc_01.jpg" alt="No image" />
+                            </picture>
+                          <?php endif; ?>
                         </div>
                         <span class="img_title"><?php
                         $terms = get_the_terms(get_the_ID(), 'blog_cate');
@@ -38,6 +43,7 @@
                         }
                         ?></span>
                       </div>
+
                       <div class="blog_item_right">
                         <h2 class="search_right">
                           <?php echo wp_trim_words(get_the_title(), 26, '...'); ?>
@@ -56,26 +62,29 @@
                 ?>
               </ul>
             </div>
+
             <div class="page">
               <?php wp_pagenavi(); ?>
             </div>
-          <?php else: ?>
+
+          <?php else:?>
             <div class="search_sec_title__no-result">
               <p>検索されたキーワードにマッチする<br class="pc-none">記事はありませんでした。</p>
               <a onclick="history.back()" class="c_button contact_button">戻る</a>
             </div>
-          <?php endif; ?>
+          <?php endif;?>
+
         <?php else: ?>
           <div class="search_sec_title__no-result">
             <p>検索キーワードが未入力です。</p>
             <a onclick="history.back()" class="c_button contact_button">戻る</a>
           </div>
         <?php endif; ?>
+
       </div>
-    </div>
-    </div>
     </div>
   </section>
 </main>
+
 <?php get_template_part('template-parts/fix-area'); ?>
 <?php get_footer(); ?>

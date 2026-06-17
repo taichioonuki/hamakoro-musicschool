@@ -4,10 +4,10 @@
       <?php
       wp_nav_menu(
         array(
-          'theme_location' => 'footer',      // functions.phpで決めた識別子
-          'container' => false,         // 余計な div を出さない
-          'menu_class' => 'footer_list', // ul につくクラス名
-          'add_li_class' => 'footer_item', // li につくクラス名（※要フック）
+          'theme_location' => 'footer',
+          'container' => false,
+          'menu_class' => 'footer_list',
+          'add_li_class' => 'footer_item',
         )
       );
       ?>

@@ -8,6 +8,7 @@
       ?>
       <section class="profile_card">
         <div class="profile inner">
+
           <div class="profile_img">
             <?php if (has_post_thumbnail()): ?>
               <?php the_post_thumbnail('large'); ?>
@@ -17,7 +18,8 @@
                   media="(max-width: 767px)" />
                 <img src="<?php echo get_template_directory_uri(); ?>/img/result_details/result_details_pc_01.jpg"
                   alt="ギター" />
-              </picture><?php endif; ?>
+              </picture>
+            <?php endif; ?>
             <span class="img_title"><?php
             $terms = get_the_terms(get_the_ID(), 'genre');
             if (!empty($terms) && !is_wp_error($terms)) {
@@ -25,6 +27,7 @@
             }
             ?></span>
           </div>
+
           <div class="profile_card_body">
             <h1 class="profile_card_title">
               <?php the_title(); ?>
@@ -32,6 +35,7 @@
             <div class="resultdeta_time">
               <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
             </div>
+
             <div class="profile_card_content">
               <div class="profile_card_table-wrapper">
                 <table class="profile_card_table">
@@ -63,20 +67,15 @@
                     <td><?php the_field('sns'); ?></td>
                   </tr>
                 </table>
-              </div>
-              <?php the_content(); ?>
+              </div> <?php the_content(); ?>
             </div>
-          </div>
-          <?php get_template_part('template-parts/single-pagination'); ?>
+          </div> <?php get_template_part('template-parts/single-pagination'); ?>
           <?php get_template_part('template-parts/related-articles'); ?>
+
         </div>
-      </section>
-      <?php
+      </section> <?php
     endwhile;
   endif;
   ?>
-  </div>
-  </div>
-</main>
-<?php get_template_part('template-parts/fix-area'); ?>
+</main> <?php get_template_part('template-parts/fix-area'); ?>
 <?php get_footer(); ?>
