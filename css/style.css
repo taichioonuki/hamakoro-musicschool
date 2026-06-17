@@ -648,7 +648,7 @@ header.header div.header_container nav.header_nav .header_list li {
           align-items: center;
 }
 header.header div.header_container nav.header_nav .header_list li:last-child {
-  height: 5.8rem;
+  height: 4.5rem;
 }
 @media screen and (max-width: 767px) {
   header.header div.header_container nav.header_nav .header_list li {
