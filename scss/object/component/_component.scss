@@ -594,18 +594,14 @@ div.related {
     }
   }
 }
-.wp-pagenavi a,
-.wp-pagenavi span {
+.page .wp-pagenavi a,
+.page .wp-pagenavi span {
   text-decoration: none;
-  border: 1px solid #bfbfbf;
-  padding: 0 !important;
-
-  // 1. 基本はすべて margin: 0 !important; にしてプラグインの2pxを消す
-  margin: 0 !important;
-
-  // 2. その中で、.extend だけは margin を 0 1rem !important で上書きする
+  border: 1px solid #000;
+  padding: 0;
+  margin: 0;
   &.extend {
-    margin: 0 1rem !important;
+    margin: 0 1rem;
     border: none;
     display: inline-block;
   }
