@@ -31,10 +31,10 @@
         <div class="header_logo">
           <?php endif; ?>
           <a href="<?php echo esc_url(home_url('/')); ?>">
-            <div class="logo_img">
+            <span class="logo_img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/icon_logo/music-school_logo_pc.svg"
                 alt="きたむらミュージックスクール" />
-            </div>
+            </span>
             <span class="logo_text">きたむら<br class="pc_only" />
               <span class="logo_text_smallsize">ミュージックスクール</span></span>
           </a>

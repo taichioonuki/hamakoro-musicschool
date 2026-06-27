@@ -319,8 +319,7 @@
                       <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog01-sp.jpg"
                         media="(max-width: 767px)" />
                       <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog01.jpg" alt="歌う女性の画像" />
-                    <?php endif; ?>
-                  </picture>
+                    </picture> <?php endif; ?>
                   <span class="img_title"><?php
                   $terms = get_the_terms(get_the_ID(), 'blog_cate');
                   if (!empty($terms) && !is_wp_error($terms)) {
@@ -330,12 +329,11 @@
                   <h3><?php echo wp_trim_words(get_the_title(), 20, '...'); ?></h3>
                   <p><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time></p>
                 </a>
-                <?php
+              </li> <?php
             endwhile;
           endif;
           wp_reset_postdata();
           ?>
-          </li>
         </ul>
       </div>
       <div class="blog_btnbox">
