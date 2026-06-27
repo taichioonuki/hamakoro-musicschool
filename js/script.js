@@ -1,6 +1,6 @@
-$(function() {
+$(function () {
   // 1. まず真っ先にbodyを表示させる
-  $('body').show();
+  $("body").show();
 });
 
 /* ハンバーガーメニュー開閉
@@ -185,7 +185,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  pageTop.addEventListener("click", scrollTop);
+  const backToTopBtn = pageTop.querySelector(".back-to-top_btn");
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener("click", scrollTop);
+  }
+
   window.addEventListener("scroll", scrollEvent);
   window.addEventListener("scroll", Position);
 });
