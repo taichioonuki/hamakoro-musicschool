@@ -133,7 +133,8 @@ header.header {
             align-items: center;
             height: 100%;
             position: relative;
-
+            width: 100%;
+            justify-content: center;
             &::after {
               content: "";
               position: absolute;

@@ -667,6 +667,10 @@ header.header div.header_container nav.header_nav .header_list li a {
           align-items: center;
   height: 100%;
   position: relative;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 header.header div.header_container nav.header_nav .header_list li a::after {
   content: "";
