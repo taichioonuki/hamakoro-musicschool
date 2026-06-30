@@ -967,9 +967,13 @@ span.img_title {
   left: 0;
   background: #cb0000;
   color: #fff;
-  width: 8rem;
+  min-width: 8rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
   text-align: center;
-  padding: 0.3rem 0;
+  padding: 0.3rem 1rem;
 }
 @media screen and (max-width: 767px) {
   span.img_title {

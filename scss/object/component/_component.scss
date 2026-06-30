@@ -76,9 +76,11 @@ span.img_title {
   left: 0;
   background: #cb0000;
   color: #fff;
-  width: 8rem;
+  min-width: 8rem;
+  width: max-content;
+  max-width: 100%;
   text-align: center;
-  padding: 0.3rem 0;
+  padding: 0.3rem 1rem;
   @include mq($sm) {
     width: 9rem;
   }
