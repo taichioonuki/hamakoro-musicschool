@@ -34,6 +34,10 @@ section.page_fv {
           transition: opacity 0.4s;
           .achievement_img {
             position: relative;
+            .wp-post-image {
+              aspect-ratio: 387 / 273;
+              object-fit: cover;
+            }
             span.img_title {
               width: 10rem;
             }

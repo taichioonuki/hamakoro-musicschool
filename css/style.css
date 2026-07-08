@@ -4182,6 +4182,11 @@ section.page_fv .page_fv_overlay.result_overlay {
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_img {
   position: relative;
 }
+.result_container .result.inner .achievement_grid .achievement_card a .achievement_img .wp-post-image {
+  aspect-ratio: 387/273;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_img span.img_title {
   width: 10rem;
 }
