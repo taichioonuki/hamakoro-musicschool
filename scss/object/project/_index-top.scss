@@ -264,6 +264,9 @@ section.sec4 {
                 text-align: center;
                 line-height: 1.5;
                 overflow-wrap: break-word;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
                 @include mq($sm) {
                   margin: 2.7rem 0 1rem 0;
                 }
@@ -272,6 +275,10 @@ section.sec4 {
                 font-weight: 400;
                 font-size: 1.8rem;
                 line-height: 1.667;
+                -webkit-line-clamp: 3;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
               }
               &:hover {
                 opacity: 0.7;

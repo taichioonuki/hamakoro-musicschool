@@ -1917,6 +1917,9 @@ section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .s
   text-align: center;
   line-height: 1.5;
   overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 @media screen and (max-width: 767px) {
   section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .swiper-slide p.name {
@@ -1927,6 +1930,10 @@ section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .s
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.667;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 section.sec4 .sec4.inner .sec4_container .sec4_swiper .swiper .swiper-wrapper .swiper-slide:hover {
   opacity: 0.7;
