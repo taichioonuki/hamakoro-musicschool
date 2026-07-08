@@ -17,10 +17,10 @@
                 <?php the_post_thumbnail('large'); ?>
               <?php else: ?>
                 <picture>
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/blog_details/blog_sp_01.jpg"
-                    media="(max-width: 767px)" />
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/blog_details/blog_pc_01.jpg" alt="ギター" />
-                </picture>
+                      <source srcset="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg"
+                        media="(max-width: 767px)" />
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg" alt="No Image" />
+                    </picture>
               <?php endif; ?>
             </div>
 

@@ -29,8 +29,8 @@
                   <?php if (has_post_thumbnail()): ?>
                     <?php the_post_thumbnail(); ?>
                   <?php else: ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/result_list/result_pc_01.jpg"
-                      alt="歌う男性の画像" /><?php endif; ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg" alt="No Image" />
+                  <?php endif; ?>
                   <span class="img_title"><?php
                   $terms = get_the_terms(get_the_ID(), 'genre');
                   if (!empty($terms) && !is_wp_error($terms)) {

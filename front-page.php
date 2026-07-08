@@ -150,7 +150,7 @@
                         <?php if (has_post_thumbnail()): ?>
                           <?php the_post_thumbnail('full'); ?>
                         <?php else: ?>
-                          <img src="<?php echo get_template_directory_uri(); ?>/img/top/default.jpg" alt="デフォルト画像" />
+                          <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg" alt="デフォルト画像" />
                         <?php endif; ?>
                       </div>
                       <p class="name"><?php the_field('job'); ?>&emsp;<?php the_field('name'); ?>さん</p>
@@ -316,9 +316,9 @@
                     <?php the_post_thumbnail(); ?>
                   <?php else: ?>
                     <picture>
-                      <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/top/blog01-sp.jpg"
+                      <source srcset="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg"
                         media="(max-width: 767px)" />
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/top/blog01.jpg" alt="歌う女性の画像" />
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg" alt="No Image" />
                     </picture> <?php endif; ?>
                   <span class="img_title"><?php
                   $terms = get_the_terms(get_the_ID(), 'blog_cate');

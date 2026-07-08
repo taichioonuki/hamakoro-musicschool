@@ -14,10 +14,8 @@
               <?php the_post_thumbnail('large'); ?>
             <?php else: ?>
               <picture>
-                <source srcset="<?php echo get_template_directory_uri(); ?>/img/sp/result_details/result_details_sp01.jpg"
-                  media="(max-width: 767px)" />
-                <img src="<?php echo get_template_directory_uri(); ?>/img/result_details/result_details_pc_01.jpg"
-                  alt="ギター" />
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg" media="(max-width: 767px)" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg" alt="No Image" />
               </picture>
             <?php endif; ?>
             <span class="img_title"><?php
