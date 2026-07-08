@@ -212,6 +212,8 @@ nav.breadcrumb {
               width: 100%;
             }
             .wp-post-image {
+              object-fit: cover;
+              aspect-ratio: 260 / 160;
               @include mq($sm) {
                 aspect-ratio: 335 / 200;
               }

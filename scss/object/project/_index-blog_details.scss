@@ -10,7 +10,7 @@ section.sec1_blog_details {
   }
 
   .inner,
-  .sec1_blog_details_inner { 
+  .sec1_blog_details_inner {
     display: flex;
     gap: 3rem;
     @include mq($sm) {
@@ -20,12 +20,13 @@ section.sec1_blog_details {
     .sec1_left_content {
       position: relative;
       flex: 1 1 60%;
-      
+
       .sec1_left_img {
         max-width: 60rem;
       }
       .wp-post-image {
         aspect-ratio: 600 / 350;
+        object-fit: cover;
         @include mq($sm) {
           aspect-ratio: 335 / 200;
         }
@@ -137,7 +138,8 @@ section.sec1_blog_details {
             }
           }
         }
-        ul, ol {
+        ul,
+        ol {
           margin-block: 2.8rem;
           padding-left: 0;
           li {
@@ -202,7 +204,8 @@ section.sec1_blog_details {
           }
           &::before {
             content: "";
-            background: url(https://hamakoro-i.com/music_school/img/icon_logo/quotation.svg) center center / contain no-repeat;
+            background: url(https://hamakoro-i.com/music_school/img/icon_logo/quotation.svg)
+              center center / contain no-repeat;
             display: inline-block;
             width: 2.7rem;
             height: 2.34rem;
@@ -232,7 +235,7 @@ section.sec1_blog_details {
           }
         }
       }
-    } 
+    }
     .wp-block-separator {
       border: none;
       border-top: 0.5px solid #ccc;
