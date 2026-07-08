@@ -541,7 +541,8 @@ section.sec6 {
             transition:
               max-height 0.4s ease-in-out,
               padding 0.4s ease-in,
-              transform 0.4s ease;
+              transform 0.4s ease,
+              color 0.4s ease;
             .faq-answer-inner {
               padding: 1.5rem 2rem; // ここで余白を確保
               display: flex;
@@ -556,8 +557,9 @@ section.sec6 {
               align-items: flex-start;
               font-size: 1.7rem;
               line-height: 1.765;
-              color: #000000;
+              color: #cb0000;
               padding: 0;
+              font-weight: bold;
               & {
                 flex-grow: 1;
               }
@@ -593,10 +595,6 @@ section.sec6 {
             }
 
             .faq-answer {
-              transition:
-                max-height 0.4s ease-in-out,
-                padding 0.4s ease-in,
-                transform 0.4s ease;
               border-bottom: 1px solid #000000;
             }
 

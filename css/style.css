@@ -2251,10 +2251,10 @@ section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer {
   max-height: 0;
   overflow: hidden;
   padding: 0 2rem;
-  -webkit-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, -webkit-transform 0.4s ease;
-  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, -webkit-transform 0.4s ease;
-  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, transform 0.4s ease;
-  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, color 0.4s ease, -webkit-transform 0.4s ease;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, color 0.4s ease, -webkit-transform 0.4s ease;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, transform 0.4s ease, color 0.4s ease;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, transform 0.4s ease, color 0.4s ease, -webkit-transform 0.4s ease;
 }
 section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer .faq-answer-inner {
   padding: 1.5rem 2rem;
@@ -2280,8 +2280,9 @@ section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer.high
           align-items: flex-start;
   font-size: 1.7rem;
   line-height: 1.765;
-  color: #000000;
+  color: #cb0000;
   padding: 0;
+  font-weight: bold;
 }
 section.sec6 .sec6.inner .sec6_container .faq-section .faq-item .faq-answer.highlighted {
   -webkit-box-flex: 1;
@@ -2324,10 +2325,6 @@ section.sec6 .sec6.inner .sec6_container .faq-section .faq-item.open .faq-questi
   border-bottom: none;
 }
 section.sec6 .sec6.inner .sec6_container .faq-section .faq-item.open .faq-answer {
-  -webkit-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, -webkit-transform 0.4s ease;
-  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, -webkit-transform 0.4s ease;
-  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, transform 0.4s ease;
-  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in, transform 0.4s ease, -webkit-transform 0.4s ease;
   border-bottom: 1px solid #000000;
 }
 section.sec6 .sec6.inner .sec6_container .faq-section .faq-item.open .faq-answer.highlighted {
