@@ -3705,6 +3705,9 @@ section.sec1_blog_details .sec1_blog_details_inner aside.sidebar .sidebar_catego
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .smf-form--business .smf-item:last-child,
 .smf-form--simple-table .smf-item:last-child,
@@ -3743,6 +3746,13 @@ section.sec1_blog_details .sec1_blog_details_inner aside.sidebar .sidebar_catego
   font-size: 2rem;
   line-height: 1.5;
   font-weight: normal;
+  min-height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 767px) {
   .smf-form--business .smf-item__col--label,
@@ -3757,6 +3767,8 @@ section.sec1_blog_details .sec1_blog_details_inner aside.sidebar .sidebar_catego
     font-weight: 500;
     margin-bottom: 0.8rem;
     padding-top: 0;
+    min-height: auto;
+    display: block;
   }
 }
 .smf-form--business .smf-item__col--controls,
@@ -3767,6 +3779,17 @@ section.sec1_blog_details .sec1_blog_details_inner aside.sidebar .sidebar_catego
           flex: 1 1 auto;
   max-width: none;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 4rem;
 }
 .smf-form--business .smf-text-control__control,
 .smf-form--simple-table .smf-text-control__control,
@@ -3994,13 +4017,25 @@ section.sec1_blog_details .sec1_blog_details_inner aside.sidebar .sidebar_catego
     display: none;
   }
 }
+.smf-form .smf-item.content_group {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .smf-form .smf-item.content_group .smf-item__col--label {
   padding-top: 1.4rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 @media screen and (max-width: 767px) {
   .smf-form .smf-item.content_group .smf-item__col--label {
     padding-top: 0;
   }
+}
+
+.smf-error-messages {
+  font-size: 1.2rem;
 }
 
 .contact_done {
