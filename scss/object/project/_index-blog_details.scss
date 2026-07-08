@@ -107,6 +107,10 @@ section.sec1_blog_details {
         @include mq($sm) {
           margin-top: 2.7rem;
         }
+        & > * {
+          margin-block: 0;
+        }
+
         p {
           margin-bottom: 1.7rem;
           &:last-child {
@@ -126,6 +130,8 @@ section.sec1_blog_details {
         }
         figure {
           margin-block: 0rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
           @include mq($sm) {
             margin-top: 3.9rem;
           }
@@ -140,7 +146,8 @@ section.sec1_blog_details {
         }
         ul,
         ol {
-          margin-block: 2.8rem;
+          margin-top: 2.8rem;
+          margin-bottom: 2.8rem;
           padding-left: 0;
           li {
             font-size: 1.8rem;
@@ -193,7 +200,8 @@ section.sec1_blog_details {
           display: flex;
           column-gap: 0.8rem;
           padding: 1.8rem 3rem 1rem;
-          margin-block: 1.7rem 2.9rem;
+          margin-top: 1.7rem;
+          margin-bottom: 2.9rem;
           position: relative;
           border: none;
           background: #e8e8e8;
@@ -228,7 +236,8 @@ section.sec1_blog_details {
           }
         }
         hr {
-          margin-block: 4.1rem;
+          margin-top: 4.1rem;
+          margin-bottom: 4.1rem;
           border-bottom: 0.5px solid;
           @include mq($sm) {
             margin-top: 3.5rem;

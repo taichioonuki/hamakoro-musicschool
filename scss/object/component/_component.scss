@@ -610,3 +610,19 @@ div.related {
     display: inline-block;
   }
 }
+
+//共通パーツ【記事がない場合】
+.no_posts{
+  text-align: center;
+  list-style: none;
+  margin-top: 3rem;
+}
+
+.achievement_grid .no_posts {
+  grid-column: 1 / -1; /* Gridレイアウトの場合、横いっぱいに広げる指定 */
+  width: 100%;         /* Flexboxレイアウトの場合の保険 */
+  text-align: center;
+  padding: 50px 0;
+  color: #666;
+  font-size: 16px;
+}

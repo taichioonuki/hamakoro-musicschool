@@ -63,6 +63,10 @@
                 </li>
                 <?php
               endwhile;
+            else:
+              ?>
+              <li class="no_posts">投稿はありません。</li>
+              <?php
             endif;
             ?>
           </ul>

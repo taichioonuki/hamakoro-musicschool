@@ -50,6 +50,9 @@
             </div>
             <?php
           endwhile;
+        else:
+          ?><p class="no_posts">投稿はありません。</p>
+          <?php
         endif;
         ?>
       </div>
