@@ -11,15 +11,19 @@
       <h1 class="page_fv_title">卒業実績</h1>
     </div>
   </section>
+
   <?php get_template_part('template-parts/breadcrumbs'); ?>
+
   <div class="result_container">
     <div class="result inner">
       <div class="sec_title">
         <h2>卒業実績一覧</h2>
       </div>
-      <div class="achievement_grid">
-        <?php
-        if (have_posts()):
+
+      <?php if (have_posts()):?>
+
+        <div class="achievement_grid">
+          <?php
           while (have_posts()):
             the_post();
             ?>
@@ -50,15 +54,15 @@
             </div>
             <?php
           endwhile;
-        else:
-          ?><p class="no_posts">投稿はありません。</p>
-          <?php
-        endif;
-        ?>
-      </div>
-      <div class="page">
-        <?php wp_pagenavi(); ?>
-      </div>
+          ?>
+        </div>
+        <div class="page">
+          <?php wp_pagenavi(); ?>
+        </div>
+      <?php else:?>
+        <p class="no_posts">投稿はありません。</p>
+      <?php endif; ?>
+
     </div>
   </div>
 </main>

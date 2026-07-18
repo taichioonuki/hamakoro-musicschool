@@ -1543,7 +1543,7 @@ div.related div.related_content_box div.related_content ul .related_content_item
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
-  margin: 0 30rem;
+  margin: 0 25rem;
 }
 @media screen and (max-width: 767px) {
   .page .wp-pagenavi {

@@ -63,6 +63,12 @@
                 </li>
                 <?php
               endwhile;
+              ?>
+              <div class="page">
+                <?php wp_pagenavi(); ?>
+              </div>
+              <?php
+
             else:
               ?>
               <li class="no_posts">投稿はありません。</li>
@@ -72,9 +78,6 @@
           </ul>
         </div>
 
-        <div class="page">
-          <?php wp_pagenavi(); ?>
-        </div>
       </div>
     </div>
   </section>

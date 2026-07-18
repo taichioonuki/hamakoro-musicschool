@@ -552,7 +552,7 @@ div.related {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin: 0 30rem;
+    margin: 0 25rem;
     @include mq($sm) {
       gap: 0.5rem;
       margin: 0;
