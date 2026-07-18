@@ -207,7 +207,8 @@ nav.breadcrumb {
         .blog_item_left {
           position: relative;
           .blog_item_img {
-            width: 26rem;
+            width: 260px;
+            aspect-ratio: 260 / 184;
             @include mq($sm) {
               width: 100%;
             }
@@ -217,6 +218,12 @@ nav.breadcrumb {
               @include mq($sm) {
                 aspect-ratio: 335 / 200;
               }
+            }
+            picture,
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
           }
         }
@@ -612,7 +619,7 @@ div.related {
 }
 
 //共通パーツ【記事がない場合】
-.no_posts{
+.no_posts {
   text-align: center;
   list-style: none;
   margin-top: 3rem;
@@ -620,7 +627,7 @@ div.related {
 
 .achievement_grid .no_posts {
   grid-column: 1 / -1; /* Gridレイアウトの場合、横いっぱいに広げる指定 */
-  width: 100%;         /* Flexboxレイアウトの場合の保険 */
+  width: 100%; /* Flexboxレイアウトの場合の保険 */
   text-align: center;
   padding: 50px 0;
   color: #666;

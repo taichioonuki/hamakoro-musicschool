@@ -1134,7 +1134,8 @@ nav.breadcrumb .breadcrumb_container .breadcrumb_sign {
   position: relative;
 }
 .blog_list ul li.blog_item a .blog_item_left .blog_item_img {
-  width: 26rem;
+  width: 260px;
+  aspect-ratio: 260/184;
 }
 @media screen and (max-width: 767px) {
   .blog_list ul li.blog_item a .blog_item_left .blog_item_img {
@@ -1150,6 +1151,13 @@ nav.breadcrumb .breadcrumb_container .breadcrumb_sign {
   .blog_list ul li.blog_item a .blog_item_left .blog_item_img .wp-post-image {
     aspect-ratio: 335/200;
   }
+}
+.blog_list ul li.blog_item a .blog_item_left .blog_item_img picture,
+.blog_list ul li.blog_item a .blog_item_left .blog_item_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .blog_list ul li.blog_item a .blog_item_right h3 {
   font-size: 2rem;
@@ -4216,14 +4224,28 @@ section.page_fv .page_fv_overlay.result_overlay {
 }
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_img {
   position: relative;
+  aspect-ratio: 387/273;
 }
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_img .wp-post-image {
   aspect-ratio: 387/273;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.result_container .result.inner .achievement_grid .achievement_card a .achievement_img picture,
+.result_container .result.inner .achievement_grid .achievement_card a .achievement_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_img span.img_title {
   width: 10rem;
+  min-width: 8rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  padding: 0.3rem 1rem;
 }
 .result_container .result.inner .achievement_grid .achievement_card a .achievement_content {
   margin: 2rem 0 1rem;

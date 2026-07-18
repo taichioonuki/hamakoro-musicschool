@@ -34,12 +34,23 @@ section.page_fv {
           transition: opacity 0.4s;
           .achievement_img {
             position: relative;
+            aspect-ratio: 387 / 273;
             .wp-post-image {
               aspect-ratio: 387 / 273;
               object-fit: cover;
             }
+            picture,
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
             span.img_title {
               width: 10rem;
+              min-width: 8rem;
+              width: max-content;
+              max-width: 100%;
+              padding: 0.3rem 1rem;
             }
           }
           .achievement_content {

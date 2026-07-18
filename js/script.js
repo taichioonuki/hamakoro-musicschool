@@ -185,11 +185,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  const backToTopBtn = pageTop.querySelector(".back-to-top_btn");
+const backToTopBtn = pageTop.querySelector(".back-to-top_btn");
   if (backToTopBtn) {
     backToTopBtn.addEventListener("click", scrollTop);
   }
-
+  const contactBtn = pageTop.querySelector(".fixed-buttons__contact");
+  if (contactBtn) {
+    contactBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  }
   window.addEventListener("scroll", scrollEvent);
   window.addEventListener("scroll", Position);
 });
