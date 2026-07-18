@@ -267,3 +267,38 @@ add_filter(
     10,
     3
 );
+
+function load_recaptcha_js()
+{
+    // お問い合わせページ（スラッグが "contact" の場合）以外ではJSを読み込まない
+    if (!is_page('contact')) {
+        wp_deregister_script('google-recaptcha');
+    }
+}
+add_action('wp_enqueue_scripts', 'load_recaptcha_js', 100);
+function block_wp_admin_direct_access()
+{
+    if (is_user_logged_in() || (defined('DOING_AJAX') && DOING_AJAX)) {
+        return;
+    }
+
+    $request_uri = $_SERVER['REQUEST_URI'];
+
+    if (false !== strpos($request_uri, 'wp-admin') || false !== strpos($request_uri, 'wp-login.php')) {
+        if (false !== strpos($request_uri, 'hamakoro')) {
+            return;
+        }
+
+        global $wp_query;
+        $wp_query->set_404();
+        status_header(404);
+        nocache_headers();
+
+        // 💡 崩れ対策：WordPressのフロントエンド用のヘッダー・スクリプト処理を強制的に呼び出す
+        do_action('wp_enqueue_scripts');
+
+        include(get_query_template('404'));
+        die();
+    }
+}
+add_action('init', 'block_wp_admin_direct_access', 1);
