@@ -3010,6 +3010,7 @@ section.sec1_blog_details .sec1_blog_details_inner .sec1_left_content .blog_deta
 }
 section.sec1_blog_details .inner .sec1_left_content .blog_details_content p,
 section.sec1_blog_details .sec1_blog_details_inner .sec1_left_content .blog_details_content p {
+  margin-top: 1.5rem;
   margin-bottom: 1.7rem;
 }
 section.sec1_blog_details .inner .sec1_left_content .blog_details_content p:last-child,

@@ -294,7 +294,6 @@ function block_wp_admin_direct_access()
         status_header(404);
         nocache_headers();
 
-        // 💡 崩れ対策：WordPressのフロントエンド用のヘッダー・スクリプト処理を強制的に呼び出す
         do_action('wp_enqueue_scripts');
 
         include(get_query_template('404'));
