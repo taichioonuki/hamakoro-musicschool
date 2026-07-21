@@ -31,7 +31,7 @@
                 <?php if (has_post_thumbnail()): ?>
                   <?php the_post_thumbnail(); ?>
                 <?php else: ?>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/blog_details/side_img.jpg" alt="タイトル" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg" alt="タイトル" />
                 <?php endif; ?>
               </div>
               <p class="post_item_title">

@@ -16,7 +16,7 @@ $article_class = 'article' . (is_singular('result') ? ' article--result' : '');
               <?php if (has_post_thumbnail($prev_post->ID)): ?>
                 <?php echo get_the_post_thumbnail($prev_post->ID); ?>
               <?php else: ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/blog_details/blog_pc_03.jpg" alt="No image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg" alt="No image" />
               <?php endif; ?>
             </div>
             <p class="article_text">
@@ -35,7 +35,7 @@ $article_class = 'article' . (is_singular('result') ? ' article--result' : '');
               <?php if (has_post_thumbnail($next_post->ID)): ?>
                 <?php echo get_the_post_thumbnail($next_post->ID); ?>
               <?php else: ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/blog_details/blog_pc_03.jpg" alt="No image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg" alt="No image" />
               <?php endif; ?>
             </div>
             <p class="article_text">

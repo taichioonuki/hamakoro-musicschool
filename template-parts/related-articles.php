@@ -56,7 +56,7 @@ if (!empty($terms)):
                       <?php if (has_post_thumbnail()): ?>
                         <?php the_post_thumbnail(); ?>
                       <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/blog/blog_pc_03.jpg" alt="No image" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.jpg" alt="No image" />
                       <?php endif; ?>
                     </div>
                     <span class="img_title related_img_title">

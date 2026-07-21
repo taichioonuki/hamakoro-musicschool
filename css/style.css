@@ -697,6 +697,10 @@ header.header div.header_container nav.header_nav .header_list li a:hover::after
   header.header div.header_container nav.header_nav .header_list li a {
     height: 5.8rem;
     width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 2rem;
   }
 }
 header.header div.header_container nav.header_nav .header_list li:last-child {
@@ -978,10 +982,16 @@ span.img_title {
 @media screen and (max-width: 767px) {
   span.img_title {
     width: 9rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 span.img_title.related_img_title {
   width: 8rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 nav.breadcrumb {
@@ -1347,16 +1357,24 @@ div.article div.article_page div.article_pagebox a.article_link div.article_text
   width: 9.8rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  height: 6.8rem;
 }
 @media screen and (max-width: 767px) {
   div.article div.article_page div.article_pagebox a.article_link div.article_textbox .article_textbox_img {
     width: 0;
+    height: 0;
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
   }
 }
 div.article div.article_page div.article_pagebox a.article_link div.article_textbox .article_textbox_img .wp-post-image {
   aspect-ratio: 98/68;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div.article div.article_page div.article_pagebox a.article_link div.article_textbox .article_textbox_img img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3380,6 +3398,7 @@ section.sec1_blog_details .sec1_blog_details_inner aside.sidebar .sidebar_posts 
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 9.5rem;
+  height: 7.5rem;
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
@@ -3388,6 +3407,13 @@ section.sec1_blog_details .sec1_blog_details_inner aside.sidebar .sidebar_posts 
     width: 16rem;
     height: 11rem;
   }
+}
+section.sec1_blog_details .inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper img,
+section.sec1_blog_details .sec1_blog_details_inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.sec1_blog_details .inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper .wp-post-image,
 section.sec1_blog_details .sec1_blog_details_inner aside.sidebar .sidebar_posts .post_list .post_item .post_link .post_img_wrapper .wp-post-image {
@@ -4298,6 +4324,9 @@ section.profile_card .profile.inner .profile_img img {
 }
 section.profile_card .profile.inner .profile_img span.img_title {
   width: 10rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 section.profile_card .profile.inner .profile_card_body {
   -webkit-box-flex: 1;

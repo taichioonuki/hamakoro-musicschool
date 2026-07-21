@@ -372,10 +372,16 @@ section.sec1_blog_details {
               .post_img_wrapper {
                 flex-shrink: 0;
                 width: 9.5rem;
+                height: 7.5rem;
                 overflow: hidden;
                 @include mq($sm) {
                   width: 16rem;
                   height: 11rem;
+                }
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
                 }
                 .wp-post-image {
                   aspect-ratio: 95 / 75;

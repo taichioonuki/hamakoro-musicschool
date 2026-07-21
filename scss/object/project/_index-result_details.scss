@@ -29,6 +29,7 @@ section.profile_card {
       }
       span.img_title {
         width: 10rem;
+        width: max-content;
       }
     }
     .profile_card_body {
