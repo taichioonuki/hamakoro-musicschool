@@ -1,3 +1,8 @@
+$(function () {
+  // 1. まず真っ先にbodyを表示させる
+  $("body").show();
+});
+
 /* ハンバーガーメニュー開閉
  ***************************************************************/
 // メニュー開閉
@@ -180,7 +185,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  pageTop.addEventListener("click", scrollTop);
+const backToTopBtn = pageTop.querySelector(".back-to-top_btn");
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener("click", scrollTop);
+  }
+  const contactBtn = pageTop.querySelector(".fixed-buttons__contact");
+  if (contactBtn) {
+    contactBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  }
   window.addEventListener("scroll", scrollEvent);
   window.addEventListener("scroll", Position);
 });

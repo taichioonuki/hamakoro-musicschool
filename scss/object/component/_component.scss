@@ -76,70 +76,79 @@ span.img_title {
   left: 0;
   background: #cb0000;
   color: #fff;
-  width: 8rem;
+  min-width: 8rem;
+  width: max-content;
+  max-width: 100%;
   text-align: center;
-  padding: 0.3rem 0;
+  padding: 0.3rem 1rem;
   @include mq($sm) {
     width: 9rem;
+    width: max-content;
   }
   &.related_img_title {
     width: 8rem;
+    width: max-content;
   }
 }
 
 //共通パーツ【パンくずリスト】
 nav.breadcrumb {
   background-color: #e8e8e8;
+  .page_fv + & {
+    margin-top: 0;
+  }
   .breadcrumb_container {
-    ul.breadcrumb_list {
+    // コンテナ自体をフレックスボックスにして横並びにする
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    column-gap: 1.7rem;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    // 各アイテム（リンクや現在のページ名）
+    span[property="itemListElement"] {
       display: flex;
       align-items: center;
-      font-size: 1.6rem;
-      column-gap: 1.7rem;
-      overflow-x: auto;
-      white-space: nowrap;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
+      flex-shrink: 0;
+      height: 5rem;
+      @include mq($sm) {
+        height: 3.6rem;
       }
-      li {
+
+      a {
+        text-decoration: none;
+        color: #000;
+        transition: opacity 0.4s;
+        height: 100%;
         display: flex;
         align-items: center;
-        flex-shrink: 0; // 横スクロール時に潰れないようにする
-        height: 5rem;
-        @include mq($sm) {
-          height: 3.6rem;
-        }
-        &:not(:last-child)::after {
-          content: ">";
-          font-size: 1.6rem;
-          margin-left: 1.7rem; // column-gapと合わせて調整
-          color: #000;
-        }
-
-        a.breadcrumb_link {
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          color: #000;
-          transition: opacity 0.4s;
-          height: 5rem;
-          @include mq($sm) {
-            height: 3.6rem;
-          }
-          &:hover {
-            opacity: 0.7;
-          }
+        &:hover {
+          opacity: 0.7;
         }
       }
 
-      li:last-child {
+      // リンクになっていない（現在地など）テキストの調整
+      span[property="name"] {
         line-height: 1.45;
         @include mq($sm) {
           line-height: 1.25;
         }
       }
+    }
+
+    // プラグインが出力する区切り文字「 > 」の調整
+    .breadcrumb_sign {
+      display: flex;
+      align-items: center;
+      margin: 0 1.7rem; // 左右に余白を作る
+      color: #000;
+      font-size: 1.6rem;
     }
   }
 }
@@ -173,7 +182,7 @@ nav.breadcrumb {
 
 //共通パーツ リスト
 .blog_list {
-  margin-top: 3.2rem;
+  margin-top: 3.5rem;
   @include mq($sm) {
     margin-top: 3.9rem;
   }
@@ -200,9 +209,23 @@ nav.breadcrumb {
         .blog_item_left {
           position: relative;
           .blog_item_img {
-            width: 26rem;
+            width: 260px;
+            aspect-ratio: 260 / 184;
             @include mq($sm) {
               width: 100%;
+            }
+            .wp-post-image {
+              object-fit: cover;
+              aspect-ratio: 260 / 184;
+              @include mq($sm) {
+                aspect-ratio: 335 / 200;
+              }
+            }
+            picture,
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
           }
         }
@@ -225,7 +248,7 @@ nav.breadcrumb {
             }
           }
           p {
-            margin-top: 1.1rem;
+            margin-top: 0.5rem;
             @include mq($sm) {
               font-size: 1.6rem;
               margin-top: 0.8rem;
@@ -306,20 +329,28 @@ nav.breadcrumb {
     }
   }
 }
-
-//前の記事 次の記事
+// 前の記事 次の記事
 div.article {
   margin-top: 5.4rem;
   @include mq($sm) {
     margin-top: 4.5rem;
   }
+
+  // 共通のレイアウト設定
   div.article_page {
     display: flex;
     gap: 8rem;
     @include mq($sm) {
       gap: 2.2rem;
     }
+
     div.article_pagebox {
+      width: 100%;
+      &:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
       a.article_link {
         transition: opacity 0.4s;
         .article_title_prev {
@@ -348,9 +379,20 @@ div.article {
             flex-basis: 9.8rem;
             width: 9.8rem;
             flex-shrink: 0;
+            height: 6.8rem; // ← 高さを明示的に指定
             @include mq($sm) {
               width: 0;
+              height: 0;
               flex-basis: 0;
+            }
+            .wp-post-image {
+              aspect-ratio: 98 / 68;
+              object-fit: cover;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
           }
           p.article_text {
@@ -365,6 +407,7 @@ div.article {
           color: #fff;
           text-align: right;
           padding: 0.4rem 2rem 0.3rem 0;
+          font-size: 1.7rem;
           @include mq($sm) {
             width: 100%;
           }
@@ -383,9 +426,29 @@ div.article {
   }
 }
 
+div.article.article--result {
+  div.article_page {
+    gap: 20rem;
+    @include mq($sm) {
+      gap: 2.2rem;
+    }
+
+    div.article_pagebox {
+      a.article_link {
+        .article_title_prev,
+        .article_title_next {
+          width: 34rem;
+          @include mq($sm) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 //関連記事
 div.related {
-  margin-top: 9.2rem;
+  margin-top: 10rem;
   @include mq($sm) {
     margin-top: 6.5rem;
   }
@@ -406,7 +469,7 @@ div.related {
     div.related_content {
       margin-top: 3rem;
       @include mq($sm) {
-        margin-top: 2rem;
+        margin-top: 1.7rem;
       }
       ul {
         li.related_content_item {
@@ -434,9 +497,25 @@ div.related {
               .related_img {
                 width: 20rem;
                 height: 14rem;
+
                 @include mq($sm) {
                   width: 16rem;
                   height: 11rem;
+                }
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+                &.result_related_img {
+                  width: 26rem;
+                  height: 18.3rem;
+
+                  @include mq($sm) {
+                    width: 16rem;
+                    height: 11.3rem;
+                  }
                 }
               }
             }
@@ -450,8 +529,7 @@ div.related {
                 @include mq($sm) {
                   font-size: 1.7rem;
                   line-height: 1.647;
-                  margin-bottom: 0.4rem;
-                  margin-top: 1rem;
+                  margin-bottom: 0rem;
                 }
               }
               p.time {
@@ -473,23 +551,25 @@ div.related {
 
 //ページネーション
 .page {
-  margin-top: 7rem;
+  margin-top: 6.8rem;
   @include mq($sm) {
-    margin-top: 5.9rem;
+    margin-top: 5.8rem;
   }
 
-  .Pagination {
+  .wp-pagenavi {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-
+    margin: 0 25rem;
     @include mq($sm) {
       gap: 0.5rem;
+      margin: 0;
     }
   }
 
-  .Pagination-Item-Link {
+  .current,
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -507,16 +587,58 @@ div.related {
       height: 4.4rem;
     }
   }
-  .isActive {
+  .current {
     background: #000;
     color: #fff;
   }
-  a.Pagination-Item-Link:not(.isFirst):hover {
+  .page:not(.isFirst):hover {
     background: #000;
     color: #fff;
   }
-
-  .Pagination_ellipsis {
+  .last {
+    transition:
+      background-color 0.4s linear,
+      color 0.4s linear;
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+  .first {
+    transition:
+      background-color 0.4s linear,
+      color 0.4s linear;
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+.page .wp-pagenavi a,
+.page .wp-pagenavi span {
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 0;
+  margin: 0;
+  &.extend {
     margin: 0 1rem;
+    border: none;
+    display: inline-block;
   }
+}
+
+//共通パーツ【記事がない場合】
+.no_posts {
+  text-align: center;
+  list-style: none;
+  margin-top: 3rem;
+}
+
+.achievement_grid .no_posts {
+  grid-column: 1 / -1; /* Gridレイアウトの場合、横いっぱいに広げる指定 */
+  width: 100%; /* Flexboxレイアウトの場合の保険 */
+  text-align: center;
+  padding: 50px 0;
+  color: #666;
+  font-size: 16px;
 }

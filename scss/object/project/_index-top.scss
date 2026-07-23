@@ -62,7 +62,7 @@ section.sec1 {
         @include mq($sm) {
           font-size: 1.8rem;
           line-height: 1.667;
-          margin: 0.7rem 0rem 2rem;
+          margin: 0.7rem 0rem 2rem -1.4rem;
         }
       }
     }
@@ -230,7 +230,7 @@ section.sec4 {
   padding: 4.4rem 2rem 8rem 2rem;
   background-color: $main_color;
   @include mq($sm) {
-    padding: 4.6rem 0 4rem 0;
+    padding: 4.6rem 0 5.2rem 0;
   }
   .sec4.inner {
     .sec4_container {
@@ -264,13 +264,21 @@ section.sec4 {
                 text-align: center;
                 line-height: 1.5;
                 overflow-wrap: break-word;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
                 @include mq($sm) {
                   margin: 2.7rem 0 1rem 0;
                 }
               }
-              p.voice_text {
+              p {
                 font-weight: 400;
                 font-size: 1.8rem;
+                line-height: 1.667;
+                -webkit-line-clamp: 3;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
               }
               &:hover {
                 opacity: 0.7;
@@ -474,7 +482,7 @@ section.sec6 {
             border-bottom: 1px solid #000000;
             padding: 1.5rem 2rem;
             @include mq($sm) {
-              padding: 1.3rem 5rem 1.3rem 0;
+              padding: 1.5rem 5rem 0.9rem 0;
             }
             span.icon {
               display: flex;
@@ -533,13 +541,14 @@ section.sec6 {
             transition:
               max-height 0.4s ease-in-out,
               padding 0.4s ease-in,
-              transform 0.4s ease;
+              transform 0.4s ease,
+              color 0.4s ease;
             .faq-answer-inner {
               padding: 1.5rem 2rem; // ここで余白を確保
               display: flex;
               align-items: center;
               @include mq($sm) {
-                padding: 1.3rem 3rem 1.3rem 0;
+                padding: 1.9rem 5rem 0.9rem 0;
               }
             }
             &.highlighted {
@@ -548,8 +557,9 @@ section.sec6 {
               align-items: flex-start;
               font-size: 1.7rem;
               line-height: 1.765;
-              color: #000000;
+              color: #cb0000;
               padding: 0;
+              font-weight: bold;
               & {
                 flex-grow: 1;
               }
@@ -585,10 +595,6 @@ section.sec6 {
             }
 
             .faq-answer {
-              transition:
-                max-height 0.4s ease-in-out,
-                padding 0.4s ease-in,
-                transform 0.4s ease;
               border-bottom: 1px solid #000000;
             }
 
@@ -629,6 +635,13 @@ section.sec7 {
           width: calc((100% - (5rem * 2)) / 3);
           @include mq($sm) {
             width: 100%;
+          }
+          img {
+            aspect-ratio: 260 / 200;
+            object-fit: cover;
+            @include mq($sm) {
+              aspect-ratio: 335 / 200;
+            }
           }
           a {
             transition: opacity 0.4s;

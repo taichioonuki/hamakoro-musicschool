@@ -8,7 +8,9 @@ section.sec1_blog_details {
   @include mq($sm) {
     padding: 5.3rem 0 19.7rem 0;
   }
-  .sec1_blog_details.inner {
+
+  .inner,
+  .sec1_blog_details_inner {
     display: flex;
     gap: 3rem;
     @include mq($sm) {
@@ -18,8 +20,16 @@ section.sec1_blog_details {
     .sec1_left_content {
       position: relative;
       flex: 1 1 60%;
+
       .sec1_left_img {
         max-width: 60rem;
+      }
+      .wp-post-image {
+        aspect-ratio: 600 / 350;
+        object-fit: cover;
+        @include mq($sm) {
+          aspect-ratio: 335 / 200;
+        }
       }
       h1 {
         font-size: 2.5rem;
@@ -51,7 +61,6 @@ section.sec1_blog_details {
             opacity: 0.7;
           }
         }
-
         .sns_img_fb {
           width: 10.5rem;
           height: 4rem;
@@ -98,100 +107,125 @@ section.sec1_blog_details {
         @include mq($sm) {
           margin-top: 2.7rem;
         }
+        & > * {
+          margin-block: 0;
+        }
 
+        p {
+          margin-top: 1.5rem;
+          margin-bottom: 1.7rem;
+          &:last-child {
+            margin-bottom: 0;
+            display: inline-block;
+          }
+        }
         h2 {
+          margin-block: 3.3rem 1.5rem;
           font-size: 2rem;
-          line-height: 2;
-          font-weight: 700;
-          margin-top: 3.3rem;
+          font-weight: bold;
+          line-height: calc(40 / 20);
+          @include mq($sm) {
+            line-height: calc(30 / 20);
+            margin-block: 4rem 1.5rem;
+          }
+        }
+        figure {
+          margin-block: 0rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
           @include mq($sm) {
             margin-top: 3.9rem;
-            line-height: 1.5;
+          }
+          img {
+            width: 33.5rem;
+            aspect-ratio: 335 / 200;
+            object-fit: cover;
+            @include mq($sm) {
+              width: 100%;
+            }
           }
         }
-        p.text_bottom {
-          margin-top: 1.5rem;
-          @include mq($sm) {
-            margin-top: 1.7rem;
+        ul,
+        ol {
+          margin-top: 2.8rem;
+          margin-bottom: 2.8rem;
+          padding-left: 0;
+          li {
+            font-size: 1.8rem;
+            line-height: 1.6;
+            list-style: none;
+            padding-left: 1em;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0.6rem;
+              top: 0.6em;
+              width: 3px;
+              height: 3px;
+              background-color: currentColor;
+              border-radius: 50%;
+            }
+            @include mq($sm) {
+              font-size: 1.6rem;
+              line-height: 1.875;
+            }
           }
-        }
-        .text_bottom_img {
-          margin: 1.7rem 0 2.8rem 0;
-          width: 33.5rem;
-          @include mq($sm) {
-            margin: 3.9rem 0 2.7rem 0;
-          }
-        }
-        hr {
-          margin-top: 4.1rem;
-          @include mq($sm) {
-            margin-top: 3.8rem;
-          }
-        }
-      }
-      .blog_details_content02 {
-        margin-top: 4.3rem;
-        @include mq($sm) {
-          margin-top: 5rem;
         }
         h3 {
+          margin-block: 4.3rem 1.7rem;
           font-size: 2rem;
-          line-height: 2;
-          font-weight: 700;
-          position: relative;
-          padding-left: 0.9rem;
-          @include mq($sm) {
-            line-height: 1.5;
-          }
-        }
-        h3::before {
-          content: "";
-          display: block;
-          width: 0.3rem;
-          background-color: #000;
-          position: absolute;
-          left: 0.1rem;
-          top: 50%;
-          transform: translateY(-50%);
-          height: calc(100% - 1.2rem);
-          @include mq($sm) {
-            height: calc(100% - 1rem);
-          }
-        }
-        .sec1_left_textbox {
-          background: #e8e8e8;
-          margin: 1.7rem 0 2.7rem 0;
+          line-height: calc(40 / 20);
+          font-weight: bold;
+          padding-left: 1.1rem;
           position: relative;
           @include mq($sm) {
-            margin-top: 1.95rem;
+            line-height: calc(30 / 20);
+            margin-block: 5rem 2rem;
           }
-          &::after {
+          &::before {
             content: "";
-            display: inline-block;
+            width: 0.3rem;
+            height: calc(100% - 2rem);
+            background: #000;
             position: absolute;
-            width: 3rem;
-            height: 3rem;
-            top: 2rem;
-            left: 3rem;
-            background-image: url(https://hamakoro-i.com/music_school/img/icon_logo/quotation.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            vertical-align: middle;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
             @include mq($sm) {
-              width: 2.6rem;
-              height: 2.4rem;
-              top: 2.2rem;
-              left: 2.7rem;
-            }
-          }
-          p.question {
-            padding: 1.8rem 3rem 1rem 6.7rem;
-            @include mq($sm) {
-              padding: 1.8rem 2rem 1rem 7rem;
+              height: calc(100% - 1rem);
             }
           }
         }
-        a.sec1_left_textlink {
+        blockquote {
+          display: flex;
+          column-gap: 0.8rem;
+          padding: 1.8rem 3rem 1rem;
+          margin-top: 1.7rem;
+          margin-bottom: 2.9rem;
+          position: relative;
+          border: none;
+          background: #e8e8e8;
+          @include mq($sm) {
+            column-gap: 1.7rem;
+            padding: 1.7rem 2rem 1.1rem 2.5rem;
+            margin-bottom: 2.6rem;
+          }
+          &::before {
+            content: "";
+            background: url(https://hamakoro-i.com/music_school/img/icon_logo/quotation.svg)
+              center center / contain no-repeat;
+            display: inline-block;
+            width: 2.7rem;
+            height: 2.34rem;
+            flex-shrink: 0;
+          }
+          p {
+            margin: 0;
+            flex: 1;
+          }
+        }
+        a {
           font-size: 2rem;
           font-weight: 700;
           color: $main_color;
@@ -202,36 +236,47 @@ section.sec1_blog_details {
             opacity: 0.7;
           }
         }
+        hr {
+          margin-top: 4.1rem;
+          margin-bottom: 4.1rem;
+          border-bottom: 0.5px solid;
+          @include mq($sm) {
+            margin-top: 3.5rem;
+          }
+        }
       }
     }
+    .wp-block-separator {
+      border: none;
+      border-top: 0.5px solid #ccc;
+    }
+
     aside.sidebar {
-      flex: 1 1 40%;
+      flex: 1 1 20%;
       @include mq($sm) {
         font-size: 1.8rem;
         line-height: 1.833;
       }
 
-      // 共通：タイトル（h3からpに変更したもの）
       .sidebar_title {
         background: #000;
         color: #fff;
         padding: 1rem 0;
         text-align: center;
         font-weight: 700;
-        margin: 0; // pタグの初期余白を消去
+        margin: 0;
         @include mq($sm) {
           padding: 0.9rem 0 0.8rem 0;
         }
       }
 
-      // 無料メールマガジン
       .sidebar_mail {
         margin-bottom: 3rem;
         .banner {
           border: 1px solid #000;
           padding: 1.5rem;
           a {
-            display: block; // リンクを広げる
+            display: block;
             transition: opacity 0.4s;
             &:hover {
               opacity: 0.7;
@@ -240,7 +285,6 @@ section.sec1_blog_details {
         }
       }
 
-      // ブログ内検索
       .sidebar_search {
         margin-bottom: 3rem;
         .search_box {
@@ -299,7 +343,6 @@ section.sec1_blog_details {
         }
       }
 
-      // おすすめの記事
       .sidebar_posts {
         margin-bottom: 3rem;
         .post_list {
@@ -329,25 +372,35 @@ section.sec1_blog_details {
               .post_img_wrapper {
                 flex-shrink: 0;
                 width: 9.5rem;
+                height: 7.5rem;
                 overflow: hidden;
                 @include mq($sm) {
                   width: 16rem;
                   height: 11rem;
                 }
-                .post_item_title {
-                  font-size: 1.7rem;
-                  line-height: 1.647;
-                  margin: 0;
-                  @include mq($sm) {
-                    margin-top: 1rem;
-                  }
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+                .wp-post-image {
+                  aspect-ratio: 95 / 75;
+                  object-fit: cover;
+                }
+              }
+              .post_item_title {
+                font-size: 1.7rem;
+                line-height: 1.647;
+                margin: 0;
+                @include mq($sm) {
+                  margin-top: 1rem;
                 }
               }
             }
           }
         }
       }
-      // カテゴリー
+
       .sidebar_category {
         .category_list {
           .category_item {
